@@ -1,11 +1,14 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
   </head>
   <body>
-    {{ content }}
     <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    {% include navigation.html %}
+    {{ content }}
   </body>
 </html>
