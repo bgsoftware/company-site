@@ -1,0 +1,17 @@
+{
+  "name": "bg-software-site",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.x.x",
+    "jquery": "3.x.x",
+    "popper.js": "1.x.x"
+  }
+}
