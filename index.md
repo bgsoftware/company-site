@@ -16,6 +16,15 @@ title: Home
 {% assign restOfTechImages = techImages | shift %}
 
 <div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 text-center">
+      <p>
+        Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
+      </p>
+    </div>
+    <div class="col-3"></div>
+  </div>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
