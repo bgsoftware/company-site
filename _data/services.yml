@@ -1,0 +1,15 @@
+- name: Service 1
+  points:
+    - A
+    - B
+    - C
+- name: Service 2
+  points:
+    - A
+    - B
+    - C
+- name: Service 3
+  points:
+    - A
+    - B
+    - C
