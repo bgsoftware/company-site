@@ -26,7 +26,7 @@ title: Home
 
 
   <!--- Services. --->
-  <div id="services" class="py-5">
+  <div id="services" class="py-15">
     <h1 class="text-center">Services</h1>
     <div class="d-flex flex-row justify-content-between">
       {% for service in site.data.services %}
@@ -46,7 +46,6 @@ title: Home
 
   <br>
 
-
   <!--- Capabilities. --->
   {% assign techImages = "" | split: "" %}
   {% for image in site.static_files %}
@@ -57,7 +56,7 @@ title: Home
   {% assign firstTechImagePath = techImages.first %}
   {% assign restOfTechImagePaths = techImages | shift %}
 
-  <div id="capabilities" class="py-5">
+  <div id="capabilities" class="py-15">
     <h1 class="text-center">Capabilities</h1>
     <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -81,5 +80,39 @@ title: Home
     </div>
   </div>
 
+
+  <!--- Clients. --->
+  {% assign clientImages = "" | split: "" %}
+  {% for image in site.static_files %}
+    {% if image.path contains 'assets/images/clients' %}
+      {% assign clientImages = clientImages | push: image.path %}
+    {% endif %}
+  {% endfor %}
+  {% assign firstClientImagePath = clientImages.first %}
+  {% assign restOfClientImagePaths = clientImages | shift %}
+
+  <div id="clients" class="py-15">
+    <h1 class="text-center">Clients</h1>
+    <div id="clients-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item text-center active">
+          <img class="inline-block w-15 img-fluid" src="{{ site.baseurl }}{{ firstClientImagePath }}">
+        </div>
+        {% for imagePath in restOfClientImagePaths %}
+          <div class="carousel-item text-center">
+            <img class="inline-block w-15 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+          </div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#clients-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#clients-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 
 </div>
