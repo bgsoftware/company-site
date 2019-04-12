@@ -1,4 +1,5 @@
 <div class="position-relative bg-color-primary shadow-lg p-3 mt-5 d-flex justify-content-around">
+
   <!--- Contact Information. --->
   <div>
     <p class="d-flex flex-column align-content-start">
@@ -8,13 +9,16 @@
       <a href="mailto:customsoftware@benningfieldgroup.com"  class="color-white">customsoftware@benningfieldgroup.com</a>
     </p>
   </div>
+
   <!--- Social Media Logos and Links. --->
-  <!-- {{ site.data.socialMedia | inspect }} -->
   <div class="d-flex justify-content-center align-items-end">
     {% for app in site.data.socialMedia %}
     <div class="text-center h-10">
-      <img class="w-50 img-fluid" src="{{ site.baseurl }}{{ app.imagePath }}"></img>
+      <a href="{{ site.baseurl }}{{ app.link }}" target="_blank">
+        <img class="w-50 img-fluid" src="{{ site.baseurl }}{{ app.imagePath }}"></img>
+      </a>
     </div>
     {% endfor %}
   </div>
+
 </div>
