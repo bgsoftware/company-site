@@ -1,0 +1,40 @@
+/* Adjust space amounts to set rems you need */
+$spaceamounts: (10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}rem !important;
+    }
+
+    .mx-#{$space} {
+      margin-left: #{$space}rem !important;
+      margin-right: #{$space}rem !important;
+    }
+
+    .my-#{$space} {
+      margin-top: #{$space}rem !important;
+      margin-bottom: #{$space}rem !important;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}rem !important;
+    }
+
+    .p-#{$space} {
+      padding: #{$space}rem !important;
+    }
+
+    .px-#{$space} {
+      padding-left: #{$space}rem !important;
+      padding-right: #{$space}rem !important;
+    }
+
+    .py-#{$space} {
+      padding-top: #{$space}rem !important;
+      padding-bottom: #{$space}rem !important;
+    }
+  }
+}
