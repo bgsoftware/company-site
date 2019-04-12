@@ -1,15 +1,20 @@
-<div class="position-relative shadow-lg p-3 mt-5 d-flex justify-content-center">
+<div class="position-relative bg-color-primary shadow-lg p-3 mt-5 d-flex justify-content-around">
   <!--- Contact Information. --->
   <div>
     <p class="d-flex flex-column align-content-start">
-      <span>400 Plaza Drive, Suite 120</span>
-      <span>Folsom, CA 95630</span>
-      <a href="tel:1-916-221-3110">916.221.3110</a>
-      <a href="mailto:customsoftware@benningfieldgroup.com">customsoftware@benningfieldgroup.com</a>
+      <span class="color-white">400 Plaza Drive, Suite 120</span>
+      <span  class="color-white">Folsom, CA 95630</span>
+      <a href="tel:1-916-221-3110"  class="color-white">916.221.3110</a>
+      <a href="mailto:customsoftware@benningfieldgroup.com"  class="color-white">customsoftware@benningfieldgroup.com</a>
     </p>
   </div>
   <!--- Social Media Logos and Links. --->
-  <div>
-
+  <!-- {{ site.data.socialMedia | inspect }} -->
+  <div class="d-flex justify-content-center align-items-end">
+    {% for app in site.data.socialMedia %}
+    <div class="text-center h-10">
+      <img class="w-50 img-fluid" src="{{ site.baseurl }}{{ app.imagePath }}"></img>
+    </div>
+    {% endfor %}
   </div>
 </div>
