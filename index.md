@@ -10,7 +10,7 @@ title: Home
 <div class="container">
 
   <!--- Mission Statement. --->
-  <div class="py-5">
+  <div class="py-15">
     <div class="row">
       <div class="col-3"></div>
       <div class="col-6 text-center">
