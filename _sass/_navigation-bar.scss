@@ -1,3 +1,8 @@
+.nav-link {
+  color: $primary-color !important;
+}
+
 .nav-link.active {
-  border-bottom: solid $tertiary-color;
+  border-bottom: solid $secondary-color !important;
+  color: $tertiary-color;
 }
