@@ -1,8 +1,8 @@
 .nav-link {
   color: $primary-color !important;
+  border-bottom: solid $white
 }
 
 .nav-link.active {
-  border-bottom: solid $secondary-color !important;
-  color: $tertiary-color;
+  border-bottom: solid $secondary-color
 }
