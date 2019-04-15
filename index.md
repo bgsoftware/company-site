@@ -24,6 +24,17 @@ title: Home
 
   <br>
 
+  <!--- About Us. --->
+  <div id="aboutus" class="py-15 d-flex justify-content-center align-items-center flex-column">
+    <h1 class="text-center">About Us</h1>
+    <img class="w-75 text-center" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
+    <br>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
+    </p>
+  </div>
+
+  <br>
 
   <!--- Services. --->
   <div id="services" class="py-15">
@@ -53,20 +64,51 @@ title: Home
       {% assign techImages = techImages | push: image.path %}
     {% endif %}
   {% endfor %}
-  {% assign firstTechImagePath = techImages.first %}
-  {% assign restOfTechImagePaths = techImages | shift %}
 
-  <div id="capabilities" class="py-15">
-    <h1 class="text-center">Capabilities</h1>
-    <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
+  <!--- Create a nested array for Capabilities to group carousel. --->
+  {% assign subArrSize = 5 %}
+  {% assign capabilities = "" | split: "/" %}
+
+  {% for element in techImages %}
+    {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
+
+    {% if needsNewSubArr == 1 %}
+      <!--- Create a new empty sub array. --->
+      {% assign subArr = "" | split: "/" %}
+    {% endif %}
+
+    <!--- Push the current image in sub array. --->
+    {% assign subArr = subArr | push: element %}
+
+    {% if needsNewSubArr == 0 or forloop.last %}
+      <!--- push subArr in capabilities if subArr length is. --->
+      {% assign capabilities = capabilities | push: subArr %}
+    {% endif %}
+  {% endfor %}
+
+  <div id="capabilities" class="py-15 d-flex flex-column align-items-center">
+    <h1 class="text-center pb-2">Capabilities</h1>
+
+    <div id="capabilities-carousel" class="carousel slide w-75" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item text-center active">
-          <img class="inline-block w-15 img-fluid" src="{{ site.baseurl }}{{ firstTechImagePath }}">
-        </div>
-        {% for imagePath in restOfTechImagePaths %}
-          <div class="carousel-item text-center">
-            <img class="inline-block w-15 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
-          </div>
+        {% for imageGroup in capabilities %}
+          <!--- If first group, set class have active class. --->
+          {% if forloop.first %}
+            <div class="carousel-item text-center active">
+              {% for imagePath in imageGroup %}
+                  <img class="inline-block w-15 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if forloop.first == false %}
+            <div class="carousel-item text-center">
+              {% for imagePath in imageGroup %}
+                  <img class="inline-block w-15 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+
+              {% endfor %}
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
       <a class="carousel-control-prev" href="#capabilities-carousel" role="button" data-slide="prev">
@@ -78,8 +120,10 @@ title: Home
         <span class="sr-only">Next</span>
       </a>
     </div>
+
   </div>
 
+  <br>
 
   <!--- Clients. --->
   {% assign clientImages = "" | split: "" %}
