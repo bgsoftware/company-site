@@ -4,5 +4,6 @@
 }
 
 .nav-link.active {
-  border-bottom: solid $secondary-color
+  border-bottom: solid $secondary-color;
+  color: $secondary-color !important;
 }
