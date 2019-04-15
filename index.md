@@ -89,7 +89,7 @@ title: Home
   <div id="capabilities" class="py-15 d-flex flex-column align-items-center">
     <h1 class="text-center pb-2">Capabilities</h1>
 
-    <div id="capabilities-carousel" class="carousel slide w-75" data-ride="carousel">
+    <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         {% for imageGroup in capabilities %}
           <!--- If first group, set class have active class. --->
@@ -132,20 +132,50 @@ title: Home
       {% assign clientImages = clientImages | push: image.path %}
     {% endif %}
   {% endfor %}
-  {% assign firstClientImagePath = clientImages.first %}
-  {% assign restOfClientImagePaths = clientImages | shift %}
+
+  <!--- Create a nested array for Clients to group carousel. --->
+  {% assign subArrSize = 4 %}
+  {% assign clients = "" | split: "/" %}
+
+  {% for element in clientImages %}
+    {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
+
+    {% if needsNewSubArr == 1 %}
+      <!--- Create a new empty sub array. --->
+      {% assign subArr = "" | split: "/" %}
+    {% endif %}
+
+    <!--- Push the current image in sub array. --->
+    {% assign subArr = subArr | push: element %}
+
+    {% if needsNewSubArr == 0 or forloop.last %}
+      <!--- push subArr in clients if subArr length is. --->
+      {% assign clients = clients | push: subArr %}
+    {% endif %}
+  {% endfor %}
 
   <div id="clients" class="py-15">
     <h1 class="text-center">Clients</h1>
     <div id="clients-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item text-center active">
-          <img class="inline-block w-15 img-fluid" src="{{ site.baseurl }}{{ firstClientImagePath }}">
-        </div>
-        {% for imagePath in restOfClientImagePaths %}
-          <div class="carousel-item text-center">
-            <img class="inline-block w-15 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
-          </div>
+        {% for imageGroup in clients %}
+          <!--- If first group, set class have active class. --->
+          {% if forloop.first %}
+            <div class="carousel-item text-center active">
+              {% for imagePath in imageGroup %}
+                  <img class="inline-block w-20 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if forloop.first == false %}
+            <div class="carousel-item text-center">
+              {% for imagePath in imageGroup %}
+                  <img class="inline-block w-20 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+
+              {% endfor %}
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
       <a class="carousel-control-prev" href="#clients-carousel" role="button" data-slide="prev">
@@ -158,5 +188,7 @@ title: Home
       </a>
     </div>
   </div>
+
+  <br>
 
 </div>
