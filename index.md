@@ -25,7 +25,7 @@ title: Home
   <br>
 
   <!--- About Us. --->
-  <div id="aboutus" class="py-15 d-flex justify-content-center align-items-center flex-column">
+  <div id="aboutus" class="pt-15 pb-5 d-flex justify-content-center align-items-center flex-column">
     <h1 class="text-center">About Us</h1>
     <img class="w-75 text-center" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
     <br>
@@ -37,7 +37,7 @@ title: Home
   <br>
 
   <!--- Services. --->
-  <div id="services" class="py-15">
+  <div id="services" class="py-10">
     <h1 class="text-center">Services</h1>
     <div class="d-flex flex-row justify-content-between">
       {% for service in site.data.services %}
@@ -86,7 +86,7 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" class="py-15 d-flex flex-column align-items-center">
+  <div id="capabilities" class="py-10 d-flex flex-column align-items-center">
     <h1 class="text-center pb-2">Capabilities</h1>
 
     <div id="capabilities-carousel" class="carousel slide w-75" data-ride="carousel">
@@ -154,7 +154,7 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="clients" class="py-15 d-flex flex-column align-items-center">
+  <div id="clients" class="pt-10 pb-30 d-flex flex-column align-items-center">
     <h1 class="text-center pb-2">Clients</h1>
     <div id="clients-carousel" class="carousel slide w-75" data-ride="carousel">
       <div class="carousel-inner">
