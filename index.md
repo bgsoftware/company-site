@@ -86,17 +86,17 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" class="py-10 d-flex flex-column align-items-center">
+  <div id="capabilities" class="py-5 d-flex flex-column align-items-center">
     <h1 class="text-center pb-2">Capabilities</h1>
 
-    <div id="capabilities-carousel" class="carousel slide w-75" data-ride="carousel">
+    <div id="capabilities-carousel" class="carousel slide w-90" data-ride="carousel">
       <div class="carousel-inner">
         {% for imageGroup in capabilities %}
           <!--- If first group, set class have active class. --->
           {% if forloop.first %}
             <div class="carousel-item text-center active">
               {% for imagePath in imageGroup %}
-                  <img class="inline-block w-15 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                  <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
               {% endfor %}
             </div>
@@ -104,7 +104,7 @@ title: Home
           {% if forloop.first == false %}
             <div class="carousel-item text-center">
               {% for imagePath in imageGroup %}
-                  <img class="inline-block w-15 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                  <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
               {% endfor %}
             </div>
@@ -154,16 +154,16 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="clients" class="pt-10 pb-30 d-flex flex-column align-items-center">
+  <div id="clients" class="pt-5 pb-30 d-flex flex-column align-items-center">
     <h1 class="text-center pb-2">Clients</h1>
-    <div id="clients-carousel" class="carousel slide w-75" data-ride="carousel">
+    <div id="clients-carousel" class="carousel slide w-90" data-ride="carousel">
       <div class="carousel-inner">
         {% for imageGroup in clients %}
           <!--- If first group, set class have active class. --->
           {% if forloop.first %}
             <div class="carousel-item text-center active">
               {% for imagePath in imageGroup %}
-                  <img class="inline-block w-20 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                  <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
               {% endfor %}
             </div>
@@ -171,7 +171,7 @@ title: Home
           {% if forloop.first == false %}
             <div class="carousel-item text-center">
               {% for imagePath in imageGroup %}
-                  <img class="inline-block w-20 px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                  <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
               {% endfor %}
             </div>
