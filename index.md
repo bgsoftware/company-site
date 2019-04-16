@@ -89,7 +89,7 @@ title: Home
   <div id="capabilities" class="py-15 d-flex flex-column align-items-center">
     <h1 class="text-center pb-2">Capabilities</h1>
 
-    <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
+    <div id="capabilities-carousel" class="carousel slide w-75" data-ride="carousel">
       <div class="carousel-inner">
         {% for imageGroup in capabilities %}
           <!--- If first group, set class have active class. --->
@@ -154,9 +154,9 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="clients" class="py-15">
-    <h1 class="text-center">Clients</h1>
-    <div id="clients-carousel" class="carousel slide" data-ride="carousel">
+  <div id="clients" class="py-15 d-flex flex-column align-items-center">
+    <h1 class="text-center pb-2">Clients</h1>
+    <div id="clients-carousel" class="carousel slide w-75" data-ride="carousel">
       <div class="carousel-inner">
         {% for imageGroup in clients %}
           <!--- If first group, set class have active class. --->
