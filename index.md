@@ -3,6 +3,7 @@ layout: default
 title: Home
 ---
 
+<script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
 
 <div class="container">
 
