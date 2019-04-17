@@ -1,8 +1,8 @@
-- name: About Us
-  link: "#aboutus"
 - name: Services
   link: "#services"
 - name: Capabilities
   link: "#capabilities"
 - name: Clients
   link: "#clients"
+- name: About Us
+  link: "#aboutus"
