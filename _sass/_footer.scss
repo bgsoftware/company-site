@@ -9,8 +9,14 @@
 
   #social-media {
     justify-content: space-between;
-    align-items: end;
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1176px) {
+  .footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -23,10 +29,6 @@
       padding-left: 2rem;
     }
 
-    #social-media {
-      flex-direction: column;
-      align-items: flex-end;
-    }
   }
 }
 
@@ -34,6 +36,10 @@
   .footer {
     #contact {
       font-size: .75rem;
+    }
+    #social-media {
+      flex-direction: column;
+      align-items: flex-end;
     }
   }
 }
