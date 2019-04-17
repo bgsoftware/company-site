@@ -22,40 +22,30 @@ title: Home
     </div>
   </div>
 
-  <br>
 
-  <!--- About Us. --->
-  <div id="aboutus" class="pt-15 pb-5 d-flex justify-content-center align-items-center flex-column">
-    <h1 class="text-center">About Us</h1>
-    <img class="w-75 text-center" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
-    <br>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
-    </p>
-  </div>
 
-  <br>
 
   <!--- Services. --->
-  <div id="services" class="py-10">
-    <h1 class="text-center">Services</h1>
-    <div class="d-flex flex-row justify-content-between">
-      {% for service in site.data.services %}
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{ service.name }}</h5>
-            <ul>
-            {% for point in service.points %}
-              <li class="card-text">{{ point }}</li>
-            {% endfor %}
-            </ul>
+  <div id="services">
+    <div class="pt-10">
+      <h1 class="text-center">Services</h1>
+      <div class="d-flex flex-row justify-content-between">
+        {% for service in site.data.services %}
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{ service.name }}</h5>
+              <ul>
+              {% for point in service.points %}
+                <li class="card-text">{{ point }}</li>
+              {% endfor %}
+              </ul>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 
-  <br>
 
   <!--- Capabilities. --->
   {% assign techImages = "" | split: "" %}
@@ -86,44 +76,44 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" class="py-5 d-flex flex-column align-items-center">
-    <h1 class="text-center pb-2">Capabilities</h1>
+  <div id="capabilities">
+    <div class="pt-10 d-flex flex-column align-items-center">
+      <h1 class="text-center pb-2">Capabilities</h1>
 
-    <div id="capabilities-carousel" class="carousel slide w-90" data-ride="carousel">
-      <div class="carousel-inner">
-        {% for imageGroup in capabilities %}
-          <!--- If first group, set class have active class. --->
-          {% if forloop.first %}
-            <div class="carousel-item text-center active">
-              {% for imagePath in imageGroup %}
-                  <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+      <div id="capabilities-carousel" class="carousel slide w-90" data-ride="carousel">
+        <div class="carousel-inner">
+          {% for imageGroup in capabilities %}
+            <!--- If first group, set class have active class. --->
+            {% if forloop.first %}
+              <div class="carousel-item text-center active">
+                {% for imagePath in imageGroup %}
+                    <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
-              {% endfor %}
-            </div>
-          {% endif %}
-          {% if forloop.first == false %}
-            <div class="carousel-item text-center">
-              {% for imagePath in imageGroup %}
-                  <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if forloop.first == false %}
+              <div class="carousel-item text-center">
+                {% for imagePath in imageGroup %}
+                    <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
-              {% endfor %}
-            </div>
-          {% endif %}
-        {% endfor %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#capabilities-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#capabilities-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="#capabilities-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#capabilities-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-
   </div>
 
-  <br>
 
   <!--- Clients. --->
   {% assign clientImages = "" | split: "" %}
@@ -154,41 +144,54 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="clients" class="pt-5 pb-30 d-flex flex-column align-items-center">
-    <h1 class="text-center pb-2">Clients</h1>
-    <div id="clients-carousel" class="carousel slide w-90" data-ride="carousel">
-      <div class="carousel-inner">
-        {% for imageGroup in clients %}
-          <!--- If first group, set class have active class. --->
-          {% if forloop.first %}
-            <div class="carousel-item text-center active">
-              {% for imagePath in imageGroup %}
-                  <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+  <div id="clients">
+    <div class="pt-10 d-flex flex-column align-items-center">
+      <h1 class="text-center pb-2">Clients</h1>
+      <div id="clients-carousel" class="carousel slide w-90" data-ride="carousel">
+        <div class="carousel-inner">
+          {% for imageGroup in clients %}
+            <!--- If first group, set class have active class. --->
+            {% if forloop.first %}
+              <div class="carousel-item text-center active">
+                {% for imagePath in imageGroup %}
+                    <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
-              {% endfor %}
-            </div>
-          {% endif %}
-          {% if forloop.first == false %}
-            <div class="carousel-item text-center">
-              {% for imagePath in imageGroup %}
-                  <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if forloop.first == false %}
+              <div class="carousel-item text-center">
+                {% for imagePath in imageGroup %}
+                    <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
 
-              {% endfor %}
-            </div>
-          {% endif %}
-        {% endfor %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#clients-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#clients-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="#clients-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#clients-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 
-  <br>
+
+  <!--- About Us. --->
+  <div id="aboutus">
+    <div class="pt-15 pb-30 d-flex justify-content-center align-items-center flex-column">
+      <h1 class="text-center">About Us</h1>
+      <img class="w-75 text-center" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
+      </p>
+    </div>
+  </div>
 
 </div>
