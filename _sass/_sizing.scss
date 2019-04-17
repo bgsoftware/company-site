@@ -1,0 +1,4 @@
+@for $i from 1 through 20 {
+  .w-#{$i}rem { width: #{$i}rem; }
+  .h-#{$i}rem { height: #{$i}rem; }
+}

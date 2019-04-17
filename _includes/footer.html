@@ -11,9 +11,9 @@
   <!--- Social Media Logos and Links. --->
   <div id="social-media" class="d-flex w-25">
     {% for app in site.data.socialMedia %}
-    <div class="h-5" style="width: 4rem">
+    <div class="h-5 w-4rem">
       <a href="{{ site.baseurl }}{{ app.link }}" target="_blank">
-        <img style="height:2rem" class="img-fluid" src="{{ site.baseurl }}{{ app.imagePath }}"></img>
+        <img class="img-fluid h-2rem" src="{{ site.baseurl }}{{ app.imagePath }}"></img>
       </a>
     </div>
     {% endfor %}

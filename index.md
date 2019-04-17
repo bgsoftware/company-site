@@ -14,7 +14,7 @@ title: Home
     <div class="row">
       <div class="col-3"></div>
       <div class="col-6 text-center">
-        <p style="font-size: 1.25rem">
+        <p class="font-size-125">
           Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
         </p>
       </div>
@@ -31,7 +31,7 @@ title: Home
       <h1 class="text-center">Services</h1>
       <div class="d-flex flex-row justify-content-between">
         {% for service in site.data.services %}
-          <div class="card" style="width: 18rem;">
+          <div class="card w-18rem">
             <div class="card-body">
               <h5 class="card-title text-center">{{ service.name }}</h5>
               <ul>
@@ -87,7 +87,7 @@ title: Home
             {% if forloop.first %}
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                    <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img class="inline-block px-3 img-fluid w-7rem" src="{{ site.baseurl }}{{ imagePath }}">
 
                 {% endfor %}
               </div>
@@ -95,7 +95,7 @@ title: Home
             {% if forloop.first == false %}
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                    <img style="width: 7rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img class="inline-block px-3 img-fluid w-7rem" src="{{ site.baseurl }}{{ imagePath }}">
 
                 {% endfor %}
               </div>
@@ -154,7 +154,7 @@ title: Home
             {% if forloop.first %}
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                    <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
 
                 {% endfor %}
               </div>
@@ -162,7 +162,7 @@ title: Home
             {% if forloop.first == false %}
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                    <img style="width: 10rem" class="inline-block px-3 img-fluid" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
 
                 {% endfor %}
               </div>
