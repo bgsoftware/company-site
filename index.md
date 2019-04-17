@@ -4,10 +4,9 @@ title: Home
 ---
 
 
-
-
-
 <div class="container">
+
+
 
   <!--- Mission Statement. --->
   <div class="py-15">
@@ -21,7 +20,6 @@ title: Home
       <div class="col-3"></div>
     </div>
   </div>
-
 
 
 
@@ -45,6 +43,7 @@ title: Home
       </div>
     </div>
   </div>
+
 
 
   <!--- Capabilities. --->
@@ -115,6 +114,7 @@ title: Home
   </div>
 
 
+
   <!--- Clients. --->
   {% assign clientImages = "" | split: "" %}
   {% for image in site.static_files %}
@@ -180,6 +180,7 @@ title: Home
       </div>
     </div>
   </div>
+
 
 
   <!--- About Us. --->
