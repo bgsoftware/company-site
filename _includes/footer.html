@@ -1,19 +1,17 @@
-<div id="footer" class="position-relative bg-color-primary shadow-lg pt-5 pb-6 d-flex justify-content-around">
+<div id="footer" class="footer position-relative bg-color-primary shadow-lg pt-5 pb-6 d-flex justify-content-around">
 
   <!--- Contact Information. --->
-  <div>
-    <p class="d-flex flex-column align-content-start">
+  <div id="contact" class="d-flex flex-column align-content-start w-75">
       <span class="color-white">400 Plaza Drive, Suite 120</span>
       <span class="color-white">Folsom, CA 95630</span>
       <a href="tel:1-916-221-3110"  class="color-white">916.221.3110</a>
       <a href="mailto:customsoftware@benningfieldgroup.com"  class="color-white">customsoftware@benningfieldgroup.com</a>
-    </p>
   </div>
 
   <!--- Social Media Logos and Links. --->
-  <div class="d-flex justify-content-center align-items-end">
+  <div id="social-media" class="d-flex w-25">
     {% for app in site.data.socialMedia %}
-    <div class="text-center h-10" style="width: 5rem">
+    <div class="h-5" style="width: 4rem">
       <a href="{{ site.baseurl }}{{ app.link }}" target="_blank">
         <img style="height:2rem" class="img-fluid" src="{{ site.baseurl }}{{ app.imagePath }}"></img>
       </a>
