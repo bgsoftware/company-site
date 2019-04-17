@@ -6,7 +6,6 @@
 .footer {
   padding-left: 10rem;
   padding-right: 10rem;
-  padding-bottom: 5rem;
 
   #social-media {
     justify-content: space-between;
@@ -17,7 +16,8 @@
 
 @media only screen and (max-width: 760px) {
   .footer {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     #contact {
       padding-left: 2rem;
