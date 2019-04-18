@@ -4,24 +4,21 @@ title: Home
 ---
 
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
-
-<div class="container">
-
-
-
-  <!--- Mission Statement. --->
-  <div class="py-15">
-    <div class="row">
-      <div class="col-3"></div>
-      <div class="col-6 text-center">
-        <p class="font-size-125">
-          Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
-        </p>
+<div class="container-fluid px-0">
+  <div class="jumbotron jumbotron-fluid">
+    <!--- Mission Statement. --->
+    <div class="py-15">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 text-center">
+          <p class="font-size-2">
+            Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
+          </p>
+        </div>
+        <div class="col-2"></div>
       </div>
-      <div class="col-3"></div>
     </div>
   </div>
-
 
 
   <!--- Services. --->
