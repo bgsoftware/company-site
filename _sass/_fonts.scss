@@ -2,6 +2,6 @@ body {
   font-family: 'Lato', sans-serif !important;
 }
 
-.font-size-125 {
-  font-size: 125%;
+@for $i from 1 through 5 {
+  .font-size-#{$i} { font-size: #{$i}rem; }
 }
