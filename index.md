@@ -75,9 +75,10 @@ title: Home
 
   <div id="capabilities">
     <div class="pt-10 d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 py-5">
-        <h1 class="text-center pb-2 color-tertiary font-weight-lighter">Capabilities</h1>
+      <div class="bg-color-primary w-100 pt-3">
+        <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
+      <div class="right-angle-primary"></div>
 
       <div id="capabilities-carousel" class="carousel slide w-90 pt-5" data-ride="carousel">
         <div class="carousel-inner">
