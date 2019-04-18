@@ -5,3 +5,7 @@ body {
 @for $i from 1 through 5 {
   .font-size-#{$i} { font-size: #{$i}rem; }
 }
+
+.font-weight-lighter {
+  font-weight: lighter;
+}
