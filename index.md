@@ -5,7 +5,7 @@ title: Home
 
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
 <div class="container-fluid px-0">
-  <div class="jumbotron jumbotron-fluid">
+  <div class="bg-image-parallax jumbotron-fluid color-white">
     <!--- Mission Statement. --->
     <div class="py-15">
       <div class="row">
@@ -24,8 +24,8 @@ title: Home
   <!--- Services. --->
   <div id="services">
     <div class="pt-10">
-      <h1 class="text-center">Services</h1>
-      <div class="d-flex flex-row justify-content-between">
+      <h1 class="text-center color-tertiary font-weight-lighter">Services</h1>
+      <div class="d-flex justify-content-center m-0">
         {% for service in site.data.services %}
           <div class="card w-18rem">
             <div class="card-body">
@@ -75,9 +75,11 @@ title: Home
 
   <div id="capabilities">
     <div class="pt-10 d-flex flex-column align-items-center">
-      <h1 class="text-center pb-2">Capabilities</h1>
+      <div class="bg-color-primary w-100 py-5">
+        <h1 class="text-center pb-2 color-tertiary font-weight-lighter">Capabilities</h1>
+      </div>
 
-      <div id="capabilities-carousel" class="carousel slide w-90" data-ride="carousel">
+      <div id="capabilities-carousel" class="carousel slide w-90 pt-5" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
@@ -144,8 +146,10 @@ title: Home
 
   <div id="clients">
     <div class="pt-10 d-flex flex-column align-items-center">
-      <h1 class="text-center pb-2">Clients</h1>
-      <div id="clients-carousel" class="carousel slide w-90" data-ride="carousel">
+      <div class="bg-color-primary w-100 py-5">
+        <h1 class="text-center pb-2 color-tertiary font-weight-lighter">Clients</h1>
+      </div>
+      <div id="clients-carousel" class="carousel slide w-90 pt-5" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in clients %}
             <!--- If first group, set class have active class. --->
@@ -183,11 +187,13 @@ title: Home
 
   <!--- About Us. --->
   <div id="aboutus">
-    <div class="pt-15 pb-30 d-flex justify-content-center align-items-center flex-column">
-      <h1 class="text-center">About Us</h1>
-      <img class="w-75 text-center" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
+    <div class="pt-15 pb-25 d-flex justify-content-center align-items-center flex-column">
+      <div class="bg-color-primary w-100 py-5">
+        <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
+      </div>
+      <img class="w-50 text-center pt-5" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
       <br>
-      <p>
+      <p class="w-50">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
       </p>
     </div>
