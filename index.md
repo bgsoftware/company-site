@@ -27,7 +27,7 @@ title: Home
   <!--- Services. --->
   <div id="services">
     <div class="pb-5">
-      <div class="bg-color-primary w-100 pt-5">
+      <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
       </div>
       <div class="right-angle-primary"></div>
