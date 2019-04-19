@@ -17,6 +17,8 @@ title: Home
         </div>
         <div class="col-2"></div>
       </div>
+      <!--- Have services here so the navigation to services works correctly. --->
+      <div class="row" id="services"></div>
     </div>
   </div>
 
