@@ -1,5 +1,13 @@
 .footer a:hover {
-  color: $white !important;
+  color: $tertiary-color !important;
+}
+
+.footer a {
+  color: $tertiary-color !important;
+}
+
+.footer a:visited {
+  color: $tertiary-color !important;
 }
 
 
