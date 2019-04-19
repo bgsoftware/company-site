@@ -22,12 +22,12 @@ title: Home
 
 
   <!--- Services. --->
-  <div id="services">
-    <div class="pt-10">
+  <div id="services" class="bg-color-primary">
+    <div class="pt-8 pb-5">
       <h1 class="text-center color-tertiary font-weight-lighter">Services</h1>
       <div class="d-flex justify-content-center m-0">
         {% for service in site.data.services %}
-          <div class="card w-18rem">
+          <div class="w-18rem color-tertiary">
             <div class="card-body">
               <h5 class="card-title text-center">{{ service.name }}</h5>
               <ul>
@@ -74,7 +74,7 @@ title: Home
   {% endfor %}
 
   <div id="capabilities">
-    <div class="pt-10 d-flex flex-column align-items-center">
+    <div class="pt-8 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
@@ -147,9 +147,11 @@ title: Home
 
   <div id="clients">
     <div class="pt-10 d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 py-5">
-        <h1 class="text-center pb-2 color-tertiary font-weight-lighter">Clients</h1>
+      <div class="bg-color-primary w-100 pt-3">
+        <h1 class="text-center color-tertiary font-weight-lighter">Clients</h1>
       </div>
+      <div class="right-angle-primary"></div>
+
       <div id="clients-carousel" class="carousel slide w-90 pt-5" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in clients %}
@@ -189,9 +191,11 @@ title: Home
   <!--- About Us. --->
   <div id="aboutus">
     <div class="pt-15 pb-25 d-flex justify-content-center align-items-center flex-column">
-      <div class="bg-color-primary w-100 py-5">
+      <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
+      <div class="right-angle-primary"></div>
+
       <img class="w-50 text-center pt-5" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
       <br>
       <p class="w-50">
@@ -199,7 +203,5 @@ title: Home
       </p>
     </div>
   </div>
-
-
 
 </div>
