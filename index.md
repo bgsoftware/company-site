@@ -5,9 +5,9 @@ title: Home
 
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
 <div class="container-fluid px-0">
-  <div class="bg-image-parallax jumbotron-fluid color-white">
+  <div class="bg-image-parallax jumbotron-fluid color-white d-flex align-items-center">
     <!--- Mission Statement. --->
-    <div class="py-15">
+    <div>
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8 text-center">
@@ -21,22 +21,38 @@ title: Home
   </div>
 
 
+
+
   <!--- Services. --->
   <div id="services" class="bg-color-primary">
     <div class="pt-8 pb-5">
       <h1 class="text-center color-tertiary font-weight-lighter">Services</h1>
       <div class="d-flex justify-content-center m-0">
         {% for service in site.data.services %}
-          <div class="w-18rem color-tertiary">
-            <div class="card-body">
-              <h5 class="card-title text-center">{{ service.name }}</h5>
-              <ul>
-              {% for point in service.points %}
-                <li class="card-text">{{ point }}</li>
-              {% endfor %}
-              </ul>
+          {% if forloop.first == true %}
+            <div class="w-18rem color-tertiary">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{ service.name }}</h5>
+                <ul>
+                {% for point in service.points %}
+                  <li class="card-text">{{ point }}</li>
+                {% endfor %}
+                </ul>
+              </div>
             </div>
-          </div>
+          {% endif %}
+          {% if forloop.first == false %}
+            <div class="w-18rem color-tertiary border-left-tertiary">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{ service.name }}</h5>
+                <ul>
+                {% for point in service.points %}
+                  <li class="card-text">{{ point }}</li>
+                {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -74,7 +90,7 @@ title: Home
   {% endfor %}
 
   <div id="capabilities">
-    <div class="pt-8 d-flex flex-column align-items-center">
+    <div class="pt-10 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
@@ -190,7 +206,7 @@ title: Home
 
   <!--- About Us. --->
   <div id="aboutus">
-    <div class="pt-15 pb-25 d-flex justify-content-center align-items-center flex-column">
+    <div class="pt-10 pb-30 d-flex justify-content-center align-items-center flex-column">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
