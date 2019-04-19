@@ -22,15 +22,18 @@ title: Home
 
 
 
-
   <!--- Services. --->
-  <div id="services" class="bg-color-primary">
-    <div class="pt-8 pb-5">
-      <h1 class="text-center color-tertiary font-weight-lighter">Services</h1>
+  <div id="services">
+    <div class="pb-5">
+      <div class="bg-color-primary w-100 pt-5">
+        <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
+      </div>
+      <div class="right-angle-primary"></div>
+
       <div class="d-flex justify-content-center m-0">
         {% for service in site.data.services %}
           {% if forloop.first == true %}
-            <div class="w-18rem color-tertiary">
+            <div class="w-18rem">
               <div class="card-body">
                 <h5 class="card-title text-center">{{ service.name }}</h5>
                 <ul>
@@ -42,7 +45,7 @@ title: Home
             </div>
           {% endif %}
           {% if forloop.first == false %}
-            <div class="w-18rem color-tertiary border-left-tertiary">
+            <div class="w-18rem border-left-primary">
               <div class="card-body">
                 <h5 class="card-title text-center">{{ service.name }}</h5>
                 <ul>
@@ -91,7 +94,7 @@ title: Home
 
   <div id="capabilities">
     <div class="pt-10 d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 pt-3">
+      <div class="bg-color-primary w-100 pt-3 mb-0">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
       <div class="right-angle-primary"></div>
