@@ -99,9 +99,9 @@ title: Home
       <div class="bg-color-primary w-100 pt-3 mb-0">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
-      <div class="right-angle-primary"></div>
+      <div class="right-angle-primary pb-4"></div>
 
-      <div id="capabilities-carousel" class="carousel slide pt-5" data-ride="carousel">
+      <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
@@ -171,9 +171,9 @@ title: Home
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">Clients</h1>
       </div>
-      <div class="right-angle-primary"></div>
+      <div class="right-angle-primary pb-4"></div>
 
-      <div id="clients-carousel" class="carousel slide pt-5" data-ride="carousel">
+      <div id="clients-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in clients %}
             <!--- If first group, set class have active class. --->
@@ -211,18 +211,22 @@ title: Home
 
   <!--- About Us. --->
   <div id="about-us">
-    <div class="pt-5 pb-30 d-flex justify-content-center align-items-center flex-column">
+    <div class="pt-5 pb-15 d-flex align-items-center flex-column">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
       <div class="right-angle-primary"></div>
 
       <div class="about-us-content">
-        <img class="text-center pt-5 w-100" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
-        <br>
+        <img class="text-center pt-5 w-100 pb-3" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
         </p>
+      </div>
+
+      <div class="about-us-content d-flex flex-column align-items-center">
+        <img id="robin-image" class="text-center pt-5 pb-3 w-100" src="{{site.baseurl}}/assets/images/BG/robin.jpg">
+        <h4>Robin Wells, CEO</h4>
       </div>
     </div>
   </div>
