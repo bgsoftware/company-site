@@ -15,10 +15,7 @@ title: Home
             Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
           </p>
         </div>
-        <div class="col-2"></div>
       </div>
-      <!--- Have services here so the navigation to services works correctly. --->
-      <div class="row" id="services"></div>
     </div>
   </div>
 
