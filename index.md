@@ -101,7 +101,7 @@ title: Home
       </div>
       <div class="right-angle-primary"></div>
 
-      <div id="capabilities-carousel" class="carousel slide w-90 pt-5" data-ride="carousel">
+      <div id="capabilities-carousel" class="carousel slide pt-5" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
@@ -173,7 +173,7 @@ title: Home
       </div>
       <div class="right-angle-primary"></div>
 
-      <div id="clients-carousel" class="carousel slide w-90 pt-5" data-ride="carousel">
+      <div id="clients-carousel" class="carousel slide pt-5" data-ride="carousel">
         <div class="carousel-inner">
           {% for imageGroup in clients %}
             <!--- If first group, set class have active class. --->
