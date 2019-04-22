@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(function(){
   $(".nav-link").on('click', function(event) {
     const numMs = 800; /* Number of ms it takes to scroll to the specified area. */
 
@@ -20,6 +20,4 @@ $(document).ready(function(){
       });
     }
   });
-
-
-});
+})();
