@@ -5,7 +5,10 @@ title: Home
 
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
 <div class="container-fluid px-0">
-  <div class="bg-image-parallax jumbotron-fluid color-white d-flex align-items-center">
+
+  <div
+    id="headline"
+    class="headline jumbotron-fluid color-white d-flex align-items-center">
     <!--- Mission Statement. --->
     <div>
       <div class="row">
