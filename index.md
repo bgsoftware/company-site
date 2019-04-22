@@ -14,7 +14,7 @@ title: Home
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8 text-center">
-          <p class="font-size-2">
+          <p class="font-size-2" data-aos="fade-right">
             Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
           </p>
         </div>
@@ -217,16 +217,25 @@ title: Home
       </div>
       <div class="right-angle-primary"></div>
 
-      <div class="about-us-content" data-aos="fade-left">
-        <img class="text-center pt-5 w-100 pb-3" src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg" >
-        <p>
+      <div class="about-us-content">
+        <img
+          class="text-center pt-5 w-100 pb-3"
+          src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
+          data-aos="fade-left"
+        >
+        <p data-aos="fade-right">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
         </p>
       </div>
 
-      <div class="about-us-content d-flex flex-column align-items-center" data-aos="fade-right">
-        <img id="robin-image" class="text-center pt-5 pb-3 w-100" src="{{site.baseurl}}/assets/images/BG/robin.jpg">
-        <h4>Robin Wells, CEO</h4>
+      <div class="about-us-content d-flex flex-column align-items-center">
+        <img
+          id="robin-image"
+          class="text-center pt-5 pb-3 w-100"
+          src="{{site.baseurl}}/assets/images/BG/robin.jpg"
+          data-aos="fade-right"
+        >
+        <h4 data-aos="fade-left">Robin Wells, CEO</h4>
       </div>
     </div>
   </div>
