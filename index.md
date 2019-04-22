@@ -6,11 +6,11 @@ title: Home
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
 <div class="container-fluid px-0">
 
-  <div
+<!--   <div
     id="headline"
-    class="headline jumbotron-fluid color-white d-flex align-items-center">
+    class="headline jumbotron-fluid color-white d-flex align-items-center"> -->
     <!--- Mission Statement. --->
-    <div>
+    <div class="d-flex align-items-center" style="height: 95vh">
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8 text-center">
@@ -20,13 +20,13 @@ title: Home
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
 
 
   <!--- Services. --->
   <div id="services">
-    <div class="pb-5">
+    <div class="pt-5">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
       </div>
@@ -95,7 +95,7 @@ title: Home
   {% endfor %}
 
   <div id="capabilities">
-    <div class="pt-10 d-flex flex-column align-items-center">
+    <div class="pt-5 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 pt-3 mb-0">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
@@ -167,7 +167,7 @@ title: Home
   {% endfor %}
 
   <div id="clients">
-    <div class="pt-10 d-flex flex-column align-items-center">
+    <div class="pt-5 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">Clients</h1>
       </div>
@@ -211,7 +211,7 @@ title: Home
 
   <!--- About Us. --->
   <div id="about-us">
-    <div class="pt-10 pb-30 d-flex justify-content-center align-items-center flex-column">
+    <div class="pt-5 pb-30 d-flex justify-content-center align-items-center flex-column">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
