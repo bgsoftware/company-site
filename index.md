@@ -227,7 +227,7 @@ title: Home
           data-aos="fade-right"
           data-aos-offset="500"
         >
-        <h4 data-aos="fade-right" data-aos-offset="400">Robin Wells, CEO</h4>
+        <h4 data-aos="fade-right" data-aos-offset="200">Robin Wells, CEO</h4>
       </div>
     </div>
   </div>
