@@ -6,20 +6,16 @@ title: Home
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
 <div class="container-fluid px-0">
 
-  <div class="d-flex align-items-center" style="height: 95vh">
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8 text-center">
-        <p class="font-size-2" data-aos="fade-right">
-          Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
-        </p>
-      </div>
-    </div>
+  <div class="d-flex align-items-center justify-content-center" style="height: 95vh;">
+    <p class="text-center font-size-2 w-75" data-aos="fade-right">
+      Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
+    </p>
   </div>
 
 
+
   <!--- Services. --->
-  <div id="services" data-aos="fade-up">
+  <div id="services" data-aos="fade-up" data-aos-offset="400">
     <div class="pt-5">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
@@ -88,7 +84,7 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" data-aos="fade-left">
+  <div id="capabilities" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 pt-3 mb-0">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
@@ -160,7 +156,7 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <div id="clients" data-aos="fade-right">
+  <div id="clients" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">Clients</h1>
@@ -204,7 +200,7 @@ title: Home
 
 
   <!--- About Us. --->
-  <div id="about-us" data-aos="fade-up">
+  <div id="about-us" data-aos="fade-up" data-aos-offset="400">
     <div class="pt-5 pb-15 d-flex align-items-center flex-column">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
@@ -215,9 +211,10 @@ title: Home
         <img
           class="text-center pt-5 w-100 pb-3"
           src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
-          data-aos="fade-left"
+          data-aos="fade-right"
+          data-aos-offset="500"
         >
-        <p data-aos="fade-right">
+        <p data-aos="fade-right" data-aos-offset="500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
         </p>
       </div>
@@ -228,8 +225,9 @@ title: Home
           class="text-center pt-5 pb-3 w-100"
           src="{{site.baseurl}}/assets/images/BG/robin.jpg"
           data-aos="fade-right"
+          data-aos-offset="500"
         >
-        <h4 data-aos="fade-left">Robin Wells, CEO</h4>
+        <h4 data-aos="fade-right" data-aos-offset="400">Robin Wells, CEO</h4>
       </div>
     </div>
   </div>
