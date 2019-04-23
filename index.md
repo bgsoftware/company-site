@@ -7,7 +7,7 @@ title: Home
 <div class="container-fluid px-0">
 
   <div class="d-flex align-items-center justify-content-center" style="height: 95vh;">
-    <p class="text-center font-size-2 w-75" data-aos="fade-right">
+    <p class="text-center font-size-2 w-75" data-aos="fade-right" data-aos-duration="3000">
       Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
     </p>
   </div>
