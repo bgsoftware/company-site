@@ -26,24 +26,20 @@ title: Home
           {% if forloop.first == true %}
             <div class="w-18rem">
               <div class="card-body">
-                <h5 class="card-title text-center">{{ service.name }}</h5>
-                <ul>
-                {% for point in service.points %}
-                  <li class="card-text">{{ point }}</li>
-                {% endfor %}
-                </ul>
+                <h4 class="card-title text-center">{{ service.name }}</h4>
+                <p>
+                  {{ service.points }}
+                </p>
               </div>
             </div>
           {% endif %}
           {% if forloop.first == false %}
             <div class="w-18rem border-left-primary">
               <div class="card-body">
-                <h5 class="card-title text-center">{{ service.name }}</h5>
-                <ul>
-                {% for point in service.points %}
-                  <li class="card-text">{{ point }}</li>
-                {% endfor %}
-                </ul>
+                <h4 class="card-title text-center">{{ service.name }}</h4>
+                <p>
+                  {{ service.points }}
+                </p>
               </div>
             </div>
           {% endif %}
@@ -210,7 +206,7 @@ title: Home
           src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
         >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
+          This is our family, a team of talented software developers, analysts and customer care pros. For over 13 years, this close-knit group has worked on a variety of projects and can turn things around faster than the typical large company with so many layers of management. Family is an important value to this group, which is why we are based in one of <a href="https://smartasset.com/checking-account/best-places-to-raise-a-family-west-coast-2019#q=best%20cities%20on%20the%20west%20coast">the best cities to raise a family on the West Coast</a>—Folsom, California.
         </p>
       </div>
 
