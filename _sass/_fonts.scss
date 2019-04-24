@@ -9,3 +9,9 @@ body {
 .font-weight-lighter {
   font-weight: lighter;
 }
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 2rem;
+  }
+}
