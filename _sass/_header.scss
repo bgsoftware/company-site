@@ -1,6 +1,9 @@
 .right-angle-primary {
   width: 0;
   height: 0;
-  border-top: 4rem solid $primary-color;
-  border-right: 99vw solid transparent;
+  border-style: solid;
+  border-width: 2.5rem 100vw 0 0;
+  border-color: $primary-color white transparent transparent;
+
 }
+
