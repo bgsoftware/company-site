@@ -4,7 +4,7 @@ title: Home
 ---
 
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
-<div class="container-fluid px-0">
+<div class="container-fluid px-0" style="overflow: hidden">
 
   <div class="d-flex align-items-center justify-content-center" style="height: 95vh;">
     <p class="text-center font-size-2 w-75" data-aos="fade-right" data-aos-duration="3000">
@@ -15,9 +15,9 @@ title: Home
 
 
   <!--- Services. --->
-  <div id="services" data-aos="fade-up" data-aos-offset="400">
+  <div id="services" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5">
-      <div class="bg-color-primary w-100 pt-3">
+      <div class="opener bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
       </div>
       <div class="right-angle-primary"></div>
@@ -200,21 +200,20 @@ title: Home
 
 
   <!--- About Us. --->
-  <div id="about-us" data-aos="fade-up">
+  <div id="about-us" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5 pb-15 d-flex align-items-center flex-column">
       <div class="bg-color-primary w-100 pt-3">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
       <div class="right-angle-primary"></div>
 
-      <div class="about-us-content">
+      <div class="about-us-content d-flex" data-aos="fade-right"
+          data-aos-offset="400">
         <img
-          class="text-center pt-5 w-100 pb-3"
+          class="text-center object-fit-contain"
           src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
-          data-aos="fade-right"
-          data-aos-offset="500"
         >
-        <p data-aos="fade-right" data-aos-offset="500">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Habitant morbi tristique senectus et netus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mi ipsum faucibus vitae aliquet. In mollis nunc sed id semper risus in hendrerit. Platea dictumst vestibulum rhoncus est pellentesque. Arcu non sodales neque sodales ut etiam sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor lacus. Eget nunc lobortis mattis aliquam faucibus purus in massa. Arcu cursus vitae congue mauris rhoncus aenean vel. Volutpat sed cras ornare arcu dui vivamus arcu.
         </p>
       </div>
@@ -222,10 +221,9 @@ title: Home
       <div class="about-us-content d-flex flex-column align-items-center">
         <img
           id="robin-image"
-          class="text-center pt-5 pb-3 w-100"
+          class="text-center pt-5 pb-3 w-100 object-fit-contain"
           src="{{site.baseurl}}/assets/images/BG/robin.jpg"
           data-aos="fade-right"
-          data-aos-offset="500"
         >
         <h4 data-aos="fade-right">Robin Wells, CEO</h4>
       </div>
