@@ -1,0 +1,6 @@
+- name: Custom Software
+  points: Our team is skilled (and focused) on the back-end. This is where we do our best work.  We’re good with data—making sense of it and organizing it. From discovery to launch, we’ll work side-by side with your super admin/IT manager and speak the languages you do. The result? We’ll shortcut the timeline but not take shortcuts which results in code that isn’t great.
+- name: Security
+  points: From single sign-on to multi-factor authentication to consumer identity and access management, BG Software developers will work with you to manage both authentication and authorization to give you the options you need for your business. While you may not have a dedicated CIO or CISO, you will have us available on an ongoing basis to monitor, test, and maintain your systems.
+- name: Data Integration
+  points: What good is having piles of content siloed and difficult to access? If you’ve been trying to figure out how to merge XML, JSON or CSV data, we can build you a way to map all kinds of that data into a single, sensible schema.

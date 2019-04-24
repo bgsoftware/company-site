@@ -1,15 +1,6 @@
-- name: Service 1
-  points:
-    - A
-    - B
-    - C
-- name: Service 2
-  points:
-    - A
-    - B
-    - C
-- name: Service 3
-  points:
-    - A
-    - B
-    - C
+- name: Custom Software
+  points: What we do is find out exactly what you’d like to achieve with your business, show you the possibilities, then talk with you about creating software that solves your problem. Our developers have many resources to build things. The best part? You’re the expert on your business. You’ll be our partner in the project.
+- name: Security
+  points: It means a lot more than a login and a password. You want your system to be as secure as possible. We can help by creating tools to not only make sure the person accessing your program(s) is who they say they are, but also verify what each user has access to. We have a lot of experience in this area.
+- name: Data Integration
+  points: Information comes at us from many sources.  At BG Software, we can personalize a program for you which can gather up business records from legacy systems, old databases, and your brand-new data to show you one unified view. We can gather all of it and present it in a way that works for you.

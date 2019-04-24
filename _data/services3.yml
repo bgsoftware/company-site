@@ -1,0 +1,16 @@
+- name: Custom Software
+  points:
+    - Database Design and Implementation
+    - Web Development
+    - Mobile Applications
+    - Application Management & Support
+- name: Security
+  points:
+    - Single Sign-On
+    - Authorization
+    - Authentication
+- name: Data Integration
+  points:
+    - APIs
+    - Automation Services
+    - Scheduled Tasks
