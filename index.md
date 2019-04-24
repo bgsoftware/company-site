@@ -17,10 +17,9 @@ title: Home
   <!--- Services. --->
   <div id="services" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5">
-      <div class="opener bg-color-primary w-100 pt-3">
+      <div class="opener bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
       </div>
-      <div class="right-angle-primary"></div>
 
       <div class="d-flex justify-content-center m-0">
         {% for service in site.data.services %}
@@ -86,10 +85,9 @@ title: Home
 
   <div id="capabilities" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5 d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 pt-3 mb-0">
+      <div class="bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
-      <div class="right-angle-primary pb-4"></div>
 
       <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -158,10 +156,9 @@ title: Home
 
   <div id="clients" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5 d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 pt-3">
+      <div class="bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter">Clients</h1>
       </div>
-      <div class="right-angle-primary pb-4"></div>
 
       <div id="clients-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -202,10 +199,9 @@ title: Home
   <!--- About Us. --->
   <div id="about-us" data-aos="fade-right" data-aos-offset="400">
     <div class="pt-5 pb-15 d-flex align-items-center flex-column">
-      <div class="bg-color-primary w-100 pt-3">
+      <div class="bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
-      <div class="right-angle-primary"></div>
 
       <div class="about-us-content d-flex" data-aos="fade-right"
           data-aos-offset="400">
