@@ -4,12 +4,17 @@ title: c
 ---
 
 <script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
-<div class="container-fluid px-0" style="overflow: hidden">
+<div class="container-fluid px-0 overflow-hidden">
 
-  <div class="d-flex align-items-center justify-content-center" style="height: 95vh;">
+  <div class="d-flex flex-column align-items-center justify-content-center h-95vh">
     <p class="text-center font-size-2 w-75" data-aos="fade-right" data-aos-duration="3000">
       Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
     </p>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nDOKwLf2flg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 
 
@@ -54,6 +59,7 @@ title: c
 
 
 
+
   <!--- Capabilities. --->
   {% assign techImages = "" | split: "" %}
   {% for image in site.static_files %}
@@ -84,7 +90,7 @@ title: c
   {% endfor %}
 
   <div id="capabilities" data-aos="fade-right" data-aos-offset="400">
-    <div class="pt-5 d-flex flex-column align-items-center">
+    <div class="pt-10 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter">Capabilities</h1>
       </div>
@@ -155,7 +161,7 @@ title: c
   {% endfor %}
 
   <div id="clients" data-aos="fade-right" data-aos-offset="400">
-    <div class="pt-5 d-flex flex-column align-items-center">
+    <div class="pt-10 d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter">Clients</h1>
       </div>
@@ -198,7 +204,7 @@ title: c
 
   <!--- About Us. --->
   <div id="about-us" data-aos="fade-right" data-aos-offset="400">
-    <div class="pt-5 pb-15 d-flex align-items-center flex-column">
+    <div class="pt-10 pb-15 d-flex align-items-center flex-column">
       <div class="bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
@@ -210,7 +216,7 @@ title: c
           src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
         >
         <p>
-          This is our family, a team of talented software developers, analysts and customer care pros. For over 13 years, this close-knit group has worked on a variety of projects and can turn things around faster than the typical large company with so many layers of management. Family is an important value to this group, which is why we are based in one of <a href="https://smartasset.com/checking-account/best-places-to-raise-a-family-west-coast-2019#q=best%20cities%20on%20the%20west%20coast">the best cities to raise a family on the West Coast</a>—Folsom, California.
+          This is our family, a team of talented software developers, analysts and customer care pros. For over 13 years, this close-knit group has worked on a variety of projects and can turn things around faster than the typical large company with so many layers of management. Family is an important value to this group, which is why we are based in one of <a href="https://smartasset.com/checking-account/best-places-to-raise-a-family-west-coast-2019#q=best%20cities%20on%20the%20west%20coast" target="_blank">the best cities to raise a family on the West Coast</a>—Folsom, California.
         </p>
       </div>
 
