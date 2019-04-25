@@ -3,11 +3,11 @@ layout: default
 title: b
 ---
 
-<script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
+
 <div class="container-fluid px-0 overflow-hidden">
 
-  <div class="d-flex flex-column align-items-center justify-content-center h-95vh">
-    <p class="text-center font-size-2 w-75" data-aos="fade-right" data-aos-duration="3000">
+  <div id="headline" class="d-flex flex-column align-items-center justify-content-center h-95vh">
+    <p class="headline-text text-center font-size-2" data-aos="fade-right" data-aos-duration="3000">
       Benningfield Group partners with small and medium-sized businesses to create personalized software that's easy to learn, simple to launch, and tailored specifically to your unique needs.
     </p>
     <div class="video-wrap" data-aos="fade-right" data-aos-duration="3000">
@@ -21,7 +21,7 @@ title: b
 
   <!--- Services. --->
   <div id="services" data-aos="fade-right" data-aos-offset="400">
-    <div class="pt-5">
+    <div class="pt-10">
       <div class="opener bg-color-primary w-100 py-3 mb-5">
         <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
       </div>
@@ -52,7 +52,6 @@ title: b
       </div>
     </div>
   </div>
-
 
 
 
@@ -205,13 +204,12 @@ title: b
         <h1 class="text-center color-tertiary font-weight-lighter">About Us</h1>
       </div>
 
-      <div class="about-us-content d-flex" data-aos="fade-right"
-          data-aos-offset="400">
+      <div class="about-us-content d-flex" data-aos="fade-right" data-aos-offset="400">
         <img
           class="text-center object-fit-contain"
           src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
         >
-        <p>
+        <p class="font-1pnt25">
           This is our family, a team of talented software developers, analysts and customer care pros. For over 13 years, this close-knit group has worked on a variety of projects and can turn things around faster than the typical large company with so many layers of management. Family is an important value to this group, which is why we are based in one of <a href="https://smartasset.com/checking-account/best-places-to-raise-a-family-west-coast-2019#q=best%20cities%20on%20the%20west%20coast" target="_blank">the best cities to raise a family on the West Coast</a>—Folsom, California.
         </p>
       </div>
@@ -228,4 +226,14 @@ title: b
     </div>
   </div>
 
+
+
+  <div class="d-flex justify-content-center">
+    <a href="#headline" class="nav-link">
+      <img src="{{site.baseurl}}/assets/images/misc/up_arrow.png" class="w-2rem">
+    </a>
+  </div>
+
 </div>
+
+<script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
