@@ -12,9 +12,11 @@ $nav-link-transition-speed: .25s; /* Speed for nav link border animation. */
 
 .nav-link:hover { border-color: $tertiary-color }
 
-.nav-link.active {
-  color: $secondary-color !important;
-  border-color: $secondary-color
+.navbar-nav {
+  .nav-link.active {
+    color: $secondary-color !important;
+    border-color: $secondary-color
+  }
 }
 
 .sticky-top {
