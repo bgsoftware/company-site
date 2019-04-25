@@ -2,9 +2,15 @@
   width: 50rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1000px) {
   #capabilities-carousel, #clients-carousel {
-    width: 90%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 768px)  {
+  #capabilities-carousel, #clients-carousel {
+    width: 100%;
   }
 }
 
