@@ -2,9 +2,15 @@
 title: Home
 ---
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh">
+<div style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 4rem"
+>
 
-  <ol>
+  <ul style="list-style-type:none">
     <li>
       <a href="/a">a</a>
     </li>
@@ -14,7 +20,6 @@ title: Home
     <li>
       <a href="/c">c</a>
     </li>
-
-  </ol>
+  </ul>
 
 </div>
