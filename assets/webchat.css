@@ -1,0 +1,190 @@
+.chatprompt {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.chatprompt img {
+    margin: 6px;
+    width: 50px;
+    border: 0;
+    border-radius: 50%;
+}
+
+#overlay {
+    background: #000;
+    filter: alpha(opacity=50);
+    height: 100%;
+    left: 0;
+    -moz-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    -ms-filter: alpha(opacity=50);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+#contant {
+    position: relative;
+}
+#sntchWebChat * {
+    box-sizing: border-box;
+}
+#sntchWebChat {
+    background: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    height: auto;
+    padding: 0;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    position: fixed;
+    right: 30px;
+    bottom: 0px;
+    z-index: 2147483647;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+#sntch_header {
+    /* height: 45px; */
+    overflow: hidden;
+    clear: both;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100002;
+}
+
+#sntch_close {
+    /* margin-top: 20px; */
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    opacity: 0.6;
+    /* float: right; */
+    line-height: 23px;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    /* background: rgba(255, 255, 255, .5); */
+    text-align: center;
+}
+
+#sntch_close:hover {
+    opacity: 1;
+}
+
+.channelbtn-preview {
+    margin-right: 25px;
+}
+
+.lwc-chat-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    background: linear-gradient(20deg,#3089ff,#2ea9ff);
+    font-size: 12px;
+    /* padding: 4px 12px; */
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    color: white;
+    fill: transparent;
+    align-items: center;
+    box-sizing: content-box;
+    z-index: 2147483647;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.lwc-chat-button--bubble {
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.snatch-button {
+    font-family: "Segoe UI Local", "Segoe WP", "Segoe UI Web", "Segoe UI Arabic Web", "Segoe UI Cyrillic Web", "Segoe UI Greek Web", "Segoe UI Hebrew Web", Tahoma, "Helvetica Neue", Helvetica, "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.rounded {
+    border-radius: 30px;
+}
+
+.bubble {
+    /*position: fixed;*/
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    right: 20px;
+    bottom: 50px;
+}
+
+@media (max-width: 600px),
+(max-height: 600px) {
+    #sntchWebChat {
+        right: 0;
+        left: auto;
+        max-width: 635px; /* iPhoneX landscape */
+        width: 100%;
+        top: 5px;
+        /* bottom: 45px; */
+    }
+
+    #sntchWebChat iframe {
+        max-width: 100vw !important;
+        max-height: calc(100vh - 75px) !important;
+    }
+
+    /* #sntch_header {
+        left: auto;
+        right: 15px;
+    } */
+
+    #sntch_close {
+        margin-top: 17px,
+    }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    #sntchWebChat iframe {
+        max-width: 100vw !important;
+        max-height: calc(100vh - 80px) !important;
+    }
+}
