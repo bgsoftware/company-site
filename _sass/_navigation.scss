@@ -1,11 +1,20 @@
 .nav-link {
   color: $primary-color !important;
-  border-bottom: solid $white
+  border-bottom: solid $white;
+
+  -webkit-transition: border-color .5s linear; /* Saf3.2+, Chrome */
+     -moz-transition: border-color .5s linear; /* FF3.7+ */
+       -o-transition: border-color .5s linear; /* Opera 10.5 */
+          transition: border-color .5s linear;
+}
+
+.nav-link:hover {
+  border-color: $secondary-color
 }
 
 .nav-link.active {
-  border-bottom: solid $secondary-color;
   color: $secondary-color !important;
+  border-color: $secondary-color
 }
 
 .sticky-top {
