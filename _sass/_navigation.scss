@@ -1,16 +1,16 @@
+$nav-link-transition-speed: .25s; /* Speed for nav link border animation. */
+
 .nav-link {
   color: $primary-color !important;
   border-bottom: solid $white;
 
-  -webkit-transition: border-color .5s linear; /* Saf3.2+, Chrome */
-     -moz-transition: border-color .5s linear; /* FF3.7+ */
-       -o-transition: border-color .5s linear; /* Opera 10.5 */
-          transition: border-color .5s linear;
+  -webkit-transition: border-color $nav-link-transition-speed linear; /* Saf3.2+, Chrome */
+     -moz-transition: border-color $nav-link-transition-speed linear; /* FF3.7+ */
+       -o-transition: border-color $nav-link-transition-speed linear; /* Opera 10.5 */
+          transition: border-color $nav-link-transition-speed linear;
 }
 
-.nav-link:hover {
-  border-color: $tertiary-color
-}
+.nav-link:hover { border-color: $tertiary-color }
 
 .nav-link.active {
   color: $secondary-color !important;

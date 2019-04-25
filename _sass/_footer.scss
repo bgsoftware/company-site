@@ -1,14 +1,8 @@
-.footer a:hover {
-  color: $tertiary-color !important;
-}
+.footer a:hover { color: $tertiary-color !important; }
 
-.footer a {
-  color: $tertiary-color !important;
-}
+.footer a { color: $tertiary-color !important; }
 
-.footer a:visited {
-  color: $tertiary-color !important;
-}
+.footer a:visited { color: $tertiary-color !important; }
 
 
 .footer {
@@ -34,18 +28,14 @@
     padding-left: 0;
     padding-right: 0;
 
-    #contact {
-      padding-left: 2rem;
-    }
-
+    #contact { padding-left: 2rem; }
   }
 }
 
 @media only screen and (max-width: 448px) {
   .footer {
-    #contact {
-      font-size: .75rem;
-    }
+    #contact { font-size: .75rem; }
+
     #social-media {
       flex-direction: column;
       align-items: flex-end;
