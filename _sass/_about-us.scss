@@ -35,6 +35,31 @@
 
 
 
+.scroll-up-button {
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.scroll-up-button:hover {
+  box-shadow: 0 5px 15px #888888;
+}
+
+// .scroll-up-button {
+//   border-radius: 50%
+// }
+
+// .scroll-up-button:hover{
+//   -o-transition:.25s;
+//   -ms-transition:.25s;
+//   -moz-transition:.25s;
+//   -webkit-transition:.25s;
+//   transition:.25s;
+//   box-shadow: 5px 5px 2.5px #888888;
+// }
+
+
+
 // CSS for template A
 .about-us-content {
   #robin-quote { width: 35%; }
