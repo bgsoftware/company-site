@@ -10,11 +10,8 @@
       /* Store hash. */
       const hash = this.hash;
 
-      console.log($(window).height());
       /* Using jQuery's animate() method to add smooth page scroll. */
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, numMs);
+      $('html, body').animate({ scrollTop: $(hash).offset().top }, numMs);
     }
   });
 })();
