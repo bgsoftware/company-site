@@ -3,6 +3,9 @@ layout: default
 title: b
 ---
 
+{% include navigation.html %}
+
+
 
 <div class="container-fluid px-0 overflow-hidden">
 
@@ -229,11 +232,11 @@ title: b
 
 
   <div class="d-flex justify-content-center" data-aos="fade-up">
-    <a href="#headline" class="nav-link" style="border-bottom: solid #FFFFFF">
-      <img src="{{site.baseurl}}/assets/images/misc/up_chevron.png" class="w-3rem scroll-up-button">
+    <a id="scroll-up-button" style="border-bottom: solid #FFFFFF" class="btn">
+      <img src="{{site.baseurl}}/assets/images/misc/up_chevron_solid.png" class="w-3rem scroll-up-button">
     </a>
   </div>
 
 </div>
 
-<script src="{{ site.baseurl }}/assets/js/navLinkAnimate.js"></script>
+<script src="{{ site.baseurl }}/assets/js/scrollAnimate.js"></script>
