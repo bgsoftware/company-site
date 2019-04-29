@@ -1,20 +1,22 @@
-<nav id="navigation-bar" class="navbar sticky-top navbar-expand-lg navbar-light shadow-sm bg-white p-1">
-  <a href="" class="nav-link p-0">
-    <img src="{{site.baseurl}}/assets/images/BG/logo_01.png" class="w-10rem">
-  </a>
+<div class="p-2 sticky-top shadow-sm bg-white">
+  <nav id="navigation-bar" class="w-100 navbar navbar-expand-lg navbar-light shadow-sm bg-white py-0 px-1" style="border: solid 1px">
+    <a href="" class="nav-link p-0">
+      <img src="{{site.baseurl}}/assets/images/BG/logo_01.png" class="w-10rem">
+    </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      {% for item in site.data.navigation %}
-      <li class="nav-item">
-        <a class="nav-link" href={{ item.link }}>{{ item.name }} <span class="sr-only">(current)</span></a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        {% for item in site.data.navigation %}
+        <li class="nav-item">
+          <a class="nav-link" href={{ item.link }}>{{ item.name }} <span class="sr-only">(current)</span></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-</nav>
+  </nav>
+</div>
