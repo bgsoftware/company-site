@@ -27,15 +27,17 @@ title: a
 
 
   <!---  Custom Software. --->
-  <div id="custom-software">
-    <div class="opener bg-color-quinary w-100 py-4">
+  <div id="custom-software" class="bg-color-quinary">
+    <div class="opener w-100 py-4">
       <h1 class="text-center color-tertiary mb-0">Why Custom Software?</h1>
-      <div class="d-flex justify-content-center">
+    </div>
+
+    <div class="d-flex justify-content-center">
       <h2 class="color-tertiary text-center w-50 py-5 font-weight-lighter">
         Custom software is a tailor-made solution built with a client’s insight and business requirements from the onset, enabling it to meet a company’s specific business needs, processes, and security requirements.
       </h2>
-      </div>
     </div>
+
   </div>
 
 
@@ -48,8 +50,8 @@ title: a
     data-aos-offset="400"
   >
     <div class="d-flex align-items-center flex-column">
-      <div class="bg-color-primary w-100 py-4 mb-5">
-        <h1 class="text-center color-white">Why Benningfield Group?</h1>
+      <div class="bg-color-primary w-100 py-4 mb-3">
+        <h1 class="text-center color-tertiary">Why Benningfield Group?</h1>
       </div>
 
       <div
@@ -60,12 +62,12 @@ title: a
           class="text-center"
           src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
         >
-        <p id="about-us-text" class="color-white">
+        <h3 id="about-us-text" class="color-tertiary font-weight-lighter">
           This is our family, a team of talented software developers, analysts and customer care pros. For over 13 years, we have been building, maintaining, and enhancing custom software systems that are both easy to use and scalable to our clients’ needs.
           <br><br>
           Our process typically involves meeting with your team
           to learn more about your needs, products, and industry. We then formulate a plan to select the appropriate technologies, software architects, and quality assurance team to bring your vision to life. A custom solution is then created to fit your specific needs.
-        </p>
+        </h3>
       </div>
     </div>
   </div>
@@ -80,26 +82,16 @@ title: a
     data-aos-offset="400"
   >
     <div class="d-flex align-items-center flex-column">
-      <div class="w-100 py-4 mb-5">
+      <div class="w-100 py-4">
         <h1 class="text-center">Services</h1>
       </div>
 
-  </div>
-
-
-
-  <!--- Services. --->
-  <div id="services" data-aos="fade-right" data-aos-offset="400">
-    <div class="pt-10">
-      <div class="opener bg-color-primary w-100 py-4 mb-5">
-        <h1 class="text-center color-tertiary font-weight-lighter mb-0">Services</h1>
-      </div>
-
-      <div id="services-cards" class="d-flex justify-content-around m-0">
+      <div class="d-flex justify-content-center m-0">
         {% for service in site.data.services %}
-          <div class="d-flex justify-content-center">
-            <div class="card-body bg-color-tertiary" style="box-shadow: 5px 5px 5px grey;" >
-              <h4 class="card-title text-center">{{ service.name }}</h4>
+          <div class="w-18rem">
+            <div class="card-body">
+              <img src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.png" class="mx-auto d-block">
+              <h3 class="card-title text-center">{{ service.name }}</h3>
               <p>
                 {{ service.point }}
               </p>
@@ -112,7 +104,8 @@ title: a
           </div>
         {% endfor %}
       </div>
-    </div>
+
+
   </div>
 
 
@@ -183,6 +176,7 @@ title: a
           <span class="sr-only">Next</span>
         </a>
       </div>
+
     </div>
   </div>
 
