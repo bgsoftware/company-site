@@ -1,0 +1,17 @@
+// small screen size (sm)
+@media only screen and (min-width: 576px) {
+  // @include headline--sm();
+}
+
+@media only screen and (min-width: 768px) {
+  @include headline--md();
+}
+
+// medium screen size (md)
+@media only screen and (min-width: 992px) {
+  @include headline--lg();
+}
+
+@media only screen and (min-width: 1200px) {
+  @include headline--xl();
+}
