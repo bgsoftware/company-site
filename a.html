@@ -167,13 +167,23 @@ title: a
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" data-aos="fade-right" data-aos-offset="400" class="bg-color-white">
+  <div id="capabilities" class="bg-color-white pb-4">
     <div class="d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 py-4 mb-5">
-        <h1 class="text-center color-tertiary">Capabilities</h1>
+        <h1
+          class="text-center color-tertiary"
+          data-aos="fade-right"
+          data-aos-offset="400"
+        >Capabilities</h1>
       </div>
 
-      <div id="capabilities-carousel" class="carousel slide" data-ride="carousel">
+      <div
+        id="capabilities-carousel"
+        class="carousel slide py-4"
+        data-ride="carousel"
+        data-aos="fade-right"
+        data-aos-offset="400"
+      >
         <div class="carousel-inner">
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
@@ -195,11 +205,21 @@ title: a
             {% endif %}
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#capabilities-carousel" role="button" data-slide="prev">
+        <a
+          class="carousel-control-prev"
+          href="#capabilities-carousel"
+          role="button"
+          data-slide="prev"
+        >
           <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#capabilities-carousel" role="button" data-slide="next">
+        <a
+          class="carousel-control-next"
+          href="#capabilities-carousel"
+          role="button"
+          data-slide="next"
+        >
           <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -239,13 +259,23 @@ title: a
     {% endif %}
   {% endfor %}
 
-  <div id="clients" data-aos="fade-right" data-aos-offset="400">
-    <div class="pt-10 d-flex flex-column align-items-center">
+  <div id="clients" class="pb-4">
+    <div class="d-flex flex-column align-items-center">
       <div class="bg-color-primary w-100 py-4 mb-5">
-        <h1 class="text-center color-tertiary">Clients</h1>
+        <h1
+          class="text-center color-tertiary"
+          data-aos="fade-right"
+          data-aos-offset="400"
+        >Clients</h1>
       </div>
 
-      <div id="clients-carousel" class="carousel slide" data-ride="carousel">
+      <div
+        id="clients-carousel"
+        class="carousel slide py-4"
+        data-ride="carousel"
+        data-aos="fade-right"
+        data-aos-offset="400"
+      >
         <div class="carousel-inner">
           {% for imageGroup in clients %}
             <!--- If first group, set class have active class. --->
@@ -267,11 +297,21 @@ title: a
             {% endif %}
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#clients-carousel" role="button" data-slide="prev">
+        <a
+          class="carousel-control-prev"
+          href="#clients-carousel"
+          role="button"
+          data-slide="prev"
+        >
           <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#clients-carousel" role="button" data-slide="next">
+        <a
+          class="carousel-control-next"
+          href="#clients-carousel"
+          role="button"
+          data-slide="next"
+        >
           <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
