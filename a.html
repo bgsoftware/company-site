@@ -107,11 +107,18 @@ title: a
         <h1 class="text-center">Services</h1>
       </div>
 
-      <div class="d-flex justify-content-center m-0">
+      <div
+        class="d-flex justify-content-center m-0"
+        data-aos="fade-right"
+        data-aos-offset="400"
+      >
         {% for service in site.data.services %}
           <div style="max-width: 18rem">
             <div class="card-body">
-              <img src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.png" class="mx-auto d-block">
+              <img
+                src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.svg"
+                class="mx-auto d-block w-75"
+              >
               <h3 class="card-title text-center">{{ service.name }}</h3>
               <p>
                 {{ service.point }}
