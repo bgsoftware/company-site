@@ -112,3 +112,28 @@
 /* End of Scroll Up Button */
 
 
+
+/**
+ * CTA Buttons
+ */
+.cta-button-tertiary {
+  background-color: $primary-color;
+  color: $tertiary-color;
+}
+
+.cta-button-tertiary:hover {
+  background-color: $tertiary-color;
+  color: $primary-color;
+  border: solid 1px $primary-color;
+}
+
+.cta-button-primary {
+  background-color: $tertiary-color;
+  color: $primary-color;
+}
+
+.cta-button-primary:hover {
+  background-color: $primary-color;
+  color: $tertiary-color;
+  border: solid 1px $tertiary-color;
+}
