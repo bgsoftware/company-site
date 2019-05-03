@@ -1,31 +1,32 @@
-#services-cards {
-  flex-direction: row;
-  justify-content: space-around;
+// #services-cards {
+//   flex-direction: row;
+//   justify-content: space-around;
 
-  div {
-    width: 22rem;
-  }
-}
+//   div {
+//     width: 22rem;
+//   }
+// }
 
-@media only screen and (max-width: 1150px) {
-  #services-cards {
-    flex-direction: column;
-    align-content: space-around;
-    align-items: center;
+// @media only screen and (max-width: 1150px) {
+//   #services-cards {
+//     flex-direction: column;
+//     align-content: space-around;
+//     align-items: center;
 
-    div {
-      margin-top: 2rem;
-      width: 65%;
-    }
+//     div {
+//       margin-top: 2rem;
+//       width: 65%;
+//     }
 
-    :first-child {
-      margin-top: 0;
-    }
-  }
-}
+//     :first-child {
+//       margin-top: 0;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 760px) {
-  #services-cards {
-    div { width: 80%; }
-  }
-}
+// @media only screen and (max-width: 760px) {
+//   #services-cards {
+//     div { width: 80%; }
+//   }
+// }
+

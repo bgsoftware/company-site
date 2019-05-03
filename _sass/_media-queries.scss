@@ -5,6 +5,8 @@
 
 @media only screen and (min-width: 768px) {
   @include headline--md();
+  @include custom-software--md();
+  @include about-us__md();
 }
 
 // medium screen size (md)
@@ -14,4 +16,5 @@
 
 @media only screen and (min-width: 1200px) {
   @include headline--xl();
+  @include about-us__xl();
 }

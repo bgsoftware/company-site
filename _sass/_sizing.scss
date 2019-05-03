@@ -2,7 +2,7 @@
 
 .h-80vh { height: 80vh; }
 
-@for $i from 1 through 20 {
+@for $i from 1 through 25 {
   .w-#{$i}rem { width: #{$i}rem; }
   .h-#{$i}rem { height: #{$i}rem; }
 }

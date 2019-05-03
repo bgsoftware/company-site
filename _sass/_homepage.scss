@@ -1,0 +1,88 @@
+/**
+ * Headline.
+ */
+.headline__headline {
+  font-size: 2rem;
+}
+
+.headline__text {
+  font-size: 1.25rem;
+  width: 90%;
+}
+
+
+@mixin headline--md() {
+  .headline__headline { font-size: 2.75rem; }
+
+  .headline__text {
+    font-size: 1.75rem;
+    width: 45rem;
+  }
+}
+
+@mixin headline--lg() {
+  .headline__headline { font-size: 3rem; }
+
+  .headline__text { font-size: 2rem; }
+}
+
+@mixin headline--xl() {
+  .headline__headline { font-size: 3.5rem; }
+}
+/* End of Headline. */
+
+
+
+/**
+ * Why Custom Software?
+ */
+.custom-software__text { width: 95%; }
+
+@mixin custom-software--md() {
+  .custom-software__text { width: 45rem; }
+}
+/* End of Why Custom Software? */
+
+
+
+/**
+ * Why Benningfield Group?
+ */
+ .about-us__content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__image { width: 95%; }
+
+.about-us__text {
+  width: 95%;
+  text-align: center;
+}
+
+
+@mixin about-us__md() {
+
+  .about-us__image { width: 45rem; }
+
+  .about-us__text { width: 45rem; }
+}
+
+@mixin about-us__xl() {
+  .about-us__content {
+    flex-direction: row;
+    max-width: 80%;
+  }
+
+  .about-us__image {
+    width: 48%;
+    min-width: 40rem;
+  }
+
+  .about-us__text {
+    text-align: left;
+    width: 48%;
+    padding-left: 2rem;
+  }
+}
+/* End of Why Benningfield Group? */
