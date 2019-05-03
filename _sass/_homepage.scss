@@ -86,3 +86,29 @@
   }
 }
 /* End of Why Benningfield Group? */
+
+
+
+/**
+ * Let's Talk Software.
+ */
+
+@mixin lets-talk-software__sm() {
+  .lets-talk-software__quote { width: 30rem; }
+}
+/**
+ * Scroll Up Button (at bottom of page)
+ */
+.scroll-up-button {
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.15s ease-in-out;
+  border-bottom: solid $primary-color;
+}
+
+.scroll-up-button:hover {
+  box-shadow: 0 5px 15px #888888;
+}
+/* End of Scroll Up Button */
+
+
