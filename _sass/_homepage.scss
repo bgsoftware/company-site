@@ -21,9 +21,9 @@
 }
 
 @mixin headline--lg() {
-  .headline__headline { font-size: 3rem; }
+  .headline__headline { font-size: 2.85rem; }
 
-  .headline__text { font-size: 2rem; }
+  // .headline__text { font-size: 1.85rem; }
 }
 
 @mixin headline--xl() {
@@ -76,7 +76,7 @@
 
   .about-us__image {
     width: 48%;
-    min-width: 40rem;
+    // min-width: 40rem;
   }
 
   .about-us__text {
@@ -90,9 +90,36 @@
 
 
 /**
+ * Services.
+ */
+.services__cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__card { width: 95%; }
+
+@mixin services__sm() {
+  .services__card { width: 85%; }
+}
+
+@mixin services__md() {
+  .services__cards {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .services__card {
+    max-width: 18rem;
+  }
+}
+/* End of Services. */
+
+
+
+/**
  * Let's Talk Software.
  */
-
 @mixin lets-talk-software__sm() {
   .lets-talk-software__quote { width: 30rem; }
 }
