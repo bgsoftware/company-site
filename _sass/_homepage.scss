@@ -39,7 +39,7 @@
 .custom-software__text { width: 95%; }
 
 @mixin custom-software--md() {
-  .custom-software__text { width: 45rem; }
+  .custom-software__text { max-width: 70rem; }
 }
 /* End of Why Custom Software? */
 
@@ -58,6 +58,7 @@
 .about-us__text {
   width: 95%;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 
@@ -68,20 +69,37 @@
   .about-us__text { width: 45rem; }
 }
 
-@mixin about-us__xl() {
+@mixin about-us__lg() {
   .about-us__content {
     flex-direction: row;
-    max-width: 80%;
   }
 
   .about-us__image {
-    width: 48%;
+    width: 60%;
     // min-width: 40rem;
   }
 
   .about-us__text {
     text-align: left;
-    width: 48%;
+    width: 40%;
+    padding-left: 2rem;
+  }
+}
+
+@mixin about-us__xl() {
+  .about-us__content {
+    flex-direction: row;
+    max-width: 90%;
+  }
+
+  .about-us__image {
+    width: 50%;
+    // min-width: 40rem;
+  }
+
+  .about-us__text {
+    text-align: left;
+    width: 50%;
     padding-left: 2rem;
   }
 }
@@ -144,6 +162,7 @@
  * CTA Buttons
  */
 .cta-button-tertiary {
+  font-size: 2rem;
   background-color: $primary-color;
   color: $tertiary-color;
 }
@@ -155,6 +174,7 @@
 }
 
 .cta-button-primary {
+  font-size: 2rem;
   background-color: $tertiary-color;
   color: $primary-color;
 }
