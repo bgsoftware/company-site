@@ -10,7 +10,6 @@
   width: 90%;
 }
 
-
 @mixin headline--md() {
   .headline__headline { font-size: 2.75rem; }
 
@@ -168,7 +167,7 @@
 
 
 /**
- * CTA Buttons
+ * CTA Buttons.
  */
 .cta-button-tertiary {
   font-size: 2rem;
@@ -193,3 +192,4 @@
   color: $tertiary-color;
   border: solid 1px $tertiary-color;
 }
+/* End of CTA buttons. */
