@@ -14,8 +14,46 @@ body {
   font-weight: lighter;
 }
 
-@media only screen and (max-device-width: 768px) {
-  body {
-    font-size: 2rem;
-  }
+// @media only screen and (max-device-width: 768px) {
+//   body {
+//     font-size: 150%;
+//   }
+// }
+
+$font-size-sm: .75;
+$font-size-md: 1;
+$font-size-lg: 1.25;
+$font-size-xl: 1.5;
+
+.font-size-sm { font-size: #{$font-size-sm}rem !important; }
+.font-size-md { font-size: #{$font-size-md}rem !important; }
+.font-size-lg { font-size: #{$font-size-lg}rem !important; }
+.font-size-xl { font-size: #{$font-size-xl}rem !important; }
+
+@mixin font-size--sm() {
+  .font-size-sm { font-size: #{$font-size-sm + .25}rem !important; }
+  .font-size-md { font-size: #{$font-size-md + .25}rem !important; }
+  .font-size-lg { font-size: #{$font-size-lg + .25}rem !important; }
+  .font-size-xl { font-size: #{$font-size-xl + .25}rem !important; }
+}
+
+@mixin font-size--md() {
+  .font-size-sm { font-size: #{$font-size-sm + .50}rem !important; }
+  .font-size-md { font-size: #{$font-size-md + .50}rem !important; }
+  .font-size-lg { font-size: #{$font-size-lg + .50}rem !important; }
+  .font-size-xl { font-size: #{$font-size-xl + .50}rem !important; }
+}
+
+@mixin font-size--lg() {
+  .font-size-sm { font-size: #{$font-size-sm + .75}rem !important; }
+  .font-size-md { font-size: #{$font-size-md + .75}rem !important; }
+  .font-size-lg { font-size: #{$font-size-lg + .75}rem !important; }
+  .font-size-xl { font-size: #{$font-size-xl + .75}rem !important; }
+}
+
+@mixin font-size--xl() {
+  .font-size-sm { font-size: #{$font-size-sm + 1}rem !important; }
+  .font-size-md { font-size: #{$font-size-md + 1}rem !important; }
+  .font-size-lg { font-size: #{$font-size-lg + 1}rem !important; }
+  .font-size-xl { font-size: #{$font-size-xl + 1}rem !important; }
 }
