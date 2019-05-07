@@ -58,7 +58,6 @@
 .about-us__text {
   width: 95%;
   text-align: center;
-  font-size: 1.5rem;
 }
 
 
@@ -115,20 +114,30 @@
   align-items: center;
 }
 
-.services__card { width: 95%; }
+.services__card-title { min-height: 1.5rem; }
+
+.services__card { width: 90%; }
 
 @mixin services__sm() {
-  .services__card { width: 85%; }
+  .services__card { max-width: 40rem; }
 }
 
-@mixin services__md() {
+@mixin services__lg() {
   .services__cards {
     flex-direction: row;
     align-items: flex-start;
   }
 
   .services__card {
-    max-width: 18rem;
+    min-height: 40rem;
+    max-width: 25rem;
+  }
+}
+
+@mixin services__xl() {
+  .services__card {
+    min-height: 38rem;
+    max-width: 25rem;
   }
 }
 /* End of Services. */

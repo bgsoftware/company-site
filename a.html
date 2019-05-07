@@ -135,17 +135,19 @@ title: a
 
       <div
         class="services__cards d-flex justify-content-center m-0"
-        data-aos="fade-right"
-        data-aos-offset="200"
       >
         {% for service in site.data.services %}
-          <div class="services__card ml-5 mr-5" style="box-shadow: 5px 5px 5px grey;">
+          <div
+            class="services__card bg-color-octonary ml-3 mr-3 mb-3 box-shadow"
+            data-aos="fade-right"
+            data-aos-offset="200"
+          >
             <div class="card-body">
               <img
                 src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.svg"
                 class="mx-auto d-block w-75 max-width-13rem"
               >
-              <h2 class="card-title text-center">{{ service.name }}</h2>
+              <h2 class="services__card-title card-title text-center">{{ service.name }}</h2>
               <h3 class="font-weight-lighter">
                 {{ service.point }}
               </h3>
