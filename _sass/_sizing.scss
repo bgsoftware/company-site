@@ -5,4 +5,8 @@
 @for $i from 1 through 25 {
   .w-#{$i}rem { width: #{$i}rem; }
   .h-#{$i}rem { height: #{$i}rem; }
+  .max-width-#{$i}rem { max-width: #{$i}rem; }
+  .max-height-#{$i}rem { max-height: #{$i}rem; }
+  .min-width-#{$i}rem { min-width: #{$i}rem; }
+  .min-height-#{$i}rem { min-height: #{$i}rem; }
 }
