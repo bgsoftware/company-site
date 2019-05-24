@@ -129,7 +129,7 @@
 
 /* Pre-render the bigger shadow, but hide it */
 .lwc-chat-button:hover {
-    box-shadow: 0 0 3px #515151;
+  box-shadow: 0 5px 30px #888888;
 }
 
 
