@@ -22,7 +22,6 @@
 
 /* Extra large screen size (lg) */
 @media only screen and (min-width: 1200px) {
-  @include headline--xl();
   @include about-us__xl();
   @include font-size--xl();
 }
