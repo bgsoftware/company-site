@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
     <link href="{{'/assets/vendor/aos.css' | prepend: site.baseurl}}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
   </head>
   <body data-spy="scroll">
     <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
@@ -15,17 +16,17 @@
     <script src="https://snatchbot.me/sdk/webchat.min.js"></script>
 
     <script>AOS.init();</script>
-
+    {% include navigation.html %}
     {{ content }}
     {% include footer.html %}
-    <script>
+<!--     <script>
       Init('?botID=52408&appID=webchat', 600, 700, 'https://dvgpba5hywmpo.cloudfront.net/media/image/7vOf35jhFsCEiWkIArtq50XsR', 'bubble', 'transparent', 80, 80, 70, '', '1', '#2C2222', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */
       $('.lwc-chat-button').hover(function () {
         $('.chatbot__text').css('display', 'block');
       }, function() {
         $('.chatbot__text').css('display', 'none');
       });
-    </script>
+    </script> -->
 
   </body>
 </html>
