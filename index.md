@@ -11,39 +11,45 @@ title: Home
     id="headline"
     class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
   >
-    <h1 class="headline__headline pt-10 text-center">Because there's only one business like yours.</h1>
-    <h1
-      class="headline__text text-center font-weight-lighter font-size-4"
-      data-aos="fade-right"
-      data-aos-duration="3000"
-    >
-      BG Software partners with small and medium-sized businesses to create personalized software
-      that's easy to learn, simple to launch, and tailored specifically to your unique needs.
-    </h1>
-    <div
-      class="video-wrap"
-      data-aos="fade-right"
-      data-aos-duration="3000"
-    >
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/nDOKwLf2flg"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+    <div class="headline__content">
+      <div class="headline__left text-right">
+        <h1 class="headline__title text-right font-italic color-white"
+          >Because there's only one business like yours.
+        </h1>
+        <h4
+          class="headline__subtitle text-right font-weight-light color-white"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
+        </h4>
+        <div
+          class="px-1"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <button class="btn cta-button-tertiary font-weight-light">
+            How can we help you?
+          </button>
+        </div>
+      </div>
+      <div
+        class="headline__right video-wrap"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/nDOKwLf2flg"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
-    <div
-      class="py-3"
-      data-aos="fade-right"
-      data-aos-duration="3000"
-    >
-      <button class="btn cta-button-tertiary">How can we help you?</button>
-    </div>
-
   </div>
 
 
