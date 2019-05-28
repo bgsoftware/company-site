@@ -1,32 +1,44 @@
-/**
+/*
  * Headline.
  */
-.headline__headline {
-  font-size: 2rem;
+#headline {
+  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('./images/misc/hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.headline__text {
-  font-size: 1.25rem;
-  width: 90%;
-}
+.headline__video { margin-left: auto; }
+
+.headline__left { padding-bottom: 1rem; }
 
 @mixin headline--md() {
-  .headline__headline { font-size: 2.75rem; }
-
-  .headline__text {
-    font-size: 1.75rem;
-    width: 45rem;
+  .headline__right {
+    margin-right: auto;
+    margin-left: 0;
   }
 }
 
 @mixin headline--lg() {
-  .headline__headline { font-size: 2.85rem; }
+  .headline__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    padding-right: 1rem;
+    padding-bottom: 0;
+  }
 
-  // .headline__text { font-size: 1.85rem; }
-}
+  .headline__right { width: 55%; }
 
-@mixin headline--xl() {
-  .headline__headline { font-size: 3.5rem; }
+  .headline__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .headline__title { font-size: 2.45rem; }
+  .headline__subtitle { font-size: 1.1rem; }
 }
 /* End of Headline. */
 
@@ -141,7 +153,10 @@
 }
 /* End of Services. */
 
-
+.headline__content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 /**
  * Let's Talk Software.
@@ -169,13 +184,14 @@
  * CTA Buttons.
  */
 .cta-button-tertiary {
-  font-size: 2rem;
+  padding: 10px 20px;
   background-color: $primary-color;
-  color: $tertiary-color;
+  color: $white;
+  border: solid 1px $white;
 }
 
 .cta-button-tertiary:hover {
-  background-color: $tertiary-color;
+  background-color: $white;
   color: $primary-color;
   border: solid 1px $primary-color;
 }
