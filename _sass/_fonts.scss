@@ -14,12 +14,6 @@ body {
   font-weight: lighter;
 }
 
-@media only screen and (max-device-width: 768px) {
-  body {
-    font-size: 150%;
-  }
-}
-
 $font-size-sm: .75;
 $font-size-md: 1;
 $font-size-lg: 1.25;
