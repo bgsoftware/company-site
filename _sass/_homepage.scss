@@ -38,7 +38,6 @@
   }
 
   .headline__title { font-size: 2.45rem; }
-  .headline__subtitle { font-size: 1.1rem; }
 }
 /* End of Headline. */
 
@@ -64,16 +63,14 @@
   align-items: center;
 }
 
+.services__card {
+  max-width: 40rem;
+  width: 90%;
+}
+
 .services__card-title { min-height: 1.5rem; }
 
-.services__card { width: 90%; }
-
 .services__card-points { padding-inline-start: 20px; }
-
-.services__card { max-width: 40rem; }
-
-@mixin services__md() {
-}
 
 @mixin services__lg() {
   .services__cards {
