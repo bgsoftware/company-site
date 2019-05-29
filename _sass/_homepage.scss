@@ -49,8 +49,8 @@
  */
 .custom-software__text { width: 95%; }
 
-@mixin custom-software--md() {
-  .custom-software__text { max-width: 70rem; }
+@mixin custom-software--lg() {
+  .custom-software__text { width: 60%; }
 }
 /* End of Why Custom Software? */
 
