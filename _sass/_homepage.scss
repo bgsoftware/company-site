@@ -57,6 +57,47 @@
 
 
 /**
+ * Services.
+ */
+.services__cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__card-title { min-height: 1.5rem; }
+
+.services__card { width: 90%; }
+
+.services__card-points { padding-inline-start: 20px; }
+
+.services__card { max-width: 40rem; }
+
+@mixin services__md() {
+}
+
+@mixin services__lg() {
+  .services__cards {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .services__card {
+    min-height: 35rem;
+    max-width: 25rem;
+  }
+}
+
+@mixin services__xl() {
+  .services__card {
+    min-height: 38rem;
+    max-width: 25rem;
+  }
+}
+/* End of Services. */
+
+
+
+/**
  * Why Benningfield Group?
  */
  .about-us__content {
@@ -117,41 +158,6 @@
 
 
 
-/**
- * Services.
- */
-.services__cards {
-  flex-direction: column;
-  align-items: center;
-}
-
-.services__card-title { min-height: 1.5rem; }
-
-.services__card { width: 90%; }
-
-@mixin services__sm() {
-  .services__card { max-width: 40rem; }
-}
-
-@mixin services__lg() {
-  .services__cards {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .services__card {
-    min-height: 40rem;
-    max-width: 25rem;
-  }
-}
-
-@mixin services__xl() {
-  .services__card {
-    min-height: 38rem;
-    max-width: 25rem;
-  }
-}
-/* End of Services. */
 
 .headline__content {
   padding-left: 1rem;
