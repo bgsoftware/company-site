@@ -8,13 +8,13 @@
 /* Medium screen size (md) */
 @media only screen and (min-width: 768px) {
   @include headline--md();
-  @include custom-software--md();
   @include about-us__md();
   @include font-size--md();
 }
 
 /* Large screen size (lg) */
 @media only screen and (min-width: 992px) {
+  @include custom-software--lg();
   @include services__lg();
   @include headline--lg();
   @include font-size--lg();
