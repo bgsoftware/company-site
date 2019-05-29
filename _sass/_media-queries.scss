@@ -1,13 +1,14 @@
 /* Small screen size (sm) */
 @media only screen and (min-width: 576px) {
   @include lets-talk-software--sm();
-  @include services__sm();
+  @include font-size--sm();
 }
 
 /* Medium screen size (md) */
 @media only screen and (min-width: 768px) {
   @include headline--md();
   @include about-us__md();
+  @include font-size--md();
 }
 
 /* Large screen size (lg) */
@@ -15,9 +16,11 @@
   @include custom-software--lg();
   @include services__lg();
   @include headline--lg();
+  @include font-size--lg();
 }
 
 /* Extra large screen size (lg) */
 @media only screen and (min-width: 1200px) {
   @include about-us__xl();
+  @include font-size--xl();
 }
