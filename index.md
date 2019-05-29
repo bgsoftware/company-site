@@ -55,24 +55,24 @@ title: Home
 
 
   <!---  Custom Software. --->
-  <div id="custom-software" class="bg-color-quinary pt-4 pb-15">
+  <div id="custom-software" class="bg-color-secondary py-5">
     <div
       class="opener w-100"
       data-aos="fade-right"
       data-aos-offset="200"
     >
-      <h1 class="text-center color-tertiary mb-0 font-size-4">Why Custom Software?</h1>
+      <h1 class="text-center color-white mb-0">Why Custom Software</h1>
     </div>
     <div
       class="d-flex justify-content-center"
       data-aos="fade-right"
       data-aos-offset="200"
     >
-      <h2 class="custom-software__text color-tertiary text-center pt-5 font-weight-lighter font-size-3">
+      <h3 class="custom-software__text color-white text-center pt-5 font-weight-lighter">
         Custom software is a tailor-made solution built with a client’s insight and business
-        requirements from the onset, enabling it to meet a company’s specific business needs,
-        processes, and security requirements.
-      </h2>
+        requirements from the onset, enabling it to meet a company’s specific business
+        needs, processes, and security requirements.
+      </h3>
     </div>
 
   </div>
