@@ -16,13 +16,13 @@ title: Home
         <h1 class="headline__title text-right font-italic color-white"
           >Because there's only one business like yours.
         </h1>
-        <h4
-          class="headline__subtitle text-right font-weight-light color-white"
+        <p
+          class="text-right font-weight-light color-white font-size-md"
           data-aos="fade-right"
           data-aos-duration="3000"
         >
           BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
-        </h4>
+        </p>
         <div
           class="px-1"
           data-aos="fade-right"
@@ -68,13 +68,54 @@ title: Home
       data-aos="fade-right"
       data-aos-offset="200"
     >
-      <h3 class="custom-software__text color-white text-center pt-5 font-weight-lighter">
+      <p class="custom-software__text color-white text-center pt-5 font-weight-lighter font-size-md line-height-2">
         Custom software is a tailor-made solution built with a client’s insight and business
         requirements from the onset, enabling it to meet a company’s specific business
         needs, processes, and security requirements.
-      </h3>
+      </p>
     </div>
 
+  </div>
+
+
+
+  <!--- Services. --->
+  <div
+    id="services"
+    class="py-4"
+  >
+    <div class="d-flex align-items-center flex-column">
+      <div
+        class="services__cards d-flex justify-content-center m-0"
+      >
+        {% for service in site.data.services %}
+          <div
+            class="services__card ml-3 mr-3 mb-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+          >
+            <div class="card-body px-1">
+              <img
+                src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.png"
+                class="mx-auto d-block w-75 max-width-7rem pb-4"
+              >
+              <h2 class="services__card-title card-title text-center">{{ service.name }}</h2>
+              <div class="services__card-content font-size-md">
+                <p class="font-weight-lighter line-height-2">
+                  {{ service.point }}
+                </p>
+                <ul class="services__card-points pt-3">
+                {% for point in service.points %}
+                  <li class="card-text"><p class="font-weight-lighter">{{ point }}</p></li>
+                {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
   </div>
 
 
