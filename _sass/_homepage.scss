@@ -72,7 +72,7 @@
 
 .services__card-points { padding-inline-start: 20px; }
 
-@mixin services__lg() {
+@mixin services--lg() {
   .services__cards {
     flex-direction: row;
     align-items: flex-start;
@@ -147,14 +147,14 @@
 }
 
 
-@mixin about-us__md() {
+@mixin about-us--md() {
 
   .about-us__image { width: 45rem; }
 
   .about-us__text { width: 45rem; }
 }
 
-@mixin about-us__lg() {
+@mixin about-us--lg() {
   .about-us__content {
     flex-direction: row;
   }
@@ -201,7 +201,7 @@
 /**
  * Let's Talk Software.
  */
-@mixin lets-talk-software__sm() {
+@mixin lets-talk-software--sm() {
   .lets-talk-software__quote { width: 30rem; }
 }
 /**
