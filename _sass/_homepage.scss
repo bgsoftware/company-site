@@ -95,6 +95,43 @@
 
 
 /**
+ * Survey.
+ */
+.survey__groups {
+  flex-direction: column;
+}
+
+.survey__group {
+  flex-direction: column;
+}
+
+
+@mixin survey--md() {
+  .survey__group {
+    flex-direction: row;
+  }
+}
+
+@mixin survey--lg() {
+  .survey__groups {
+    flex-direction: row;
+  }
+
+  .survey__card {
+    min-height: 25rem;
+    max-width: 21rem;
+  }
+}
+
+@mixin survey--xl() {
+  .survey__groups {
+    width: 90%;
+  }
+}
+
+/* End of Survey.*/
+
+/**
  * Why Benningfield Group?
  */
  .about-us__content {
