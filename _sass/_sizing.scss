@@ -2,7 +2,7 @@
 
 .min-height-100vh { min-height: 100vh; }
 
-@for $i from 1 through 25 {
+@for $i from 1 through 50 {
   .w-#{$i}rem { width: #{$i}rem; }
   .h-#{$i}rem { height: #{$i}rem; }
   .max-width-#{$i}rem { max-width: #{$i}rem; }
