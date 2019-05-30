@@ -134,40 +134,44 @@
 /**
  * Why Benningfield Group?
  */
- .about-us__content {
+
+.about-us__content {
   flex-direction: column;
   align-items: center;
 }
 
-.about-us__image { width: 95%; }
-
-.about-us__text {
-  width: 95%;
-  text-align: center;
-}
+.about-us__image { display: none; }
 
 
 @mixin about-us--md() {
-
-  .about-us__image { width: 45rem; }
-
-  .about-us__text { width: 45rem; }
-}
-
-@mixin about-us--lg() {
-  .about-us__content {
-    flex-direction: row;
+  #about-us {
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .about-us__image {
-    width: 60%;
-    // min-width: 40rem;
+    display: block;
+    width: 90%;
+  }
+}
+
+@mixin about-us--lg() {
+  #about-us {
+    flex-direction: row;
   }
 
-  .about-us__text {
+  .about-us__left {
+    width: 50%
+  }
+
+  .about-us__image {
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  .about-us__right {
     text-align: left;
-    width: 40%;
-    padding-left: 2rem;
+    width: 50%;
   }
 }
 
@@ -177,12 +181,7 @@
     max-width: 90%;
   }
 
-  .about-us__image {
-    width: 50%;
-    // min-width: 40rem;
-  }
-
-  .about-us__text {
+  .about-us__right {
     text-align: left;
     width: 50%;
     padding-left: 2rem;
