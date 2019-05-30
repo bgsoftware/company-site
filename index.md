@@ -267,16 +267,15 @@ title: Home
 
   <div id="capabilities" class="bg-color-white pb-4">
     <div class="d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 py-4 mb-5">
+      <div class="bg-color-secondary w-100 py-2">
         <h1
-          class="text-center color-tertiary font-size-4"
+          class="text-center color-white"
           data-aos="fade-right"
           data-aos-offset="200"
         >Capabilities</h1>
       </div>
       <div
-        id="capabilities-carousel"
-        class="carousel slide py-4"
+        class="capabilities__carousel carousel slide py-4"
         data-ride="carousel"
         data-aos="fade-right"
         data-aos-offset="200"
@@ -287,14 +286,14 @@ title: Home
             {% if forloop.first %}
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                    <img class="inline-block px-3 img-fluid w-7rem" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
                 {% endfor %}
               </div>
             {% endif %}
             {% if forloop.first == false %}
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                    <img class="inline-block px-3 img-fluid w-7rem" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
                 {% endfor %}
               </div>
             {% endif %}
@@ -302,7 +301,7 @@ title: Home
         </div>
         <a
           class="carousel-control-prev"
-          href="#capabilities-carousel"
+          href=".capabilities__carousel"
           role="button"
           data-slide="prev"
         >
@@ -311,7 +310,7 @@ title: Home
         </a>
         <a
           class="carousel-control-next"
-          href="#capabilities-carousel"
+          href=".capabilities__carousel"
           role="button"
           data-slide="next"
         >
@@ -355,17 +354,15 @@ title: Home
 
   <div id="clients" class="pb-4">
     <div class="d-flex flex-column align-items-center">
-      <div class="bg-color-primary w-100 py-4 mb-5">
+      <div class="bg-color-secondary w-100 py-2">
         <h1
-          class="text-center color-tertiary font-size-4"
+          class="text-center color-white"
           data-aos="fade-right"
           data-aos-offset="200"
         >Clients</h1>
       </div>
-
       <div
-        id="clients-carousel"
-        class="carousel slide py-4"
+        class="clients__carousel carousel slide py-4"
         data-ride="carousel"
         data-aos="fade-right"
         data-aos-offset="200"
@@ -377,7 +374,6 @@ title: Home
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
                     <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
-
                 {% endfor %}
               </div>
             {% endif %}
@@ -385,7 +381,6 @@ title: Home
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
                     <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
-
                 {% endfor %}
               </div>
             {% endif %}
@@ -393,7 +388,7 @@ title: Home
         </div>
         <a
           class="carousel-control-prev"
-          href="#clients-carousel"
+          href=".clients__carousel"
           role="button"
           data-slide="prev"
         >
@@ -402,7 +397,7 @@ title: Home
         </a>
         <a
           class="carousel-control-next"
-          href="#clients-carousel"
+          href=".clients__carousel"
           role="button"
           data-slide="next"
         >

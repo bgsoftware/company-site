@@ -183,6 +183,39 @@
 
 
 /**
+ * Capabilities and Clients.
+ */
+.capabilities__carousel .clients__carousel {
+  width: 100%
+}
+
+@mixin capabilities-and-clients__sm() {
+  .capabilities__carousel { width: 40rem; }
+
+  .clients__carousel { width: 30rem; }
+}
+
+@mixin capabilities-and-clients__md() {
+  .clients__carousel { width: 50rem; }
+}
+
+@mixin capabilities-and-clients__lg() {
+  .capabilities__carousel { width: 62rem; }
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+/* End of Capabilities and Clients.*/
+
+
+
+/**
  * Scroll Up Button (at bottom of page)
  */
 .scroll-up-button {

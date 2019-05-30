@@ -1,6 +1,7 @@
 /* Small screen size (sm) */
 @media only screen and (min-width: 576px) {
   @include font-size--sm();
+  @include capabilities-and-clients__sm();
 }
 
 /* Medium screen size (md) */
@@ -9,6 +10,7 @@
   @include about-us--md();
   @include font-size--md();
   @include survey--md();
+  @include capabilities-and-clients__md();
 }
 
 /* Large screen size (lg) */
@@ -19,6 +21,7 @@
   @include font-size--lg();
   @include survey--lg();
   @include about-us--lg();
+  @include capabilities-and-clients__lg();
 }
 
 /* Extra large screen size (lg) */
