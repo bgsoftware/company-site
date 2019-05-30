@@ -128,81 +128,60 @@
     width: 90%;
   }
 }
-
 /* End of Survey.*/
 
-/**
- * Why Benningfield Group?
- */
 
+
+/**
+ * About Us.
+ */
 .about-us__content {
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.about-us__image { display: none; }
+.about-us__image-container { display: none; }
 
+.about-us__text { padding: 1.5rem; }
 
 @mixin about-us--md() {
-  #about-us {
+  .about-us__content {
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .about-us__image {
+  .about-us__image-container {
     display: block;
-    width: 90%;
+    margin: auto;
   }
 }
 
 @mixin about-us--lg() {
-  #about-us {
-    flex-direction: row;
+  .about-us__content { flex-direction: row; }
+
+  #why-bg-software { .about-us__text { padding-right: 1.5rem; } }
+
+  #lets-talk-software { .about-us__text { padding-left: 1.5rem; } }
+
+  .about-us__image-container {
+    width: 48%;
+    margin: 0;
   }
 
-  .about-us__left {
-    width: 50%
-  }
-
-  .about-us__image {
-    width: 100%;
-    max-width: 50rem;
-  }
-
-  .about-us__right {
-    text-align: left;
-    width: 50%;
+  .about-us__text {
+    width: 48%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @mixin about-us__xl() {
-  .about-us__content {
-    flex-direction: row;
-    max-width: 90%;
-  }
-
-  .about-us__right {
-    text-align: left;
-    width: 50%;
-    padding-left: 2rem;
-  }
+  .about-us__content { flex-direction: row; }
 }
-/* End of Why Benningfield Group? */
+/* End of About Us. */
 
 
 
-
-.headline__content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/**
- * Let's Talk Software.
- */
-@mixin lets-talk-software--sm() {
-  .lets-talk-software__quote { width: 30rem; }
-}
 /**
  * Scroll Up Button (at bottom of page)
  */

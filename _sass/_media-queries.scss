@@ -1,6 +1,5 @@
 /* Small screen size (sm) */
 @media only screen and (min-width: 576px) {
-  @include lets-talk-software--sm();
   @include font-size--sm();
 }
 

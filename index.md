@@ -164,42 +164,81 @@ title: Home
 
 
   <!--- About Us. --->
-  <div
-    id="about-us"
-    class="d-flex"
-  >
-    <div
-      class="about-us__left"
-      data-aos="fade-right"
-      data-aos-offset="200"
-    >
-      <img
-        class="about-us__image"
-        src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
+  <div id="about-us">
+    <!--- Why BG Software? --->
+    <div id="why-bg-software" class="d-flex about-us__content">
+      <div
+        class="about-us__image-container about-us__side"
+        data-aos="fade-right"
+        data-aos-offset="200"
       >
+        <img
+          id="why-bg-software__team-photo"
+          class="max-width-50rem w-100 h-auto"
+          src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
+        >
+      </div>
+      <div
+        class="about-us__text text-align-left"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+        <h1>Why BG Software?</h1>
+        <p class="font-size-md line-height-2">
+          This is our family, a team of talented software developers, analysts and customer
+          care pros. For over 13 years, we have been building, maintaining, and enhancing
+          custom software systems that are both easy to use and scalable to our clients’
+          needs.
+        </p>
+        <p class="font-size-md line-height-2">
+          Our process typically involves meeting with your team to learn more about your needs,
+          products, and industry. We then formulate a plan to select the appropriate
+          technologies, software architects, and quality assurance team to bring your vision
+          to life. A custom solution is then created to fit your specific needs.
+        </p>
+        <button class="btn cta-button-tertiary font-weight-light">
+          Speak to an expert
+        </button>
+      </div>
     </div>
-    <div
-      class="about-us__right text-align-left p-4"
-      data-aos="fade-right"
-      data-aos-offset="200"
-    >
-      <h1>Why BG Software?</h1>
-      <p class="font-size-md line-height-2">
-        This is our family, a team of talented software developers, analysts and customer
-        care pros. For over 13 years, we have been building, maintaining, and enhancing
-        custom software systems that are both easy to use and scalable to our clients’
-        needs.
-      </p>
-      <p class="font-size-md line-height-2">
-        Our process typically involves meeting with your team to learn more about your needs,
-        products, and industry. We then formulate a plan to select the appropriate
-        technologies, software architects, and quality assurance team to bring your vision
-        to life. A custom solution is then created to fit your specific needs.
-      </p>
-      <button class="btn cta-button-tertiary font-weight-light">
-        Speak to an expert
-      </button>
+    <!--- Let's talk Software. --->
+    <div id="lets-talk-software" class="about-us__content d-flex">
+      <div
+        class="about-us__text text-right"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+        <h1>Let's Talk Software</h1>
+        <h2>Robin Wells</h2>
+        <h3 class="font-italic">Chief Executive Officer</h3>
+        <p
+          class="font-italic font-size-md line-height-2"
+          data-aos="fade-up"
+          data-aos-offset="100"
+        >
+          “For me and my team, it’s all about connecting with clients on a one-on-one level, getting
+          to know their needs and ensuring they receive the highest-quality support and products.”
+        </p>
+        <button class="btn cta-button-tertiary font-weight-light">Ready to chat?</button>
+      </div>
+      <div
+        class="about-us__image-container about-us__side text-align-left"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+        <img
+          id="lets-talk-software__robin-image"
+          class="max-width-40"
+          src="{{site.baseurl}}/assets/images/BG/robin.jpg"
+          data-aos="fade-right"
+          data-aos-offset="100"
+        >
+      </div>
     </div>
+  </div>
+
+
+
 <!--     <div
       class="d-flex align-items-center flex-column"
       data-aos="fade-right"
@@ -213,7 +252,7 @@ title: Home
         <h1 class="text-center color-tertiary font-size-4">Why BG Software?</h1>
       </div>
       <div
-        class="about-us__content d-flex"
+        class="lets-talk-software__content d-flex"
         data-aos="fade-right"
         data-aos-offset="200"
       >
@@ -280,7 +319,6 @@ title: Home
           </div>
         {% endfor %}
       </div>
-
     </div>
   </div>
 
@@ -302,15 +340,15 @@ title: Home
     {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
 
     {% if needsNewSubArr == 1 %}
-      <!--- Create a new empty sub array. --->
+      {% comment %} Create a new empty sub array. {% endcomment %}
       {% assign subArr = "" | split: "/" %}
     {% endif %}
 
-    <!--- Push the current image in sub array. --->
+    {% comment %} Push the current image in sub array. {% endcomment %}
     {% assign subArr = subArr | push: element %}
 
     {% if needsNewSubArr == 0 or forloop.last %}
-      <!--- push subArr in capabilities if subArr length is. --->
+      {% comment %} push subArr in capabilities if subArr length is. {% endcomment %}
       {% assign capabilities = capabilities | push: subArr %}
     {% endif %}
   {% endfor %}
@@ -324,7 +362,6 @@ title: Home
           data-aos-offset="200"
         >Capabilities</h1>
       </div>
-
       <div
         id="capabilities-carousel"
         class="carousel slide py-4"
@@ -339,7 +376,6 @@ title: Home
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
                     <img class="inline-block px-3 img-fluid w-7rem" src="{{ site.baseurl }}{{ imagePath }}">
-
                 {% endfor %}
               </div>
             {% endif %}
@@ -347,7 +383,6 @@ title: Home
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
                     <img class="inline-block px-3 img-fluid w-7rem" src="{{ site.baseurl }}{{ imagePath }}">
-
                 {% endfor %}
               </div>
             {% endif %}
@@ -372,7 +407,6 @@ title: Home
           <span class="sr-only">Next</span>
         </a>
       </div>
-
     </div>
   </div>
 
@@ -394,15 +428,15 @@ title: Home
     {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
 
     {% if needsNewSubArr == 1 %}
-      <!--- Create a new empty sub array. --->
+      {% comment %} Create a new empty sub array. {% endcomment %}
       {% assign subArr = "" | split: "/" %}
     {% endif %}
 
-    <!--- Push the current image in sub array. --->
+    {% comment %} Push the current image in sub array. {% endcomment %}
     {% assign subArr = subArr | push: element %}
 
     {% if needsNewSubArr == 0 or forloop.last %}
-      <!--- push subArr in clients if subArr length is. --->
+      {% comment %} push subArr in clients if subArr length is. {% endcomment %}
       {% assign clients = clients | push: subArr %}
     {% endif %}
   {% endfor %}
