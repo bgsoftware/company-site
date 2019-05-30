@@ -74,20 +74,14 @@ title: Home
         needs, processes, and security requirements.
       </p>
     </div>
-
   </div>
 
 
 
   <!--- Services. --->
-  <div
-    id="services"
-    class="py-4"
-  >
+  <div id="services" class="py-4">
     <div class="d-flex align-items-center flex-column">
-      <div
-        class="services__cards d-flex justify-content-center m-0"
-      >
+      <div class="services__cards d-flex justify-content-center m-0">
         {% for service in site.data.services %}
           <div
             class="services__card ml-3 mr-3 mb-3"
@@ -114,7 +108,57 @@ title: Home
           </div>
         {% endfor %}
       </div>
+    </div>
+  </div>
 
+
+  <!--- Survey. --->
+  <div id="survey" class="py-4 bg-color-secondary">
+    <div class="survey__groups d-flex justify-content-center align-items-center color-white mx-auto">
+      <div class="survey__group d-flex">
+        <div
+          class="survey__card card-body text-center"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <i class="fa fa-heart-o fa-3x color-white" aria-hidden="true"></i>
+          <h1 class="card-title text-center font-size-4">96%</h1>
+          <p class="font-size-md line-height-2">of employees said that they would be more satisfied at work with access to better software</p>
+        </div>
+        <div
+          class="survey__card card-body text-center"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <i class="fa fa-eye fa-3x color-white" aria-hidden="true"></i>
+          <h1 class="card-title text-center font-size-4">24%</h1>
+          <p class="font-size-md line-height-2">of employees said they have considered looking for a new job due to mismatched software</p>
+        </div>
+      </div>
+      <div class="survey__group d-flex">
+        <div
+          class="survey__card card-body text-center"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <i class="fa fa-frown-o fa-3x color-white" aria-hidden="true"></i>
+          <h1 class="card-title text-center font-size-4">52%</h1>
+          <p class="font-size-md line-height-2">of respondents said they have been dissatisfied in their roles due to mismatched software</p>
+        </div>
+        <div
+          class="survey__card card-body text-center"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <i class="fa fa-floppy-o fa-3x color-white" aria-hidden="true"></i>
+          <h1 class="card-title text-center font-size-4">66%</h1>
+          <p class="font-size-md line-height-2">of respondents said they do not have control over software decisions at their company</p>
+          <br>
+          <div class="text-right font-size-md">
+            <b>Source: G2.com</b>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -180,7 +224,6 @@ title: Home
       >
         <h1 class="text-center font-size-4">Services</h1>
       </div>
-
       <div
         class="services__cards d-flex justify-content-center m-0 pb-10"
       >
