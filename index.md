@@ -163,13 +163,44 @@ title: Home
   </div>
 
 
-
   <!--- About Us. --->
   <div
     id="about-us"
-    class="bg-color-primary py-4 pb-15"
+    class="d-flex"
   >
     <div
+      class="about-us__left"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >
+      <img
+        class="about-us__image"
+        src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
+      >
+    </div>
+    <div
+      class="about-us__right text-align-left p-4"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >
+      <h1>Why BG Software?</h1>
+      <p class="font-size-md line-height-2">
+        This is our family, a team of talented software developers, analysts and customer
+        care pros. For over 13 years, we have been building, maintaining, and enhancing
+        custom software systems that are both easy to use and scalable to our clients’
+        needs.
+      </p>
+      <p class="font-size-md line-height-2">
+        Our process typically involves meeting with your team to learn more about your needs,
+        products, and industry. We then formulate a plan to select the appropriate
+        technologies, software architects, and quality assurance team to bring your vision
+        to life. A custom solution is then created to fit your specific needs.
+      </p>
+      <button class="btn cta-button-tertiary font-weight-light">
+        Speak to an expert
+      </button>
+    </div>
+<!--     <div
       class="d-flex align-items-center flex-column"
       data-aos="fade-right"
       data-aos-offset="200"
@@ -201,12 +232,10 @@ title: Home
           solution is then created to fit your specific needs.
         </h3>
       </div>
-
       <div class="pt-5">
         <button class="btn cta-button-primary">Speak to an expert</button>
       </div>
-
-    </div>
+    </div> -->
   </div>
 
 
