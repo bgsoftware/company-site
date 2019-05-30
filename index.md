@@ -164,7 +164,7 @@ title: Home
 
 
   <!--- About Us. --->
-  <div id="about-us">
+  <div id="about-us" class="pb-2">
     <!--- Why BG Software? --->
     <div id="why-bg-software" class="d-flex about-us__content">
       <div
@@ -211,13 +211,10 @@ title: Home
         <h1>Let's Talk Software</h1>
         <h2>Robin Wells</h2>
         <h3 class="font-italic">Chief Executive Officer</h3>
-        <p
-          class="font-italic font-size-md line-height-2"
-          data-aos="fade-up"
-          data-aos-offset="100"
-        >
-          “For me and my team, it’s all about connecting with clients on a one-on-one level, getting
-          to know their needs and ensuring they receive the highest-quality support and products.”
+        <p class="font-italic font-size-md line-height-2">
+          “For me and my team, it’s all about connecting with clients on a one-on-one level,
+          getting to know their needs and ensuring they receive the highest-quality support
+          and products.”
         </p>
         <button class="btn cta-button-tertiary font-weight-light">Ready to chat?</button>
       </div>
@@ -233,91 +230,6 @@ title: Home
           data-aos="fade-right"
           data-aos-offset="100"
         >
-      </div>
-    </div>
-  </div>
-
-
-
-<!--     <div
-      class="d-flex align-items-center flex-column"
-      data-aos="fade-right"
-      data-aos-offset="200"
-    >
-      <div
-        class="bg-color-primary w-100"
-        data-aos="fade-right"
-        data-aos-offset="200"
-      >
-        <h1 class="text-center color-tertiary font-size-4">Why BG Software?</h1>
-      </div>
-      <div
-        class="lets-talk-software__content d-flex"
-        data-aos="fade-right"
-        data-aos-offset="200"
-      >
-        <img
-          class="about-us__image text-center"
-          src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
-        >
-        <h3 class="about-us__text color-tertiary font-weight-lighter">
-          This is our family, a team of talented software developers, analysts and customer care
-          pros. For over 13 years, we have been building, maintaining, and enhancing custom software
-          systems that are both easy to use and scalable to our clients’ needs.
-          <br><br>
-          Our process typically involves meeting with your team to learn more about your needs,
-          products, and industry. We then formulate a plan to select the appropriate technologies,
-          software architects, and quality assurance team to bring your vision to life. A custom
-          solution is then created to fit your specific needs.
-        </h3>
-      </div>
-      <div class="pt-5">
-        <button class="btn cta-button-primary">Speak to an expert</button>
-      </div>
-    </div> -->
-  </div>
-
-
-
-  <!--- Services. --->
-  <div
-    id="services"
-    class="bg-color-tertiary py-4"
-  >
-    <div class="d-flex align-items-center flex-column">
-      <div
-        class="w-100"
-        data-aos="fade-right"
-        data-aos-offset="200"
-      >
-        <h1 class="text-center font-size-4">Services</h1>
-      </div>
-      <div
-        class="services__cards d-flex justify-content-center m-0 pb-10"
-      >
-        {% for service in site.data.services %}
-          <div
-            class="services__card bg-color-octonary ml-3 mr-3 mb-5 box-shadow"
-            data-aos="fade-right"
-            data-aos-offset="200"
-          >
-            <div class="card-body">
-              <img
-                src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.png"
-                class="mx-auto d-block w-75 max-width-13rem"
-              >
-              <h2 class="services__card-title card-title text-center">{{ service.name }}</h2>
-              <h3 class="font-weight-lighter">
-                {{ service.point }}
-              </h3>
-              <ul>
-              {% for point in service.points %}
-                <li class="card-text"><h3 class="font-weight-lighter">{{ point }}</h3></li>
-              {% endfor %}
-              </ul>
-            </div>
-          </div>
-        {% endfor %}
       </div>
     </div>
   </div>
