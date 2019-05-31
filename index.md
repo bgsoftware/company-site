@@ -407,65 +407,6 @@ title: Home
       </div>
     </div>
   </div>
-
-
-
-  <!--- Let's Talk Software. --->
-  <div
-    id="lets-talk-software"
-    class="bg-color-primary"
-  >
-    <div class="w-100">
-      <h1
-        class="text-center color-tertiary font-size-4"
-        data-aos="fade-right"
-        data-aos-offset="100"
-      >Let's Talk Software</h1>
-    </div>
-
-    <div class="w-75 mx-auto d-flex flex-column align-items-center pb-8">
-      <img
-        id="robin-image"
-        class="text-center w-15rem"
-        src="{{site.baseurl}}/assets/images/BG/robin.jpg"
-        data-aos="fade-right"
-        data-aos-offset="100"
-      >
-      <h1
-        class="lets-talk-software__name mb-0 pt-2 color-tertiary font-weight-lighter text-center font-size-3"
-        data-aos="fade-right"
-        data-aos-offset="100"
-      >Robin Wells</h1>
-      <h2
-        class="lets-talk-software__position color-tertiary font-weight-lighter font-italic text-center font-size-2"
-        data-aos="fade-right"
-        data-aos-offset="100"
-      >Chief Executive Officer</h2>
-
-      <h2
-        class="lets-talk-software__quote pt-4 text-center font-italic color-tertiary font-weight-lighter"
-        data-aos="fade-up"
-        data-aos-offset="100"
-      >
-        “For me and my team, it’s all about connecting with clients on a one-on-one level, getting
-        to know their needs and ensuring they receive the highest-quality support and products.”
-      </h2>
-
-      <div class="pt-5" data-aos="fade-up">
-        <button class="btn cta-button-primary">Ready to chat?</button>
-      </div>
-
-    </div>
-
-    <div class="d-flex justify-content-center" data-aos="fade-up">
-      <a id="scroll-up-button" class="btn">
-        <img src="{{site.baseurl}}/assets/images/misc/up_chevron_e.png" class="w-3rem scroll-up-button">
-      </a>
-    </div>
-  </div>
-
-
-
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/scrollAnimate.js"></script>
