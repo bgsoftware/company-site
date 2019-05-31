@@ -21,7 +21,8 @@
   @include font-size--lg();
   @include survey--lg();
   @include about-us--lg();
-  @include capabilities-and-clients__lg();
+  @include capabilities-and-clients--lg();
+  @include footer--lg();
 }
 
 /* Extra large screen size (lg) */
@@ -29,4 +30,5 @@
   @include about-us--xl();
   @include font-size--xl();
   @include survey--xl();
+  @include footer--xl();
 }
