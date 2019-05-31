@@ -1,8 +1,12 @@
 - imagePath: /assets/images/socialMedia/flogo-HexRBG-Wht-72.png
   link     : https://www.facebook.com/BGSoftwareInc
+  class    : fa-facebook-square
 - imagePath: /assets/images/socialMedia/twitter_logo.png
   link     : https://twitter.com/BGSoftwareInc
+  class    : fa-twitter-square
 - imagePath: /assets/images/socialMedia/In-White-75px-TM.png
   link     : https://www.linkedin.com/company/bgsoftware1/about/
+  class    : fa-linkedin-square
 - imagePath: /assets/images/socialMedia/youtube_social_squircle_white.png
   link     : https://www.youtube.com/channel/UC9pYdScxIwmjlVJ8dL_8mtw
+  class    : fa-youtube-square
