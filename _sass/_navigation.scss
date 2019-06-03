@@ -1,11 +1,26 @@
-$nav-link-transition-speed: .25s; /* Speed for nav link border animation. */
+$nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
 
 #navigation-bar {
   position: fixed;
   top: 0;
   width: 100%;
   transition: top .3s;
+  padding-left: .25rem;
+  padding-right: .25rem;
 }
+
+@mixin navigation-bar--md() {
+  #navigation-bar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.navigation-bar__icon {
+  -webkit-transition: color $nav-link-transition-speed;
+  transition: color $nav-link-transition-speed;
+}
+
+.navigation-bar__icon:hover { color: $light-grey; }
 
 .nav-link {
   color: $primary-color !important;
@@ -17,7 +32,10 @@ $nav-link-transition-speed: .25s; /* Speed for nav link border animation. */
           transition: border-color $nav-link-transition-speed linear;
 }
 
-.nav-link:hover { border-color: $tertiary-color }
+.nav-link:hover {
+  color: $light-grey !important;
+  border-color: $light-grey;
+}
 
 .navbar-nav {
   .nav-link.active {
