@@ -408,5 +408,3 @@ title: Home
     </div>
   </div>
 </div>
-
-<script src="{{ site.baseurl }}/assets/js/scrollAnimate.js"></script>

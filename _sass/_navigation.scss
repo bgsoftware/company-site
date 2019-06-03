@@ -1,10 +1,8 @@
 $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
 
 #navigation-bar {
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
-  transition: top .3s;
   padding-left: .25rem;
   padding-right: .25rem;
 }
@@ -44,9 +42,43 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
   }
 }
 
-.sticky-top {
-  position: -webkit-sticky;
-  position: sticky;
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
   top: 0;
-  z-index: 1020;
+  background-color: $primary-color;
+  opacity: 0.95;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: $white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
