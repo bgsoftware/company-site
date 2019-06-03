@@ -16,12 +16,16 @@
 
 .footer__copyright, .footer__social-media { justify-content: center; }
 
-.footer__icon {
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
+.footer__social-media {
+  .footer__icon {
+    @include transition(color, $footer-link-transition-speed);
+  }
 
-.footer__icon:hover { color: $light-grey; }
+  .facebook:hover { color: $facebook-blue !important; }
+  .twitter:hover  { color: $twitter-blue !important; }
+  .linkedin:hover { color: $linkedin-blue !important; }
+  .youtube:hover  { color: $youtube-red !important; }
+}
 
 @mixin footer--lg() {
   #footer {
