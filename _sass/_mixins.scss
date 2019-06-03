@@ -1,0 +1,6 @@
+@mixin transition($attribute, $time) {
+  -webkit-transition: $attribute $time linear; /* Saf3.2+, Chrome */
+     -moz-transition: $attribute $time linear; /* FF3.7+ */
+       -o-transition: $attribute $time linear; /* Opera 10.5 */
+          transition: $attribute $time linear;
+}
