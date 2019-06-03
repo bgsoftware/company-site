@@ -6,6 +6,7 @@
 
 /* Medium screen size (md) */
 @media only screen and (min-width: 768px) {
+  @include navigation-bar--md();
   @include headline--md();
   @include about-us--md();
   @include font-size--md();
