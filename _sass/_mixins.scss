@@ -1,3 +1,8 @@
+/**
+ * transition - Add smooth transition.
+ * @param attribute - The attribute to be transitioned.
+ * @param time      - The time it takes to transition.
+ */
 @mixin transition($attribute, $time) {
   -webkit-transition: $attribute $time linear; /* Saf3.2+, Chrome */
      -moz-transition: $attribute $time linear; /* FF3.7+ */
