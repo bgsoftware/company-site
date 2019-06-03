@@ -16,6 +16,7 @@
 
 /* Large screen size (lg) */
 @media only screen and (min-width: 992px) {
+  @include navigation-bar--lg();
   @include custom-software--lg();
   @include services--lg();
   @include headline--lg();
@@ -28,6 +29,7 @@
 
 /* Extra large screen size (lg) */
 @media only screen and (min-width: 1200px) {
+  @include navigation-bar--xl();
   @include about-us--xl();
   @include font-size--xl();
   @include survey--xl();

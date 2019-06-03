@@ -7,68 +7,87 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
   padding-right: .25rem;
 }
 
+.navigation-bar__bg-logo { width: 15rem; }
+
 @mixin navigation-bar--md() {
   #navigation-bar {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
-.navigation-bar__icon {
-  -webkit-transition: color $nav-link-transition-speed;
-  transition: color $nav-link-transition-speed;
+
+@mixin navigation-bar--lg() {
+  .navigation-bar__bg-logo { width: 20rem; }
 }
 
-// .navigation-bar__icon:hover { color: $light-grey; }
+@mixin navigation-bar--xl() {
+  #navigation-bar {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.navigation-bar__icon {
+  -webkit-transition: color $nav-link-transition-speed linear;
+     -moz-transition: color $nav-link-transition-speed linear; /* FF3.7+ */
+       -o-transition: color $nav-link-transition-speed linear; /* Opera 10.5 */
+          transition: color $nav-link-transition-speed linear;
+}
+
 
 .nav-link {
-  color: $primary-color !important;
+  color: $dark-blue !important;
   border-bottom: solid $white;
 
-  -webkit-transition: border-color $nav-link-transition-speed linear; /* Saf3.2+, Chrome */
-     -moz-transition: border-color $nav-link-transition-speed linear; /* FF3.7+ */
-       -o-transition: border-color $nav-link-transition-speed linear; /* Opera 10.5 */
-          transition: border-color $nav-link-transition-speed linear;
+  -webkit-transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear; /* Saf3.2+, Chrome */
+     -moz-transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear; /* FF3.7+ */
+       -o-transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear; /* Opera 10.5 */
+          transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear;
 }
 
 .navigation-bar__link {
-  .fa-facebook:hover {
-    color: $light-grey !important;
-    border-color: $light-grey;
-  }
+  .facebook:hover { color: $facebook-blue !important; }
+  .twitter:hover  { color: $twitter-blue !important; }
+  .linkedin:hover { color: $linkedin-blue !important; }
+  .youtube:hover  { color: $youtube-red !important; }
+  .mail:hover     { color: #A9A9A9 !important; }
+}
+
+.nav-link:hover {
+  color: $light-blue !important;
+  border-color: $blue;
 }
 
 .navbar-nav {
   .nav-link.active {
-    color: $secondary-color !important;
-    border-color: $secondary-color
+    color: $blue !important;
+    border-color: $blue
   }
 }
 
 
-
-.overlay {
+.navigation-overlay {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: $primary-color;
+  background-color: $dark-blue;
   opacity: 0.95;
   overflow-x: hidden;
   transition: 0.5s;
 }
 
-.overlay-content {
+.navigation-overlay__content {
   position: relative;
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
-.overlay a {
-  padding: 8px;
+.navigation-overlay a {
+  padding: 1rem;
   text-decoration: none;
   font-size: 1.25rem;
   color: $white;
@@ -76,13 +95,15 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
+.navigation-overlay a:hover, .navigation-overlay a:focus { color: #f1f1f1; }
 
-.overlay .closebtn {
+.navigation-overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.navigation-overlay__text:hover {
+  color: $light-grey !important;
 }
