@@ -17,3 +17,9 @@ $facebook-blue: #4267b2;
 $twitter-blue: #38A1F3;
 $linkedin-blue: #0077B5;
 $youtube-red: #ED3833;
+
+ /* Speed for link color transitions in navbar. */
+$nav-link-transition-speed: .5s;
+
+/* Speed for link color transitions in footer. */
+$footer-link-transition-speed: .5s;
