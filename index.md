@@ -175,7 +175,7 @@ title: Home
         <img
           id="why-bg-software__team-photo"
           class="max-width-50rem w-100 h-auto"
-          src="{{site.baseurl}}/assets/images/BG/teamPhoto.jpg"
+          src="{{site.baseurl}}/assets/images/BG/team_photo.jpg"
         >
       </div>
       <div
