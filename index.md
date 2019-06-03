@@ -55,7 +55,7 @@ title: Home
 
 
   <!---  Custom Software. --->
-  <div id="custom-software" class="bg-color-secondary py-5">
+  <div id="custom-software" class="bg-color-blue py-5">
     <div
       class="opener w-100"
       data-aos="fade-right"
@@ -113,7 +113,7 @@ title: Home
 
 
   <!--- Survey. --->
-  <div id="survey" class="py-4 bg-color-secondary">
+  <div id="survey" class="py-4 bg-color-blue">
     <div class="survey__groups d-flex justify-content-center align-items-center color-white mx-auto">
       <div class="survey__group d-flex">
         <div
@@ -267,7 +267,7 @@ title: Home
 
   <div id="capabilities" class="bg-color-white pb-4">
     <div class="d-flex flex-column align-items-center">
-      <div class="bg-color-secondary w-100 py-2">
+      <div class="bg-color-blue w-100 py-2">
         <h1
           class="text-center color-white"
           data-aos="fade-right"
@@ -354,7 +354,7 @@ title: Home
 
   <div id="clients" class="pb-4">
     <div class="d-flex flex-column align-items-center">
-      <div class="bg-color-secondary w-100 py-2">
+      <div class="bg-color-blue w-100 py-2">
         <h1
           class="text-center color-white"
           data-aos="fade-right"
