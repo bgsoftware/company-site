@@ -1,8 +1,4 @@
-- name: About Us
-  link: "#about-us"
-- name: Services
-  link: "#services"
-- name: Capabilities
-  link: "#capabilities"
-- name: Clients
-  link: "#clients"
+- name: Home
+  link: "./"
+- name: Blog
+  link: ""
