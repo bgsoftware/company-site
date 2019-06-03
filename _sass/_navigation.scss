@@ -1,5 +1,3 @@
-$nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
-
 #navigation-bar {
   position: relative;
   width: 100%;
@@ -28,10 +26,7 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
 }
 
 .navigation-bar__icon {
-  -webkit-transition: color $nav-link-transition-speed linear;
-     -moz-transition: color $nav-link-transition-speed linear; /* FF3.7+ */
-       -o-transition: color $nav-link-transition-speed linear; /* Opera 10.5 */
-          transition: color $nav-link-transition-speed linear;
+  @include transition(color, $nav-link-transition-speed);
 }
 
 
