@@ -18,7 +18,7 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
   transition: color $nav-link-transition-speed;
 }
 
-.navigation-bar__icon:hover { color: $light-grey; }
+// .navigation-bar__icon:hover { color: $light-grey; }
 
 .nav-link {
   color: $primary-color !important;
@@ -30,9 +30,11 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
           transition: border-color $nav-link-transition-speed linear;
 }
 
-.nav-link:hover {
-  color: $light-grey !important;
-  border-color: $light-grey;
+.navigation-bar__link {
+  .fa-facebook:hover {
+    color: $light-grey !important;
+    border-color: $light-grey;
+  }
 }
 
 .navbar-nav {
@@ -41,6 +43,8 @@ $nav-link-transition-speed: .5s; /* Speed for nav link border animation. */
     border-color: $secondary-color
   }
 }
+
+
 
 .overlay {
   height: 100%;

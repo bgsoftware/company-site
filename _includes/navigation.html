@@ -16,14 +16,14 @@
       {% endfor %}
       {% for app in site.data.socialMedia %}
       <li class="nav-item px-2 d-flex align-items-center">
-        <a href="{{ site.baseurl }}{{ app.link }}" target="_blank" class="px-1">
-          <i class="navigation-bar__icon fa {{ app.class }} color-primary font-size-2" aria-hidden="true"></i>
+        <a href="{{ site.baseurl }}{{ app.link }}" target="_blank" class="px-1 navigation-bar__link">
+          <i class="navigation-bar__icon fa {{ app.img-class }} color-dark-blue font-size-2" aria-hidden="true"></i>
         </a>
       </li>
       {% endfor %}
       <li class="nav-item px-2 d-flex align-items-center">
         <a href="mailto:customsoftware@benningfieldgroup.com" class="px-1">
-          <i class="navigation-bar__icon fa fa-envelope color-primary font-size-2" aria-hidden="true"></i>
+          <i class="navigation-bar__icon fa fa-envelope color-dark-grey font-size-2" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
@@ -58,7 +58,7 @@
     <div class="d-flex justify-content-between w-50 mx-auto pt-3">
       {% for app in site.data.socialMedia %}
       <a href="{{ site.baseurl }}{{ app.link }}" target="_blank" class="px-1">
-        <i class="navigation-bar__icon fa {{ app.class }} color-white font-size-2"></i>
+        <i class="navigation-bar__icon fa {{ app.img-class }} color-white font-size-2"></i>
       </a>
       {% endfor %}
       <a href="mailto:customsoftware@benningfieldgroup.com" class="px-1">
