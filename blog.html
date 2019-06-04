@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="container-fluid px-0 overflow-hidden">
+  <h5>BLOG POSTS</h5>
+</div>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.subtitle }}</p>
+    </li>
+  {% endfor %}
+</ul>
