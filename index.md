@@ -39,14 +39,10 @@ title: Home
         data-aos-duration="3000"
       >
         <div class="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/nDOKwLf2flg"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <video width="100%" height="auto" controls>
+            <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
