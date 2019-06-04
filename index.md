@@ -359,7 +359,7 @@ title: Home
           class="text-center color-white"
           data-aos="fade-right"
           data-aos-offset="200"
-        >Clients</h1>
+        >Current Clients</h1>
       </div>
       <div
         class="clients__carousel carousel slide py-4"
@@ -386,24 +386,6 @@ title: Home
             {% endif %}
           {% endfor %}
         </div>
-        <a
-          class="carousel-control-prev"
-          href=".clients__carousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href=".clients__carousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
   </div>
