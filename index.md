@@ -164,7 +164,7 @@ title: Home
 
 
   <!--- About Us. --->
-  <div id="about-us" class="pb-2">
+  <div id="about-us" class="pb-4">
     <!--- Why BG Software? --->
     <div id="why-bg-software" class="d-flex about-us__content">
       <div
