@@ -143,11 +143,16 @@
 .about-us__content {
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .about-us__image-container { display: none; }
 
-.about-us__text { padding: 1.5rem; }
+.about-us__text {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 
 @mixin about-us--md() {
   .about-us__content {
@@ -156,9 +161,13 @@
   }
 
   .about-us__image-container {
+    padding-top: 1.5rem;
     display: block;
     margin: auto;
+    text-align: center;
   }
+
+  #lets-talk-software__robin-image { width: 50%; }
 }
 
 @mixin about-us--lg() {
@@ -177,6 +186,10 @@
     width: 48%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  #lets-talk-software__robin-image {
+    width: 100%;
   }
 }
 
