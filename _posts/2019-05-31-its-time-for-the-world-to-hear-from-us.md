@@ -1,7 +1,9 @@
 ---
-layout: default
-title: It's Time For The World To Hear From Us
-subtitle: How often does one get to take an existing company and treat it like a startup? We're having a blast!
+layout   : default
+title    : It's Time For The World To Hear From Us
+subtitle : How often does one get to take an existing company and treat it like a
+           startup? We're having a blast!
+image    : 2019-05-31-its-time-for-the-world-to-hear-from-us.jpg
 ---
 
 A banana is an edible fruit – botanically a berry – produced by several kinds
