@@ -15,12 +15,14 @@
     <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/aos.js' | prepend: site.baseurl}}"></script>
     <script src="https://snatchbot.me/sdk/webchat.min.js"></script>
-
     <script>AOS.init();</script>
+
     {% include navigation.html %}
     <div style="min-height: 75vh;">
       {{ content }}
     </div>
     {% include footer.html %}
+
+    <script id="dsq-count-scr" src="//bg-software-test.disqus.com/count.js" async></script>
   </body>
 </html>
