@@ -1,4 +1,6 @@
 title: Benningfield Group Software
+collections:
+  authors:
 sass:
   load_paths:
     - _sass
