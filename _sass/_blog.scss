@@ -1,3 +1,30 @@
-.blog-card__title {
-  color: $dark-blue !important;
+.blog-library__card__title { @include transition(color, $link-transition-speed); }
+.blog-library__card__title:hover { color: $grey; }
+
+.blog-library__card__library-link { @include transition(color, $link-transition-speed); }
+.blog-library__card__library-link:hover { color: $dark-blue; }
+
+.blog-library__card__image { @include transition(filter, $image-transition-speed); }
+.blog-library__card__image:hover { filter: brightness(66%); }
+
+.blog-library__card { flex-direction: column; }
+
+.blog-library {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@mixin blog-card--md() {
+  .blog-library {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .blog-library__card {
+    flex-direction: row;
+  }
+
+  .blog-library__card__text {
+    padding-left: 2rem;
+  }
 }

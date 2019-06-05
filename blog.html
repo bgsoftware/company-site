@@ -3,18 +3,28 @@ layout: default
 title: Blog
 ---
 
-<div class="container-fluid px-5 overflow-hidden">
-  <h5>BLOG POSTS</h5>
+<div class="blog-library container-fluid overflow-hidden">
   {% for post in site.posts %}
-    <div>
-      <img src="{{site.baseurl}}/assets/images/blog/{{ post.image }}" width="100%">
-    </div>
-    <div class="color-dark-blue">
-      <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      <p>{{ post.subtitle }}</p>
-      <p>{{ post.date | date: '%B %d, %Y' }}</p>
+    <div class="blog-library__card d-flex">
+      <div>
+        <a href="{{ post.url }}">
+          <img
+            src="{{site.baseurl}}/assets/images/blog/{{ post.image }}"
+            class="blog-library__card__image"
+            width="100%"
+          >
+        </a>
+      </div>
+      <div class="blog-library__card__text py-3">
+        <a href="/blog" class="text-decoration-none-important">
+          <h5 class="blog-library__card__library-link color-teal font-weight-lighter">THE BG BLOG LIBRARY</h5>
+        </a>
+        <a href="{{ post.url }}" class="px-0 text-decoration-none-important">
+          <h2 class="blog-library__card__title color-dark-blue">{{ post.title }}</h2>
+        </a>
+        <p class="color-dark-blue font-size-md line-height-2">{{ post.subtitle }}</p>
+        <p class="color-light-grey border-top font-size-sm text-right pt-2">{{ post.date | date: '%B %d, %Y' }}</p>
+      </div>
     </div>
   {% endfor %}
 </div>
