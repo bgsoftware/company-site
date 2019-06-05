@@ -14,7 +14,7 @@
   padding-right: 1.5rem;
 }
 
-@mixin blog-card--md() {
+@mixin blog-library--md() {
   .blog-library {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -27,4 +27,8 @@
   .blog-library__card__text {
     padding-left: 2rem;
   }
+}
+
+@mixin blog-library--lg() {
+
 }

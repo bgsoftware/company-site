@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<div class="blog-library container-fluid overflow-hidden">
+<div class="blog-library container-fluid overflow-hidden pt-6">
   {% for post in site.posts %}
     <div class="blog-library__card d-flex">
       <div>
@@ -16,7 +16,7 @@ title: Blog
         </a>
       </div>
       <div class="blog-library__card__text py-3">
-        <a href="/blog" class="text-decoration-none-important">
+        <a href="/blog-library" class="text-decoration-none-important">
           <h5 class="blog-library__card__library-link color-teal font-weight-lighter">THE BG BLOG LIBRARY</h5>
         </a>
         <a href="{{ post.url }}" class="px-0 text-decoration-none-important">
