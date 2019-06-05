@@ -26,6 +26,7 @@
   @include about-us--lg();
   @include capabilities-and-clients--lg();
   @include footer--lg();
+  @include blog-library--lg();
 }
 
 /* Extra large screen size (lg) */
@@ -35,4 +36,5 @@
   @include font-size--xl();
   @include survey--xl();
   @include footer--xl();
+  @include blog-library--xl();
 }
