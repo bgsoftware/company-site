@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="blog-post mt-6 d-flex flex-column justify-content-center font-size-md">
+  <div class="blog-post__image-container pb-5">
+    <img src="{{site.baseurl}}/assets/images/blog/{{ page.image }}" class="w-100">
+  </div>
+  <h1 class="border-bottom border-light pb-2">{{ page.title }}</h1>
+  {{ page.author }}
+  {% assign author = site.authors | where: 'name', page.author | first %}
+  {{ author | jsonify}}
+  <span>
+  {% if author %}
+    - <a href="{{ author.url }}">{{ author.name }}</a>
+  {% endif %}
+  </span>
+  {{ content }}
+</div>
