@@ -1,8 +1,7 @@
 ---
 layout   : default
 title    : It's Time For The World To Hear From Us
-subtitle : How often does one get to take an existing company and treat it like a
-           startup? We're having a blast!
+subtitle : How often does one get to take an existing company and treat it like a startup?
 image    : 2019-05-31-its-time-for-the-world-to-hear-from-us.jpg
 ---
 
