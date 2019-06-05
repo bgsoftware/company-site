@@ -1,18 +1,60 @@
 ---
 layout: default
+comments: true
 ---
-<div class="blog-post mt-6 d-flex flex-column justify-content-center font-size-md">
+<div class="blog-post mt-6 d-flex flex-column justify-content-center font-size-md pb-6">
   <div class="blog-post__image-container pb-5">
     <img src="{{site.baseurl}}/assets/images/blog/{{ page.image }}" class="w-100">
   </div>
-  <h1 class="border-bottom border-light pb-2">{{ page.title }}</h1>
-  {{ page.author }}
-  {% assign author = site.authors | where: 'name', page.author | first %}
-  {{ author | jsonify}}
-  <span>
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-  </span>
-  {{ content }}
+  <div class="blog-post__text mx-auto">
+    <h1 class="border-bottom border-light pb-2">{{ page.title }}</h1>
+    {% assign author = site.authors | where: 'name', page.author | first %}
+    <span class="color-light-grey font-size-sm text-center">
+    {% if author %}
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <a class="font-size-sm color-light-grey text-decoration-none-important hover-color-teal" href="{{ author.url }}">{{ author.name }}</a>
+      &nbsp;-&nbsp;
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      {{ page.date | date: '%B %d, %Y'}}
+      &nbsp;-&nbsp;
+      <i class="fa fa-folder-o" aria-hidden="true"></i>
+      <a href="/blog-library" class="text-decoration-none-important color-light-grey hover-color-teal">
+        The BG Blog Library
+      </a>
+      &nbsp;-&nbsp;
+      <i class="fa fa-comment-o" aria-hidden="true"></i>
+      6 Comments
+    {% endif %}
+    </span>
+    <div class="px-2 line-height-1pt75 pt-8">
+      <div class="pb-5">
+        {{ content }}
+      </div>
+      <div class="font-weight-bold pb-3">{{ author.content }}</div>
+
+      <a href="mailto:{{ author.email }}" class="pt-4 color-dark-blue hover-color-teal text-decoration-none-important">john.scott@benningfieldgroup.com</a>
+    </div>
+  </div>
+    {% if page.comments %}
+      <div id="disqus_thread"></div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://bg-software-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% endif %}
 </div>
