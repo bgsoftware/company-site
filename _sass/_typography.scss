@@ -33,7 +33,7 @@ $font-size-xl: 1.5;
 @mixin font-size--sm() {}
 
 @mixin font-size--md() {
-  .font-size-sm { font-size: #{$font-size-sm + .15}rem !important; }
+  .font-size-sm { font-size: #{$font-size-sm + .1}rem !important; }
   .font-size-md { font-size: #{$font-size-md + .25}rem !important; }
 }
 
