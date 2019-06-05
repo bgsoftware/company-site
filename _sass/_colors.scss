@@ -16,3 +16,12 @@
 .color-lighter-blue { color: $lighter-blue }
 .color-light-grey { color: $light-grey }
 .color-teal { color: $teal; }
+
+.hover-color-grey { @include transition(color, $link-transition-speed); }
+.hover-color-grey:hover { color: $grey; }
+
+.hover-color-dark-blue { @include transition(color, $link-transition-speed); }
+.hover-color-dark-blue:hover {color: $dark-blue; }
+
+.hover-color-teal { @include transition(color, $link-transition-speed); }
+.hover-color-teal:hover {color: $teal; }
