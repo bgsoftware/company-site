@@ -1,9 +1,3 @@
-.blog-library__card__title { @include transition(color, $link-transition-speed); }
-.blog-library__card__title:hover { color: $grey; }
-
-.blog-library__card__library-link { @include transition(color, $link-transition-speed); }
-.blog-library__card__library-link:hover { color: $dark-blue; }
-
 .blog-library__card__image { @include transition(filter, $image-transition-speed); }
 .blog-library__card__image:hover { filter: brightness(66%); }
 
