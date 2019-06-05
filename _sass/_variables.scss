@@ -4,6 +4,7 @@ $dark-blue: #1b283d;
 $blue: #3d5a8a;
 $light-blue: #d1d9ed;
 $lighter-blue: #ebeef7;
+$teal: #13aff0;
 $dark-grey: #414957;
 $grey: #67748a;
 $light-grey: #ababab;
@@ -24,3 +25,9 @@ $nav-link-transition-speed: .5s;
 
 /* Speed for link color transitions in footer. */
 $footer-link-transition-speed: .5s;
+
+/* Speed for general link color transitions. */
+$link-transition-speed: .25s;
+
+/* Speed for darkening of link image transitions. */
+$image-transition-speed: .25s;
