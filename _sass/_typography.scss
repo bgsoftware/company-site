@@ -6,6 +6,8 @@ body {
   .font-size-#{$i} { font-size: #{$i}rem; }
 }
 
+.text-decoration-none-important { text-decoration: none !important; }
+
 .font-weight-lighter { font-weight: lighter; }
 
 .line-height-1 { line-height: 1; }
