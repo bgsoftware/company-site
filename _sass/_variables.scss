@@ -8,6 +8,7 @@ $teal: #13aff0;
 $dark-grey: #414957;
 $grey: #67748a;
 $light-grey: #ababab;
+$lightest-grey: #f1f1f1;
 
 
 $body-bg: $white;
@@ -31,3 +32,6 @@ $link-transition-speed: .25s;
 
 /* Speed for darkening of link image transitions. */
 $image-transition-speed: .25s;
+
+/* The padding sides size for mobile views. */
+$px-size-mobile: 1.5rem;
