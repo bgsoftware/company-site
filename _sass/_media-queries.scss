@@ -13,6 +13,7 @@
   @include survey--md();
   @include capabilities-and-clients__md();
   @include blog-library--md();
+  @include blog-post--md();
 }
 
 /* Large screen size (lg) */
@@ -37,4 +38,5 @@
   @include survey--xl();
   @include footer--xl();
   @include blog-library--xl();
+  @include blog-post--xl();
 }
