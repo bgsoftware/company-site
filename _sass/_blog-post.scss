@@ -2,3 +2,19 @@
   padding-left: $px-size-mobile;
   padding-right: $px-size-mobile;
 }
+
+.blog-post__content { max-width: 40rem; }
+
+@mixin blog-post--md() {
+  .blog-post {
+    padding-left: $px-size-md;
+    padding-right: $px-size-md;
+  }
+}
+
+@mixin blog-post--xl() {
+  .blog-post {
+    padding-left: $px-size-xl;
+    padding-right: $px-size-xl;
+  }
+}
