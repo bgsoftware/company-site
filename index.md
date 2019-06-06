@@ -6,7 +6,6 @@ title: Home
 
 
 <div class="container-fluid px-0 overflow-hidden">
-
   <div
     id="headline"
     class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
