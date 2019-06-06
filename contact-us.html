@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="contact-us pt-10">
+  <div class="bg-color-blue w-100 text-center">
+    <h1 class="color-white">How can we help?</h1>
+  </div>
+  <div class="contact-us__content d-flex">
+    <div class="contact-us__image-container">
+    </div>
+    <form
+      class="contact-us__form d-flex justify-content-center flex-column"
+      action="https://formspree.io/bobby@benningfieldgroup.com"
+      method="POST"
+    >
+      <div class="contact-us__field">
+      <label for="name">Name:&nbsp;<span class="text-danger">*</span></label>
+        <input
+          name="name"
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter name"
+          required
+        >
+      </div>
+      <div class="contact-us__field">
+        <label for="email">
+          Email Address:&nbsp;<span class="text-danger">*</span>
+        </label>
+        <input
+          type="email"
+          class="form-control w-100"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+          required
+        >
+      </div>
+      <div class="contact-us__field">
+        <label for="company-name">
+          Company Name:&nbsp;<span class="text-danger">*</span>
+        </label>
+        <input
+          name="company-name"
+          type="text"
+          class="form-control w-100"
+          id="company-name"
+          placeholder="Enter company name"
+          required
+        >
+      </div>
+      <div class="contact-us__field">
+        <label for="project-details">Tell us about your project:</label>
+        <textarea
+          name="project-details"
+          class="form-control"
+          id="project-details"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="contact-us-__submit-btn-container">
+        <button type="submit" class="btn btn-primary hover-bg-color-blue">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
