@@ -25,3 +25,6 @@
 
 .hover-color-teal { @include transition(color, $link-transition-speed); }
 .hover-color-teal:hover {color: $teal; }
+
+.hover-color-dark-blue { @include transition(color, $link-transition-speed); }
+.hover-color-dark-blue:hover {color: $dark-blue; }
