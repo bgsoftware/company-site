@@ -4,7 +4,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{'/assets/webchat.css' | prepend: site.baseurl}}">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{'/assets/fonts/font-awesome/css/font-awesome.min.css' | prepend: site.baseurl}}" type="text/css">
     <link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
     <link href="{{'/assets/vendor/aos.css' | prepend: site.baseurl}}" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
@@ -14,15 +14,13 @@
     <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/aos.js' | prepend: site.baseurl}}"></script>
-    <script src="https://snatchbot.me/sdk/webchat.min.js"></script>
     <script>AOS.init();</script>
-
     {% include navigation.html %}
     <div style="min-height: 75vh;">
       {{ content }}
+      {% include scroll-top.html %}
     </div>
     {% include footer.html %}
-
     <script id="dsq-count-scr" src="//bg-software-test.disqus.com/count.js" async></script>
   </body>
 </html>

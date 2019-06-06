@@ -1,0 +1,25 @@
+#scroll-top {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $dark-blue;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: .75rem;
+  background: $blue;
+  background: rgba($blue, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility $image-transition-speed, opacity $image-transition-speed, background $image-transition-speed linear; /* Saf3.2+, Chrome */
+     -moz-transition: visibility $image-transition-speed, opacity $image-transition-speed, background $image-transition-speed linear; /* FF3.7+ */
+       -o-transition: visibility $image-transition-speed, opacity $image-transition-speed, background $image-transition-speed linear; /* Opera 10.5 */
+          transition: visibility $image-transition-speed, opacity $image-transition-speed, background $image-transition-speed linear;
+}
+
+#scroll-top:hover{
+  background: $dark-blue;
+  background: rgba($dark-blue, 0.5);
+}
