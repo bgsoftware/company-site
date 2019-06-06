@@ -22,15 +22,6 @@ title: Home
         <p class="text-right font-weight-light color-white font-size-md">
           BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
         </p>
-        <div
-          class="px-1"
-          data-aos="fade-right"
-          data-aos-duration="3000"
-        >
-          <button class="btn cta-button-tertiary font-weight-light">
-            How can we help you?
-          </button>
-        </div>
       </div>
       <div
         class="headline__right video-wrap"
