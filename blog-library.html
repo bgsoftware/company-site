@@ -3,29 +3,44 @@ layout: default
 title: Blog
 ---
 
-<div class="blog-library pb-6 mt-6">
+<div class="blog-library my-8">
   {% for post in site.posts %}
-    <div class="blog-library__card d-flex border-bottom border-light">
+    <div class="blog-library__card d-flex border-bottom border-light mt-4">
       <div class="bg-library__card__image-container">
         <a href="{{ post.url }}">
           <img
             src="{{site.baseurl}}/assets/images/blog/{{ post.image }}"
-            class="blog-library__card__image pb-5"
+            class="blog-library__card__image pb-4"
             width="100%"
           >
         </a>
       </div>
       <div class="blog-library__card__text py-3">
         <div>
-          <a href="/blog-library" class="text-decoration-none-important d-inline-block">
+          <a
+            href="/blog-library"
+            class="text-decoration-none-important d-inline-block"
+          >
             <h5 class="hover-color-dark-blue color-teal font-weight-lighter">THE BG BLOG LIBRARY</h5>
           </a>
         </div>
-        <a href="{{ post.url }}" class="px-0 text-decoration-none-important d-inline-block">
+        <a
+          href="{{ post.url }}"
+          class="px-0 text-decoration-none-important d-inline-block"
+        >
           <h2 class="hover-color-grey color-dark-blue">{{ post.title }}</h2>
         </a>
         <p class="color-dark-blue font-size-md line-height-2">{{ post.subtitle }}</p>
-        <p class="color-light-grey border-top border-light font-size-sm text-right pt-2">{{ post.date | date: '%B %d, %Y' }}</p>
+        <p class="d-flex justify-content-between color-light-grey border-top border-light font-size-sm text-right pt-2">
+          <span>
+          <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <a
+              href="{{ post.url }}#disqus_thread"
+              class="text-decoration-none-important color-light-grey text-capitalize hover-color-dark-blue"
+            >0 Comments</a>
+          </span>
+          {{ post.date | date: '%B %d, %Y' }}
+        </p>
       </div>
     </div>
   {% endfor %}
