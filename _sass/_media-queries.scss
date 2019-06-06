@@ -14,6 +14,7 @@
   @include capabilities-and-clients__md();
   @include blog-library--md();
   @include blog-post--md();
+  @include contact-us--md();
 }
 
 /* Large screen size (lg) */
@@ -33,10 +34,12 @@
 /* Extra large screen size (lg) */
 @media only screen and (min-width: 1200px) {
   @include navigation-bar--xl();
+  @include headline--xl();
   @include about-us--xl();
   @include font-size--xl();
   @include survey--xl();
   @include footer--xl();
   @include blog-library--xl();
   @include blog-post--xl();
+  @include contact-us--xl();
 }
