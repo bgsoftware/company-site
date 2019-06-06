@@ -26,13 +26,33 @@ comments: true
       <a href="{{ post.url }}#disqus_thread" class="text-decoration-none-important color-light-grey text-capitalize hover-color-teal"></a>
     {% endif %}
     </span>
-    <div class="px-2 line-height-1pt75 pt-8">
+    <div class="px-2 line-height-1pt75 py-8">
       <div class="pb-5">
         {{ content }}
       </div>
       <div class="font-weight-bold pb-3">{{ author.content }}</div>
 
       <a href="mailto:{{ author.email }}" class="pt-4 color-dark-blue hover-color-teal text-decoration-none-important">john.scott@benningfieldgroup.com</a>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="w-40 text-left">
+        {% if page.previous.url %}
+          <a class="previous next color-teal hover-color-dark-blue" href="{{page.previous.url}}">
+            Previous Post
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+          </a>
+          <h5>{{ page.previous.title }}</h5>
+        {% endif %}
+      </div>
+      <div class="w-40 text-right">
+        {% if page.next.url %}
+          <a class="next color-teal hover-color-dark-blue" href="{{page.next.url}}">
+            Next Post
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </a>
+          <h5>{{ page.next.title }}</h5>
+        {% endif %}
+      </div>
     </div>
     {% if page.comments %}
       <div id="disqus_thread" class="py-8"></div>
