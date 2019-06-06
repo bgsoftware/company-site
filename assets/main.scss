@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "bootstrap/bootstrap";
 @import "variables";
+@import "bootstrap/bootstrap";
 @import "mixins";
 @import "colors";
 @import "typography";
@@ -14,6 +14,7 @@
 @import "homepage";
 @import "blog-library";
 @import "blog-post";
+@import "contact-us";
 @import "media-queries";
 
 @-ms-viewport { width: device-width; }
