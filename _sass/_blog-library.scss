@@ -14,13 +14,13 @@
     padding-right: 3%;
   }
 
-  .bg-library__card__image-container { width: 50%; }
+  .bg-library__card__image-container { width: 45%; }
 
-  .blog-library__card__text { width: 50%; }
+  .blog-library__card__text { width: 55%; }
 
   .blog-library__card { flex-direction: row; }
 
-  .blog-library__card__text { padding-left: 2rem; }
+  .blog-library__card__text { padding-left: 3rem; }
 }
 
 @mixin blog-library--lg() {
