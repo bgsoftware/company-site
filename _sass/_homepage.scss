@@ -28,7 +28,7 @@
   .headline__left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 45%;
     padding-right: 1rem;
     padding-bottom: 0;
@@ -43,6 +43,12 @@
   }
 
   .headline__title { font-size: 2.45rem; }
+}
+
+@mixin headline--xl() {
+  .headline__content { width: 80%; }
+
+  .headline__left, .headline__right { width: 50%; }
 }
 /* End of Headline. */
 
