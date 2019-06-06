@@ -182,9 +182,11 @@ title: Home
           technologies, software architects, and quality assurance team to bring your vision
           to life. A custom solution is then created to fit your specific needs.
         </p>
-        <button class="btn cta-button-tertiary font-weight-light">
-          Speak to an expert
-        </button>
+        <a href="/contact-us.html">
+          <button class="btn cta-button-tertiary font-weight-light">
+            Speak to an expert
+          </button>
+        </a>
       </div>
     </div>
     <!--- Let's talk Software. --->
@@ -202,7 +204,9 @@ title: Home
           getting to know their needs and ensuring they receive the highest-quality support
           and products.”
         </p>
-        <button class="btn cta-button-tertiary font-weight-light">Ready to chat?</button>
+        <a href="/contact-us.html">
+          <button class="btn cta-button-tertiary font-weight-light">Ready to chat?</button>
+        </a>
       </div>
       <div
         class="about-us__image-container about-us__side text-align-left"
