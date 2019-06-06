@@ -3,7 +3,7 @@
   padding-right: $px-size-mobile;
 }
 
-.blog-post__content { max-width: 40rem; }
+.blog-post__text { max-width: 50rem; }
 
 @mixin blog-post--md() {
   .blog-post {
