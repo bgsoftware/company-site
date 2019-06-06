@@ -32,12 +32,18 @@ comments: true
       </div>
       <div class="font-weight-bold pb-3">{{ author.content }}</div>
 
-      <a href="mailto:{{ author.email }}" class="pt-4 color-dark-blue hover-color-teal text-decoration-none-important">john.scott@benningfieldgroup.com</a>
+      <a
+        href="mailto:{{ author.email }}"
+        class="pt-4 color-teal hover-color-dark-blue text-decoration-none-important"
+      >john.scott@benningfieldgroup.com</a>
     </div>
     <div class="d-flex justify-content-between">
       <div class="w-40 text-left">
         {% if page.previous.url %}
-          <a class="previous next color-teal hover-color-dark-blue" href="{{page.previous.url}}">
+          <a
+            class="previous next color-teal hover-color-dark-blue text-decoration-none-important"
+            href="{{page.previous.url}}"
+          >
             Previous Post
             <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
           </a>
@@ -46,7 +52,10 @@ comments: true
       </div>
       <div class="w-40 text-right">
         {% if page.next.url %}
-          <a class="next color-teal hover-color-dark-blue" href="{{page.next.url}}">
+          <a
+            href="{{page.next.url}}"
+            class="next color-teal hover-color-dark-blue text-decoration-none-important"
+          >
             Next Post
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
