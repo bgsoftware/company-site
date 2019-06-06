@@ -1,0 +1,47 @@
+.contact-us {
+  padding-left: $px-size-mobile;
+  padding-right: $px-size-mobile;
+}
+
+.contact-us__content { flex-direction: column; }
+
+.contact-us__image-container { display: none; }
+
+.contact-us__field {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.contact-us-__submit-btn-container  { text-align: center; }
+
+@mixin contact-us--md() {
+  .contact-us {
+    padding-left: $px-size-md;
+    padding-right: $px-size-md;
+  }
+
+  .contact-us__content {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .contact-us__image-container {
+    display: block;
+    width: 48%;
+    background-image: url("/assets/images/misc/hero-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .contact-us__image-container, .contact-us__form { width: 48%; }
+
+  .contact-us-__submit-btn-container  { text-align: left; }
+}
+
+@mixin contact-us--xl() {
+  .contact-us {
+    padding-left: $px-size-xl;
+    padding-right: $px-size-xl;
+  }
+}
