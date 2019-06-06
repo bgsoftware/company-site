@@ -11,15 +11,15 @@ title: Home
     class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
   >
     <div class="headline__content">
-      <div class="headline__left text-right">
+      <div
+        class="headline__left text-right"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <h1 class="headline__title text-right font-italic color-white"
           >Because there's only one business like yours.
         </h1>
-        <p
-          class="text-right font-weight-light color-white font-size-md"
-          data-aos="fade-right"
-          data-aos-duration="3000"
-        >
+        <p class="text-right font-weight-light color-white font-size-md">
           BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
         </p>
         <div
