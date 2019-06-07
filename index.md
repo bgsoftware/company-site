@@ -1,5 +1,6 @@
 ---
 layout: default
+description: BG Software Homepage
 title: Home
 ---
 
@@ -78,6 +79,7 @@ title: Home
               <img
                 src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.png"
                 class="mx-auto d-block w-75 max-width-7rem pb-4"
+                alt="{{ service.name }}"
               >
               <h2 class="services__card-title card-title text-center">{{ service.name }}</h2>
               <div class="services__card-content font-size-md">
@@ -162,6 +164,7 @@ title: Home
           id="why-bg-software__team-photo"
           class="max-width-50rem w-100 h-auto"
           src="{{site.baseurl}}/assets/images/BG/team_photo.jpg"
+          alt="BG Software Team"
         >
       </div>
       <div
@@ -216,6 +219,7 @@ title: Home
         <img
           id="lets-talk-software__robin-image"
           class="max-width-40"
+          alt="Robin Benningfield, CEO"
           src="{{site.baseurl}}/assets/images/BG/robin.jpg"
           data-aos="fade-right"
           data-aos-offset="100"
@@ -276,14 +280,22 @@ title: Home
             {% if forloop.first %}
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img
+                      class="inline-block px-3 img-fluid w-10rem"
+                      src="{{ site.baseurl }}{{ imagePath }}"
+                      alt="{{ imagePath }}"
+                    >
                 {% endfor %}
               </div>
             {% endif %}
             {% if forloop.first == false %}
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img
+                      class="inline-block px-3 img-fluid w-10rem"
+                      src="{{ site.baseurl }}{{ imagePath }}"
+                      alt="{{ imagePath }}"
+                    >
                 {% endfor %}
               </div>
             {% endif %}
@@ -363,14 +375,22 @@ title: Home
             {% if forloop.first %}
               <div class="carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img
+                      class="inline-block px-3 img-fluid w-10rem"
+                      src="{{ site.baseurl }}{{ imagePath }}"
+                      alt="{{ imagePath }}"
+                    >
                 {% endfor %}
               </div>
             {% endif %}
             {% if forloop.first == false %}
               <div class="carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                    <img class="inline-block px-3 img-fluid w-10rem" src="{{ site.baseurl }}{{ imagePath }}">
+                    <img
+                      class="inline-block px-3 img-fluid w-10rem"
+                      src="{{ site.baseurl }}{{ imagePath }}"
+                      alt="{{ imagePath }}"
+                    >
                 {% endfor %}
               </div>
             {% endif %}
