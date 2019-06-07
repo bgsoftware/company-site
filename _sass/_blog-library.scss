@@ -1,11 +1,22 @@
 .blog-library__card__image { @include transition(filter, $image-transition-speed); }
 .blog-library__card__image:hover { filter: brightness(66%); }
 
-.blog-library__card { flex-direction: column; }
+.blog-library__card {
+  flex-direction: column;
+  background-color: $white;
+}
 
 .blog-library {
   padding-left: $px-size-mobile;
   padding-right: $px-size-mobile;
+  background-color: $white;
+}
+
+.blog-library__container {
+  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('./images/misc/hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @mixin blog-library--md() {
@@ -26,12 +37,6 @@
 @mixin blog-library--lg() {
   .blog-library {
     width: 75%;
-    border-right: 1px solid $lightest-grey;
-    padding-right: 2rem;
     max-width: 70rem;
   }
-}
-
-@mixin blog-library--xl() {
-  .blog-library { padding-left: 15%; }
 }
