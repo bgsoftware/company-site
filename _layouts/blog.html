@@ -52,7 +52,17 @@ comments: true
         class="pt-4 color-teal hover-color-dark-blue"
       >{{ author.email }}</a>
       <!--- End of author information. --->
+
+      <div class="pt-10">
+        <b class="font-size-xs text-uppercase">
+          Tags:
+          {% for tag in page.tags %}
+            {{ tag }}{% if forloop.last == false %},{% endif %}
+          {% endfor %}
+        </b>
+      </div>
     </div>
+
 
     <!--- Links to previous and next post. --->
     <div class="d-flex justify-content-between">
