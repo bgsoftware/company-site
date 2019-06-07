@@ -8,8 +8,10 @@ comments: true
       <img src="{{site.baseurl}}/assets/images/blog/{{ page.image }}" class="w-100">
     </div>
     <h1 class="border-bottom border-light pb-2">{{ page.title }}</h1>
-    {% assign author = site.authors | where: 'name', page.author | first %}
+
+    <!--- Article meta information. --->
     <span class="color-light-grey font-size-sm text-center">
+    {% assign author = site.authors | where: 'name', page.author | first %}
     {% if author %}
       <i class="fa fa-user" aria-hidden="true"></i>
       <a
@@ -34,16 +36,25 @@ comments: true
       ></a>
     {% endif %}
     </span>
+    <!--- End of article meta inforation. --->
+
     <div class="px-2 line-height-1pt75 py-8">
+      <!--- Blog content. --->
       <div class="pb-5">
         {{ content }}
       </div>
+      <!--- End of blog content. --->
+
+      <!--- Author information. --->
       <div class="font-weight-bold pb-1 font-italic">{{ author.quote }}</div>
       <a
         href="mailto:{{ author.email }}"
         class="pt-4 color-teal hover-color-dark-blue"
       >{{ author.email }}</a>
+      <!--- End of author information. --->
     </div>
+
+    <!--- Links to previous and next post. --->
     <div class="d-flex justify-content-between">
       <div class="w-40 text-left">
         {% if page.previous.url %}
@@ -70,6 +81,9 @@ comments: true
         {% endif %}
       </div>
     </div>
+    <!--- End of previous and next post links. --->
+
+    <!--- Comments section. --->
     {% if page.comments %}
       <div id="disqus_thread" class="py-8"></div>
       <script>
@@ -93,4 +107,5 @@ comments: true
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     {% endif %}
   </div>
+  <!--- End of comments sections. --->
 </div>
