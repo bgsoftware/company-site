@@ -10,3 +10,10 @@
   .min-width-#{$i}rem { min-width: #{$i}rem; }
   .min-height-#{$i}rem { min-height: #{$i}rem; }
 }
+
+/* Default heights for vh classes. */
+$heights: (75, 80, 85, 90, 95, 100) !default;
+
+@each $height in $heights {
+  .min-height-#{$height}vh { min-height: #{$height}vh !important; }
+}
