@@ -1,7 +1,7 @@
 {
   "name": "bg-software-site",
   "version": "0.1.0",
-  "description": "",
+  "description": "BG software site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
