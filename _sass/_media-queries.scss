@@ -30,14 +30,13 @@
   @include blog-library--lg();
 }
 
-/* Extra large screen size (lg) */
+/* Extra large screen size (xl) */
 @media only screen and (min-width: 1200px) {
   @include navigation-bar--xl();
   @include about-us--xl();
   @include font-size--xl();
   @include survey--xl();
   @include footer--xl();
-  @include blog-library--xl();
   @include blog-post--xl();
   @include contact-us--xl();
 }
