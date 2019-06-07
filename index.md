@@ -10,33 +10,25 @@ title: Home
   <!--- Headline. --->
   <div
     id="headline"
-    class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
+    class="d-flex flex-column align-items-center justify-content-center min-height-95vh"
   >
-    <div class="headline__content">
-      <div
-        class="headline__left text-right"
-        data-aos="fade-right"
-        data-aos-duration="3000"
-      >
-        <h1 class="headline__title text-right font-italic color-white"
-          >Because there's only one business like yours.
-        </h1>
-        <p class="text-right font-weight-light color-white font-size-md">
-          BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
-        </p>
-      </div>
-      <div
-        class="headline__right video-wrap"
-        data-aos="fade-right"
-        data-aos-duration="3000"
-      >
-        <div class="video-container">
-          <video width="100%" height="auto" controls>
-            <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
+    <div
+      class="headline__content video-wrap d-flex flex-column"
+      data-aos="fade-right"
+      data-aos-duration="3000"
+    >
+      <h1 class="headline__title text-right font-italic color-white text-center"
+        >Because there's only one business like yours.
+      </h1>
+      <div class="headline__video-container">
+        <video width="100%" height="auto" controls>
+          <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video>
-        </div>
+        </video>
       </div>
+      <p class="text-right font-weight-light color-white font-size-md text-center">
+        BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
+      </p>
     </div>
   </div>
   <!--- End of Headline. --->
