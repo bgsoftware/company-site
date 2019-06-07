@@ -1,7 +1,7 @@
 .overflow-hidden { overflow: hidden; }
 
-/* Adjust space amounts to set rems you need */
-$spaceamounts: (5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+/* Default margin and padding sizes (rem). */
+$spaceamounts: (5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100) !default;
 
 $sides: (top, bottom, left, right);
 
