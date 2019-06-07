@@ -6,7 +6,8 @@ title: Home
 
 
 
-<div class="container-fluid px-0 overflow-hidden">
+<div>
+  <!--- Headline. --->
   <div
     id="headline"
     class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
@@ -38,7 +39,7 @@ title: Home
       </div>
     </div>
   </div>
-
+  <!--- End of Headline. --->
 
 
   <!---  Custom Software. --->
@@ -62,7 +63,7 @@ title: Home
       </p>
     </div>
   </div>
-
+  <!--- End of Custom Software. --->
 
 
   <!--- Services. --->
@@ -98,6 +99,7 @@ title: Home
       </div>
     </div>
   </div>
+  <!--- End of Services. --->
 
 
   <!--- Survey. --->
@@ -149,6 +151,7 @@ title: Home
       </div>
     </div>
   </div>
+  <!--- End of Survey. --->
 
 
   <!--- About Us. --->
@@ -192,7 +195,8 @@ title: Home
         </a>
       </div>
     </div>
-    <!--- Let's talk Software. --->
+    <!--- End of Why BG Software? --->
+    <!--- Let's Talk Software. --->
     <div id="lets-talk-software" class="about-us__content d-flex">
       <div
         class="about-us__text text-right"
@@ -226,6 +230,7 @@ title: Home
         >
       </div>
     </div>
+    <!--- End of Let's Talk Software. --->
   </div>
 
 
@@ -322,7 +327,7 @@ title: Home
       </div>
     </div>
   </div>
-
+  <!--- End of Capabilities. --->
 
 
   <!--- Clients. --->
@@ -399,4 +404,5 @@ title: Home
       </div>
     </div>
   </div>
+  <!--- End of Clients. --->
 </div>
