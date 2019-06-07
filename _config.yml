@@ -1,4 +1,4 @@
-title: Benningfield Group Software
+title: BG Software
 collections:
   authors:
 sass:
@@ -12,3 +12,15 @@ exclude:
   - package.json
   - package-lock.json
   - yarn.lock
+plugins:
+  - jekyll-seo-tag
+twitter:
+  username: BGSoftwareInc
+  card: summary
+social:
+  name: BG Software
+  links:
+    - https://twitter.com/BGSoftwareInc
+    - https://www.facebook.com/BGSoftwareInc
+    - https://www.linkedin.com/company/bgsoftwareinc
+    - https://www.youtube.com/channel/UCkeGLG82Ydd6GnoLh1QPfag
