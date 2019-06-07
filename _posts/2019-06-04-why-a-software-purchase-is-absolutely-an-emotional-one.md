@@ -1,10 +1,11 @@
 ---
-layout   : blog
-title    : Why A Software Purchase Is Absolutely An Emotional One
-subtitle : ...and doesn't making the right call feel awesome?
-image    : 2019-06-04-why-a-software-purchase-is-absolutely-an-emotional-one.jpg
-author   : John Scott
-comments : true
+layout      : blog
+title       : Why A Software Purchase Is Absolutely An Emotional One
+description : ...and doesn't making the right call feel awesome?
+image       : 2019-06-04-why-a-software-purchase-is-absolutely-an-emotional-one.jpg
+author      : John Scott
+comments    : true
+tags        : [BG Software, Blog, John Scott]
 ---
 
 At first glance, one would think the decision-making process for a software purchase is pure logic: it needs to do A so we can generate reports about B and it’d be great if it could do C. Meet those criteria, and done.

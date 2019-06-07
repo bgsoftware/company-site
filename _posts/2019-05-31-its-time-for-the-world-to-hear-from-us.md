@@ -1,10 +1,11 @@
 ---
-layout   : blog
-title    : It's Time For The World To Hear From Us
-subtitle : How often does one get to take an existing company and treat it like a startup?
-image    : 2019-05-31-its-time-for-the-world-to-hear-from-us.jpg
-author   : John Scott
-comments : true
+layout      : blog
+title       : It's Time For The World To Hear From Us
+description : How often does one get to take an existing company and treat it like a startup?
+image       : 2019-05-31-its-time-for-the-world-to-hear-from-us.jpg
+author      : John Scott
+comments    : true
+tags        : [BG Software, Blog, John Scott]
 ---
 
 This is an exciting day!  We are re-introducing ourselves to the marketplace. Nice to meet you.
