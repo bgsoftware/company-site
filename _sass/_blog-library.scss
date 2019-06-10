@@ -12,13 +12,6 @@
   background-color: $white;
 }
 
-.blog-library__container {
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('./images/misc/hero.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @mixin blog-library--md() {
   .blog-library {
     padding-left: 3%;
@@ -38,5 +31,8 @@
   .blog-library {
     width: 75%;
     max-width: 70rem;
+    border-radius: 0.5%;
   }
+
+  .blog-library__container { padding-top: 2rem; }
 }

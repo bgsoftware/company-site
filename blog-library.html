@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-<div class="blog-library__container">
+<div class="blog-library__container bg-color-dark-blue">
   <div class="blog-library mx-auto py-8">
     {% for post in site.posts %}
       {% if forloop.first %}
@@ -27,12 +27,12 @@ title: Blog
             <h2 class="hover-color-grey color-dark-blue">{{ post.title }}</h2>
           </a>
           <p class="color-dark-blue font-size-md line-height-2">{{ post.description }}</p>
-          <p class="d-flex justify-content-between color-light-grey border-top border-light font-size-sm text-right pt-2">
+          <p class="d-flex justify-content-between color-light-grey border-top border-light font-size-xs text-right pt-2 text-uppercase">
             <span>
-            <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
               <a
                 href="{{ post.url }}#disqus_thread"
-                class="text-decoration-none-important color-light-grey text-capitalize hover-color-dark-blue"
+                class="text-decoration-none-important color-light-grey text-uppercase hover-color-dark-blue"
               >0 Comments</a>
             </span>
             {{ post.date | date: '%B %-d, %Y' }}
