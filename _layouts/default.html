@@ -13,19 +13,23 @@
     {% if page.tags %}
       <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
     {% endif %}
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5cfff7a04351e90012650329&product=inline-share-buttons' async='async'></script>
   </head>
   <body data-spy="scroll">
     <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/js/animations.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/vendor/aos.js' | prepend: site.baseurl}}"></script>
     <script>AOS.init();</script>
+
     {% include navigation.html %}
     <div class="min-height-75vh">
       {{ content }}
       {% include scroll-top.html %}
     </div>
     {% include footer.html %}
+
     <script id="dsq-count-scr" src="//bg-software-test.disqus.com/count.js" async></script>
   </body>
 </html>
