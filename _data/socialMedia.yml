@@ -1,20 +1,20 @@
 - name         : facebook
-  image-path   : /assets/images/socialMedia/flogo-HexRBG-Wht-72.png
   link         : https://www.facebook.com/BGSoftwareInc
   img-class    : fa-facebook
   img-class-sq : fa-facebook-square
 - name         : twitter
-  image-path   : /assets/images/socialMedia/twitter_logo.png
   link         : https://twitter.com/BGSoftwareInc
   img-class    : fa-twitter
   img-class-sq : fa-twitter-square
 - name         : linkedin
-  image-path   : /assets/images/socialMedia/In-White-75px-TM.png
   link         : https://www.linkedin.com/company/bgsoftware1/about/
   img-class    : fa-linkedin
   img-class-sq : fa-linkedin-square
 - name         : youtube
-  image-path   : /assets/images/socialMedia/youtube_social_squircle_white.png
   link         : https://www.youtube.com/channel/UC9pYdScxIwmjlVJ8dL_8mtw
   img-class    : fa-youtube-play
   img-class-sq : fa-youtube-square
+- name         : instagram
+  link         : https://www.youtube.com/channel/UC9pYdScxIwmjlVJ8dL_8mtw
+  img-class    : fa-instagram
+  img-class-sq : fa-instagram
