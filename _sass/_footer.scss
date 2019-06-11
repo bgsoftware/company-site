@@ -21,10 +21,11 @@
     @include transition(color, $footer-link-transition-speed);
   }
 
-  .facebook:hover { color: $facebook-blue !important; }
-  .twitter:hover  { color: $twitter-blue !important; }
-  .linkedin:hover { color: $linkedin-blue !important; }
-  .youtube:hover  { color: $youtube-red !important; }
+  .facebook:hover  { color: $facebook-blue !important; }
+  .twitter:hover   { color: $twitter-blue !important; }
+  .linkedin:hover  { color: $linkedin-blue !important; }
+  .youtube:hover   { color: $youtube-red !important; }
+  .instagram:hover { color: $instagram-pink !important;}
 }
 
 @mixin footer--lg() {
