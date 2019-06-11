@@ -5,31 +5,44 @@ title: Home
 ---
 
 
-
 <div>
   <!--- Headline. --->
   <div
     id="headline"
-    class="d-flex flex-column align-items-center justify-content-center min-height-95vh"
+    class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
   >
-    <div
-      class="headline__content video-wrap d-flex flex-column"
-      data-aos="fade-right"
-      data-aos-duration="3000"
-    >
-      <h1 class="headline__title text-right font-italic color-white text-center"
-        >Because there's only one business like yours.
-      </h1>
-      <div class="headline__video-container">
-        <video width="100%" height="auto" controls>
-          <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
+    <div class="headline__content">
+      <div
+        class="headline__left video-wrap"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
+        <div
+          class="video-wrap"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+        <div class="headline__video-container">
+          <video class="headline__video" width="100%" height="auto" controls>
+            <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
+          </video>
+          <div class="headline__video-overlay">
+          </div>
+        </div>
+        </div>
       </div>
-      <p class="text-right font-weight-light color-white font-size-md text-center">
-        BG Software partners with small and medium-sized businesses to create personalized software that’s easy to learn, simple to launch, and tailored specifically to your unique needs.
-      </p>
+      <div
+        class="headline__right text-left"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
+        <p class="text-left font-weight-light color-white font-size-lg line-height-2">
+          BG Software partners with small and medium-sized businesses to create professional software that’s easy to learn, simple to launch,​ and created just for you.
+        </p>
+      </div>
     </div>
+    <script src="{{'/assets/js/headlineVideoOverlay.js' | prepend: site.baseurl}}"></script>
   </div>
   <!--- End of Headline. --->
 

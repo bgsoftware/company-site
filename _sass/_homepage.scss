@@ -2,7 +2,9 @@
  * Headline.
  */
 #headline {
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('./images/misc/hero.jpg');
+  background-image:
+    linear-gradient( rgba(  65, 73, 87,0.9), rgba(  65, 73, 87,0.9) ),
+    url('./images/misc/hero-3.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +13,61 @@
 .headline__content {
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 60rem;
+}
+
+.headline__video { margin-left: auto; }
+
+.headline__right { padding-bottom: 1rem; }
+
+.headline__video-overlay {
+  background-image:url('./images/BG/logo_01.png');
+  background-repeat:no-repeat;
+  width:100%;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+}
+
+@mixin headline--md() {
+  .headline__left {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+@mixin headline--lg() {
+  .headline__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
+  }
+
+  .headline__left { width: 55%; }
+
+  .headline__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .headline__title { font-size: 2.45rem; }
+
+  .video-wrap { max-width: 650px; }
+}
+
+@mixin headline--xl() {
+  .headline__content { width: 80%; }
+
+  .headline__right, .headline__left { width: 50%; }
 }
 
 /* Set your aspect ratio */
@@ -32,8 +88,8 @@
   max-width: 100%;
 }
 
-@mixin headline--lg() {
-  .headline__title { font-size: 2.45rem; }
+.video-wrap {
+  width: 100%;
 }
 /* End of Headline. */
 
