@@ -41,11 +41,12 @@
 }
 
 .navigation-bar__link {
-  .facebook:hover { color: $facebook-blue !important; }
-  .twitter:hover  { color: $twitter-blue !important; }
-  .linkedin:hover { color: $linkedin-blue !important; }
-  .youtube:hover  { color: $youtube-red !important; }
-  .mail:hover     { color: #A9A9A9 !important; }
+  .facebook:hover  { color: $facebook-blue !important; }
+  .twitter:hover   { color: $twitter-blue !important; }
+  .linkedin:hover  { color: $linkedin-blue !important; }
+  .youtube:hover   { color: $youtube-red !important; }
+  .instagram:hover { color: $instagram-pink !important;}
+  .mail:hover      { color: #A9A9A9 !important; }
 }
 
 .nav-link:hover {
