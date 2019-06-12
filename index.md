@@ -22,8 +22,8 @@ title: Home
           data-aos="fade-right"
           data-aos-duration="3000"
         >
-        <div class="headline__video-container">
-          <video class="headline__video" width="100%" height="auto" controls>
+        <div class="headline__video-container bg-color-white">
+          <video class="headline__video bg-color-white" width="100%" height="auto" controls>
             <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
@@ -288,10 +288,10 @@ title: Home
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
             {% if forloop.first %}
-              <div class="carousel-item text-center active">
+              <div class="capabilities__carousel-item carousel-item text-center active">
                 {% for imagePath in imageGroup %}
                     <img
-                      class="inline-block px-3 img-fluid w-10rem"
+                      class="inline-block mx-4 my-1 img-fluid w-8rem"
                       src="{{ site.baseurl }}{{ imagePath }}"
                       alt="{{ imagePath }}"
                     >
@@ -299,10 +299,10 @@ title: Home
               </div>
             {% endif %}
             {% if forloop.first == false %}
-              <div class="carousel-item text-center">
+              <div class="capabilities__carousel-item carousel-item text-center">
                 {% for imagePath in imageGroup %}
                     <img
-                      class="inline-block px-3 img-fluid w-10rem"
+                      class="inline-block mx-4 my-1 img-fluid w-8rem"
                       src="{{ site.baseurl }}{{ imagePath }}"
                       alt="{{ imagePath }}"
                     >
@@ -343,27 +343,6 @@ title: Home
     {% endif %}
   {% endfor %}
 
-  <!--- Create a nested array for Clients to group carousel. --->
-  {% assign subArrSize = 4 %}
-  {% assign clients = "" | split: "/" %}
-
-  {% for element in clientImages %}
-    {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
-
-    {% if needsNewSubArr == 1 %}
-      {% comment %} Create a new empty sub array. {% endcomment %}
-      {% assign subArr = "" | split: "/" %}
-    {% endif %}
-
-    {% comment %} Push the current image in sub array. {% endcomment %}
-    {% assign subArr = subArr | push: element %}
-
-    {% if needsNewSubArr == 0 or forloop.last %}
-      {% comment %} push subArr in clients if subArr length is. {% endcomment %}
-      {% assign clients = clients | push: subArr %}
-    {% endif %}
-  {% endfor %}
-
   <div id="clients" class="pb-4">
     <div class="d-flex flex-column align-items-center">
       <div class="bg-color-blue w-100 py-2">
@@ -373,41 +352,17 @@ title: Home
           data-aos-offset="200"
         >Current Clients</h1>
       </div>
-      <div
-        class="clients__carousel carousel slide py-4"
-        data-ride="carousel"
-        data-aos="fade-right"
-        data-aos-offset="200"
-      >
-        <div class="carousel-inner">
-          {% for imageGroup in clients %}
-            <!--- If first group, set class have active class. --->
-            {% if forloop.first %}
-              <div class="carousel-item text-center active">
-                {% for imagePath in imageGroup %}
-                    <img
-                      class="inline-block px-3 img-fluid w-10rem"
-                      src="{{ site.baseurl }}{{ imagePath }}"
-                      alt="{{ imagePath }}"
-                    >
-                {% endfor %}
-              </div>
-            {% endif %}
-            {% if forloop.first == false %}
-              <div class="carousel-item text-center">
-                {% for imagePath in imageGroup %}
-                    <img
-                      class="inline-block px-3 img-fluid w-10rem"
-                      src="{{ site.baseurl }}{{ imagePath }}"
-                      alt="{{ imagePath }}"
-                    >
-                {% endfor %}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+      <div class="clients__content py-4 text-center">
+        {% for clientImage in clientImages %}
+          <img
+            class="inline-block px-3 img-fluid w-10rem"
+            src="{{ site.baseurl }}{{ clientImage }}"
+            alt="{{ clientImage }}"
+          >
+        {% endfor %}
       </div>
     </div>
   </div>
   <!--- End of Clients. --->
+
 </div>
