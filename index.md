@@ -22,14 +22,18 @@ title: Home
           data-aos="fade-right"
           data-aos-duration="3000"
         >
-        <div class="headline__video-container">
-          <video class="headline__video bg-color-white" width="100%" height="auto" controls>
-            <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-          <div class="headline__video-overlay">
+          <div class="headline__video-container">
+            <video
+              class="headline__video bg-color-white border-radius-1pct"
+              width="100%"
+              height="auto"
+              controls
+            >
+              <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <div class="headline__video-overlay"></div>
           </div>
-        </div>
         </div>
       </div>
       <div
@@ -173,7 +177,7 @@ title: Home
       >
         <img
           id="why-bg-software__team-photo"
-          class="about-us__image max-width-50rem w-100 h-auto"
+          class="max-width-50rem w-100 h-auto border-radius-1pct"
           src="{{site.baseurl}}/assets/images/BG/team_photo.jpg"
           alt="BG Software Team"
         >
@@ -230,7 +234,7 @@ title: Home
       >
         <img
           id="lets-talk-software__robin-image"
-          class="about-us__image max-width-40"
+          class="max-width-40 border-radius-1pct"
           alt="Robin Benningfield, CEO"
           src="{{site.baseurl}}/assets/images/BG/robin.jpg"
           data-aos="fade-right"

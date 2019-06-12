@@ -12,10 +12,7 @@
   }
 }
 
-.blog-post__image {
-  width: 100%;
-  border-radius: 1%;
-}
+.blog-post__image { width: 100%; }
 
 @mixin blog-post--md() {
   .blog-post {
