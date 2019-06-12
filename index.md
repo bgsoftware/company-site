@@ -29,7 +29,7 @@ title: Home
               height="auto"
               controls
             >
-              <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
+              <source src="/assets/videos/explainer.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
             <div class="headline__video-overlay"></div>
@@ -46,7 +46,7 @@ title: Home
         </p>
       </div>
     </div>
-    <script src="{{'/assets/js/headlineVideoOverlay.js' | prepend: site.baseurl}}"></script>
+    <script src="/assets/js/headlineVideoOverlay.js"></script>
   </div>
   <!--- End of Headline. --->
 
@@ -87,7 +87,7 @@ title: Home
           >
             <div class="card-body px-1">
               <img
-                src="{{site.baseurl}}/assets/images/services/{{ forloop.index }}.png"
+                src="/assets/images/services/{{ forloop.index }}.png"
                 class="mx-auto d-block w-75 max-width-7rem pb-4"
                 alt="{{ service.name }}"
               >
@@ -180,7 +180,7 @@ title: Home
         <img
           id="why-bg-software__team-photo"
           class="max-width-50rem w-100 h-auto border-radius-1pct"
-          src="{{site.baseurl}}/assets/images/BG/team_photo.jpg"
+          src="/assets/images/BG/team_photo.jpg"
           alt="BG Software Team"
         >
       </div>
@@ -238,7 +238,7 @@ title: Home
           id="lets-talk-software__robin-image"
           class="max-width-40 border-radius-1pct"
           alt="Robin Benningfield, CEO"
-          src="{{site.baseurl}}/assets/images/BG/robin.jpg"
+          src="/assets/images/BG/robin.jpg"
           data-aos="fade-right"
           data-aos-offset="100"
         >
@@ -301,7 +301,7 @@ title: Home
                 {% for imagePath in imageGroup %}
                     <img
                       class="inline-block mx-4 my-1 img-fluid w-8rem"
-                      src="{{ site.baseurl }}{{ imagePath }}"
+                      src="{{ imagePath }}"
                       alt="{{ imagePath }}"
                     >
                 {% endfor %}
@@ -312,7 +312,7 @@ title: Home
                 {% for imagePath in imageGroup %}
                     <img
                       class="inline-block mx-4 my-1 img-fluid w-8rem"
-                      src="{{ site.baseurl }}{{ imagePath }}"
+                      src="{{ imagePath }}"
                       alt="{{ imagePath }}"
                     >
                 {% endfor %}
@@ -369,7 +369,7 @@ title: Home
         {% for clientImage in clientImages %}
           <img
             class="inline-block px-3 img-fluid w-10rem"
-            src="{{ site.baseurl }}{{ clientImage }}"
+            src="{{ clientImage }}"
             alt="{{ clientImage }}"
           >
         {% endfor %}

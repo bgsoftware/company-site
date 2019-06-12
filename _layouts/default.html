@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{'/assets/webchat.css' | prepend: site.baseurl}}">
+    <link rel="stylesheet" href="/assets/webchat.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{'/assets/fonts/font-awesome/css/font-awesome.min.css' | prepend: site.baseurl}}" type="text/css">
-    <link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
-    <link href="{{'/assets/vendor/aos.css' | prepend: site.baseurl}}" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{{'/assets/images/BG/square_logo.png' | prepend: site.baseurl}}">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link href="/assets/vendor/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/images/BG/square_logo.png">
     <meta name="viewport" content="width=device-width">
     {% if page.tags %}
       <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
@@ -17,10 +17,10 @@
     <script async>(function(w, d) { w.CollectId = "5ced95b2829bd47f4515b522"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   </head>
   <body data-spy="scroll">
-    <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
-    <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-    <script src="{{'/assets/js/animations.js' | prepend: site.baseurl}}"></script>
-    <script src="{{'/assets/vendor/aos.js' | prepend: site.baseurl}}"></script>
+    <script src="/assets/vendor/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap.min.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/vendor/aos.js"></script>
     <script>AOS.init();</script>
 
     {% include navigation.html %}

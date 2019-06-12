@@ -1,6 +1,6 @@
 <nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light shadow-sm bg-white py-1">
   <a href="/" class="p-0 d-flex align-items-center">
-    <img class="navigation-bar__bg-logo" src="{{site.baseurl}}/assets/images/BG/logo_02.png">
+    <img class="navigation-bar__bg-logo" src="/assets/images/BG/logo_02.png">
   </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" >
@@ -17,7 +17,7 @@
       {% for app in site.data.socialMedia %}
       <li class="nav-item px-2 d-flex align-items-center">
         <a
-          href="{{ site.baseurl }}{{ app.link }}"
+          href="{{ app.link }}"
           target="_blank"
           class="px-1 navigation-bar__link"
         >
@@ -30,14 +30,14 @@
           href="mailto:customsoftware@benningfieldgroup.com"
           class="px-1 navigation-bar__link"
         >
-          <i class="navigation-bar__icon mail fa fa-envelope font-size-2" aria-hidden="true"></i>
+          <i class="navigation-bar__icon mail hover-color-grey fa fa-envelope font-size-2" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
   </div>
 
   <!--- Navigation Overlay Menu. --->
-  <script src="{{ site.baseurl }}/assets/js/navOverlay.js"></script>
+  <script src="/assets/js/navOverlay.js"></script>
 
   <div id="navigation-overlay" class="navigation-overlay">
     <a
@@ -49,14 +49,14 @@
       <div class="d-flex flex-column">
         {% for item in site.data.navigation %}
           <span class="navigation-overlay__text">
-            <a href="{{ item.link }}" class="navigation-overlay__text d-inline-block">{{ item.name }}</a>
+            <a href="{{ item.link }}" class="navigation-overlay__text d-inline-block hover-color-light-blue">{{ item.name }}</a>
           </span>
         {% endfor %}
       </div>
       <div class="d-flex justify-content-between w-75 mx-auto pt-3">
         {% for app in site.data.socialMedia %}
         <a
-          href="{{ site.baseurl }}{{ app.link }}"
+          href="{{ app.link }}"
           target="_blank"
           class="px-1 navigation-bar__link"
         >
@@ -64,7 +64,7 @@
         </a>
         {% endfor %}
         <a href="mailto:customsoftware@benningfieldgroup.com" class="px-1 navigation-bar__link">
-          <i class="navigation-bar__icon mail fa fa-envelope font-size-2" aria-hidden="true"></i>
+          <i class="navigation-bar__icon mail hover-color-grey fa fa-envelope font-size-2" aria-hidden="true"></i>
         </a>
       </div>
     </div>
