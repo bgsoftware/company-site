@@ -1,8 +1,8 @@
 @each $color, $hex in $site-colors {
-  .bg-color-#{$color} { background-color: $hex; }
+  .bg-color-#{$color} { background-color: $hex !important; }
 
-  .color-#{$color} { color: $hex; }
+  .color-#{$color} { color: $hex !important; }
 
   .hover-color-#{$color} { @include transition(color, $color-transition-speed); }
-  .hover-color-#{$color}:hover { color: $hex; }
+  .hover-color-#{$color}:hover { color: $hex !important; }
 }
