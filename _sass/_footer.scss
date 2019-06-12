@@ -16,17 +16,7 @@
 
 .footer__copyright, .footer__social-media { justify-content: center; }
 
-.footer__social-media {
-  .footer__icon {
-    @include transition(color, $footer-link-transition-speed);
-  }
-
-  .facebook:hover  { color: $facebook-blue !important; }
-  .twitter:hover   { color: $twitter-blue !important; }
-  .linkedin:hover  { color: $linkedin-blue !important; }
-  .youtube:hover   { color: $youtube-red !important; }
-  .instagram:hover { color: $instagram-pink !important;}
-}
+.footer__icon { @include transition(color, $footer-link-transition-speed); }
 
 @mixin footer--lg() {
   #footer {
