@@ -6,15 +6,15 @@
 @import "mixins";
 @import "colors";
 @import "typography";
-@import "footer";
 @import "sizing";
 @import "spacing";
-@import "navigation";
 @import "scroll-top";
-@import "homepage";
-@import "blog-library";
-@import "blog-post";
-@import "contact-us";
+@import "components/navigation";
+@import "components/footer";
+@import "components/homepage";
+@import "components/blog-library";
+@import "components/blog-post";
+@import "components/contact-us";
 @import "media-queries";
 
 @-ms-viewport { width: device-width; }
