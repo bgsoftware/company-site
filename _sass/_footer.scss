@@ -16,7 +16,7 @@
 
 .footer__copyright, .footer__social-media { justify-content: center; }
 
-.footer__icon { @include transition(color, $footer-link-transition-speed); }
+.footer__icon { @include transition(color, $footer-color-transition-speed); }
 
 @mixin footer--lg() {
   #footer {

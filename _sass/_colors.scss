@@ -3,6 +3,6 @@
 
   .color-#{$color} { color: $hex; }
 
-  .hover-color-#{$color} { @include transition(color, $link-transition-speed); }
+  .hover-color-#{$color} { @include transition(color, $color-transition-speed); }
   .hover-color-#{$color}:hover { color: $hex; }
 }

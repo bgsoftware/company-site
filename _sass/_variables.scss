@@ -77,13 +77,13 @@ $body-color: $dark-blue;
 
 
  /* Speed for link color transitions in navbar. */
-$nav-link-transition-speed: .25s;
+$nav-color-transition-speed: .25s;
 
 /* Speed for link color transitions in footer. */
-$footer-link-transition-speed: .25s;
+$footer-color-transition-speed: .25s;
 
-/* Speed for general link color transitions. */
-$link-transition-speed: .25s;
+/* Speed for general color transitions. */
+$color-transition-speed: .25s;
 
 /* Speed for darkening of link image transitions. */
 $image-transition-speed: .25s;
