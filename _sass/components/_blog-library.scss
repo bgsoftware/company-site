@@ -1,7 +1,4 @@
-.blog-library__card-image {
-  border-radius: 1%;
-  @include transition(filter, $image-transition-speed);
-}
+.blog-library__card-image { @include transition(filter, $image-transition-speed); }
 
 .blog-library__card-image:hover { filter: brightness(66%); }
 
