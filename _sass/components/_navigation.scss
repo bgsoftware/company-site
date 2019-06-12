@@ -42,18 +42,7 @@
 
 .mail:hover      { color: #A9A9A9 !important; }
 
-.nav-link:hover {
-  color: $light-blue !important;
-  border-color: $blue;
-}
-
-.navbar-nav {
-  .nav-link.active {
-    color: $blue !important;
-    border-color: $blue
-  }
-}
-
+.nav-link:hover { border-color: $blue; }
 
 .navigation-overlay {
   height: 100%;
@@ -91,8 +80,4 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
-
-.navigation-overlay__text:hover {
-  color: $grey !important;
 }
