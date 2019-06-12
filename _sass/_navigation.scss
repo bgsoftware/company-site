@@ -26,7 +26,7 @@
 }
 
 .navigation-bar__icon {
-  @include transition(color, $nav-link-transition-speed);
+  @include transition(color, $nav-color-transition-speed);
 }
 
 
@@ -34,20 +34,13 @@
   color: $dark-blue !important;
   border-bottom: solid $white;
 
-  -webkit-transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear; /* Saf3.2+, Chrome */
-     -moz-transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear; /* FF3.7+ */
-       -o-transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear; /* Opera 10.5 */
-          transition: color $nav-link-transition-speed linear, border-color $nav-link-transition-speed linear;
+  -webkit-transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear; /* Saf3.2+, Chrome */
+     -moz-transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear; /* FF3.7+ */
+       -o-transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear; /* Opera 10.5 */
+          transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear;
 }
 
-.navigation-bar__link {
-  .facebook:hover  { color: $facebook-blue !important; }
-  .twitter:hover   { color: $twitter-blue !important; }
-  .linkedin:hover  { color: $linkedin-blue !important; }
-  .youtube:hover   { color: $youtube-red !important; }
-  .instagram:hover { color: $instagram-pink !important;}
-  .mail:hover      { color: #A9A9A9 !important; }
-}
+.mail:hover      { color: #A9A9A9 !important; }
 
 .nav-link:hover {
   color: $light-blue !important;
