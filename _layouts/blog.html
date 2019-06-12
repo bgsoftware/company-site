@@ -2,10 +2,12 @@
 layout: default
 comments: true
 ---
+
+
 <div class="blog-post mt-6 d-flex flex-column justify-content-center font-size-md pb-6">
   <div class="blog-post__content mx-auto">
-    <div class="blog-post__image-container pb-5">
-      <img src="{{site.baseurl}}/assets/images/blog/{{ page.image }}" class="w-100">
+    <div class="blog-post__image-container pb-5 text-center">
+      <img src="/assets/images/blog/{{ page.image }}" class="blog-post__image">
     </div>
     <h1 class="border-bottom border-light pb-2">{{ page.title }}</h1>
 
@@ -40,7 +42,7 @@ comments: true
 
     <div class="px-2 line-height-1pt75 py-8">
       <!--- Blog content. --->
-      <div class="pb-5">
+      <div class="blog-post__text pb-5">
         {{ content }}
       </div>
       <!--- End of blog content. --->
@@ -63,6 +65,9 @@ comments: true
       </div>
     </div>
 
+    <!--- Share buttons. --->
+    <div class="sharethis-inline-share-buttons pb-5"></div>
+    <!--- End of Share buttons. --->
 
     <!--- Links to previous and next post. --->
     <div class="d-flex justify-content-between">
@@ -92,6 +97,7 @@ comments: true
       </div>
     </div>
     <!--- End of previous and next post links. --->
+
 
     <!--- Comments section. --->
     {% if page.comments %}
