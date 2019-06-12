@@ -26,7 +26,7 @@
 }
 
 .navigation-bar__icon {
-  @include transition(color, $nav-color-transition-speed);
+  @include transition(color, $color-transition-speed);
 }
 
 
@@ -34,10 +34,10 @@
   color: $dark-blue !important;
   border-bottom: solid $white;
 
-  -webkit-transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear; /* Saf3.2+, Chrome */
-     -moz-transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear; /* FF3.7+ */
-       -o-transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear; /* Opera 10.5 */
-          transition: color $nav-color-transition-speed linear, border-color $nav-color-transition-speed linear;
+  -webkit-transition: color $color-transition-speed linear, border-color $color-transition-speed linear; /* Saf3.2+, Chrome */
+     -moz-transition: color $color-transition-speed linear, border-color $color-transition-speed linear; /* FF3.7+ */
+       -o-transition: color $color-transition-speed linear, border-color $color-transition-speed linear; /* Opera 10.5 */
+          transition: color $color-transition-speed linear, border-color $color-transition-speed linear;
 }
 
 .mail:hover      { color: #A9A9A9 !important; }
