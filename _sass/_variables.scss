@@ -22,7 +22,6 @@ $blue-7:  #60709a;
 $blue-8:  #3d5a8a;
 $blue-9:  #1b283d;
 
-
 $dark-blue:     $blue-9;
 $blue:          $blue-8;
 $light-blue:    $blue-4;
@@ -37,12 +36,14 @@ $lighter-grey:  $grey-1;
 $lightest-grey: #f1f1f1;
 $teal:          #13aff0;
 
+/* Social media colors. */
 $facebook-blue:  #4267b2;
 $twitter-blue:   #38A1F3;
 $linkedin-blue:  #0077B5;
 $youtube-red:    #ED3833;
 $instagram-pink: #E1306C;
 
+/* Colors used to make classes. */
 $site-colors: (
   "white":         $white,
   "dark-blue":     $dark-blue,
@@ -63,14 +64,11 @@ $site-colors: (
   "instagram":     $instagram-pink
 );
 
-
+/* Overrides bootstrap colors. */
 $primary: $dark-blue;
-$secondary: $blue;
-$info: $teal;
 $light: $lightest-grey;
 
 $link-hover-decoration: none;
-
 
 $body-bg: $white;
 $body-color: $dark-blue;
