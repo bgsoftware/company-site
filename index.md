@@ -158,10 +158,12 @@ title: Home
     </div>
     <a
       href="https://learn.g2.com/state-of-software-happiness-report-2019"
-      class="font-size-md color-white hover-color-dark-blue text-center"
+      class="font-size-md color-white text-center"
       data-aos="fade-right"
       data-aos-offset="200"
-    >State of Software Happiness Report 2019. G2.com</a>
+    >
+      <span class="hover-color-dark-blue">State of Software Happiness Report 2019. G2.com</span>
+    </a>
   </div>
   <!--- End of Survey. --->
 
