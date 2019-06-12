@@ -22,7 +22,7 @@ title: Home
           data-aos="fade-right"
           data-aos-duration="3000"
         >
-        <div class="headline__video-container bg-color-white">
+        <div class="headline__video-container">
           <video class="headline__video bg-color-white" width="100%" height="auto" controls>
             <source src="{{site.baseurl}}/assets/videos/explainer.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -108,7 +108,7 @@ title: Home
 
 
   <!--- Survey. --->
-  <div id="survey" class="py-4 bg-color-blue">
+  <div id="survey" class="py-4 bg-color-blue d-flex flex-column">
     <div class="survey__groups d-flex justify-content-center align-items-center color-white mx-auto">
       <div class="survey__group d-flex">
         <div
@@ -149,12 +149,15 @@ title: Home
           <h1 class="card-title text-center font-size-4">66%</h1>
           <p class="font-size-md line-height-2">of respondents said they do not have control over software decisions at their company</p>
           <br>
-          <div class="text-right font-size-md">
-            <b>Source: G2.com</b>
-          </div>
         </div>
       </div>
     </div>
+    <a
+      href="https://learn.g2.com/state-of-software-happiness-report-2019"
+      class="font-size-md color-white hover-color-dark-blue text-center"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >State of Software Happiness Report 2019. G2.com</a>
   </div>
   <!--- End of Survey. --->
 
@@ -170,7 +173,7 @@ title: Home
       >
         <img
           id="why-bg-software__team-photo"
-          class="max-width-50rem w-100 h-auto"
+          class="about-us__image max-width-50rem w-100 h-auto"
           src="{{site.baseurl}}/assets/images/BG/team_photo.jpg"
           alt="BG Software Team"
         >
@@ -227,7 +230,7 @@ title: Home
       >
         <img
           id="lets-talk-software__robin-image"
-          class="max-width-40"
+          class="about-us__image max-width-40"
           alt="Robin Benningfield, CEO"
           src="{{site.baseurl}}/assets/images/BG/robin.jpg"
           data-aos="fade-right"
@@ -352,7 +355,11 @@ title: Home
           data-aos-offset="200"
         >Current Clients</h1>
       </div>
-      <div class="clients__content py-4 text-center">
+      <div
+        class="clients__content py-4 text-center"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
         {% for clientImage in clientImages %}
           <img
             class="inline-block px-3 img-fluid w-10rem"
