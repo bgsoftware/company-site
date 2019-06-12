@@ -20,7 +20,7 @@
 .headline__right { padding-bottom: 1rem; }
 
 .headline__video-overlay {
-  background-image:url('./images/BG/logo_01.png');
+  background-image:url('./images/BG/video_overlay.png');
   background-repeat:no-repeat;
   width:100%;
   position:absolute;
@@ -250,24 +250,34 @@
 /**
  * Capabilities and Clients.
  */
-.capabilities__carousel .clients__carousel {
+.capabilities__carousel .clients__content {
   width: 100%
 }
 
 @mixin capabilities-and-clients__sm() {
   .capabilities__carousel { width: 40rem; }
 
-  .clients__carousel { width: 30rem; }
+  .clients__content { width: 30rem; }
 }
 
 @mixin capabilities-and-clients__md() {
-  .clients__carousel { width: 50rem; }
+  .clients__content { width: 50rem; }
 }
 
 @mixin capabilities-and-clients--lg() {
   .capabilities__carousel { width: 62rem; }
+
+  .clients__content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
+@mixin capabilities-and-clients--xl() {
+  .capabilities__carousel { width: 70rem; }
+
+  .clients__content { width: 55rem; }
+}
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
