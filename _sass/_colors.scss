@@ -28,3 +28,6 @@
 
 .hover-bg-color-blue { @include transition(background-color, $link-transition-speed); }
 .hover-bg-color-blue:hover {background-color: $blue;}
+
+.hover-color-white { @include transition(color, $link-transition-speed); }
+.hover-color-white:hover { color: $white; }
