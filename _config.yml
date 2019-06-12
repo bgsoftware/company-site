@@ -1,6 +1,6 @@
 title: BG Software
 url: http://bobby.benningfieldgroup.com:4000
-baseurl: /
+baseurl: ''
 collections:
   authors:
 sass:
