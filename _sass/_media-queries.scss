@@ -28,6 +28,7 @@
   @include capabilities-and-clients--lg();
   @include footer--lg();
   @include blog-library--lg();
+  @include blog-post--lg();
 }
 
 /* Extra large screen size (xl) */
@@ -39,4 +40,5 @@
   @include footer--xl();
   @include blog-post--xl();
   @include contact-us--xl();
+  @include capabilities-and-clients--xl();
 }
