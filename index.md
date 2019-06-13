@@ -51,6 +51,91 @@ title: Home
   <!--- End of Headline. --->
 
 
+  <!--- Create a nested array for blog posts to group carousel. --->
+  {% assign subArrSize = 4 %}
+  {% assign posts = "" | split: "/" %}
+
+  {% for post in site.posts %}
+    {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
+
+    {% if needsNewSubArr == 1 %}
+      {% comment %} Create a new empty sub array. {% endcomment %}
+      {% assign subArr = "" | split: "/" %}
+    {% endif %}
+
+    {% comment %} Push the current image in sub array. {% endcomment %}
+    {% assign subArr = subArr | push: post %}
+
+    {% if needsNewSubArr == 0 or forloop.last %}
+      {% comment %} push subArr in posts if subArr length is. {% endcomment %}
+      {% assign posts = posts | push: subArr %}
+    {% endif %}
+  {% endfor %}
+  <!--- Blogs. --->
+  <div id="homepage-blogs" class="py-4">
+    <h1 class="text-center">Recent Blogs</h1>
+     <div
+        class="homepage-blogs__carousel carousel slide py-4 mx-auto"
+        data-ride="carousel"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+        <div class="carousel-inner">
+          {% for postGroup in posts %}
+            <!--- If first group, set class have active class. --->
+            {% if forloop.first %}
+              <div class="homepage-blogs__carousel-item carousel-item text-center active">
+                {% for post in postGroup %}
+                  {% include blog-card.html %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if forloop.first == false %}
+              <div class="homepage-blogs__carousel-item carousel-item text-center">
+                {% for post in postGroup %}
+                    <img
+                      class="inline-block mx-4 my-1 img-fluid w-8rem"
+                      src="/assets/images/blog/{{ post.image }}"
+                      alt="/assets/images/blog/{{ post.image }}"
+                    >
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <a
+          class="carousel-control-prev w-1rem"
+          href=".homepage-blogs__carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next w-1rem"
+          href=".homepage-blogs__carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    {% for post in posts %}
+      <!--- If first group, set class have active class. --->
+      {% if forloop.first %}
+        <div class="homepage-blogs__carousel-item carousel-item text-center active">
+          {% for blog in post %}
+          <span>{{ post.author }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <!--- End of Blogs. --->
+
+
   <!---  Custom Software. --->
   <div id="custom-software" class="bg-color-blue py-5">
     <div

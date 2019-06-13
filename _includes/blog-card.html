@@ -1,28 +1,15 @@
-<div class="bg-library__card__image-container">
-  <a href="{{ post.url }}">
-    <img
-      src="/assets/images/blog/{{ post.image }}"
-      class="blog-library__card__image pb-4"
-      width="100%"
-    >
-  </a>
-</div>
-<div class="blog-library__card__text py-3">
-  <a
-    href="{{ post.url }}"
-    class="px-0 text-decoration-none-important d-inline-block"
-  >
-    <h2 class="hover-color-grey color-dark-blue">{{ post.title }}</h2>
-  </a>
-  <p class="color-dark-blue font-size-md line-height-2">{{ post.description }}</p>
-  <p class="d-flex justify-content-between color-light-grey border-top border-light font-size-xs text-right pt-2 text-uppercase">
-    <span>
-      <i class="fa fa-comment-o" aria-hidden="true"></i>
-      <a
-        href="{{ post.url }}#disqus_thread"
-        class="text-decoration-none-important color-light-grey text-uppercase hover-color-dark-blue"
-      >0 Comments</a>
-    </span>
-    {{ post.date | date: '%B %-d, %Y' }}
-  </p>
-</div>
+<a href="{{ post.id }}">
+  <div class="homepage-blog__card card d-inline-block align-top border-radius-2pct">
+    <div class="homepage-blog__image-container d-flex justify-content-center overflow-hidden bg-color-dark-blue">
+      <img
+        class="flex-none object-fit-contain"
+        src="/assets/images/blog/{{ post.image }}"
+        alt="/assets/images/blog/{{ post.image }}"
+      >
+    </div>
+    <div class="card-body">
+      <h5 class="card-title font-size-md">{{ post.title }}</h5>
+      <p class="card-text homepage-blog__card-description font-size-sm">{{ post.description }}</p>
+    </div>
+  </div>
+</a>

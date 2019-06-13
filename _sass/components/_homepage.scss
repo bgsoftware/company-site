@@ -96,6 +96,71 @@
 
 
 /**
+ * Homepage Blogs.
+ */
+.homepage-blog__card {
+  min-height: 20rem;
+  margin: .25rem;
+  width: 11rem;
+  @include transition(box-shadow, $color-transition-speed);
+}
+
+.homepage-blog__card:hover {
+  box-shadow: 0 .25rem 1rem #888888;
+}
+
+.homepage-blog__image-container {
+  height: 10rem;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.homepage-blog__card-description { display: none; }
+
+@mixin homepage-blog--sm() {
+  .homepage-blogs__carousel { max-width: 42rem; }
+
+  .homepage-blog__card {
+    width: 15rem;
+    min-height: 25rem;
+  }
+
+  .homepage-blog__card-description { display: block; }
+}
+
+@mixin homepage-blog--md() {
+  .homepage-blog__image-container { height: 15rem; }
+
+  .homepage-blogs__carousel { max-width: 50rem; }
+
+  .homepage-blog__card {
+    width: 20rem;
+    min-height: 30rem;
+  }
+
+}
+
+@mixin homepage-blog--lg() {
+  .homepage-blog__image-container { height: 10rem; }
+
+  .homepage-blogs__carousel { max-width: 85rem; }
+
+  .homepage-blog__card {
+    width: 12rem;
+    min-height: 28rem;
+  }
+}
+
+@mixin homepage-blog--xl() {
+  .homepage-blog__image-container { height: 15rem; }
+
+  .homepage-blog__card { width: 17rem; }
+}
+/* End of Homepage Blogs. */
+
+
+
+/**
  * Why Custom Software?
  */
 .custom-software__text { width: 95%; }

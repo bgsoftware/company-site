@@ -1,12 +1,14 @@
 /* Small screen size (sm) */
 @media only screen and (min-width: 576px) {
   @include font-size--sm();
+  @include homepage-blog--sm();
   @include capabilities-and-clients__sm();
 }
 
 /* Medium screen size (md) */
 @media only screen and (min-width: 768px) {
   @include navigation-bar--md();
+  @include homepage-blog--md();
   @include about-us--md();
   @include font-size--md();
   @include survey--md();
@@ -19,6 +21,7 @@
 /* Large screen size (lg) */
 @media only screen and (min-width: 992px) {
   @include navigation-bar--lg();
+  @include homepage-blog--lg();
   @include custom-software--lg();
   @include services--lg();
   @include headline--lg();
@@ -34,6 +37,7 @@
 /* Extra large screen size (xl) */
 @media only screen and (min-width: 1200px) {
   @include navigation-bar--xl();
+  @include homepage-blog--xl();
   @include about-us--xl();
   @include font-size--xl();
   @include survey--xl();
