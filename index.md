@@ -93,11 +93,7 @@ title: Home
             {% if forloop.first == false %}
               <div class="homepage-blogs__carousel-item carousel-item text-center">
                 {% for post in postGroup %}
-                    <img
-                      class="inline-block mx-4 my-1 img-fluid w-8rem"
-                      src="/assets/images/blog/{{ post.image }}"
-                      alt="/assets/images/blog/{{ post.image }}"
-                    >
+                  {% include blog-card.html %}
                 {% endfor %}
               </div>
             {% endif %}
