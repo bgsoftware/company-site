@@ -4,7 +4,6 @@ description: BG Software Homepage
 title: Home
 ---
 
-
 <div>
   <!--- Headline. --->
   <div
@@ -32,7 +31,7 @@ title: Home
               <source src="/assets/videos/explainer.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
-            <div class="headline__video-overlay"></div>
+            <div class="headline__video-overlay border-radius-1pct"></div>
           </div>
         </div>
       </div>
@@ -72,13 +71,16 @@ title: Home
     {% endif %}
   {% endfor %}
   <!--- Blogs. --->
-  <div id="homepage-blogs" class="py-4">
+  <div
+    id="homepage-blogs"
+    class="py-4"
+    data-ride="carousel"
+    data-aos="fade-right"
+    data-aos-offset="200"
+  >
     <h1 class="text-center">Recent Blogs</h1>
      <div
         class="homepage-blogs__carousel carousel slide py-4 mx-auto"
-        data-ride="carousel"
-        data-aos="fade-right"
-        data-aos-offset="200"
       >
         <div class="carousel-inner">
           {% for postGroup in posts %}
@@ -283,11 +285,6 @@ title: Home
           technologies, software architects, and quality assurance team to bring your vision
           to life. A custom solution is then created to fit your specific needs.
         </p>
-        <a href="/contact-us.html">
-          <button class="btn cta-button-tertiary font-weight-light">
-            Speak to an expert
-          </button>
-        </a>
       </div>
     </div>
     <!--- End of Why BG Software? --->
@@ -449,7 +446,7 @@ title: Home
       >
         {% for clientImage in clientImages %}
           <img
-            class="inline-block px-3 img-fluid w-10rem"
+            class="inline-block px-3 img-fluid w-10rem h-auto"
             src="{{ clientImage }}"
             alt="{{ clientImage }}"
           >
