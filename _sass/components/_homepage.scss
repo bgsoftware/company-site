@@ -20,7 +20,7 @@
 .headline__right { padding-bottom: 1rem; }
 
 .headline__video-overlay {
-  background-image:url('./images/BG/video_overlay.png');
+  background-image:url('./images/BG/video_overlay_white.png');
   background-repeat:no-repeat;
   width:100%;
   position:absolute;
@@ -98,6 +98,8 @@
 /**
  * Homepage Blogs.
  */
+#homepage-blogs { height: 50rem; }
+
 .homepage-blog__card {
   min-height: 20rem;
   margin: .25rem;
@@ -118,6 +120,8 @@
 .homepage-blog__card-description { display: none; }
 
 @mixin homepage-blog--sm() {
+  #homepage-blogs { height: 60rem; }
+
   .homepage-blogs__carousel { max-width: 42rem; }
 
   .homepage-blog__card {
@@ -129,6 +133,8 @@
 }
 
 @mixin homepage-blog--md() {
+  #homepage-blogs { height: 70rem; }
+
   .homepage-blog__image-container { height: 15rem; }
 
   .homepage-blogs__carousel { max-width: 50rem; }
@@ -141,13 +147,15 @@
 }
 
 @mixin homepage-blog--lg() {
+  #homepage-blogs { height: 40rem; }
+
   .homepage-blog__image-container { height: 10rem; }
 
   .homepage-blogs__carousel { max-width: 85rem; }
 
   .homepage-blog__card {
     width: 12rem;
-    min-height: 28rem;
+    min-height: 29rem;
   }
 }
 
