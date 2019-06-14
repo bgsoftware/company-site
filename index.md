@@ -23,7 +23,7 @@ title: Home
         >
           <div class="headline__video-container">
             <video
-              class="headline__video bg-color-white border-radius-1pct"
+              class="headline__video bg-color-white rounded-lg"
               width="100%"
               height="auto"
               controls
@@ -31,7 +31,7 @@ title: Home
               <source src="/assets/videos/explainer.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
-            <div class="headline__video-overlay border-radius-1pct"></div>
+            <div class="headline__video-overlay rounded-lg"></div>
           </div>
         </div>
       </div>
@@ -262,7 +262,7 @@ title: Home
       >
         <img
           id="why-bg-software__team-photo"
-          class="max-width-50rem w-100 h-auto border-radius-1pct"
+          class="max-width-50rem w-100 h-auto rounded-lg"
           src="/assets/images/BG/team_photo.jpg"
           alt="BG Software Team"
         >
@@ -314,7 +314,7 @@ title: Home
       >
         <img
           id="lets-talk-software__robin-image"
-          class="max-width-40 border-radius-1pct"
+          class="max-width-40 rounded-lg"
           alt="Robin Benningfield, CEO"
           src="/assets/images/BG/robin.jpg"
           data-aos="fade-right"
@@ -457,3 +457,18 @@ title: Home
   <!--- End of Clients. --->
 
 </div>
+<script>
+  function offset(el) {
+    var rect = el.getBoundingClientRect(),
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
+  var div = document.getElementById('survey');
+  console.log(div);
+  var divOffset = offset(div);
+  console.log(divOffset.left, divOffset.top);
+  window.onscroll = function() {
+    console.log(window.scrollY);
+  }
+</script>
