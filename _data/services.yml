@@ -1,4 +1,5 @@
 - name   : Software Development
+  image  : software_development_icon.png
   point  : We find out what you’d like to achieve with your business, show you the possibilities,
            then talk with you about creating software that solves your problem.
   points :
@@ -6,6 +7,7 @@
     - Mobile Applications
     - Application Management & Support
 - name   : Security
+  image  : security_icon.png
   point  : We can create tools to not only make sure the person accessing your program(s) is who
            they say they are, but also verify what each user has access to.
   points :
@@ -13,6 +15,7 @@
     - Authorization
     - Authentication
 - name   : Data Integration
+  image  : data_integration_icon.png
   point  : We can gather up business records from legacy systems, old databases, and your
            brand-new data to show you one unified view.
   points :

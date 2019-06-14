@@ -170,7 +170,7 @@ title: Home
           >
             <div class="card-body px-1">
               <img
-                src="/assets/images/services/{{ forloop.index }}.png"
+                src="/assets/images/services/{{ service.image }}"
                 class="mx-auto d-block w-75 max-width-7rem pb-4"
                 alt="{{ service.name }}"
               >
