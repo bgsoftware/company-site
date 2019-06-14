@@ -1,6 +1,5 @@
 /* Small screen size (sm) */
 @media only screen and (min-width: 576px) {
-  @include font-size--sm();
   @include homepage-blog--sm();
   @include capabilities--sm();
   @include clients--sm();
@@ -26,7 +25,6 @@
   @include custom-software--lg();
   @include services--lg();
   @include headline--lg();
-  @include font-size--lg();
   @include survey--lg();
   @include about-us--lg();
   @include capabilities--lg();
@@ -43,7 +41,6 @@
   @include capabilities--xl();
   @include clients--xl();
   @include about-us--xl();
-  @include font-size--xl();
   @include survey--xl();
   @include footer--xl();
   @include blog-post--xl();
