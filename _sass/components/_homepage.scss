@@ -1,6 +1,4 @@
-/*
- * Headline.
- */
+/* Headline. */
 #headline {
   background-image:
     linear-gradient( rgba(104, 116, 137,0.9), rgba(104, 116, 137,0.9) ),
@@ -95,9 +93,7 @@
 
 
 
-/**
- * Homepage Blogs.
- */
+/* Homepage Blogs. */
 #homepage-blogs { height: 50rem; }
 
 .homepage-blog__card {
@@ -168,9 +164,7 @@
 
 
 
-/**
- * Why Custom Software?
- */
+/* Why Custom Software? */
 .custom-software__text { width: 95%; }
 
 @mixin custom-software--lg() {
@@ -180,9 +174,7 @@
 
 
 
-/**
- * Services.
- */
+/* Services. */
 .services__cards {
   flex-direction: column;
   align-items: center;
@@ -219,9 +211,7 @@
 
 
 
-/**
- * Survey.
- */
+/* Survey. */
 .survey__groups {
   flex-direction: column;
 }
@@ -229,7 +219,6 @@
 .survey__group {
   flex-direction: column;
 }
-
 
 @mixin survey--md() {
   .survey__group {
@@ -257,9 +246,7 @@
 
 
 
-/**
- * About Us.
- */
+/* About Us. */
 .about-us__content {
   flex-direction: column;
   justify-content: space-between;
@@ -268,8 +255,6 @@
 }
 
 .about-us__image-container { display: none; }
-
-
 
 .about-us__text {
   padding-top: 1.5rem;
@@ -322,52 +307,50 @@
 
 
 
-/**
- * Capabilities and Clients.
- */
-.capabilities__carousel .clients__content {
-  width: 100%
+/* Capabilities. */
+.capabilities__carousel { width: 100%; }
+
+@mixin capabilities--sm() {
+  .capabilities__carousel { width: 40rem; }
 }
 
-@mixin capabilities-and-clients__sm() {
-  .capabilities__carousel { width: 40rem; }
+@mixin capabilities--lg() {
+  .capabilities__carousel { width: 62rem; }
+}
 
+@mixin capabilities--xl() {
+  .capabilities__carousel { width: 70rem; }
+}
+/* End of Capabilities. */
+
+
+
+/* Clients. */
+.clients__content { width: 100%; }
+
+@mixin clients--sm() {
   .clients__content { width: 30rem; }
 }
 
-@mixin capabilities-and-clients__md() {
+@mixin clients--md() {
   .clients__content { width: 50rem; }
 }
 
-@mixin capabilities-and-clients--lg() {
-  .capabilities__carousel { width: 62rem; }
-
+@mixin clients--lg() {
   .clients__content {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@mixin capabilities-and-clients--xl() {
-  .capabilities__carousel { width: 70rem; }
-
+@mixin clients--xl() {
   .clients__content { width: 55rem; }
 }
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-/* End of Capabilities and Clients.*/
+/* End of Clients. */
 
 
 
-/**
- * CTA Buttons.
- */
+/* CTA Buttons. */
 .cta-button-tertiary {
   padding: 10px 20px;
   background-color: $dark-blue;
@@ -393,3 +376,14 @@
   border: solid 1px $light-blue;
 }
 /* End of CTA buttons. */
+
+
+
+/* Carousel Controls. */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d5a8a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
