@@ -8,7 +8,6 @@ comments    : true
 tags        : [John Scott, Security]
 ---
 
-
 “This version of the software is incompatible with your iPad.”
 
 The inevitable error message…
