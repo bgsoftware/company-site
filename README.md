@@ -10,7 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 You will have to have one of these options installed on your machine:
 1. Ruby and Jekyll
-       or
 2. Docker Compose
 
 
