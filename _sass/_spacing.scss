@@ -38,3 +38,22 @@ $sides: (top, bottom, left, right);
     }
   }
 }
+
+.dynamic-px-container {
+  padding-left: $px-size-mobile;
+  padding-right: $px-size-mobile;
+}
+
+@mixin dynamic-px-container--md() {
+  .dynamic-px-container {
+    padding-left: $px-size-md;
+    padding-right: $px-size-md;
+  }
+}
+
+@mixin dynamic-px-container--xl() {
+  .dynamic-px-container {
+    padding-left: $px-size-xl;
+    padding-right: $px-size-xl;
+  }
+}

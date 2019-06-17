@@ -16,6 +16,7 @@
   @include blog-library--md();
   @include blog-post--md();
   @include contact-us--md();
+  @include dynamic-px-container--md();
 }
 
 /* Large screen size (lg) */
@@ -45,4 +46,5 @@
   @include footer--xl();
   @include blog-post--xl();
   @include contact-us--xl();
+  @include dynamic-px-container--xl();
 }
