@@ -457,18 +457,3 @@ title: Home
   <!--- End of Clients. --->
 
 </div>
-<script>
-  function offset(el) {
-    var rect = el.getBoundingClientRect(),
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-  }
-  var div = document.getElementById('survey');
-  console.log(div);
-  var divOffset = offset(div);
-  console.log(divOffset.left, divOffset.top);
-  window.onscroll = function() {
-    console.log(window.scrollY);
-  }
-</script>
