@@ -107,6 +107,8 @@
   @include transition(box-shadow, $color-transition-speed);
 }
 
+.homepage-blogs__carousel { height: 44rem; }
+
 .homepage-blog__card:hover {
   box-shadow: 0 .25rem 1rem #888888;
 }
@@ -115,6 +117,9 @@
   height: 10rem;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .homepage-blog__card-description { display: none; }
@@ -153,13 +158,16 @@
 }
 
 @mixin homepage-blog--lg() {
-  #homepage-blogs { height: 40rem; min-height: 0 }
+  #homepage-blogs {
+    height: 40rem;
+    min-height: 0;
+  }
 
   .homepage-blog__image-container { height: 10rem; }
 
   .homepage-blogs__carousel {
     max-width: 85rem;
-    height: auto;
+    height: 34rem;
   }
 
   .homepage-blog__card {
@@ -323,12 +331,20 @@
 /* Capabilities. */
 .capabilities__carousel { width: 100%; }
 
+.capabilities__carousel-image-container { width: 8rem; };
+
 @mixin capabilities--sm() {
-  .capabilities__carousel { width: 39rem; }
+  .capabilities__carousel { width: 32rem; }
+}
+
+@mixin capabilities--md() {
+  .capabilities__carousel { width: 50rem; }
 }
 
 @mixin capabilities--lg() {
   .capabilities__carousel { width: 62rem; }
+
+  .capabilities__carousel-image-container { width: 10rem; };
 }
 
 @mixin capabilities--xl() {

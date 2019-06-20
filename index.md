@@ -86,7 +86,7 @@ title: Home
           {% for postGroup in posts %}
             <!--- If first group, set class have active class. --->
             {% if forloop.first %}
-              <div class="homepage-blogs__carousel-item carousel-item text-center active">
+              <div class="h-100 homepage-blogs__carousel-item carousel-item text-center active">
                 {% for post in postGroup %}
                   {% include blog-card.html %}
                 {% endfor %}
@@ -371,13 +371,13 @@ title: Home
         data-aos="fade-right"
         data-aos-offset="200"
       >
-        <div class="carousel-inner h-100">
+        <div class="carousel-inner">
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
             {% if forloop.first %}
               <div class="capabilities__carousel-item carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                  <div class="w-10rem d-inline-block mx-4 my-1">
+                  <div class="capabilities__carousel-image-container d-inline-block mx-4 my-1">
                     <img
                       class="w-100 h-auto"
                       src="{{ imagePath }}"
@@ -390,7 +390,7 @@ title: Home
             {% if forloop.first == false %}
               <div class="capabilities__carousel-item carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                  <div class="w-10rem d-inline-block mx-4 my-1">
+                  <div class="capabilities__carousel-image-container d-inline-block mx-4 my-1">
                     <img
                       class="w-100 h-auto"
                       src="{{ imagePath }}"
