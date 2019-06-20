@@ -336,7 +336,7 @@ title: Home
   {% endfor %}
 
   <!--- Create a nested array for Capabilities to group carousel. --->
-  {% assign subArrSize = 5 %}
+  {% assign subArrSize = 4 %}
   {% assign capabilities = "" | split: "/" %}
 
   {% for element in techImages %}
@@ -377,22 +377,26 @@ title: Home
             {% if forloop.first %}
               <div class="capabilities__carousel-item carousel-item text-center active">
                 {% for imagePath in imageGroup %}
+                  <div class="w-10rem d-inline-block mx-4 my-1">
                     <img
-                      class="inline-block mx-4 my-1 img-fluid w-8rem"
+                      class="w-100 h-auto"
                       src="{{ imagePath }}"
                       alt="{{ imagePath }}"
                     >
+                  </div>
                 {% endfor %}
               </div>
             {% endif %}
             {% if forloop.first == false %}
               <div class="capabilities__carousel-item carousel-item text-center">
                 {% for imagePath in imageGroup %}
+                  <div class="w-10rem d-inline-block mx-4 my-1">
                     <img
-                      class="inline-block mx-4 my-1 img-fluid w-8rem"
+                      class="w-100 h-auto"
                       src="{{ imagePath }}"
                       alt="{{ imagePath }}"
                     >
+                  </div>
                 {% endfor %}
               </div>
             {% endif %}
@@ -445,11 +449,13 @@ title: Home
         data-aos-offset="200"
       >
         {% for clientImage in clientImages %}
-          <img
-            class="inline-block px-3 img-fluid w-10rem h-auto"
-            src="{{ clientImage }}"
-            alt="{{ clientImage }}"
-          >
+          <div class="w-10rem d-inline-block">
+            <img
+              class="img-fluid w-100 h-auto"
+              src="{{ clientImage }}"
+              alt="{{ clientImage }}"
+            >
+          </div>
         {% endfor %}
       </div>
     </div>
