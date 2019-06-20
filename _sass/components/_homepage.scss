@@ -31,6 +31,10 @@
   background-position: center;
 }
 
+@mixin headline--ie() {
+  #headline { height: 75vh; }
+}
+
 @mixin headline--md() {
   .headline__left {
     margin-right: auto;
@@ -311,7 +315,7 @@
 .capabilities__carousel { width: 100%; }
 
 @mixin capabilities--sm() {
-  .capabilities__carousel { width: 40rem; }
+  .capabilities__carousel { width: 39rem; }
 }
 
 @mixin capabilities--lg() {
