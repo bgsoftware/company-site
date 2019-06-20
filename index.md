@@ -82,7 +82,7 @@ title: Home
      <div
         class="homepage-blogs__carousel carousel slide py-4 mx-auto"
       >
-        <div class="carousel-inner">
+        <div class="carousel-inner h-100">
           {% for postGroup in posts %}
             <!--- If first group, set class have active class. --->
             {% if forloop.first %}
@@ -371,7 +371,7 @@ title: Home
         data-aos="fade-right"
         data-aos-offset="200"
       >
-        <div class="carousel-inner">
+        <div class="carousel-inner h-100">
           {% for imageGroup in capabilities %}
             <!--- If first group, set class have active class. --->
             {% if forloop.first %}

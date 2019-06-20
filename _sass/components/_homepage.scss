@@ -98,7 +98,7 @@
 
 
 /* Homepage Blogs. */
-#homepage-blogs { height: 50rem; }
+#homepage-blogs { min-height: 50rem; }
 
 .homepage-blog__card {
   min-height: 20rem;
@@ -122,7 +122,10 @@
 @mixin homepage-blog--sm() {
   #homepage-blogs { height: 60rem; }
 
-  .homepage-blogs__carousel { max-width: 42rem; }
+  .homepage-blogs__carousel {
+    max-width: 42rem;
+    height: 54rem;
+  }
 
   .homepage-blog__card {
     width: 15rem;
@@ -137,7 +140,10 @@
 
   .homepage-blog__image-container { height: 15rem; }
 
-  .homepage-blogs__carousel { max-width: 50rem; }
+  .homepage-blogs__carousel {
+    max-width: 50rem;
+    height: 64rem;
+  }
 
   .homepage-blog__card {
     width: 20rem;
@@ -147,11 +153,14 @@
 }
 
 @mixin homepage-blog--lg() {
-  #homepage-blogs { height: 40rem; }
+  #homepage-blogs { height: 40rem; min-height: 0 }
 
   .homepage-blog__image-container { height: 10rem; }
 
-  .homepage-blogs__carousel { max-width: 85rem; }
+  .homepage-blogs__carousel {
+    max-width: 85rem;
+    height: auto;
+  }
 
   .homepage-blog__card {
     width: 12rem;
