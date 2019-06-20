@@ -48,3 +48,8 @@
   @include contact-us--xl();
   @include dynamic-px-container--xl();
 }
+
+/* Interet Explorer specific queries. */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @include headline--ie();
+}
