@@ -70,7 +70,7 @@ Here are a couple of tips which don’t cost you anything. Review your current s
 
 Without getting in the technical weeds here,  you, an owner or manager, may need to look at everything on your system. But do all your employees need to? Authentication and Authorization inside your software do this:  authentication verifies who you are, and authorization verifies what you can see and use.
 
-Keeping up with all of the facets of running your business can certainly make you weary some days. Security shouldn’t be one of them. No can guarantee 100% protection from every vulnerability, but a software application that’s fresh and up to date might scare off a black hat hacker who’ll move on to someone else’s system which isn’t as robust.
+Keeping up with all of the facets of running your business can certainly make you weary some days. Security shouldn’t be one of them. No one can guarantee 100% protection from every vulnerability, but a software application that’s fresh and up to date might scare off a black hat hacker who’ll move on to someone else’s system which isn’t as robust.
 
 That peace of mind could be very valuable.
 
