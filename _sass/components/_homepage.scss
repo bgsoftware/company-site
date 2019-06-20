@@ -331,7 +331,11 @@
 /* Capabilities. */
 .capabilities__carousel { width: 100%; }
 
-.capabilities__carousel-image-container { width: 8rem; };
+.capabilities__carousel-image-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 8rem;
+};
 
 @mixin capabilities--sm() {
   .capabilities__carousel { width: 32rem; }
@@ -344,11 +348,18 @@
 @mixin capabilities--lg() {
   .capabilities__carousel { width: 62rem; }
 
-  .capabilities__carousel-image-container { width: 10rem; };
+  .capabilities__carousel-image-container {
+    width: 10rem;
+  };
 }
 
 @mixin capabilities--xl() {
   .capabilities__carousel { width: 70rem; }
+
+  .capabilities__carousel-image-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  };
 }
 /* End of Capabilities. */
 

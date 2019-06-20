@@ -377,7 +377,7 @@ title: Home
             {% if forloop.first %}
               <div class="capabilities__carousel-item carousel-item text-center active">
                 {% for imagePath in imageGroup %}
-                  <div class="capabilities__carousel-image-container d-inline-block mx-4 my-1">
+                  <div class="capabilities__carousel-image-container d-inline-block my-1">
                     <img
                       class="w-100 h-auto"
                       src="{{ imagePath }}"
@@ -390,7 +390,7 @@ title: Home
             {% if forloop.first == false %}
               <div class="capabilities__carousel-item carousel-item text-center">
                 {% for imagePath in imageGroup %}
-                  <div class="capabilities__carousel-image-container d-inline-block mx-4 my-1">
+                  <div class="capabilities__carousel-image-container d-inline-block my-1">
                     <img
                       class="w-100 h-auto"
                       src="{{ imagePath }}"
