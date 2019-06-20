@@ -1,11 +1,9 @@
 <a href="{{ post.id }}">
   <div class="homepage-blog__card card d-inline-block align-top rounded-lg">
-    <div class="homepage-blog__image-container d-flex justify-content-center overflow-hidden bg-color-dark-blue">
-      <img
-        class="flex-none object-fit-contain"
-        src="/assets/images/blog/{{ post.image }}"
-        alt="/assets/images/blog/{{ post.image }}"
-      >
+    <div
+      class="homepage-blog__image-container"
+      style="background-image: url('/assets/images/blog/{{ post.image }}');"
+    >
     </div>
     <div class="card-body">
       <h5 class="card-title font-size-md">{{ post.title }}</h5>
