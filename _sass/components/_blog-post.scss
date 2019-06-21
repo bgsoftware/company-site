@@ -23,6 +23,14 @@
 
 @mixin blog-post--lg() {
   .blog-post__image { width: 85%; }
+
+  /* IE media query. */
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .blog-post__content {
+      max-width: none;
+      width: 50rem;
+    }
+  }
 }
 
 @mixin blog-post--xl() {
