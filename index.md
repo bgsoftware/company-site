@@ -268,7 +268,7 @@ title: Home
         >
       </div>
       <div
-        class="about-us__text text-align-left"
+        class="about-us__text text-align-left d-flex justify-content-center flex-column"
         data-aos="fade-right"
         data-aos-offset="200"
       >
@@ -294,7 +294,7 @@ title: Home
     <!--- Let's Talk Software. --->
     <div id="lets-talk-software" class="about-us__content d-flex">
       <div
-        class="about-us__text text-right"
+        class="about-us__text d-flex justify-content-center flex-column"
         data-aos="fade-right"
         data-aos-offset="200"
       >
