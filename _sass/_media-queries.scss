@@ -53,4 +53,5 @@
 /* Interet Explorer specific queries. */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   @include headline--ie();
+  @include scroll-top--ie();
 }
