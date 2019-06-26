@@ -14,7 +14,7 @@ Did you hear about Target’s cash registers going dark on Saturday? It was a gl
 
 On Tuesday the 18th, Google had an “outage” which lasted several hours. Users on social media noted the problem, with snarky comments like
 
-<img id="why-bg-software__team-photo" class="h-auto w-100" src="/assets/images/blog/content/leslie_grossman_tweet.png" alt="Leslie Grossman Tweet">
+<img id="leslie_grossman_tweet" class="h-auto w-100" src="/assets/images/blog/content/leslie_grossman_tweet.png" alt="Leslie Grossman Tweet">
 
 Besides Leslie yelling “Get off my lawn!” to the universe, it was a major inconvenience to millions of people who rely on Google Calendar to run their appointments, and lives. This was not the first incident for the company. There was another big one earlier this month.
 
