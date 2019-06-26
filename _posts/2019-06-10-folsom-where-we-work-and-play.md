@@ -1,9 +1,8 @@
 ---
 layout      : blog
 title       : "Folsom: Where We Work (and Play)"
-description : We're lucky enough to call the City of Folsom our home at BG Software. Although
-              its name is recognizable worldwide in part because of the prison that Johnny Cash
-              made…
+description : The story of our hometown, a former Gold Rush village
+              tuned-major-suburb, and why our quality of life is amazing.
 image       : 2019-06-10-folsom-where-we-work-and-play.jpg
 author      : John Stuckert
 comments    : true
