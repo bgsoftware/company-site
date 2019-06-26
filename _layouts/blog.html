@@ -15,10 +15,7 @@ comments: true
     {% assign author = site.authors | where: 'name', page.author | first %}
     {% if author %}
       <i class="fa fa-user" aria-hidden="true"></i>
-      <a
-        href="{{ author.url }}"
-        class="font-size-sm color-light-grey hover-color-teal"
-      >{{ author.name }}</a>
+      <span>{{ author.name }}</span>
       &nbsp;-&nbsp;
       <i class="fa fa-clock-o" aria-hidden="true"></i>
       {{ page.date | date: '%B %d, %Y'}}
