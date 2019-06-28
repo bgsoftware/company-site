@@ -14,7 +14,9 @@ Did you hear about Target’s cash registers going dark on Saturday? It was a gl
 
 On Tuesday the 18th, Google had an “outage” which lasted several hours. Users on social media noted the problem, with snarky comments like
 
-<img id="leslie_grossman_tweet" class="h-auto w-100" src="/assets/images/blog/content/leslie_grossman_tweet.png" alt="Leslie Grossman Tweet">
+<div class="mx-auto" style="max-width: 100%; width: 500px; min-width: 200px">
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">People make endless fun of me because I have an old school paper date book and I write everything down but now your precious Google Calendar is on the fritz and THIS OLD LADY IS STAYING ON SCHEDULE TODAY HAHA SUCKERS</p>&mdash; Leslie Grossman (@MissLeslieG) <a href="https://twitter.com/MissLeslieG/status/1141001186759368704?ref_src=twsrc%5Etfw">June 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 Besides Leslie yelling “Get off my lawn!” to the universe, it was a major inconvenience to millions of people who rely on Google Calendar to run their appointments, and lives. This was not the first incident for the company. There was another big one earlier this month.
 
