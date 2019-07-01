@@ -24,7 +24,7 @@ You might wonder why there are such wild variables in the base price. Lots of co
 
 We still haven’t answered your question. What’s it really going to cost?
 
-if you are buying something off the shelf, the final, out-the-door price will be based on what features/pricing tier you choose, and most companies clearly show you what you get for X dollars a month.
+If you are buying something off the shelf, the final, out-the-door price will be based on what features/pricing tier you choose, and most companies clearly show you what you get for X dollars a month.
 
 It’s the custom solution that has more wiggle room. But it’s different and not a bad thing. If you want something made just for you, and you want to own it as opposed to renting it month-to-month, the final cost is still going to come down to the things we mentioned above. What do you need a software to do? What operations are you automating? What kind of database do you need?
 
