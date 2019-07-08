@@ -8,7 +8,7 @@ comments    : true
 tags        : [John Scott, Google, outage]
 ---
 
-It can happen to anyone.
+It can happen to anyone
 
 Did you hear about Target’s cash registers going dark on Saturday? It was a global shutdown.
 
