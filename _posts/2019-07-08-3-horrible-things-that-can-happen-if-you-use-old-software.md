@@ -1,7 +1,7 @@
 ---
 layout      : blog
 title       : “3 Horrible Things That Can Happen If You Use Old Software”
-description : Running a small and midsize business is fulfilling, exciting and awesome. It's also occasionally exhausting and maddening.  It's easy to divert our attention to the little day-to-day crises, to put…
+description : Microsoft is ending support for some software you may be using. Danger.
 image       : 2019-07-08-3-horrible-things-that-can-happen-if-you-use-old-software.jpg
 author      : John Scott
 comments    : true
