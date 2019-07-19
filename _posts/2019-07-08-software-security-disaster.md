@@ -10,7 +10,7 @@ tags        : [John Scott, Software, Security]
 
 Running a small and midsize business is fulfilling, exciting and awesome. It’s also occasionally exhausting and maddening.  It’s easy to divert our attention to the little day-to-day crises, to put out those daily “fires.” There’s one elephant in the room which so many of us ignore, or procrastinate with. It doesn’t command our attention until something goes wrong. But the cost of ignoring this elephant can be catastrophic.
 
-According to a survey by Alert Logic, 66% of devices in SMB’s are using expired or about-to-expire Microsoft OS versions.  The findings underscore an alarming dependence on antiquated Microsoft operating systems and outdated servers. Most devices scanned by Alert Logic for their study are running versions of Windows that are more than a decade old! 
+According to a survey by Alert Logic, 66% of devices in SMB’s are using expired or about-to-expire Microsoft OS versions.  The findings underscore an alarming dependence on antiquated Microsoft operating systems and outdated servers. Most devices scanned by Alert Logic for their study are running versions of Windows that are more than a decade old!
 
 Look in your server room or around the office. Are there Windows XP or 7 workstations? Microsoft won’t be supporting 7 starting next year, and XP support is already gone. Do you have an Exchange 2000 email server? How about Windows Server 2008 or Windows NT? Support will be ending for a lot of these old products, and if you’re not ready, these could be tough distractions to deal with.
 
