@@ -285,7 +285,7 @@ title: Home
           technologies, software architects, and quality assurance team to bring your vision
           to life. A custom solution is then created to fit your specific needs.
         </p>
-        <a href="/contact-us">
+        <a href="/contact-form">
           <button class="btn cta-button-tertiary font-weight-light">Speak to an expert</button>
         </a>
       </div>
