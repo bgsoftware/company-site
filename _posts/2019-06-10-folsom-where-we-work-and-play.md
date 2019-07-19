@@ -1,5 +1,5 @@
 ---
-layout      : blog
+layout      : post
 title       : "Folsom: Where We Work (and Play)"
 description : The story of our hometown, a former Gold Rush village
               tuned-major-suburb, and why our quality of life is amazing.

@@ -1,5 +1,5 @@
 ---
-layout      : blog
+layout      : post
 title       : "What We Learned When Google Went Down (Twice)"
 description : It can happen to anyone..
 image       : 2019-06-18-what-we-learned-when-google-went-down-twice.jpg

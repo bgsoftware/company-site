@@ -1,5 +1,5 @@
 ---
-layout      : blog
+layout      : post
 title       : If Your Software Builder Can’t Answer These 3 Questions, Ghost Them
 description : These three will determine if your software build is going to be exciting, or
               a headache.
