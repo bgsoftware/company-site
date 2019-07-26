@@ -1,3 +1,5 @@
+'use strict';
+
 var headlineVideoOverlay = document.getElementsByClassName('headline__video-overlay')[0];
 var headlineVideo = document.getElementsByClassName('headline__video')[0];
 
