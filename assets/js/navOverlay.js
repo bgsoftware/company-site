@@ -1,3 +1,5 @@
+'use strict';
+
 function openNav() {
   document.getElementById("navigation-overlay").style.width = "100%";
 }
