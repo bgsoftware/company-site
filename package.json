@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/bgsoftware/company-site.git",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -13,6 +14,20 @@
     "aos": "2.3.x",
     "bootstrap": "4.3.x",
     "jquery": "3.4.x",
-    "popper.js": "1.x.x"
+    "popper.js": "1.14.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-preset-env": "^1.7.0",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-text-replace": "^0.4.0",
+    "jshint-stylish": "^2.2.1"
   }
 }
