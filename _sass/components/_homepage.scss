@@ -217,14 +217,14 @@
   }
 
   .services__card {
-    min-height: 35rem;
+    min-height: 25rem;
     max-width: 25rem;
   }
 }
 
 @mixin services__xl() {
   .services__card {
-    min-height: 38rem;
+    min-height: 30rem;
     max-width: 25rem;
   }
 }

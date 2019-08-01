@@ -159,34 +159,20 @@ title: Home
 
 
   <!--- Services. --->
-  <div id="services" class="py-4">
+  <div id="services" class="py-6">
     <div class="d-flex align-items-center flex-column">
       <div class="services__cards d-flex justify-content-center m-0">
         {% for service in site.data.services %}
-          <div
-            class="services__card ml-3 mr-3 mb-3"
-            data-aos="fade-right"
-            data-aos-offset="200"
-          >
-            <div class="card-body px-1">
-              <img
-                src="/assets/images/services/{{ service.image }}"
-                class="mx-auto d-block w-75 max-width-7rem pb-4"
-                alt="{{ service.name }}"
-              >
-              <h2 class="services__card-title card-title text-center">{{ service.name }}</h2>
-              <div class="services__card-content font-size-md">
-                <p class="font-weight-lighter line-height-2">
-                  {{ service.point }}
-                </p>
-                <ul class="services__card-points pt-3">
-                {% for point in service.points %}
-                  <li class="card-text"><p class="font-weight-lighter">{{ point }}</p></li>
-                {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
+          {% if forloop.index <= 3 %}
+            {% include service-card.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="services__cards d-flex justify-content-center m-0">
+        {% for service in site.data.services %}
+          {% if forloop.index > 3 %}
+            {% include service-card.html %}
+          {% endif %}
         {% endfor %}
       </div>
     </div>
