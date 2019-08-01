@@ -1,0 +1,35 @@
+<!--- Clients. --->
+{% assign clientImages = "" | split: "" %}
+{% for image in site.static_files %}
+  {% if image.path contains 'assets/images/clients' %}
+    {% assign clientImages = clientImages | push: image.path %}
+  {% endif %}
+{% endfor %}
+
+<div id="clients" class="pb-4">
+  <div class="d-flex flex-column align-items-center">
+    <div class="bg-color-blue w-100 py-2">
+      <h1
+        class="text-center color-white"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >Current Clients</h1>
+    </div>
+    <div
+      class="clients__content py-4 text-center"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >
+      {% for clientImage in clientImages %}
+        <div class="w-10rem d-inline-block">
+          <img
+            class="img-fluid w-100 h-auto"
+            src="{{ clientImage }}"
+            alt="{{ clientImage }}"
+          >
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--- End of Clients. --->
