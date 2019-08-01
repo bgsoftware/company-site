@@ -1,0 +1,12 @@
+- icon : heart.png
+  pct  : 96%
+  text : of employees said that they would be more satisfied at work with access to better software
+- icon : binoculars.png
+  pct  : 24%
+  text : of employees said they have considered looking for a new job due to mismatched software
+- icon : thumbs_down.png
+  pct  : 52%
+  text : of respondents said they have been dissatisfied in their roles due to mismatched software
+- icon : denied.png
+  pct  : 66%
+  text : of respondents said they do not have control over software decisions at their company

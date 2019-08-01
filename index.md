@@ -184,45 +184,18 @@ title: Home
   <div id="survey" class="py-4 bg-color-blue d-flex flex-column">
     <div class="survey__groups d-flex justify-content-center align-items-center color-white mx-auto">
       <div class="survey__group d-flex">
-        <div
-          class="survey__card card-body text-center"
-          data-aos="fade-right"
-          data-aos-offset="200"
-        >
-          <i class="fa fa-heart-o fa-3x color-white" aria-hidden="true"></i>
-          <h1 class="card-title text-center font-size-4">96%</h1>
-          <p class="font-size-md line-height-2">of employees said that they would be more satisfied at work with access to better software</p>
-        </div>
-        <div
-          class="survey__card card-body text-center"
-          data-aos="fade-right"
-          data-aos-offset="200"
-        >
-          <i class="fa fa-eye fa-3x color-white" aria-hidden="true"></i>
-          <h1 class="card-title text-center font-size-4">24%</h1>
-          <p class="font-size-md line-height-2">of employees said they have considered looking for a new job due to mismatched software</p>
-        </div>
+      {% for survey in site.data.surveys %}
+        {% if forloop.index <= 2 %}
+          {% include survey-card.html %}
+        {% endif %}
+      {% endfor %}
       </div>
       <div class="survey__group d-flex">
-        <div
-          class="survey__card card-body text-center"
-          data-aos="fade-right"
-          data-aos-offset="200"
-        >
-          <i class="fa fa-frown-o fa-3x color-white" aria-hidden="true"></i>
-          <h1 class="card-title text-center font-size-4">52%</h1>
-          <p class="font-size-md line-height-2">of respondents said they have been dissatisfied in their roles due to mismatched software</p>
-        </div>
-        <div
-          class="survey__card card-body text-center"
-          data-aos="fade-right"
-          data-aos-offset="200"
-        >
-          <i class="fa fa-floppy-o fa-3x color-white" aria-hidden="true"></i>
-          <h1 class="card-title text-center font-size-4">66%</h1>
-          <p class="font-size-md line-height-2">of respondents said they do not have control over software decisions at their company</p>
-          <br>
-        </div>
+      {% for survey in site.data.surveys %}
+        {% if forloop.index > 2 %}
+          {% include survey-card.html %}
+        {% endif %}
+      {% endfor %}
       </div>
     </div>
     <a
