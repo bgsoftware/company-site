@@ -9,4 +9,4 @@ services:
       - "4000:4000"
     stdin_open: true
     tty: true
-    command: bash -c "bundle install && bundle exec make serve"
+    command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
