@@ -18,6 +18,8 @@
   @include blog-post--md();
   @include contact-us--md();
   @include dynamic-px-container--md();
+  @include header--md();
+  @include team--md();
 }
 
 /* Large screen size (lg) */
@@ -34,6 +36,8 @@
   @include footer--lg();
   @include blog-library--lg();
   @include blog-post--lg();
+  @include header--lg();
+  @include team--lg();
 }
 
 /* Extra large screen size (xl) */
@@ -48,6 +52,7 @@
   @include blog-post--xl();
   @include contact-us--xl();
   @include dynamic-px-container--xl();
+  @include header--xl();
 }
 
 /* Interet Explorer specific queries. */

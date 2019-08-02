@@ -1,0 +1,24 @@
+.team__team-photo {
+  display: block;
+  width: 100%;
+}
+
+.team__leaders {
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@mixin team--md() {
+  .team__leaders {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@mixin team--lg() {
+  .team__text, .team__robin-quote {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
