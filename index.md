@@ -8,44 +8,21 @@ title: Home
   <!--- Headline. --->
   <div
     id="headline"
-    class="d-flex flex-column align-items-center justify-content-center min-height-100vh"
+    class="d-flex flex-column align-items-center justify-content-center min-height-90vh"
   >
-    <div class="headline__content">
-      <div
-        class="headline__left video-wrap"
-        data-aos="fade-right"
-        data-aos-duration="3000"
+    <div class="headline__video-container d-flex flex-column align-items-center justify-content-center ">
+      <video
+        class="headline__video bg-color-white"
+        width="100%"
+        height="auto"
+        autoplay="autoplay"
+        muted
+        playsinline
+        loop
       >
-        <div
-          class="video-wrap"
-          data-aos="fade-right"
-          data-aos-duration="3000"
-        >
-          <div class="headline__video-container">
-            <video
-              class="headline__video bg-color-white rounded-lg"
-              width="100%"
-              height="auto"
-              controls
-            >
-              <source src="/assets/videos/explainer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-            <div class="headline__video-overlay rounded-lg"></div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="headline__right text-left"
-        data-aos="fade-right"
-        data-aos-duration="3000"
-      >
-        <p class="text-left font-weight-light color-white font-size-lg line-height-2">
-          BG Software partners with small and medium-sized businesses to create professional software that’s easy to learn, simple to launch,​ and created just for you.
-        </p>
-      </div>
+        <source src="/assets/videos/hero_video.mp4" type="video/mp4">
+      </video>
     </div>
-    <script src="/assets/js/headlineVideoOverlay.js"></script>
   </div>
   <!--- End of Headline. --->
 
