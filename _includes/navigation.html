@@ -14,25 +14,6 @@
         <a class="nav-link font-size-sm hover-color-light-blue" href="{{ item.link }}">{{ item.name }}</a>
       </li>
       {% endfor %}
-      {% for app in site.data.socialMedia %}
-      <li class="nav-item px-2 d-flex align-items-center">
-        <a
-          href="{{ app.link }}"
-          target="_blank"
-          class="px-1 navigation-bar__link"
-        >
-          <i class="navigation-bar__icon hover-color-{{ app.name }} fa {{ app.img-class }} font-size-2" aria-hidden="true"></i>
-        </a>
-      </li>
-      {% endfor %}
-      <li class="nav-item px-2 d-flex align-items-center">
-        <a
-          href="mailto:customsoftware@benningfieldgroup.com"
-          class="px-1 navigation-bar__link"
-        >
-          <i class="navigation-bar__icon mail hover-color-grey fa fa-envelope font-size-2" aria-hidden="true"></i>
-        </a>
-      </li>
     </ul>
   </div>
 
