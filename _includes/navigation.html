@@ -28,6 +28,9 @@
     >&times;</a>
     <div class="navigation-overlay__content">
       <div class="d-flex flex-column">
+        <span class="navigation-overlay__text">
+          <a href="/" class="navigation-overlay__text d-inline-block hover-color-light-blue">Home</a>
+        </span>
         {% for item in site.data.navigation %}
           <span class="navigation-overlay__text">
             <a href="{{ item.link }}" class="navigation-overlay__text d-inline-block hover-color-light-blue">{{ item.name }}</a>
