@@ -1,0 +1,13 @@
+.cta-button-blue {
+  padding: .75rem 1.5rem;
+  background-color: $blue;
+  color: $white;
+  border: solid 1px $blue;
+  border-radius: 0.5rem;
+}
+
+.cta-button-blue:hover {
+  background-color: $dark-blue;
+  color: $white;
+  border: solid 1px $dark-blue;
+}
