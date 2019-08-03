@@ -9,7 +9,6 @@
 @media only screen and (min-width: 768px) {
   @include navigation-bar--md();
   @include homepage-blog--md();
-  @include about-us--md();
   @include font-size--md();
   @include survey--md();
   @include clients--md();
@@ -30,7 +29,6 @@
   @include services--lg();
   @include headline--lg();
   @include survey--lg();
-  @include about-us--lg();
   @include capabilities--lg();
   @include clients--lg();
   @include footer--lg();
@@ -46,7 +44,6 @@
   @include homepage-blog--xl();
   @include capabilities--xl();
   @include clients--xl();
-  @include about-us--xl();
   @include survey--xl();
   @include footer--xl();
   @include blog-post--xl();
