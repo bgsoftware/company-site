@@ -6,7 +6,7 @@ title: Team
 
 {% assign headerText1 = "Our Team" %}
 {% include header.html %}
-<div id="team" class="d-flex align-items-center flex-column">
+<div id="team" class="d-flex align-items-center flex-column pb-5">
   <div class="max-width-75rem">
     <img
       class="team__team-photo h-auto rounded-bottom-lg"
@@ -24,7 +24,7 @@ title: Team
       </p>
     </div>
     <div class="team__leaders d-flex">
-      <div class="team__leader d-flex flex-column">
+      <div class="team__leader d-flex flex-column py-3">
         <div class="team__leader-photo">
           <img
             class="w-100 max-width-20rem rounded-lg pb-3"
@@ -36,7 +36,7 @@ title: Team
         <span class="text-center font-size-md">Chief Executive Officer</span>
       </div>
 
-      <div class="team__leader d-flex flex-column">
+      <div class="team__leader d-flex flex-column pb-3">
         <div class="team__leader-photo">
           <img
             class="w-100 team__leader-photo max-width-20rem rounded-lg pb-3"
@@ -57,4 +57,6 @@ title: Team
       </p>
     </div>
   </div>
+
+  {% include pre-footer-buttons.html %}
 </div>
