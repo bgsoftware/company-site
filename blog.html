@@ -3,6 +3,8 @@ layout: default
 title: Blog Library
 ---
 
+{% assign headerText1 = "Blog" %}
+{% include header.html %}
 <div class="blog-library__container bg-color-dark-blue">
   <div class="blog-library mx-auto py-8">
     {% for post in site.posts %}
