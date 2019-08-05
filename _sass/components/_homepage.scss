@@ -268,6 +268,32 @@
 
 
 
+/* Testimonials. */
+.testimonials__carousel { width: 100% }
+
+.testimonials__carousel-container {
+  width: 90%;
+  min-height: 25rem;
+}
+
+@mixin testimonials--sm() {
+  .testimonials__carousel { width: 32rem; }
+}
+
+@mixin testimonials--md() {
+  .testimonials__carousel { width: 50rem; }
+}
+
+@mixin testimonials--lg() {
+  .testimonials__carousel { width: 62rem; }
+}
+
+@mixin testimonials--xl() {
+  .testimonials__carousel { width: 70rem; }
+}
+/* End of Testimonials. */
+
+
 /* Capabilities. */
 .capabilities__carousel { width: 100%; }
 
