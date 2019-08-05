@@ -342,6 +342,27 @@ title: Home
   </div>
   <!--- End of Capabilities. --->
 
-  {% include case-studies.html %}
+
+  <!--- Clients. --->
+  <div id="clients" class="pb-4">
+    <div class="d-flex flex-column align-items-center">
+      <div class="bg-color-blue w-100 py-2">
+        <h1
+          class="text-center color-white"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >Case Studies</h1>
+      </div>
+      <div
+        class="clients__content py-4 text-center"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+      {% include case-studies.html %}
+      </div>
+    </div>
+  </div>
+  <!--- End of Clients. --->
+
 
 </div>
