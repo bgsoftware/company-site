@@ -1,8 +1,14 @@
-<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light shadow-sm bg-white py-1">
+{% if page.url == "/" %}
+<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light shadow-sm py-1 position-absolute navbar-fixed-top fixed-top">
+  <a href="/" class="p-0 d-flex align-items-center">
+    <img class="navigation-bar__bg-logo" src="/assets/images/BG/logo_03.png">
+  </a>
+{% else %}
+<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light shadow-sm py-1 position-relative">
   <a href="/" class="p-0 d-flex align-items-center">
     <img class="navigation-bar__bg-logo" src="/assets/images/BG/logo_02.png">
   </a>
-
+{% endif %}
   <button class="navbar-toggler" type="button" data-toggle="collapse" >
     <span class="navbar-toggler-icon" onclick="openNav()"></span>
   </button>
@@ -11,7 +17,11 @@
     <ul class="navbar-nav ml-auto">
       {% for item in site.data.navigation %}
       <li class="nav-item px-2">
-        <a class="nav-link font-size-sm hover-color-light-blue" href="{{ item.link }}">{{ item.name }}</a>
+        {% if page.url == "/" %}
+        <a class="nav-link nav-link-transparent font-size-sm color-white" href="{{ item.link }}">{{ item.name }}</a>
+        {% else %}
+        <a class="nav-link nav-link-color font-size-sm hover-color-light-blue color-dark-blue" href="{{ item.link }}">{{ item.name }}</a>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>

@@ -1,5 +1,4 @@
 #navigation-bar {
-  position: relative;
   width: 100%;
   padding-left: .25rem;
   padding-right: .25rem;
@@ -31,16 +30,23 @@
 
 
 .nav-link {
-  color: $dark-blue !important;
-  border-bottom: solid $white;
-
   -webkit-transition: color $color-transition-speed linear, border-color $color-transition-speed linear; /* Saf3.2+, Chrome */
      -moz-transition: color $color-transition-speed linear, border-color $color-transition-speed linear; /* FF3.7+ */
        -o-transition: color $color-transition-speed linear, border-color $color-transition-speed linear; /* Opera 10.5 */
           transition: color $color-transition-speed linear, border-color $color-transition-speed linear;
 }
 
-.nav-link:hover { border-color: $blue; }
+.nav-link-transparent {
+  color: $white;
+  border-bottom: solid transparent;
+}
+.nav-link-transparent:hover { border-color: $white; }
+
+.nav-link-color {
+  color: $dark-blue;
+  border-bottom: solid $white;
+}
+.nav-link-color:hover { border-color: $blue; }
 
 .navigation-overlay {
   height: 100%;
