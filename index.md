@@ -182,62 +182,6 @@ tags: [BG Software]
 
 
 
-  <!--- Testimonials. --->
-  <div id="testimonials" class="d-flex justify-content-center">
-    <div
-      class="testimonials__carousel carousel slide py-4"
-      data-ride="carousel"
-      data-aos="fade-right"
-      data-aos-offset="200"
-    >
-      <div class="carousel-inner">
-        {% for testimonial in site.data.testimonials %}
-          <!--- If first group, set class have active class. --->
-          {% if forloop.first %}
-            <div class="testimonials__carousel-item carousel-item text-center active">
-              <div class="testimonials__carousel-container d-inline-block my-1 d-flex align-items-center mx-auto font-size-md">
-                <div class="font-italic">
-                  <div class="pb-3">{{ testimonial.quote }}</div>
-                  <div>{{ testimonial.author }}</div>
-                </div>
-              </div>
-            </div>
-          {% endif %}
-          {% if forloop.first == false %}
-            <div class="testimonials__carousel-item carousel-item text-center">
-              <div class="testimonials__carousel-container d-inline-block my-1 d-flex align-items-center mx-auto font-size-md">
-                <div class="font-italic">
-                  <div class="pb-3">{{ testimonial.quote }}</div>
-                  <div>{{ testimonial.author }}</div>
-                </div>
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <a
-        class="carousel-control-prev w-1rem"
-        href=".testimonials__carousel"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon carousel-control-dark" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next w-1rem"
-        href=".testimonials__carousel"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon carousel-control-dark" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  <!--- End of Testimonials. --->
-
-
   <!--- Capabilities. --->
   {% assign techImages = "" | split: "" %}
   {% for image in site.static_files %}
@@ -271,7 +215,7 @@ tags: [BG Software]
     <div class="d-flex flex-column align-items-center">
       <div class="bg-color-blue w-100 py-2">
         <h1
-          class="text-center color-white"
+          class="text-center color-white pt-8"
           data-aos="fade-right"
           data-aos-offset="200"
         >Capabilities</h1>
