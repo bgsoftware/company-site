@@ -7,11 +7,17 @@ tags: [BG Software]
 
 <div>
   <!--- Headline. --->
-  <header id="headline">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+  <div id="headline">
+    <video
+      class="headline__video"
+      playsinline="playsinline"
+      autoplay="autoplay"
+      muted="muted"
+      loop="loop"
+    >
       <source src="/assets/videos/hero_video.mp4" type="video/mp4">
     </video>
-  </header>
+  </div>
   <!--- End of Headline. --->
 
 
