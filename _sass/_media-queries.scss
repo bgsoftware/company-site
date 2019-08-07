@@ -29,7 +29,6 @@
   @include homepage-blog--lg();
   @include custom-software--lg();
   @include services--lg();
-  @include headline--lg();
   @include survey--lg();
   @include testimonials--lg();
   @include capabilities--lg();
@@ -58,6 +57,5 @@
 
 /* Interet Explorer specific queries. */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  @include headline--ie();
   @include scroll-top--ie();
 }

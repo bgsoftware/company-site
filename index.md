@@ -6,24 +6,11 @@ title: Home
 
 <div>
   <!--- Headline. --->
-  <div
-    id="headline"
-    class="d-flex flex-column align-items-center justify-content-center min-height-90vh"
-  >
-    <div class="headline__video-container d-flex flex-column align-items-center justify-content-center ">
-      <video
-        class="headline__video bg-color-white"
-        width="100%"
-        height="auto"
-        autoplay="autoplay"
-        muted
-        playsinline
-        loop
-      >
-        <source src="/assets/videos/hero_video.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
+  <header id="headline">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="/assets/videos/hero_video.mp4" type="video/mp4">
+    </video>
+  </header>
   <!--- End of Headline. --->
 
 
