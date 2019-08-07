@@ -1,7 +1,8 @@
 ---
 layout: default
-description: BG Software Homepage
 title: Home
+description: BG Software Homepage
+tags: [BG Software]
 ---
 
 <div>
