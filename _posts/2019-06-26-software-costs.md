@@ -1,6 +1,6 @@
 ---
 layout      : post
-title       : “What’s My Software Going To Cost?”
+title       : What’s My Software Going To Cost?
 description : The correct answer is, "It depends." But it's not anything like buying
               a car!
 image       : 2019-06-26-whats-my-software-going-to-cost.jpg
