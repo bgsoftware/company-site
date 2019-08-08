@@ -17,9 +17,9 @@
     "popper.js": "1.14.x"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-uglify": "^4.0.1"
+    "grunt": "1.0.x",
+    "grunt-contrib-clean": "2.0.x",
+    "grunt-contrib-concat": "1.0.x",
+    "grunt-contrib-uglify": "4.0.x"
   }
 }
