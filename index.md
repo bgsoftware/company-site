@@ -184,7 +184,7 @@ tags: [BG Software]
         class="text-center color-white"
         data-aos="fade-right"
         data-aos-offset="200"
-      >Capabilities</h1>
+      >Technologies</h1>
     </div>
   </div>
   <!--- End of Survey. --->
