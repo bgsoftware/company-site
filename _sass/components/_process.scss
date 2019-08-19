@@ -1,0 +1,29 @@
+.process__card {
+
+}
+
+.process__card-image-container {
+  display: none;
+}
+
+.process__card-text {
+  width: 100%;
+}
+
+@mixin process--sm() {
+  .process__card-image-container {
+    display: flex;
+  }
+}
+
+@mixin process--md() {
+
+}
+
+@mixin process--lg() {
+
+}
+
+@mixin process--xl() {
+
+}

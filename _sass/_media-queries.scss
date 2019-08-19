@@ -4,6 +4,7 @@
   @include testimonials--sm();
   @include capabilities--sm();
   @include clients--sm();
+  @include process--sm();
 }
 
 /* Medium screen size (md) */
@@ -19,8 +20,8 @@
   @include blog-post--md();
   @include contact-us--md();
   @include dynamic-px-container--md();
-  @include header--md();
   @include team--md();
+  @include process--md();
 }
 
 /* Large screen size (lg) */
@@ -38,6 +39,7 @@
   @include blog-post--lg();
   @include header--lg();
   @include team--lg();
+  @include process--lg();
 }
 
 /* Extra large screen size (xl) */
@@ -52,7 +54,7 @@
   @include blog-post--xl();
   @include contact-us--xl();
   @include dynamic-px-container--xl();
-  @include header--xl();
+  @include process--xl();
 }
 
 /* Interet Explorer specific queries. */
