@@ -80,11 +80,15 @@ $color-transition-speed: .25s;
 $image-transition-speed: .25s;
 
 /* Padding sizes: Use if you want to match the padding in the navigation bar. */
-$px-size-mobile: 1.5rem; /* The padding sides size for mobile views. */
-
+$px-size-sm: 1rem; /* The padding sides size for small views. */
 $px-size-md: 3%; /* The padding sides size for medium views. */
-
 $px-size-xl: 15%; /* The padding sides size for extra large views. */
+
+/* Padding sizes: Use if you want a smaller container to match the blue headers. */
+$sm-px-size-sm: 1rem; /* The padding sides size for small views. */
+$sm-px-size-md: 6%; /* The padding sides size for medium views. */
+$sm-px-size-lg: 10%; /* The padding sides size for medium views. */
+$sm-px-size-xl: 20%; /* The padding sides size for extra large views. */
 
 
 /* Margin and padding sizes (rem). */

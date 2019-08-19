@@ -40,8 +40,13 @@ $sides: (top, bottom, left, right);
 }
 
 .dynamic-px-container {
-  padding-left: $px-size-mobile;
-  padding-right: $px-size-mobile;
+  padding-left: $px-size-sm;
+  padding-right: $px-size-sm;
+}
+
+.sm-dynamic-px-container {
+  padding-left: $sm-px-size-sm;
+  padding-right: $sm-px-size-sm;
 }
 
 @mixin dynamic-px-container--md() {
@@ -49,11 +54,21 @@ $sides: (top, bottom, left, right);
     padding-left: $px-size-md;
     padding-right: $px-size-md;
   }
+
+  .sm-dynamic-px-container {
+    padding-left: $sm-px-size-md;
+    padding-right: $sm-px-size-md;
+  }
 }
 
 @mixin dynamic-px-container--xl() {
   .dynamic-px-container {
     padding-left: $px-size-xl;
     padding-right: $px-size-xl;
+  }
+
+  .sm-dynamic-px-container {
+    padding-left: $sm-px-size-xl;
+    padding-right: $sm-px-size-xl;
   }
 }
