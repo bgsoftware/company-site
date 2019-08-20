@@ -5,6 +5,7 @@
   @include capabilities--sm();
   @include clients--sm();
   @include process--sm();
+  @include case-study--sm();
 }
 
 /* Medium screen size (md) */
@@ -22,6 +23,7 @@
   @include dynamic-px-container--md();
   @include team--md();
   @include process--md();
+  @include case-study--md();
 }
 
 /* Large screen size (lg) */
@@ -40,6 +42,7 @@
   @include header--lg();
   @include team--lg();
   @include process--lg();
+  @include case-study--lg();
 }
 
 /* Extra large screen size (xl) */
@@ -55,6 +58,7 @@
   @include contact-us--xl();
   @include dynamic-px-container--xl();
   @include process--xl();
+  @include case-study--xl();
 }
 
 /* Interet Explorer specific queries. */
