@@ -1,16 +1,18 @@
-{% assign clientImages = "" | split: "" %}
-{% for image in site.static_files %}
-  {% if image.path contains 'assets/images/clients' %}
-    {% assign clientImages = clientImages | push: image.path %}
+{% assign clients = "" | split: "" %}
+{% for client in site.data.case-studies %}
+  {% if client.name != exclude %}
+    {% assign clients = clients | push: client.name %}
   {% endif %}
 {% endfor %}
 
-{% for clientImage in clientImages %}
+{% for client in clients %}
   <div class="w-10rem d-inline-block">
-    <img
-      class="img-fluid w-100 h-auto"
-      src="{{ clientImage }}"
-      alt="{{ clientImage }}"
-    >
+    <a href="/case-studies/{{ client }}">
+      <img
+        class="img-fluid w-100 h-auto"
+        src="/assets/images/clients/{{ client }}.png"
+        alt="{{ client }}"
+      >
+    </a>
   </div>
 {% endfor %}
