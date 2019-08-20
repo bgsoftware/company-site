@@ -11,6 +11,17 @@
   max-width: 200px;
 }
 
+.challenge {
+  visibility: visible;
+  opacity: 1;
+}
+
+.challenge-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
 @mixin case-study--sm() {
   .case-study__client-image {
     width: 35%;

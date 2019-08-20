@@ -1,0 +1,281 @@
+---
+layout: default
+
+---
+
+{% assign headerText1 = "International Market Centers, LLC (AmericasMart)" %}
+{% include header.html %}
+
+<script src="/assets/js/caseStudyAmericasMart.js"></script>
+
+<div id="case-study" class="dynamic-px-container py-5">
+  <div class="case-study__client d-flex py-4">
+    <div class="case-study__client-text">
+      <h2 class="pb-3">The Client:</h2>
+      <p class="font-size-md line-height-2">
+        International Market Centers serves as the center of commerce for the furniture,
+        gift, home decor and apparel industries, bringing buyers and sellers from all over
+        the world together in Atlanta (AmericasMart), High Point (High Point Market) and
+        Las Vegas (Las Vegas Market). Located in downtown Atlanta, AmericasMart spans more
+        than seven million square feet and houses the world’s single, largest collection
+        of wholesale home, gift, area rug, and apparel merchandise.
+      </p>
+    </div>
+    <div class="case-study__client-image-container d-flex align-items-center justify-content-center">
+      <img
+        class="case-study__client-image"
+        src="/assets/images/clients/americasmart.png"
+        alt="International Market Centers, LLC (AmericasMart)"
+      >
+    </div>
+  </div>
+
+  <div class="bg-color-blue rounded-xl">
+    <h2 class="color-white py-2 px-3">
+      <a
+        data-toggle="collapse"
+        href="#challenge-1-text"
+        role="button"
+        aria-expanded="false"
+        aria-controls="challenge-1-text"
+        onclick="openChallenge(1)"
+      >
+        <i
+          id="challenge-1-open"
+          class="fa fa-plus-circle color-white"
+          aria-hidden="true"
+        ></i>
+      </a>
+      <a
+        data-toggle="collapse"
+        href="#challenge-1-text"
+        role="button"
+        aria-expanded="false"
+        aria-controls="challenge-1-text"
+        onclick="closeChallenge(1)"
+      >
+        <i
+          id="challenge-1-close"
+          class="fa fa-minus-circle color-white"
+          aria-hidden="true"
+          style="display: none"
+        ></i>
+      </a>
+      The Challenge - Online Space:
+    </h2>
+  </div>
+
+  <div id="challenge-1-text" class="collapse">
+    <div class="py-4">
+      <p class="font-size-md line-height-2">
+        For an exhibitor to participate in a show, there was a lengthy process in place
+        where they would have to manually fill out a paper application, fax it in,
+        complete a credit card deposit, and include a wet signature with the final
+        contract. Exhibitors would have to complete this process for each show that they
+        attended, and most of them would attend multiple shows a year.
+      </p>
+    </div>
+
+    <div class="py-4">
+      <h2 class="pb-3">The Technology:</h2>
+      <div class="d-flex justify-content-around">
+      {% assign technologies1 = "javascript,angular,coldfusion" | split: ',' %}
+      {% for tech in technologies1 %}
+        <div class="w-10rem d-flex align-items-center">
+          <img
+            class="w-80"
+            src="/assets/images/technologies/{{ tech }}.png"
+            alt="{{ page.header-text }}"
+          >
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="py-4">
+      <h2 class="pb-3">The Outcome:</h2>
+      <p class="font-size-md line-height-2">
+        Our solution featured an integration we did with Auth.net so that AmericasMart
+        could take online payments -including signing up for auto pay - and do so
+        seamlessly within the application processes. We automated their prior process and
+        turned it into an Online Exhibitor Portal, making both the registration and
+        payment process incredibly simple for all stakeholders. Exhibitors now only need
+        to sign up one time per year, regardless of how many shows they would like to
+        attend. The Portal also remembers returning exhibitors, recalling which shows they
+        attended in the past, booth number, locations, payment information, etc. so they
+        could apply for every show, all in the same app, all at the same time.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-color-blue rounded-xl">
+    <h2 class="color-white py-2 px-3">
+      <a
+        data-toggle="collapse"
+        href="#challenge-2-text"
+        role="button"
+        aria-expanded="false"
+        aria-controls="challenge-2-text"
+        onclick="openChallenge(2)"
+      >
+        <i
+          id="challenge-2-open"
+          class="fa fa-plus-circle color-white"
+          aria-hidden="true"
+        ></i>
+      </a>
+      <a
+        data-toggle="collapse"
+        href="#challenge-2-text"
+        role="button"
+        aria-expanded="false"
+        aria-controls="challenge-2-text"
+        onclick="closeChallenge(2)"
+      >
+        <i
+          id="challenge-2-close"
+          class="fa fa-minus-circle color-white"
+          aria-hidden="true"
+          style="display: none"
+        ></i>
+      </a>
+      The Challenge - Advertising:
+    </h2>
+  </div>
+
+  <div id="challenge-2-text" class="collapse">
+    <div class="py-4">
+      <p class="font-size-md line-height-2">
+        At AmericasMart, there are three main categories of advertising/promotional
+        options for exhibitors: print, on-site exposure, and online exposure. For clients
+        deploying sponsorship campaigns, they were assigned a unique physical location at
+        the market. These historically they were kept on an Excel spreadsheet, then
+        transferred to a PowerPoint document, which was used to walk the different venues
+        to ensure and approve that the proper advertising assets where placed in the
+        correct locations.
+      </p>
+    </div>
+
+    <div class="py-4">
+      <h2 class="pb-3">The Technology:</h2>
+      <div class="d-flex justify-content-around">
+      {% assign technologies2 = "javascript,angular,coldfusion" | split: ',' %}
+      {% for tech in technologies2 %}
+        <div class="w-10rem d-flex align-items-center">
+          <img
+            class="w-80"
+            src="/assets/images/technologies/{{ tech }}.png"
+            alt="{{ page.header-text }}"
+          >
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="py-4">
+      <h2 class="pb-3">The Outcome:</h2>
+      <p class="font-size-md line-height-2">
+        We built software that created a digital representation of the floor plan of the
+        exhibitor areas, to ensure each promotional asset was placed properly. Our
+        application also featured an image uploader, so one could see at a glance what
+        was in each location, filterable based on advertising type, material etc. We took
+        a previously manual promotional process and automated it, allowing AmericasMart
+        employees to check promotional installations from their computers/phones. In an
+        integration we did with the printing company ColorSpot, our interactive floorplan
+        map saved infinite amounts of paper, time and money.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-color-blue rounded-xl">
+    <h2 class="color-white py-2 px-3">
+      <a
+        data-toggle="collapse"
+        href="#challenge-3-text"
+        role="button"
+        aria-expanded="false"
+        aria-controls="challenge-3-text"
+        onclick="openChallenge(3)"
+      >
+        <i
+          id="challenge-3-open"
+          class="fa fa-plus-circle color-white"
+          aria-hidden="true"
+        ></i>
+      </a>
+      <a
+        data-toggle="collapse"
+        href="#challenge-3-text"
+        role="button"
+        aria-expanded="false"
+        aria-controls="challenge-3-text"
+        onclick="closeChallenge(3)"
+      >
+        <i
+          id="challenge-3-close"
+          class="fa fa-minus-circle color-white"
+          aria-hidden="true"
+          style="display: none"
+        ></i>
+      </a>
+      The Challenge - Dynamic Floorplans:
+    </h2>
+  </div>
+
+  <div id="challenge-3-text" class="collapse">
+    <div class="py-4">
+      <p class="font-size-md line-height-2">
+        With over 16 shows per year, and thousands of exhibitors and the buyers for each
+        show, the floor at AmericasMart is always changing. It is crucial for all parties
+        to know not only what the floor plans for the market will look like, both for the
+        present and future shows.
+      </p>
+    </div>
+
+    <div class="py-4">
+      <h2 class="pb-3">The Technology:</h2>
+      <div class="d-flex justify-content-around">
+      {% assign technologies3 = "javascript,angular" | split: ',' %}
+      {% for tech in technologies1 %}
+        <div class="w-10rem d-flex align-items-center">
+          <img
+            class="w-80"
+            src="/assets/images/technologies/{{ tech }}.png"
+            alt="{{ page.header-text }}"
+          >
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="py-4">
+      <h2 class="pb-3">The Outcome:</h2>
+      <p class="font-size-md line-height-2">
+        We built a set of tools which takes AutoCAD files, identifies the layers that
+        show certain required information like booth dimensions that, when uploaded, are
+        saved as sets of vertices and redrawn dynamically. We built an online app to show
+        what the floor plan and booth spaces would look like ahead of each event. We were
+        able to create these custom floor plans by manipulating CAD files and sets of
+        vertices which was also rendered on the front-end. This floorplan application
+        allowed buyers to know the “address” of a booth they wanted to visit. The dynamic
+        display would instantly update who moved, who is at this spot or that booth. It
+        made it easy for buyers at market to get an overall look at the layout of the
+        floor. Here’s an example: If someone cancelled from appearing at market their
+        booth would be removed right away so buyers intending to visit it wouldn’t be
+        disappointed.
+      </p>
+    </div>
+  </div>
+
+  <div class="pt-4 pb-10">
+    <h2 class="pb-3">Check Out Our Other Case Studies:</h2>
+    <div class="d-flex w-100 justify-content-around pb-5">
+      {% assign exclude = page.client %}
+      {% include case-studies.html %}
+    </div>
+  </div>
+
+
+  {% include pre-footer-buttons.html %}
+
+</div>
