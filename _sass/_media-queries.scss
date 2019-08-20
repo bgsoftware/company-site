@@ -6,6 +6,7 @@
   @include clients--sm();
   @include process--sm();
   @include case-study--sm();
+  @include pre-footer-buttons--sm();
 }
 
 /* Medium screen size (md) */
@@ -43,6 +44,7 @@
   @include team--lg();
   @include process--lg();
   @include case-study--lg();
+  @include pre-footer-buttons--lg();
 }
 
 /* Extra large screen size (xl) */
