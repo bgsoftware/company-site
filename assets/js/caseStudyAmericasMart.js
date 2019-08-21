@@ -1,15 +1,11 @@
-function openChallenge(number) {
-  var challengeString = 'challenge-' + number;
-  var openButtonEl = document.getElementById(challengeString + '-open');
-  var closeButtonEl = document.getElementById(challengeString + '-close');
-  openButtonEl.setAttribute('style', 'display: none');
-  closeButtonEl.setAttribute('style', 'display: inline');
-}
+function toggleText(number, open) {
+  var idText = 'amc-text-' + number;
+  var openButtonEl = document.getElementById(idText + '-open');
+  var closeButtonEl = document.getElementById(idText + '-close');
 
-function closeChallenge(number) {
-  var challengeString = 'challenge-' + number;
-  var openButtonEl = document.getElementById(challengeString + '-open');
-  var closeButtonEl = document.getElementById(challengeString + '-close');
-  openButtonEl.setAttribute('style', 'display: inline');
-  closeButtonEl.setAttribute('style', 'display: none');
+  var displayNone = 'display: none';
+  var displayInline = 'display: inline';
+
+  openButtonEl.setAttribute('style', open ? displayNone : displayInline);
+  closeButtonEl.setAttribute('style', open ? displayInline : displayNone);
 }
