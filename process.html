@@ -19,9 +19,17 @@ tags: [Our Process]
   {% for step in site.data.processes %}
     {% assign idxModulo = forloop.index | modulo:2 %}
     {% if idxModulo != 0 %}
-    <div class="process_card d-flex py-7">
+    <div
+      class="process_card d-flex py-7"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >
     {% else %}
-    <div class="process_card d-flex flex-row-reverse py-7">
+    <div
+      class="process_card d-flex flex-row-reverse py-7"
+      data-aos="fade-left"
+      data-aos-offset="200"
+    >
     {% endif %}
       <div class="process__card-image-container align-items-center justify-content-center">
         <img
