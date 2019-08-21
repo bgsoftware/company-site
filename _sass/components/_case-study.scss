@@ -28,9 +28,6 @@
   }
 }
 
-@mixin case-study--md() {
-}
-
 @mixin case-study--lg() {
   .case-study__client {
     flex-direction: row;
@@ -49,6 +46,3 @@
   }
 }
 
-@mixin case-study--xl() {
-
-}

@@ -23,8 +23,6 @@
   @include contact-us--md();
   @include dynamic-px-container--md();
   @include team--md();
-  @include process--md();
-  @include case-study--md();
 }
 
 /* Large screen size (lg) */
@@ -42,7 +40,6 @@
   @include blog-post--lg();
   @include header--lg();
   @include team--lg();
-  @include process--lg();
   @include case-study--lg();
   @include pre-footer-buttons--lg();
 }
@@ -60,7 +57,6 @@
   @include contact-us--xl();
   @include dynamic-px-container--xl();
   @include process--xl();
-  @include case-study--xl();
 }
 
 /* Interet Explorer specific queries. */
