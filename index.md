@@ -177,15 +177,6 @@ tags: [BG Software]
     >
       <span class="hover-color-dark-blue">State of Software Happiness Report 2019. G2.com</span>
     </a>
-    <!--- Temporarily putting this header here until we get the testimonials in between
-          these sections. --->
-    <div class="bg-color-blue w-100 pt-10 pb-2">
-      <h1
-        class="text-center color-white"
-        data-aos="fade-right"
-        data-aos-offset="200"
-      >Technologies</h1>
-    </div>
   </div>
   <!--- End of Survey. --->
 
@@ -213,7 +204,12 @@ tags: [BG Software]
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" class="bg-color-white pb-4">
+  <div id="capabilities" class="bg-color-white py-4">
+    <h1
+      class="text-center pt-6"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >Technologies</h1>
     <div class="d-flex flex-column align-items-center">
       <div
         class="capabilities__carousel carousel slide py-4"
