@@ -206,13 +206,13 @@ tags: [BG Software]
 
   <div id="capabilities" class="bg-color-white py-4">
     <h1
-      class="text-center pt-6"
+      class="text-center pt-5"
       data-aos="fade-right"
       data-aos-offset="200"
     >Technologies</h1>
     <div class="d-flex flex-column align-items-center">
       <div
-        class="capabilities__carousel carousel slide py-4"
+        class="capabilities__carousel carousel slide py-6"
         data-ride="carousel"
         data-aos="fade-right"
         data-aos-offset="200"
