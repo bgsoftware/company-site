@@ -1,0 +1,15 @@
+.pre-footer-buttons__inner-container {
+  width: 100%;
+}
+
+@mixin pre-footer-buttons--sm() {
+  .pre-footer-buttons__inner-container {
+    width: 75%;
+  }
+}
+
+@mixin pre-footer-buttons--lg() {
+  .pre-footer-buttons__inner-container {
+    width: 50%;
+  }
+}

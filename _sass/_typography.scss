@@ -2,6 +2,10 @@ body {
   font-family: 'Lato', sans-serif !important;
 }
 
+.font-family-lato {
+  font-family: 'Lato', sans-serif;
+}
+
 @for $i from 1 through 5 {
   .font-size-#{$i} { font-size: #{$i}rem; }
 }

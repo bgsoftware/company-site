@@ -1,0 +1,65 @@
+<div class="bg-color-blue rounded-xl">
+  <h3 class="color-white py-2 px-3">
+    <a
+      id="amc-text-{{ number }}-open"
+      data-toggle="collapse"
+      href="#amc-text-{{ number }}"
+      role="button"
+      aria-expanded="false"
+      aria-controls="amc-text-{{ number }}"
+      onclick="toggleText({{ number }}, true)"
+    >
+      <i
+        class="fa fa-plus-circle color-white"
+        aria-hidden="true"
+      ></i>
+    </a>
+    <a
+      id="amc-text-{{ number }}-close"
+      data-toggle="collapse"
+      href="#amc-text-{{ number }}"
+      role="button"
+      aria-expanded="false"
+      aria-controls="amc-text-{{ number }}"
+      onclick="toggleText({{ number }})"
+      class="d-none"
+    >
+      <i
+        class="fa fa-minus-circle color-white"
+        aria-hidden="true"
+      ></i>
+    </a>
+    {{ title }}:
+  </h3>
+</div>
+
+<div id="amc-text-{{ number }}" class="collapse">
+  <div class="py-4">
+    <h2 class="pb-3">The Challenge:</h2>
+    <p class="font-size-md line-height-2">
+      {{ challenge }}
+    </p>
+  </div>
+
+  <div class="py-4">
+    <h2 class="pb-3">The Technology:</h2>
+    <div class="d-flex justify-content-around">
+    {% for tech in technologies %}
+      <div class="w-10rem d-flex align-items-center">
+        <img
+          class="w-80"
+          src="/assets/images/technologies/{{ tech }}.png"
+          alt="{{ page.header-text }}"
+        >
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+
+  <div class="py-4">
+    <h2 class="pb-3">The Outcome:</h2>
+    <p class="font-size-md line-height-2">
+      {{ outcome }}
+    </p>
+  </div>
+</div>

@@ -265,11 +265,12 @@
 }
 
 @mixin clients--md() {
-  .clients__content { width: 40rem; }
+  .clients__content { width: 45rem; }
 }
 
 @mixin clients--lg() {
   .clients__content {
+    width: 55rem;
     display: flex;
     justify-content: space-between;
   }

@@ -1,0 +1,37 @@
+.case-study__client {
+  flex-direction: column-reverse;
+}
+
+.case-study__client-text, .case-study__client-image-container {
+  width: 100%;
+}
+
+.case-study__client-image {
+  width: 50%;
+  max-width: 200px;
+}
+
+@mixin case-study--sm() {
+  .case-study__client-image {
+    width: 35%;
+  }
+}
+
+@mixin case-study--lg() {
+  .case-study__client {
+    flex-direction: row;
+  }
+
+  .case-study__client-text {
+    width: 80%;
+  }
+
+  .case-study__client-image-container {
+    width: 20%;
+  }
+
+  .case-study__client-image {
+    width: 90%;
+  }
+}
+
