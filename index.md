@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: BG Software Homepage
+description: BG Software partners with small and midsize businesses to create professional software that’s easy to learn, simple to launch, and created just for you.
 tags: [BG Software]
 ---
 
