@@ -4,11 +4,13 @@
   data-aos-offset="200"
 >
   <div class="card-body px-1">
-    <img
-      src="/assets/images/services/{{ service.image }}"
-      class="mx-auto d-block w-75 max-width-10rem pb-4"
-      alt="{{ service.name }}"
-    >
+    <a href="/capabilities/{{ service.link }}.html">
+      <img
+        src="/assets/images/services/{{ service.image }}"
+        class="mx-auto d-block w-75 max-width-10rem pb-4"
+        alt="{{ service.name }}"
+      >
+    </a>
     <h2 class="services__card-title card-title text-center">{{ service.name }}</h2>
     <div class="services__card-content font-size-md">
       <p class="font-weight-lighter line-height-2">
