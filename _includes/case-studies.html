@@ -1,8 +1,8 @@
 {% assign clients = "" | split: "" %}
 {% for client in site.data.case-studies %}
-  {% if client.name != exclude %}
+  {% unless excludes contains client.name %}
     {% assign clients = clients | push: client.name %}
-  {% endif %}
+  {% endunless %}
 {% endfor %}
 
 {% for client in clients %}
