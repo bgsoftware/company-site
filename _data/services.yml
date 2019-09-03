@@ -4,10 +4,10 @@
   point  : We find out what you’d like to achieve with your business, show you the possibilities, then talk with you about creating software that solves your problem.
 - name   : Security
   image  : security_icon.png
-  link   : security-icon
+  link   : security
   point  : We can create tools to not only make sure the person accessing your program(s) is who they say they are, but also verify what each user has access to.
 - name   : System Integrations
-  image  : data_integration_icon.png
+  image  : system_integrations_icon.png
   link   : system-integrations
   point  : We can gather up business records from legacy systems, old databases, and your brand-new data to show you one unified view.
 - name   : DevOps
