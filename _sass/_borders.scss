@@ -1,3 +1,9 @@
+// Removes highlighting outline on everything.
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
 .rounded-lg { border-radius: 0.5rem; }
 
 .rounded-bottom-lg {
