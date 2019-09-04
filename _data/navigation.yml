@@ -1,3 +1,5 @@
+- name : Capabilities
+  link : "#capabilities-modal"
 - name : Process
   link : "/process"
 - name : Contact Us
