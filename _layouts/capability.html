@@ -10,12 +10,12 @@ layout: default
       controls
       class="rounded-lg w-100"
     >
-      <source src="/assets/videos/capabilities/{{ page.video }}#t=1.1" type="video/mp4">
+      <source src="/assets/videos/capabilities/{{ page.video }}" type="video/mp4">
     </video>
   </div>
 
-  <div class="py-6">
-    <h2 class="text-center">{{ page.subtitle }}</h2>
+  <div class="py-6 text-center">
+    <h2 class="max-width-50rem mx-auto">{{ page.subtitle }}</h2>
     <div class="capability__image-text-container d-flex py-4">
       <div class="capability-image-container align-items-center justify-content-center">
         <img
@@ -30,12 +30,17 @@ layout: default
     </div>
   </div>
 
+  {% assign excludes = page.case-study-excludes | split: "," %}
   <div class="pt-4 pb-10 text-center">
-    <h2 class="pb-3 max-width-45rem mx-auto">
-      To see our {{ page.title }} skills in action, check out the following case studies:
+    <h2 class="pb-3 max-width-25rem mx-auto">
+      To see our {{ page.title }} skills in action, check out the following case
+    {% if excludes.size >= 3 %}
+      study:
+    {% else %}
+      studies:
+    {% endif %}
     </h2>
     <div class="d-flex w-100 justify-content-around pb-5">
-      {% assign excludes = page.case-study-excludes | split: "," %}
       {% include case-studies.html %}
     </div>
   </div>
