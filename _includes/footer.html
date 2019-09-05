@@ -1,26 +1,51 @@
-<div id="footer" class="footer position-relative bg-color-dark-blue py-5 d-flex justify-content-around font-size-sm">
+<div id="footer" class="footer position-relative bg-color-dark-blue py-5 d-flex justify-content-between font-size-sm">
 
   <!--- Contact Information. --->
-  <div class="footer__contact-info footer__block d-flex flex-column align-content-start color-white">
-    <span>400 Plaza Drive, Suite 120</span>
-    <span>Folsom, CA 95630</span>
-    <a href="tel:1-833-754-3313" class="color-white hover-color-light-blue">833.754.3313 (Toll Free)</a>
-    <a href="mailto:customsoftware@benningfieldgroup.com" class="color-white hover-color-light-blue">customsoftware@benningfieldgroup.com</a>
+  <div class="footer__left footer__block d-flex flex-column align-content-start color-white max-width-25rem pb-4">
+    <div class="footer__logo mx-auto pb-2">
+      <a href="/" class="footer__logo-link">
+        <img
+          class="w-100"
+          src="/assets/images/bg/logo_white.png"
+          alt="BG Software logo white"
+        >
+      </a>
+    </div>
+    <div class="footer__nav d-flex justify-content-between py-2">
+    {% for item in site.data.navigation %}
+      <a
+        class="color-white hover-color-light-blue font-size-sm color-white px-0"
+        href="{{ item.link }}"
+      >{{ item.name }}</a>
+    {% endfor %}
+    </div>
+    <!--- Social Media Logos and Links. --->
+    <div class="footer__social-media footer__block d-flex py-2">
+      {% for app in site.data.socialMedia %}
+        <a href="{{ app.link }}" target="_blank" class="px-1">
+          <i class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-3" aria-hidden="true"></i>
+        </a>
+      {% endfor %}
+    </div>
   </div>
   <!--- End of Contact Information. --->
 
-  <div class="footer__copyright footer__block color-white d-flex align-items-center justify-content-center flex-column">
-    <span>BG Software © 2019</span>
-    <a href="/cookie-policy" class="color-white hover-color-light-blue">Privacy</a>
-  </div>
+  <div class="footer__right footer__block color-white d-flex flex-column">
+    <div class="d-flex flex-column">
+      <span>400 Plaza Drive, Suite 120</span>
+      <span>Folsom, CA 95630</span>
+      <a
+        href="tel:1-833-754-3313"
+        class="color-white hover-color-light-blue"
+      >833.754.3313 (Toll Free)</a>
+      <a
+        href="mailto:customsoftware@benningfieldgroup.com"
+        class="color-white hover-color-light-blue pb-3"
+      >customsoftware@benningfieldgroup.com</a>
+      <span class="pb-3">BG Software © 2019</span>
+      <a href="/cookie-policy" class="color-white hover-color-light-blue">Privacy</a>
+    </div>
 
-  <!--- Social Media Logos and Links. --->
-  <div class="footer__social-media footer__block d-flex">
-    {% for app in site.data.socialMedia %}
-      <a href="{{ app.link }}" target="_blank" class="px-1">
-        <i class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-3" aria-hidden="true"></i>
-      </a>
-    {% endfor %}
   </div>
   <!--- End of Social Media Logos and Links. --->
 </div>
