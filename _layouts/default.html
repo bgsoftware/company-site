@@ -24,12 +24,15 @@
     <script src="{{ '/assets/vendor/dist/lib.min.js' }}?{{site.time | date: '%s%N'}}"></script>
 
     <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/modal.js"></script>
     <script>AOS.init();</script>
 
     {% include navigation.html %}
     <div class="min-height-75vh">
       {{ content }}
       {% include scroll-top.html %}
+      {% include capabilities-modal.html %}
+      {% include case-studies-modal.html %}
     </div>
     {% include footer.html %}
 
