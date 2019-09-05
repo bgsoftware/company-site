@@ -6,13 +6,13 @@
 {% endfor %}
 
 {% for client in clients %}
-  <div class="w-11rem d-inline-block">
-    <a href="/case-studies/{{ client }}">
-      <img
-        class="img-fluid w-100 h-auto"
-        src="/assets/images/clients/{{ client }}.png"
-        alt="{{ client }}"
-      >
-    </a>
-  </div>
+<div class="w-11rem d-inline-block">
+  <a href="/case-studies/{{ client }}">
+    <img
+      class="case-study__icon img-fluid w-100 h-auto"
+      src="/assets/images/clients/{{ client }}.png"
+      alt="{{ client }}"
+    >
+  </a>
+</div>
 {% endfor %}
