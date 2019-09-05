@@ -1,3 +1,8 @@
+.case-study__icon { @include transition(filter, $image-transition-speed); }
+
+.case-study__icon:hover { filter: brightness(85%); }
+
+
 .case-study__client {
   flex-direction: column-reverse;
 }
