@@ -61,18 +61,18 @@
         </div>
       </div>
       <div class="modal-footer bg-color-dark-blue rounded-bottom">
-        {% for app in site.data.socialMedia %}
-          <a
-            href="{{ app.link }}"
-            target="_blank"
-            class="px-1"
-          >
-            <i
-              class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-xxl"
-              aria-hidden="true"
-            ></i>
-          </a>
-        {% endfor %}
+      {% for app in site.data.socialMedia %}
+        <a
+          href="{{ app.link }}"
+          target="_blank"
+          class="px-1"
+        >
+          <i
+            class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-xxl"
+            aria-hidden="true"
+          ></i>
+        </a>
+      {% endfor %}
       </div>
     </div>
   </div>
