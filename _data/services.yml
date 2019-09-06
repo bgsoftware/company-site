@@ -19,8 +19,8 @@
   link   : data-warehousing
   point  : The software we author is driven by big data. Our SQL experts make reporting, aggregating, and sharing data via web services easy.
 - name   : Back-End Development
-  image  : back-end_development_icon.png
-  link   : back-end-development
+  image  : backend_development_icon.png
+  link   : backend-development
   point  : As back-end developers, our team works with a variety of languages, including JavaScript, Python, and even ColdFusion. Our specialty is integrations wherein data needs to be shared between multiple disparate systems.
 - name   : Project Management
   image  : project_management_icon.png
