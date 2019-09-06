@@ -12,15 +12,11 @@
 
 @mixin capability--lg() {
   .capability__video-container {
-    width: 75%;
+    width: 85%;
   }
 
   .capability-image-container {
     display: flex;
     width: 35%;
-  }
-
-  .capability-text {
-    width: 65%;
   }
 }
