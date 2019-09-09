@@ -1,27 +1,35 @@
 - name   : Software Development
   image  : software_development_icon.png
   link   : software-development
-  point  : We find out what you’d like to achieve with your business, show you the possibilities, then talk with you about creating software that solves your problem.
+  point  : We find out what you’d like to achieve with your business, show you the possibilities,
+           then talk with you about creating software that solves your problem.
 - name   : Security
   image  : security_icon.png
   link   : security
-  point  : We can create tools to not only make sure the person accessing your program(s) is who they say they are, but also verify what each user has access to.
+  point  : We can create tools to not only make sure the person accessing your program(s) is who
+           they say they are, but also verify what each user has access to.
 - name   : System Integrations
   image  : system_integrations_icon.png
   link   : system-integrations
-  point  : We can gather up business records from legacy systems, old databases, and your brand-new data to show you one unified view.
+  point  : We can gather up business records from legacy systems, old databases, and your brand-new
+           data to show you one unified view.
 - name   : DevOps
   image  : devops_icon.png
   link   : devops
-  point  : As systems grow, so too does the complexity of development operations. We’re also experts in automating testing, building, and deploying software using continuous-integration / continuous-delivery (CI/CD) tools.
+  point  : As systems grow, so too does the complexity of development operations. We’re also experts
+           in automating testing, building, and deploying software using continuous-integration /
+           continuous-delivery (CI/CD) tools.
 - name   : Data Warehousing
   image  : data_warehousing_icon.png
   link   : data-warehousing
-  point  : The software we author is driven by big data. Our SQL experts make reporting, aggregating, and sharing data via web services easy.
+  point  : The software we author is driven by big data. Our SQL experts make reporting,
+           aggregating, and sharing data via web services easy.
 - name   : Back-End Development
   image  : backend_development_icon.png
   link   : backend-development
-  point  : As back-end developers, our team works with a variety of languages, including JavaScript, Python, and even ColdFusion. Our specialty is integrations wherein data needs to be shared between multiple disparate systems.
+  point  : As back-end developers, our team works with a variety of languages, including JavaScript,
+           Python, and even ColdFusion. Our specialty is integrations wherein data needs to be
+           shared between multiple disparate systems.
 - name   : Project Management
   image  : project_management_icon.png
   link   : project-management
@@ -29,8 +37,10 @@
 - name   : Staff Augmentation
   image  : staff_augmentation_icon.png
   link   : staff-augmentation
-  point  : If you need to scale your current team, or need experts in a specific area, we’re ready to go.
+  point  : If you need to scale your current team, or need experts in a specific area, we’re ready
+           to go.
 - name   : Support & Maintenance
   image  : support_and_maintenance_icon.png
   link   : support-and-maintenance
-  point  : If we made it for you, we stand behind it. From changes to new features , we’re here for you.
+  point  : If we made it for you, we stand behind it. From changes to new features, we’re here for
+           you.
