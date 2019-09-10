@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: BG Software Homepage
+description: BG Software partners with small and midsize businesses to create professional software that’s easy to learn, simple to launch, and created just for you.
 tags: [BG Software]
 ---
 
@@ -177,33 +177,17 @@ tags: [BG Software]
     >
       <span class="hover-color-dark-blue">State of Software Happiness Report 2019. G2.com</span>
     </a>
-    <!--- Temporarily putting this header here until we get the testimonials in between
-          these sections. --->
-    <div class="bg-color-blue w-100 pt-10 pb-2">
-      <h1
-        class="text-center color-white"
-        data-aos="fade-right"
-        data-aos-offset="200"
-      >Technologies</h1>
-    </div>
   </div>
   <!--- End of Survey. --->
 
 
 
   <!--- Capabilities. --->
-  {% assign techImages = "" | split: "" %}
-  {% for image in site.static_files %}
-    {% if image.path contains 'assets/images/technologies' %}
-      {% assign techImages = techImages | push: image.path %}
-    {% endif %}
-  {% endfor %}
-
   <!--- Create a nested array for Capabilities to group carousel. --->
   {% assign subArrSize = 4 %}
   {% assign capabilities = "" | split: "/" %}
 
-  {% for element in techImages %}
+  {% for element in site.data.technologies %}
     {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
 
     {% if needsNewSubArr == 1 %}
@@ -212,7 +196,7 @@ tags: [BG Software]
     {% endif %}
 
     {% comment %} Push the current image in sub array. {% endcomment %}
-    {% assign subArr = subArr | push: element %}
+    {% assign subArr = subArr | push: element.image %}
 
     {% if needsNewSubArr == 0 or forloop.last %}
       {% comment %} push subArr in capabilities if subArr length is. {% endcomment %}
@@ -220,10 +204,15 @@ tags: [BG Software]
     {% endif %}
   {% endfor %}
 
-  <div id="capabilities" class="bg-color-white pb-4">
+  <div id="capabilities" class="bg-color-white py-4">
+    <h1
+      class="text-center pt-5"
+      data-aos="fade-right"
+      data-aos-offset="200"
+    >Technologies</h1>
     <div class="d-flex flex-column align-items-center">
       <div
-        class="capabilities__carousel carousel slide py-4"
+        class="capabilities__carousel carousel slide py-6"
         data-ride="carousel"
         data-aos="fade-right"
         data-aos-offset="200"
@@ -233,12 +222,12 @@ tags: [BG Software]
             <!--- If first group, set class have active class. --->
             {% if forloop.first %}
               <div class="capabilities__carousel-item carousel-item text-center active">
-                {% for imagePath in imageGroup %}
+                {% for image in imageGroup %}
                   <div class="capabilities__carousel-image-container d-inline-block my-1">
                     <img
                       class="w-100 h-auto"
-                      src="{{ imagePath }}"
-                      alt="{{ imagePath }}"
+                      src="/assets/images/technologies/{{ image }}"
+                      alt="{{ image }}"
                     >
                   </div>
                 {% endfor %}
@@ -246,12 +235,12 @@ tags: [BG Software]
             {% endif %}
             {% if forloop.first == false %}
               <div class="capabilities__carousel-item carousel-item text-center">
-                {% for imagePath in imageGroup %}
+                {% for image in imageGroup %}
                   <div class="capabilities__carousel-image-container d-inline-block my-1">
                     <img
                       class="w-100 h-auto"
-                      src="{{ imagePath }}"
-                      alt="{{ imagePath }}"
+                      src="/assets/images/technologies/{{ image }}"
+                      alt="{{ image }}"
                     >
                   </div>
                 {% endfor %}

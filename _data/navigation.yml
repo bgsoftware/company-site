@@ -1,6 +1,8 @@
-- name: Contact Us
-  link: "/contact-form"
-- name: Team
-  link: "/our-team"
-- name: Blog
-  link: "/blog"
+- name : Process
+  link : "/process"
+- name : Contact Us
+  link : "/contact-form"
+- name : Team
+  link : "/our-team"
+- name : Blog
+  link : "/blog"

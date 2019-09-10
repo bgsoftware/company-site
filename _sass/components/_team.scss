@@ -15,10 +15,3 @@
     justify-content: space-around;
   }
 }
-
-@mixin team--lg() {
-  .team__text, .team__robin-quote {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-}

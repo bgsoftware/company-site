@@ -1,5 +1,21 @@
-<div class="d-flex justify-content-around py-5">
-  <a href="/contact-form">
-    <button class="btn cta-button-blue font-weight-light">Speak to an expert</button>
-  </a>
+<div id="pre-footer-buttons" class="d-flex justify-content-center w-100">
+  <div class="pre-footer-buttons__inner-container d-flex justify-content-around py-5">
+  <!--- If exclude process is true, don't show the process button. --->
+  {% if excludeProcess == true %}
+  {% else %}
+    <a
+      href="/process"
+      class="button btn cta-button-blue font-weight-light w-9rem"
+    >
+      Our Process
+    </a>
+  {% endif %}
+
+    <a
+      href="/contact-form"
+      class="button btn cta-button-blue font-weight-light w-9rem"
+    >
+      Contact Us
+    </a>
+  </div>
 </div>

@@ -1,0 +1,54 @@
+- title       : "Step 1: Meet and Greet"
+  image       : 1_meet_and_greet.png
+  description : "We listen to find out as much as we can about your business, target market,
+                 goals and budget. This is a business meeting, designed to figure out what you
+                 want and what you need. We’ll have some questions for you as well: we’ll need to
+                 know who’s going to use the application, how team members would use it – things
+                 like that – which will help us help you."
+- title       : "Step 2: Size and Scope"
+  image       : 2_size_and_scope.png
+  description : "You want to know what it’s going to cost and the timeline to get it done. We’ll
+                 move quickly to get you answers. We’ll huddle up internally and determine what we
+                 believe is the size and scope of a solution. We’ll talk with subject matter
+                 experts and our developers internally to come up with an initial quote."
+- title       : "Step 3: Present Your Options"
+  image       : 3_present_your_options.png
+  description : "We’ll show you a high-level breakdown of your application’s structure and offer
+                 options which might work well for you. You’ll likely have more questions, and we’ll
+                 address those in this meeting.  We’ll do any final sizing and scoping after that.
+                 The option you like best will result in a fully researched final quote and we’ll
+                 sign a contract."
+- title       : "Step 4: Wireframes"
+  image       : 4_wireframes.png
+  description : "A wireframe is a term in our business for the visual representation of the pages in
+                 your application: Where elements go, what they do, what they’ll do next. This shows
+                 you the basic structure of your application. This is the ”look and feel” part of
+                 the process – at this point, you’ll be able to see not only where elements are,
+                 but how they behave."
+- title       : "Step 5: Write the Code"
+  image       : 5_write_the_code.png
+  description : "We’ve checked and confirmed features and design with you. Now, it’s time to build
+                 your software! We’ve already assembled a team including a project manager, who will
+                 be your main contact the rest of the way.  Our developers and design pros will be
+                 the artists creating your project."
+- title       : "Step 6: Test, Test, Test"
+  image       : 6_test_test_test.png
+  description : "It’s quality assurance, another word for making sure it works. We test as we go,
+                 checking in with you as much as you need us to. This is designed to save you time
+                 and money. You’ll be a big part of the process, because your software will likely
+                 have distinct and unique features. As we hit benchmarks, you’ll be able to use
+                 finished parts of your application, giving us feedback"
+- title       : "Step 7: Launch"
+  image       : 7_launch.png
+  description : "We’ve tested it, you’ve tried it out, we’ve made changes and adjustments based on
+                 your feedback.  This part of the process is typically called beta. Some or all your
+                 users have participated or even practiced with the software by this point
+                 internally. We put it to the test in beta mode, make any last-minute modifications,
+                 and then, the fun part – taking it live."
+- title       : "Step 8: Maintenance"
+  image       : 8_maintenance.png
+  description : "No software is perfect 100% of the time.  It’s a lot like a car: you take care of 
+                 it; it’ll take care of you. We can provide an ongoing maintenance deal with you to
+                 keep you up and running.  From bug fixes to user requests to additional features,
+                 we can stay with you as your partner to make sure you don’t have downtime or face
+                 any security risk."

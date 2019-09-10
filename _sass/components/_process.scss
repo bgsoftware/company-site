@@ -1,0 +1,34 @@
+.process__card {
+
+}
+
+.process__card-image-container {
+  display: none;
+}
+
+.process__card-text {
+  width: 100%;
+}
+
+@mixin process--sm() {
+  .process__card-image-container {
+    display: flex;
+    width: 35%;
+  }
+
+  .process__card-text {
+    width: 65%;
+  }
+
+}
+
+
+@mixin process--xl() {
+  .process__card-image-container {
+    width: 30%;
+  }
+
+  .process__card-text {
+    width: 70%;
+  }
+}

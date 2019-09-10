@@ -1,0 +1,59 @@
+---
+layout: default
+description: "Let’s take you through the process of creating your custom software application, from discovery to testing to live launch."
+title: Process
+tags: [The Process]
+---
+
+{% assign headerText1 = "The Process: How Your Software Is Made" %}
+{% include header.html %}
+<div class="overflow-hidden">
+  <div class="sm-dynamic-px-container">
+    <div class="py-2">
+      <b class="font-size-lg">
+        This is the journey we make together in imagining, building, and deploying your project.
+      </b>
+    </div>
+
+    <div class="py-4">
+    {% for step in site.data.processes %}
+      {% assign idxModulo = forloop.index | modulo:2 %}
+      {% if idxModulo != 0 %}
+      <div
+        class="process_card d-flex py-7"
+        data-aos="fade-right"
+        data-aos-offset="200"
+      >
+      {% else %}
+      <div
+        class="process_card d-flex flex-row-reverse py-7"
+        data-aos="fade-left"
+        data-aos-offset="200"
+      >
+      {% endif %}
+        <div class="process__card-image-container align-items-center justify-content-center">
+          <img
+            class="w-80"
+            src="/assets/images/process/{{ step.image }}"
+            alt="{{ step.title }}"
+          >
+        </div>
+        <div class="process__card-text">
+          <b class="font-size-xl">{{ step.title }}</b>
+          <p class="font-size-md line-height-2">{{ step.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+
+    <div class="pt-4 pb-10">
+      <h2 class="pb-3">Check Out Our Case Studies:</h2>
+      <div class="d-flex w-100 justify-content-around pb-5">
+        {% include case-studies.html %}
+      </div>
+    </div>
+
+    {% assign excludeProcess = true %}
+    {% include pre-footer-buttons.html %}
+    </div>
+  </div>
+</div>
