@@ -8,9 +8,9 @@
   link   : security
   point  : We can create tools to not only make sure the person accessing your program(s) is who
            they say they are, but also verify what each user has access to.
-- name   : System Integrations
-  image  : system_integrations_icon.png
-  link   : system-integrations
+- name   : System Integration
+  image  : system_integration_icon.png
+  link   : system-integration
   point  : We can gather up business records from legacy systems, old databases, and your brand-new
            data to show you one unified view.
 - name   : DevOps
