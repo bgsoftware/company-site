@@ -12,3 +12,12 @@
 }
 
 .rounded-xl { border-radius: 1.5rem; }
+
+
+@each $color, $hex in $site-colors {
+  .border-left-#{$color} { border-left: 1px solid $hex !important; }
+  .border-right-#{$color} { border-right: 1px solid $hex !important; }
+  .border-top-#{$color} { border-top: 1px solid $hex !important; }
+  .border-bottom-#{$color} { border-bottom: 1px solid $hex !important; }
+  .border-#{$color} { border: 1px solid $hex !important; }
+}
