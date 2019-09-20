@@ -65,8 +65,12 @@
     margin: auto;
   }
 
-  .security-audit-card__block-one, .security-audit-card__block-two {
-    height: 45%;
+  .security-audit-card__block-one {
+    height: 40%;
+  }
+
+  .security-audit-card__block-two {
+    height: 50%;
   }
 
   .security-audit-card__block-three {
