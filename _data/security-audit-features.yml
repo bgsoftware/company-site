@@ -1,0 +1,200 @@
+- description: Services Provided
+  title: true
+  basic: false
+  advanced: false
+  comp: false
+- description: Affected Areas
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Risk Severity Analysis
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Exploit Difficulty Analysis
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Suggested Remedies
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Enhanced Remedies
+  title: false
+  basic: false
+  advanced: true
+  comp: true
+- description: Vulnerability Impact
+  title: false
+  basic: false
+  advanced: true
+  comp: true
+- description: Telephone Consultation
+  title: false
+  basic: false
+  advanced: true
+  comp: true
+- description: Source Code Analysis
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Systems Analysis
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Concierge Services
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description:
+  title:
+  basic:
+  advanced:
+  comp:
+- description: Threats We Detect
+  title: true
+  basic: false
+  advanced: false
+  comp: false
+- description: SQL Injection
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Cross-site Scripting
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Cross-site Request Forgery
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Session ID Enumeration
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Public Service (Port) Enumeration
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Out-of-Date Platform (e.g. CMS)
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Password Reset Username Enumeration
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Development Errors in Production
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Insecure Direct Object References
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Password Sent Via Email
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Password-Only Login
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Outdated or No Transport-Layer Security
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Improper Token or Credential Storage
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Unchecked Redirects
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Language or Framework Disclosure
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Bad or No Password Policy
+  title: false
+  basic: true
+  advanced: true
+  comp: true
+- description: Comprehensive Threat Detection Vulnerabilities
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Local File Includes
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Remote File Includes
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Eval. Vulnerability
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Login Timing Attacks
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Application Running as Priveleged User
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: File Write Vulnerabilities (unprotected path; arbitrary file; unchecked extension)
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Clear-text Password Storage
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Unsalted Password Storage
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Tokens or Credentials in Log Files
+  title: false
+  basic: false
+  advanced: false
+  comp: true
+- description: Application-Readable Log Files
+  title: false
+  basic: false
+  advanced: false
+  comp: true
