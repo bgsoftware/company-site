@@ -1,0 +1,46 @@
+- question : How long will it take for me to receive the results of the security audit?
+  answer   : "The answer is “it depends,” but let’s try and be more specific.
+              You may have only one application which needs to be audited, and
+              that can usually be done quickly, generally in 2-3 business days
+              after we receive the signed contract. If you have a complex set
+              of applications, databases, etc. it might be longer, but we’ll
+              work with you to be upfront about our process, so you’ll know
+              the timeline before we start."
+- question : How will I receive my report?
+  answer   : "We’ll send you an encrypted PDF that’s password-protected via email."
+- question : Will you be looking at all my applications, or a fixed number of them?
+  answer   : "During the intake process we’ll ask a few questions about your
+              situation. You may be certain one or more of your applications
+              are safe and solid, so we’ll skip those and focus only on the
+              ones you feel need review."
+- question : Will you be looking at my emails?
+  answer   : "Generally, no. If you have your own dedicated email server and
+              suspect there may be some vulnerabilities, we’d be happy to look,
+              but as for “reading” the content of individual emails, we have no
+              interest and would not need to do that."
+- question : Are you hacking me?
+  answer   : "Absolutely not! You will know when we are performing the audit.
+              You will be 100% in the loop—no secrets."
+- question : I don’t own the software I use at my company; can you look at it?
+  answer   : "If you didn’t make it yourself but you “own it,” sure, we can
+              probably help. During the intake process we’ll ask those questions
+              and let you know."
+- question : Will you come to my business to perform the audit?
+  answer   : "In most cases we perform the audit off-site. For the Comprehensive
+              audit, we’ll be digging deep into your code, so the answer may be
+              yes depending on your software and setup."
+- question : "Do I have to use you to make any “repairs” or modifications once
+              you’ve completed the audit?"
+  answer   : "Our service provides you with a threat assessment and report on
+              what we found. You are under no obligation to use us to make any
+              suggested fixes. The deliverable from us is answers, though you may
+              ask us to continue working with you and we’d be happy to discuss that."
+- question : "What if you run the audit and come up with nothing? Do I still
+              have to pay you?"
+  answer   : "You do not. If we don’t find anything, we’ll praise you for
+              being a security wizard and your audit is free."
+- question : "My report is going to be full of words and phrases I don’t
+              understand. How will I know how to interpret your findings?"
+  answer   : "Our security experts speak two languages – computer code and
+              plain English. We’ll help you make sense of the report in a
+              way that gives you confidence."

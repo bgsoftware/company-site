@@ -1,0 +1,27 @@
+---
+layout: default
+title: Security Audit FAQ
+description: Security Audit FAQ placeholder
+tags: [BG Software, Security, FAQ, Audit]
+---
+
+{% assign headerText1 = "The BG Software Security Audit - FAQ" %}
+{% include header.html %}
+
+<div class="sm-dynamic-px-container py-6">
+  <div class="col-lg-10 mx-auto">
+  {% for faq in site.data.faqs %}
+    <h2 class="font-size-lg">
+      {{ faq.question }}
+    </h2>
+    <p class="font-size-md pb-3">
+      {{ faq.answer }}
+    </p>
+  {% endfor %}
+
+    <div class="d-flex justify-content-around py-6">
+      {% include button.html link="/software-security-audit/index.html" text="Back to<br>Security Audits" %}
+      {% include button.html link="/contact-form.html" text="Contact Us" %}
+    </div>
+  </div>
+</div>
