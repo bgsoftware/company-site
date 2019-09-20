@@ -23,6 +23,7 @@
   @include contact-us--md();
   @include dynamic-px-container--md();
   @include team--md();
+  @include security-audit--md();
 }
 
 /* Large screen size (lg) */
@@ -44,6 +45,7 @@
   @include capability--lg();
   @include capabilities-modal--lg();
   @include case-studies-modal--lg();
+  @include security-audit--lg();
 }
 
 /* Extra large screen size (xl) */
