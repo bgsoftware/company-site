@@ -1,0 +1,20 @@
+{%- assign features = include.features | split: "," -%}
+<div class="security-audit-card d-inline-block align-top rounded-lg bg-color-{{ include.bg-color }}">
+  <div class="security-audit-card__block-one security-audit-card__block pb-4 text-center">
+    <h5 class="card-title font-size-md">{{ include.title1 }}</h5>
+    <p class="card-text font-size-sm">{{ include.text1 }}</p>
+  </div>
+
+  <div class="security-audit-card__block-two security-audit-card__block pb-4">
+    <h5 class="card-title font-size-md text-center">{{ include.title2 }}</h5>
+    <ul class="font-size-sm">
+      {%- for feature in features -%}
+        <li>{{ feature }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  <div class="security-audit-card__block-three security-audit-card__block justify-content-center d-flex align-items-end">
+    {%- include button.html link=include.link text=include.button-text -%}
+  </div>
+</div>
