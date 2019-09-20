@@ -1,3 +1,4 @@
-<a href="{{ include.link }}" class="button btn cta-button-blue font-weight-light font-size-md">
-  {{ include.text }}
-</a>
+<script src="/assets/js/button.js"></script>
+<button onclick="goTo('{{ include.link }}')" class="button btn cta-button-blue font-weight-light font-size-md d-flex align-content-center">
+  <span class="d-flex align-content-center">{{ include.text }}</span>
+</button>
