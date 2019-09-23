@@ -26,8 +26,8 @@
     <!--- Social Media Logos and Links. --->
     <div class="footer__social-media footer__block d-flex py-2">
       {% for app in site.data.socialMedia %}
-        <a href="{{ app.link }}" target="_blank" class="px-1">
-          <i class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-3" aria-hidden="true"></i>
+        <a href="{{ app.link }}" name="{{ app.name }}" aria-label= "{{ app.description }}" target="_blank" class="px-1">
+          <i class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-3"></i>
         </a>
       {% endfor %}
     </div>
@@ -47,6 +47,7 @@
       <a
         href="mailto:customsoftware@benningfieldgroup.com"
         class="color-white hover-color-light-blue pb-3"
+        aria-label="contact us by email."
       >customsoftware@benningfieldgroup.com</a>
       <span class="pb-3">BG Software © 2019</span>
       <a href="/cookie-policy" class="color-white hover-color-light-blue">Privacy</a>

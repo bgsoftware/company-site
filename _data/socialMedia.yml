@@ -2,19 +2,24 @@
   link         : https://www.facebook.com/BGSoftwareInc
   img-class    : fa-facebook
   img-class-sq : fa-facebook-square
+  description  : Like us on Facebook
 - name         : twitter
   link         : https://twitter.com/BGSoftwareInc
   img-class    : fa-twitter
   img-class-sq : fa-twitter-square
+  description  : Follow us on Twitter
 - name         : linkedin
   link         : https://www.linkedin.com/company/bgsoftware1/about/
   img-class    : fa-linkedin
   img-class-sq : fa-linkedin-square
+  description  : Connect with us on LinkedIn
 - name         : youtube
   link         : https://www.youtube.com/channel/UCkeGLG82Ydd6GnoLh1QPfag
   img-class    : fa-youtube-play
   img-class-sq : fa-youtube-square
+  description  : Subscribe to our Youtube channel
 - name         : instagram
   link         : https://www.instagram.com/bgsoftwareinc/
   img-class    : fa-instagram
   img-class-sq : fa-instagram
+  description  : Follow us on Instagram
