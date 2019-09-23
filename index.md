@@ -128,24 +128,37 @@ tags: [BG Software]
   </div>
   <!--- End of Custom Software. --->
 
+  <!--- Create a nested array for Services/Capabilities. --->
+  {% assign subArrSize = 3 %}
+  {% assign services = "" | split: "/" %}
+
+  {% for element in site.data.services %}
+    {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
+
+    {% if needsNewSubArr == 1 %}
+      {% comment %} Create a new empty sub array. {% endcomment %}
+      {% assign subArr = "" | split: "/" %}
+    {% endif %}
+
+    {% comment %} Push the current image in sub array. {% endcomment %}
+    {% assign subArr = subArr | push: element %}
+
+    {% if needsNewSubArr == 0 or forloop.last %}
+      {% comment %} push subArr in services if subArr length is. {% endcomment %}
+      {% assign services = services | push: subArr %}
+    {% endif %}
+  {% endfor %}
 
   <!--- Services. --->
   <div id="services" class="py-6">
     <div class="d-flex align-items-center flex-column">
+      {% for serviceThree in services %}
       <div class="services__cards d-flex justify-content-center m-0">
-        {% for service in site.data.services %}
-          {% if forloop.index <= 3 %}
-            {% include service-card.html %}
-          {% endif %}
+        {% for service in serviceThree %}
+          {% include service-card.html %}
         {% endfor %}
       </div>
-      <div class="services__cards d-flex justify-content-center m-0">
-        {% for service in site.data.services %}
-          {% if forloop.index > 3 %}
-            {% include service-card.html %}
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% endfor %}
     </div>
   </div>
   <!--- End of Services. --->

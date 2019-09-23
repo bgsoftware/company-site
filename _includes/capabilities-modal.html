@@ -1,0 +1,80 @@
+<!--- Create a nested array for Services/Capabilities. --->
+{% assign subArrSize = 3 %}
+{% assign services = "" | split: "/" %}
+
+{% for element in site.data.services %}
+  {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
+
+  {% if needsNewSubArr == 1 %}
+    {% comment %} Create a new empty sub array. {% endcomment %}
+    {% assign subArr = "" | split: "/" %}
+  {% endif %}
+
+  {% comment %} Push the current image in sub array. {% endcomment %}
+  {% assign subArr = subArr | push: element %}
+
+  {% if needsNewSubArr == 0 or forloop.last %}
+    {% comment %} push subArr in services if subArr length is. {% endcomment %}
+    {% assign services = services | push: subArr %}
+  {% endif %}
+{% endfor %}
+
+<div
+  class="modal fade"
+  id="capabilities-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content border-0 rounded-lg">
+      <div class="modal-body p-0">
+        <div class="capabilities-modal__body text-center">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <b class="font-size-lg">
+            What's your challenge? This is what we do. Choose any icon to learn more.
+          </b>
+          <div class="d-flex flex-column py-3">
+          {% for servicesThree in services %}
+            <div class="d-flex justify-content-between">
+            {% for service in servicesThree %}
+              <div class="w-25 text-center py-2">
+                <a href="/capabilities/{{ service.link }}">
+                  <img
+                    class="capabilities-modal__icon w-90"
+                    src="/assets/images/services/{{ service.image }}"
+                    alt="{{ service.name }}"
+                  >
+                </a>
+                <b class="font-size-sm">{{ service.name }}</b>
+              </div>
+            {% endfor %}
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bg-color-dark-blue rounded-bottom">
+      {% for app in site.data.socialMedia %}
+        <a
+          href="{{ app.link }}"
+          target="_blank"
+          class="px-1"
+        >
+          <i
+            class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-xxl"
+            aria-hidden="true"
+          ></i>
+        </a>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

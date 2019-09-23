@@ -1,0 +1,17 @@
+.case-studies-modal__icon { @include transition(filter, $image-transition-speed); }
+
+.case-studies-modal__icon:hover { filter: brightness(85%); }
+
+.case-studies-modal__body {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .5rem;
+}
+
+@mixin case-studies-modal--lg() {
+  .case-studies-modal__body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+  }
+}

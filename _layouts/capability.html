@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% assign headerText1 = page.title %}
+{% include header.html %}
+<div id="capability" class="sm-dynamic-px-container py-5">
+  <div class="capability__video-container mx-auto py-4">
+    <video
+      controls
+      class="rounded-lg w-100"
+      poster="/assets/images/services/video-thumbnails/{{ page.asset-name }}.png"
+    >
+      <source src="/assets/videos/capabilities/{{ page.asset-name }}.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="py-6">
+    <h2 class="mx-auto text-center">{{ page.subtitle }}</h2>
+    <div class="capability__image-text-container d-flex py-4">
+      <div class="capability-image-container align-items-start justify-content-center">
+        <img
+          class="w-80"
+          src="/assets/images/services/{{ page.asset-name }}_icon.png"
+          alt="{{ page.title }}"
+        >
+      </div>
+      <div class="capability-text font-size-md line-height-2">
+        {{ page.text }}
+      </div>
+    </div>
+  </div>
+
+  {% assign excludes = page.case-study-excludes | split: "," %}
+  <div class="pt-4 pb-10 text-center">
+    <h2 class="pb-3 mx-auto">
+      To see our {{ page.title }} skills in action, check out the following case
+    {% if excludes.size >= 3 %}
+      study:
+    {% else %}
+      studies:
+    {% endif %}
+    </h2>
+    <div class="d-flex w-100 justify-content-center pb-5">
+      {% include case-studies.html %}
+    </div>
+  </div>
+
+
+  {% include pre-footer-buttons.html %}
+</div>
+

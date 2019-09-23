@@ -1,18 +1,18 @@
 {% assign clients = "" | split: "" %}
 {% for client in site.data.case-studies %}
-  {% if client.name != exclude %}
+  {% unless excludes contains client.name %}
     {% assign clients = clients | push: client.name %}
-  {% endif %}
+  {% endunless %}
 {% endfor %}
 
 {% for client in clients %}
-  <div class="w-11rem d-inline-block">
-    <a href="/case-studies/{{ client }}">
-      <img
-        class="img-fluid w-100 h-auto"
-        src="/assets/images/clients/{{ client }}.png"
-        alt="{{ client }}"
-      >
-    </a>
-  </div>
+<div class="w-14rem d-inline-block px-3">
+  <a href="/case-studies/{{ client }}">
+    <img
+      class="case-study__icon img-fluid w-100 h-auto"
+      src="/assets/images/clients/{{ client }}.png"
+      alt="{{ client }}"
+    >
+  </a>
+</div>
 {% endfor %}

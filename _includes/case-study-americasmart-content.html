@@ -62,4 +62,18 @@
       {{ outcome }}
     </p>
   </div>
+
+  {%- if quote-content and quote-signature-%}
+  <div class="py-4">
+    <h2 class="pb-3">What They Said:</h2>
+    <div class="case-study-americasmart-content__quote font-size-lg line-height-1pt75 font-italic">
+      <p>
+        {{ quote-content }}
+      </p>
+      <p>
+        {{ quote-signature }}
+      </p>
+    </div>
+  </div>
+  {%- endif -%}
 </div>

@@ -137,6 +137,10 @@
 
 .services__card-points { padding-inline-start: 20px; }
 
+.service__icon { @include transition(filter, $image-transition-speed); }
+
+.service__icon:hover { filter: brightness(75%); }
+
 @mixin services--lg() {
   .services__cards {
     flex-direction: row;
@@ -265,7 +269,7 @@
 }
 
 @mixin clients--md() {
-  .clients__content { width: 45rem; }
+  .clients__content { width: 35rem; }
 }
 
 @mixin clients--lg() {

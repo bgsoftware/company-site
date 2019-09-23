@@ -41,6 +41,9 @@
   @include header--lg();
   @include case-study--lg();
   @include pre-footer-buttons--lg();
+  @include capability--lg();
+  @include capabilities-modal--lg();
+  @include case-studies-modal--lg();
 }
 
 /* Extra large screen size (xl) */
@@ -56,6 +59,7 @@
   @include contact-us--xl();
   @include dynamic-px-container--xl();
   @include process--xl();
+  @include case-study-americasmart-content--xl();
 }
 
 /* Interet Explorer specific queries. */
