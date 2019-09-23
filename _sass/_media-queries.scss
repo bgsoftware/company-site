@@ -43,8 +43,7 @@
   @include case-study--lg();
   @include pre-footer-buttons--lg();
   @include capability--lg();
-  @include capabilities-modal--lg();
-  @include case-studies-modal--lg();
+  @include generic-modal--lg();
   @include security-audit--lg();
 }
 
