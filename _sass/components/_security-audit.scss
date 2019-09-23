@@ -19,10 +19,7 @@
   border-top: 1px solid $darkest-grey;
 }
 
-.security-audit__table {
-  border: 1px solid $dark-blue;
-  // display: table !important;
-}
+
 @mixin security-audit--md() {
 
   .security-audit-card {
@@ -37,6 +34,10 @@
 }
 
 @mixin security-audit--lg() {
+  .security-audit__table {
+    border: 1px solid $dark-blue;
+  }
+
   .security-audit__package-cards-break {
     width: 0;
     height: 85%;
