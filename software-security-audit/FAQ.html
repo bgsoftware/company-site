@@ -20,8 +20,19 @@ tags: [BG Software, Security, FAQ, Audit]
   {% endfor %}
 
     <div class="d-flex justify-content-around py-6">
-      {% include button.html link="/software-security-audit/index.html" text="Back to<br>Security Audits" %}
-      {% include button.html link="/contact-form.html" text="Contact Us" %}
+      {%
+        include button.html
+        link="/software-security-audit/index.html"
+        text="Back to<br>Security Audits"
+      %}
+      {%
+        include button.html
+        text="Contact Us"
+        class="security-contact-us-modal-click"
+      %}
     </div>
   </div>
 </div>
+
+{% assign current-url = site.url | append: page.url %}
+{% include security-contact-us-modal.html redirect=current-url %}
