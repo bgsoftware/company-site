@@ -1,3 +1,5 @@
+## This repo is deprecated. The current repo for the BG Software Site exists on Github here: https://github.com/bgsoftware/company-site
+
 # BG Software Marketing Site
 
 This app is used to market BG Software to potential clients.
