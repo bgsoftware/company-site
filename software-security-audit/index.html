@@ -38,7 +38,11 @@ tags: [BG Software, Security]
     </div>
 
     <div class="py-3 d-flex justify-content-center">
-      {% include button.html link="/software-security-audit/FAQ.html" text="FAQ about<br>the audit" %}
+      {%
+        include button.html
+        link="/software-security-audit/FAQ.html"
+        text="FAQ about<br>the audit"
+      %}
     </div>
   </div>
 
@@ -47,41 +51,43 @@ tags: [BG Software, Security]
     Choose the plan that's right for your company
   </h2>
   <div class="security-audit__package-cards border-none py-4 d-flex">
-    {% include security-audit-card.html
+    {%
+      include security-audit-card.html
       title1="Basic Audit"
       bg-color="lightest-blue"
       text1="We look at 16 common threats and provide you a report of threats found within your application(s)."
       title2="Starting at $499"
       features='Easy-to-read report,General locations of threats,Great for admins who are not "tech savvy"'
-      link="/software-security-audit/basic-sample.pdf"
+      button-link="/software-security-audit/basic-sample.pdf"
       button-text="View a sample<br>Basic Audit"
     %}
 
     <div class="security-audit__package-cards-break security-audit__package-cards-break-darkest-grey"></div>
 
-    {% include security-audit-card.html
+    {%
+      include security-audit-card.html
       title1="Advanced Audit"
       bg-color="lighter-blue"
       text1="Everything in the Basic Audit, plus an extensive report that provides detailed analysis and customer recommendations."
       title2="Starting at $999"
       features="Step-by-step remedies for your vulnerabilities,Phone consultation,Demonstration of threats"
-      link="/software-security-audit/advanced-sample.pdf"
+      button-link="/software-security-audit/advanced-sample.pdf"
       button-text="View a sample<br>Advanced Audit"
     %}
 
     <div class="security-audit__package-cards-break security-audit__package-cards-break-darkest-grey"></div>
 
-    {% include security-audit-card.html
+    {%
+      include security-audit-card.html
       title1="Complete Audit"
       bg-color="light-blue"
       text1="Everything in Basic and Advanced, plus a look directly into your application's code to search out and mitigate any risk we can find."
       title2="Starting at $2,999"
       features="Examines 10 additional code specific threats,Audit customized to your systems and applications,Concierge services"
-      link="/contact-form.html"
       button-text="Contact us to<br>learn more"
+      button-class="security-contact-us-modal-click"
     %}
   </div>
-
 
   <h2 class="py-5 text-center">
     See All Features
@@ -95,7 +101,6 @@ tags: [BG Software, Security]
       onclick="toggleText('security-audit__table-container', true)"
     >
       <i class="fa fa-plus-circle color-dark-blue" aria-hidden="true"></i>
-      <!-- <div class="w-100 border-bottom-darkest-grey pt-4"></div> -->
     </a>
     <a
       id="security-audit__table-container-close"
@@ -145,7 +150,7 @@ tags: [BG Software, Security]
           <td></td>
         </tr>
 
-        {% for service in site.data.security-audit-features %}
+      {% for service in site.data.security-audit-features %}
         <tr>
         {% if service.title == true %}
           <th scope="row" class="font-size-md pl-5">{{ service.description }}</th>
@@ -192,7 +197,7 @@ tags: [BG Software, Security]
           </td>
           <td></td>
         </tr>
-        {% endfor %}
+      {% endfor %}
 
         <!-- Empty row. -->
         <tr>
@@ -233,6 +238,13 @@ tags: [BG Software, Security]
   </div>
 
   <div class="py-8 d-flex justify-content-center">
-    {%- include button.html link="/contact-form.html" text="Contact Us" -%}
+    {%
+      include button.html
+      text="Contact Us"
+      class="security-contact-us-modal-click"
+    %}
   </div>
 </div>
+
+{% assign current-url = site.url | append: page.url %}
+{% include security-contact-us-modal.html redirect=current-url %}
