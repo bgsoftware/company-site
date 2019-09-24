@@ -1,66 +1,68 @@
 /* Small screen size (sm) */
 @media only screen and (min-width: 576px) {
-  @include homepage-blog--sm();
-  @include testimonials--sm();
   @include capabilities--sm();
-  @include clients--sm();
-  @include process--sm();
   @include case-study--sm();
+  @include clients--sm();
+  @include homepage-blog--sm();
   @include pre-footer-buttons--sm();
+  @include process--sm();
+  @include testimonials--sm();
 }
 
 /* Medium screen size (md) */
 @media only screen and (min-width: 768px) {
-  @include navigation-bar--md();
-  @include homepage-blog--md();
-  @include font-size--md();
-  @include survey--md();
-  @include clients--md();
-  @include testimonials--md();
-  @include capabilities--md();
   @include blog-library--md();
   @include blog-post--md();
+  @include capabilities--md();
+  @include clients--md();
   @include contact-us--md();
   @include dynamic-px-container--md();
-  @include team--md();
+  @include font-size--md();
+  @include homepage-blog--md();
+  @include navigation-bar--md();
   @include security-audit--md();
+  @include survey--md();
+  @include team--md();
+  @include testimonials--md();
 }
 
 /* Large screen size (lg) */
 @media only screen and (min-width: 992px) {
-  @include navigation-bar--lg();
-  @include homepage-blog--lg();
+  @include blog-library--lg();
+  @include blog-post--lg();
+  @include capabilities--lg();
+  @include capability--lg();
+  @include capability-security--lg();
+  @include case-study--lg();
+  @include clients--lg();
   @include custom-software--lg();
+  @include footer--lg();
+  @include generic-modal--lg();
+  @include header--lg();
+  @include homepage-blog--lg();
+  @include navigation-bar--lg();
+  @include pre-footer-buttons--lg();
+  @include security-audit--lg();
   @include services--lg();
   @include survey--lg();
   @include testimonials--lg();
-  @include capabilities--lg();
-  @include clients--lg();
-  @include footer--lg();
-  @include blog-library--lg();
-  @include blog-post--lg();
-  @include header--lg();
-  @include case-study--lg();
-  @include pre-footer-buttons--lg();
-  @include capability--lg();
-  @include generic-modal--lg();
-  @include security-audit--lg();
 }
 
 /* Extra large screen size (xl) */
 @media only screen and (min-width: 1200px) {
-  @include navigation-bar--xl();
-  @include homepage-blog--xl();
-  @include testimonials--xl();
-  @include capabilities--xl();
-  @include clients--xl();
-  @include survey--xl();
-  @include footer--xl();
   @include blog-post--xl();
+  @include capabilities--xl();
+  @include capability-security--xl();
+  @include case-study-americasmart-content--xl();
+  @include clients--xl();
   @include contact-us--xl();
   @include dynamic-px-container--xl();
+  @include footer--xl();
+  @include homepage-blog--xl();
+  @include navigation-bar--xl();
   @include process--xl();
-  @include case-study-americasmart-content--xl();
+  @include survey--xl();
+  @include testimonials--xl();
 }
 
 /* Interet Explorer specific queries. */
