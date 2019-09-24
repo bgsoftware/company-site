@@ -41,7 +41,7 @@ tags: [Security, Audit]
       {%
         include button.html
         link="/software-security-audit/FAQ.html"
-        text="FAQ about<br>the audit"
+        text="Software Security<br>Audit FAQ"
       %}
     </div>
   </div>
@@ -100,7 +100,7 @@ tags: [Security, Audit]
       aria-controls="security-audit__table-container"
       onclick="toggleText('security-audit__table-container', true)"
     >
-      <i class="fa fa-plus-circle color-dark-blue" aria-hidden="true"></i>
+      <i class="fa fa-plus color-dark-blue" aria-hidden="true"></i>
     </a>
     <a
       id="security-audit__table-container-close"
@@ -112,7 +112,7 @@ tags: [Security, Audit]
       onclick="toggleText('security-audit__table-container')"
       class="d-none"
     >
-      <i class="fa fa-minus-circle color-dark-blue" aria-hidden="true"></i>
+      <i class="fa fa-minus color-dark-blue" aria-hidden="true"></i>
     </a>
   </h2>
 </div>
@@ -121,17 +121,11 @@ tags: [Security, Audit]
   <div id="security-audit__table-container" class="collapse table-responsive">
     <table class="security-audit__table table table-borderless w-100 d-block d-md-table">
       <thead class="bg-color-dark-blue border-dark-blue">
-          <tr class=" text-center color-white">
-        <th scope="col" class="min-width-15rem"></th>
-        <th></th>
-        <th scope="col" class="min-width-10rem">BASIC<br>AUDIT</th>
-        <th></th>
-        <th></th>
-        <th scope="col" class="min-width-10rem">ADVANCED<br>AUDIT</th>
-        <th></th>
-        <th></th>
-        <th scope="col" class="min-width-10rem">COMPREHENSIVE<br>AUDIT</th>
-        <th></th>
+        <tr class=" text-center color-white">
+          <th scope="col" width="30%"></th>
+          <th scope="col" colspan="3" class="font-size-sm text-center">BASIC AUDIT</th>
+          <th scope="col" colspan="3" class="font-size-sm text-center">ADVANCED AUDIT</th>
+          <th scope="col" colspan="3" class="font-size-sm text-center">COMPREHENSIVE AUDIT</th>
         </tr>
       </thead>
       <tbody>
@@ -139,20 +133,20 @@ tags: [Security, Audit]
         <tr>
           <th scope="row"></th>
           <td></td>
+          <td width="13%" class="min-width-4rem"></td>
           <td></td>
           <td></td>
+          <td width="13%" class="min-width-4rem"></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td width="13%" class="min-width-4rem"></td>
           <td></td>
         </tr>
 
       {% for service in site.data.security-audit-features %}
         <tr>
         {% if service.title == true %}
-          <th scope="row" class="font-size-md pl-5">{{ service.description }}</th>
+          <td scope="row" class="font-size-md pl-5">{{ service.description }}</td>
         {% else %}
           <td scope="row" class="font-size-sm pl-5">{{ service.description }}</td>
         {% endif %}
