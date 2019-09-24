@@ -146,7 +146,7 @@ tags: [Security, Audit]
       {% for service in site.data.security-audit-features %}
         <tr>
         {% if service.title == true %}
-          <td scope="row" class="font-size-md pl-5">{{ service.description }}</td>
+          <td scope="row" class="font-size-md pl-5"><b>{{ service.description }}</b></td>
         {% else %}
           <td scope="row" class="font-size-sm pl-5">{{ service.description }}</td>
         {% endif %}
