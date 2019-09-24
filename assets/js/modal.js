@@ -6,4 +6,8 @@ $(document).ready(function() {
   $('a[href$="#case-studies-modal"]').on( "click", function() {
      $('#case-studies-modal').modal('show');
   });
+
+  $('.security-contact-us-modal-click').on( "click", function() {
+     $('#security-contact-us-modal').modal('show');
+  });
 });

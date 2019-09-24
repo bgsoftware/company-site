@@ -1,0 +1,13 @@
+@mixin capability-security--lg() {
+  .capability-security__audit-block {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+@mixin capability-security--xl() {
+  .capability-security__audit-block {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+}
