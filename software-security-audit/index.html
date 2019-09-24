@@ -1,0 +1,243 @@
+---
+layout: default
+title: Software Security Audit
+description: "Software security for small and midsize businesses. We find threats in your applications. We tell you what they are. We'll tighten it up."
+tags: [Security, Audit]
+---
+{% assign headerText1 = "The BG Software Security Audit" %}
+{% include header.html %}
+<script src="/assets/js/caseStudyAmericasMart.js"></script>
+
+<div class="sm-dynamic-px-container">
+  <div class="col-lg-10 mx-auto">
+    <h2 class="py-3">
+      Because your business is worth protecting.
+    </h2>
+    <div class="font-size-md line-height-1pt5 py-3">
+      <p>
+        We don't need to frighten you with ominous statistics on cybercrime. You read about it all
+        the time. What you care about is protecting your data, your reputation, and your customer's
+        trust.
+      </p>
+      <p>
+        We can help.
+      </p>
+      <p>
+        Schedule a software security audit with us and we'll perform a private test of your
+        application(s) and/or website. We'll report back to you in a confidential document and tell
+        you what we found. You will be be 100% in the loop during the process.
+      </p>
+      <p>
+        No pre-payment is required. If the results of our test show no vulnerabilities, your
+        audit is free. You are under no obligation to use us as the "fixers," but we are happy to
+        help if you ask us.
+      </p>
+      <p>
+        We care about your safety and the protection of your data.
+      </p>
+    </div>
+
+    <div class="py-3 d-flex justify-content-center">
+      {%
+        include button.html
+        link="/software-security-audit/FAQ.html"
+        text="Software Security<br>Audit FAQ"
+      %}
+    </div>
+  </div>
+
+
+  <h2 class="py-5 text-center">
+    Choose the plan that's right for your company
+  </h2>
+  <div class="security-audit__package-cards border-none py-4 d-flex">
+    {%
+      include security-audit-card.html
+      title1="Basic Audit"
+      bg-color="lightest-blue"
+      text1="We look at 16 common threats and provide you a report of threats found within your application(s)."
+      title2="Starting at $499"
+      features='Easy-to-read report,General locations of threats,Great for admins who are not "tech savvy"'
+      button-link="/software-security-audit/basic-sample.pdf"
+      button-text="View a sample<br>Basic Audit"
+    %}
+
+    <div class="security-audit__package-cards-break security-audit__package-cards-break-darkest-grey"></div>
+
+    {%
+      include security-audit-card.html
+      title1="Advanced Audit"
+      bg-color="lighter-blue"
+      text1="Everything in the Basic Audit, plus an extensive report that provides detailed analysis and customer recommendations."
+      title2="Starting at $999"
+      features="Step-by-step remedies for your vulnerabilities,Phone consultation,Demonstration of threats"
+      button-link="/software-security-audit/advanced-sample.pdf"
+      button-text="View a sample<br>Advanced Audit"
+    %}
+
+    <div class="security-audit__package-cards-break security-audit__package-cards-break-darkest-grey"></div>
+
+    {%
+      include security-audit-card.html
+      title1="Complete Audit"
+      bg-color="light-blue"
+      text1="Everything in Basic and Advanced, plus a look directly into your application's code to search out and mitigate any risk we can find."
+      title2="Starting at $2,999"
+      features="Examines 10 additional code specific threats,Audit customized to your systems and applications,Concierge services"
+      button-text="Contact us to<br>learn more"
+      button-class="security-contact-us-modal-click"
+    %}
+  </div>
+
+  <h2 class="py-5 text-center">
+    See All Features
+    <a
+      id="security-audit__table-container-open"
+      data-toggle="collapse"
+      href="#security-audit__table-container"
+      role="button"
+      aria-expanded="false"
+      aria-controls="security-audit__table-container"
+      onclick="toggleText('security-audit__table-container', true)"
+    >
+      <i class="fa fa-plus color-dark-blue" aria-hidden="true"></i>
+    </a>
+    <a
+      id="security-audit__table-container-close"
+      data-toggle="collapse"
+      href="#security-audit__table-container"
+      role="button"
+      aria-expanded="false"
+      aria-controls="security-audit__table-container"
+      onclick="toggleText('security-audit__table-container')"
+      class="d-none"
+    >
+      <i class="fa fa-minus color-dark-blue" aria-hidden="true"></i>
+    </a>
+  </h2>
+</div>
+
+<div class="dynamic-px-container">
+  <div id="security-audit__table-container" class="collapse table-responsive">
+    <table class="security-audit__table table table-borderless w-100 d-block d-md-table">
+      <thead class="bg-color-dark-blue border-dark-blue">
+        <tr class=" text-center color-white">
+          <th scope="col" width="30%"></th>
+          <th scope="col" colspan="3" class="font-size-sm text-center">BASIC AUDIT</th>
+          <th scope="col" colspan="3" class="font-size-sm text-center">ADVANCED AUDIT</th>
+          <th scope="col" colspan="3" class="font-size-sm text-center">COMPREHENSIVE AUDIT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Empty row. -->
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td width="13%" class="min-width-4rem"></td>
+          <td></td>
+          <td></td>
+          <td width="13%" class="min-width-4rem"></td>
+          <td></td>
+          <td></td>
+          <td width="13%" class="min-width-4rem"></td>
+          <td></td>
+        </tr>
+
+      {% for service in site.data.security-audit-features %}
+        <tr>
+        {% if service.title == true %}
+          <td scope="row" class="font-size-md pl-5"><b>{{ service.description }}</b></td>
+        {% else %}
+          <td scope="row" class="font-size-sm pl-5">{{ service.description }}</td>
+        {% endif %}
+          <td class="border-left-dark-blue"></td>
+        {% if forloop.first %}
+          <td class="bg-color-lightest-blue text-center box-shadow font-size-sm rounded-top-lg">
+        {% elsif forloop.last %}
+          <td class="bg-color-lightest-blue text-center box-shadow font-size-sm rounded-bottom-lg">
+        {% else %}
+          <td class="bg-color-lightest-blue text-center box-shadow font-size-sm">
+        {% endif %}
+          {% if service.basic == true %}
+            X
+          {% endif %}
+          </td>
+          <td class="border-right-dark-blue"></td>
+          <td class="border-left-dark-blue"></td>
+        {% if forloop.first %}
+          <td class="bg-color-lighter-blue text-center box-shadow font-size-sm rounded-top-lg">
+        {% elsif forloop.last %}
+          <td class="bg-color-lighter-blue text-center box-shadow font-size-sm rounded-bottom-lg">
+        {% else %}
+          <td class="bg-color-lighter-blue text-center box-shadow font-size-sm">
+        {% endif %}
+          {% if service.advanced == true %}
+            X
+          {% endif %}
+          </td>
+          <td class="border-right-dark-blue"></td>
+          <td class="border-left-dark-blue"></td>
+        {% if forloop.first %}
+          <td class="bg-color-light-blue text-center box-shadow font-size-sm rounded-top-lg">
+        {% elsif forloop.last %}
+          <td class="bg-color-light-blue text-center box-shadow font-size-sm rounded-bottom-lg">
+        {% else %}
+          <td class="bg-color-light-blue text-center box-shadow font-size-sm">
+        {% endif %}
+          {% if service.comp == true %}
+            X
+          {% endif %}
+          </td>
+          <td></td>
+        </tr>
+      {% endfor %}
+
+        <!-- Empty row. -->
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="sm-dynamic-px-container">
+  <p class="font-size-md line-height-1pt5 pb-4">
+    No one can make anyone 100% safe 100% of the time. Anyone that says they
+    can is not being truthful. We will make every effort to harden your systems
+    and applications from attacks and we'll be 100% transparent with you on what
+    we found and what we did.
+  </p>
+
+  <div class="color-white bg-color-dark-blue rounded-lg font-size-md font-italic p-4">
+    <p>
+      "Overall experience was fantastic. I would recommend this to anyone getting
+      ready to launch a web application and/or with existing projects when you
+      want some peace of mind."
+    </p>
+    <p>
+      Aaron Haskett - Independent Developer"
+    </p>
+  </div>
+
+  <div class="py-8 d-flex justify-content-center">
+    {%
+      include button.html
+      text="Contact Us"
+      class="security-contact-us-modal-click"
+    %}
+  </div>
+</div>
+
+{% assign current-url = site.url | append: page.url %}
+{% include security-contact-us-modal.html redirect=current-url %}

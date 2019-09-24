@@ -1,0 +1,13 @@
+.generic-modal__body {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .5rem;
+}
+
+@mixin generic-modal--lg() {
+  .generic-modal__body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+  }
+}

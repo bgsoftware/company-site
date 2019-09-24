@@ -1,7 +1,5 @@
 ---
-layout: capability
-
-asset-name: security
+layout: default
 
 description: "Security is the most important defense against people who seek to harm your business. See what we can offer. This is one
 of our strengths!"
@@ -9,20 +7,85 @@ of our strengths!"
 tags: [Security]
 
 title: Security
-
-subtitle: "Absolutely the most important element of software."
-
-text: '<p>We have a lot of experience implementing Single Sign-On (SSO).</p>
-<p>Google, Facebook, GitHub, and Twitter do this – we do too. It’s the act of signing in easily and quickly once to
-access several different applications. We did that for our client, the
-<a href="/case-studies/cpuc.html" class="color-teal hover-color-dark-blue">California Public Utilities Commission (CPUC)</a>
-using our own auth client as an identity provider.</p>
-<p>We also understand the security details that are behind common SSO specifications. With that understanding we
-can ensure your application has a robust authentication and authorization system, whether it’s implementing a Google
-sign-in, or something we make specifically for your application.</p>
-<p>Security is so much more than a login and a password. You’d be amazed at what black hats can do.</p>
-<p>We are committed to keeping our customer’s data secure. BG Software is currently offering security audits for
-businesses of all sizes – to identify and correct vulnerabilities in their applications.</p>'
-
-case-study-excludes: "acca,bayren"
 ---
+
+
+{% assign headerText1 = page.title %}
+{% include header.html %}
+<div id="capability" class="sm-dynamic-px-container py-5">
+  <div class="capability__video-container mx-auto py-4">
+    <video controls class="rounded-lg w-100"
+      poster="/assets/images/services/video-thumbnails/security.png">
+      <source src="/assets/videos/capabilities/security.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="py-6">
+    <h2 class="mx-auto text-center">Absolutely the most important element of software.</h2>
+    <div class="capability__image-text-container d-flex py-4">
+      <div class="capability-image-container align-items-start justify-content-center">
+        <img class="w-80" src="/assets/images/services/security_icon.png" alt="security icon">
+      </div>
+      <div class="capability-text font-size-md line-height-2">
+        <p>We have a lot of experience implementing Single Sign-On (SSO).</p>
+        <p>Google, Facebook, GitHub, and Twitter do this – we do too. It’s the act of signing in
+          easily and quickly once to access several different applications. We did that
+          for our client, the
+          <a href="/case-studies/cpuc.html" class="color-teal hover-color-dark-blue">
+            California Public Utilities Commission (CPUC)</a>
+          using our own auth client as an identity provider.
+        </p>
+        <p>We also understand the security details that are behind common SSO
+          specifications. With that understanding we can ensure your application
+          has a robust authentication and authorization system, whether it’s
+          implementing a Google sign-in, or something we make specifically for
+          your application.
+        </p>
+        <p>Security is so much more than a login and a password. You’d be
+          amazed at what black hats can do.
+        </p>
+        <p>We are committed to keeping our customer’s data secure. BG Software
+          is currently offering security audits for businesses of all sizes – to
+          identify and correct vulnerabilities in their applications.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="capability-security__audit-block pt-4 pb-10 text-center">
+    <h2 class="pb-3 mx-auto">
+      Software Security Audit Services
+    </h2>
+    <div class="font-size-md pb-3 line-height-2">
+      <p>
+        We also offer a variety of software security audits, where we identify affected
+        areas, assess risk severity, analyze exploit difficulty and suggest remedies.
+      </p>
+      <p>To learn more about our software security audit services click here:</p>
+    </div>
+    {%
+      include button.html
+      link="/software-security-audit"
+      text="Software Security<br>Audits"
+      class="mx-auto"
+    %}
+  </div>
+
+  {% assign excludes = "acca,bayren" | split: "," %}
+  <div class="pt-4 pb-10 text-center">
+    <h2 class="pb-3 mx-auto">
+      To see our Security skills in action, check out the following case
+      {% if excludes.size >= 3 %}
+      study:
+      {% else %}
+      studies:
+      {% endif %}
+    </h2>
+    <div class="d-flex w-100 justify-content-center pb-5">
+      {% include case-studies.html %}
+    </div>
+  </div>
+
+
+  {% include pre-footer-buttons.html %}
+</div>

@@ -1,0 +1,8 @@
+<script src="/assets/js/button.js"></script>
+<button
+  {% if include.link %} onclick="goTo('{{ include.link }}')" {% endif %}
+  {% if include.id %} id="{{ include.id }}" {% endif %}
+  class="{{ include.class }} button btn cta-button-blue font-weight-light font-size-md d-flex align-content-center"
+>
+  <span class="d-flex align-content-center">{{ include.text }}</span>
+</button>
