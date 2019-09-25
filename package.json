@@ -1,6 +1,6 @@
 {
   "name": "bg-software-site",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "BG software site",
   "main": "index.js",
   "scripts": {
