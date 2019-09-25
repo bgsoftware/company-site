@@ -1,5 +1,5 @@
 ---
-layout   :post
+layout: post
 title: "Software Security:Time To Turn Off The Light"
 description: "Don't make it easy for a cyber thief. Here are some simple ways to protect your business."
 image: 2019-09-24-software-security-time-to-turn-off-the-light.jpg
