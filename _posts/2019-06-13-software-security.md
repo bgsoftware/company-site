@@ -1,6 +1,6 @@
 ---
 layout      : post
-title       : "Security And Your Software: Are You Safe?"
+title       : "Security and Your Software: Are You Safe?"
 description : How to find out if you’re not.
 image       : 2019-06-13-security-and-your-software-are-you-safe.jpg
 author      : John Scott
