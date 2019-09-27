@@ -8,47 +8,21 @@ comments: true
 tags: [software security]
 ---
 
-
-
-To someone who wants to break into your company's software applications, your system - to them - may have an imaginary neon light which says, "Come on in here. This one's going to be easy."
-
-You don't want to be that person.
-
-Here are some sobering facts about small businesses and security. These aren't meant to scare you. It's to help you understand how you can stop or slow a break-in from happening to you, and that's easier than you think.
-
-<br>
-<ul>
- 	<li> According to a report from <a href="https://www.spiceworks.com/marketing/network-security/pdf-report/">spiceworks</a>, 1/3 of organizations still have at least one Windows XP device connected to their network. Support for it stopped almost 6 years ago.</li>
- 	<li> 79% of organizations still have at least one Windows 7 system connected and running in their office, according to that same spiceworks report.</li>
- 	<li>Microsoft has announced that on January 14, 2020, they will stop supporting that operating system. No patches, no updates...end of life.</li>
- 	<li>On that same day, support for Windows Server 2008 and 2008 R2 will end.</li>
- 	<li>"Legacy" software is still EVERYWHERE.  In November 2015, <a class="external" href="http://www.bristolwireless.net/blog/2015/11/13/orly-airport-brought-to-standstill-by-windows-3-1-software-crash/" target="_blank" rel="noopener">Orly Airport</a> in Paris had to ground planes for hours when the airport’s weather data system failed. The system was Windows 3.1, an operating system created in 1992.  Countless US government agencies still rely on bulky, slow mainframe computers from the 1980s.  What the Veteran's Administration uses to keep track of our soldiers and sailors in 2019 would make your nauseous. What's worse,<a href="https://psmag.com/social-justice/va-software-threatens-veterans-health-care"> they cannot figure out</a> how to really, truly fix it.</li>
-</ul>
-<br>
-
-We're in the software business, so of course we're horrified by these statistics. But many people aren't. Millions of people aren't bothered at all.  Why?
-
-We can only assume many businesses feel like their data is not "important" to anyone, so they don't need to shield it from cyber attack. Some businesses do their accounting unconnected to the Internet. I went to a Northern California bait and tackle shop recently during a fishing trip with some friends, and the owner was literally using a pencil and a ledger! I asked him why. "I don't need a computer..."
-
-Okay, that's fine. A ledger can't be hacked, that's true. It can only be stolen by a human burglar. But when that ledger is gone, so is every transaction he's ever conducted.
-
-And that's the point.
-
-When it's gone, it's gone.
-
-It's worth noting that a cyber criminal might not be necessarily interested in stealing or kidnapping your business data from ransom - but s/he can certainly use your system to set up what's called a botnet- a network of computers infected with bad software, running without your knowledge, to do things like send spam messages. Foreign bad actors use botnets to make some very big and hard-to-track messes that can be extremely difficult to disinfect.
-
-Hackers are lazy because they're humans - they'll skip a fortified system in favor of an easy job. There are some things you can do now to, at the very least, make it slightly harder for an intruder to compromise your applications and your business.
-<ol>
- 	<li>If you access your software with <em>only </em>a login name and a password, you're practically an open door. You need a <a href="https://www.lifewire.com/what-is-captcha-3486183">capcha </a> or some type of two-factor authentication (sending a code to your phone is one way).</li>
- 	<li>Run software updates. Countless businesses are running software which hasn't been updated recently - or at all. These are generally free and can take as little as a few minutes.</li>
- 	<li>Backup your data. Have it stored in a place that's not connected to the Internet. That can be a physical hard drive (yes, they still make those).</li>
- 	<li>Educate your employees about the hazards of clicking links they shouldn't. So many intrusions are originally not the fault of the software - it's caused by a human.</li>
- 	<li>Encrypt your email. There are <a href="https://blog.encyro.com/best-email-encryption-services/">many ways to do it,</a> ranging from annoying to impossible, but it's important to remember that emails sent without a "lock and key" are practically public. When you get a "forgot my password" email from a company, it may very well be visible to anyone interested in taking a peek.</li>
-</ol>
-You've worked so hard to build your business. You turn on your laptop or desktop every day and it works fine, so it's very easy to procrastinate or neglect taking steps to protect yourself from what is probably an inevitable headache - a compromised system, data loss, and massive expense to repair - if repair is possible.
-
-Is it possible to be 100% safe 100% of the time? No, and anyone who claims they can do that for you is lying to you. But you can make your systems stronger and safer and reduce the risk of attack.
-
-
-
+<p>Is your business vulnerable to cyber attack? Short answer: yes. We all are vulnerable.</p>
+<p>Technological evil naturally follows technological advances and breakthroughs, because there will always be humans who will use something for bad purposes. Here's a perfect example: deepfakes.</p>
+<p>Deepfakes are phony videos or audios that look and sound just like the real thing. Once merely an amusement for losers putting celebrities' faces on porn stars' bodies, the technology for creating videos that are almost impossible to detect as fakery are almost here. One expert believes "perfectly real" deepfakes are going to be here in<a href="https://www.businessinsider.com/perfectly-real-deepfake-videos-6-months-away-deepfake-pioneer-says-2019-9"> as little as six months.</a></p>
+<p>We have an election coming up in 2020. Can you imagine what's going to to be flying around social media?  Trouble is coming. We can only pray journalism will be able to save us from the shenanigans ahead.</p>
+<p>What could a competitor do to wreck your reputation on <a href="https://yelp.com">Yelp?</a></p>
+<p>Sadly, evil follows innovation. How to slow it, or stop it?</p>
+<p>We can't stop hackers and thieves and troublemakers from doing their thing, but we can make our businesses easier to be "avoidable" by them. Some simple security measures can make a world of difference.</p>
+<p>You need to stop using Windows XP and Windows 7 as soon as possible. These are obsolete operating systems with massive security risks. <a href="https://www.microsoft.com/en-us/microsoft-365/windows/end-of-windows-7-support">Windows is ending support for 7 on January 14.</a></p>
+<p>Even Windows 10 has occasional issues. Microsoft is <a href="https://www.computerworld.com/article/3440677/microsoft-delivers-emergency-security-update-for-antiquated-ie.html">pushing an emergency patch for Internet Explorer</a> this week. Apple this week said an attacker might be able to access your iPad with a bug <a href="https://techcrunch.com/2019/09/24/apple-bug-full-access-keyboards/">associated with third-party keyboards.</a></p>
+<p>You might shrug and say to yourself, "It's all a mess. Nothing is safe. I'm just going to live my life and see what happens."</p>
+<p>And many people do. They figure it's all so complicated and scary, better to just ignore all of it.</p>
+<p>Those words are music to the ears of cyber criminals.</p>
+<p>Here's the takeaway: yes, there are a small group of bad people out there. No, we as one person don't have the ability to stop a global cyber attack. But YES, we can toughen up and protect <strong>our own</strong> data - and prevent our "little" systems <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-botnet/">being used as a proxy</a> to harm many other people.</p>
+<p>We can and we must do better.</p>
+<p>It's a little technical (if you're not a technical person), but<a href="https://www.thesslstore.com/blog/how-to-prevent-cybercrime-9-helpful-tips/"> here's a list of measures</a> that will go a long way in protecting your business.</p>
+<p>I'll leave you with one superhuman powerful method to ward off attacks that will cost you absolutely nothing, and save you from a security nightmare.</p>
+<p>Educate your staff and employees. Tell them to never, ever click on a link that looks suspicious. Never, ever.</p>
+<p>Ever.</p>
