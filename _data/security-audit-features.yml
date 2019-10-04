@@ -143,11 +143,6 @@
   basic: true
   advanced: true
   comp: true
-- description: Comprehensive Threat Detection Vulnerabilities
-  title: false
-  basic: false
-  advanced: false
-  comp: true
 - description: Local File Includes
   title: false
   basic: false
