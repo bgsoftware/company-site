@@ -1,8 +1,6 @@
-function toggleText(number, open) {
-  var idText = 'amc-text-' + number;
+function toggleText(idText, open) {
   var openButtonEl = document.getElementById(idText + '-open');
   var closeButtonEl = document.getElementById(idText + '-close');
-
   /* If opening, show close button and hide open button. */
   if (open) {
     openButtonEl.classList.add('d-none');

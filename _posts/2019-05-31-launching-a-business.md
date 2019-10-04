@@ -1,6 +1,6 @@
 ---
 layout      : post
-title       : It's Time For The World To Hear From Us
+title       : It's Time for the World to Hear from Us
 description : How often does one get to take an existing company and treat it like a startup?
 image       : 2019-05-31-its-time-for-the-world-to-hear-from-us.jpg
 author      : John Scott

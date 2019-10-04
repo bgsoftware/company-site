@@ -1,6 +1,6 @@
 ---
 layout      : post
-title       : Why A Software Purchase Is Absolutely An Emotional One
+title       : Why a Software Purchase Is Absolutely an Emotional One
 description : ...and doesn't making the right call feel awesome?
 image       : 2019-06-04-why-a-software-purchase-is-absolutely-an-emotional-one.jpg
 author      : John Scott
