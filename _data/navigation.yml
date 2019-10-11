@@ -2,8 +2,6 @@
   link : "#capabilities-modal"
 - name : Case Studies
   link : "#case-studies-modal"
-- name : Process
-  link : "/process"
 - name : Contact Us
   link : "/contact-form"
 - name : Team
