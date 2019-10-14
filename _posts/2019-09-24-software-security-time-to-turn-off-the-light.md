@@ -3,6 +3,7 @@ layout: post
 title: "Software Security: Time to Turn Off the Light "
 description: "Don't make it easy for a cyber thief. Here are some simple ways to protect your business."
 image: 2019-09-24-software-security-time-to-turn-off-the-light.jpg
+image-description: "Link to blog post. Photo of green neon sign with arrow and the word 'ENTER'"
 author: John Scott
 comments: true
 tags: [software security]

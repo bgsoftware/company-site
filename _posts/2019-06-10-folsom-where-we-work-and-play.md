@@ -4,6 +4,7 @@ title       : "Folsom: Where We Work (and Play)"
 description : The story of our hometown, a former Gold Rush village
               tuned-major-suburb, and why our quality of life is amazing.
 image       : 2019-06-10-folsom-where-we-work-and-play.jpg
+image-description: "Link to blog post. Photo of Folsom Lake from the shore in the daytime. Tree branches in foreground"
 author      : John Stuckert
 comments    : true
 tags        : [BG Software, Blog, John Stuckert, Folsom]

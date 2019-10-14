@@ -3,6 +3,7 @@ layout      : post
 title       : 3 Horrible Things That Can Happen If You Use Old Software
 description : Microsoft is ending support for some software you may be using. Danger.
 image       : 2019-07-08-3-horrible-things-that-can-happen-if-you-use-old-software.jpg
+image-description: "Link to blog post. Photo of open padlock on door latch. Key is sticking out of the padlock."
 author      : John Scott
 comments    : true
 tags        : [John Scott, Software, Security]

@@ -4,6 +4,7 @@ title       : What’s My Software Going to Cost?
 description : The correct answer is, "It depends." But it's not anything like buying
               a car!
 image       : 2019-06-26-whats-my-software-going-to-cost.jpg
+image-description: "Link to blog post. Photo of computer screen with html code going across it."
 author      : John Scott
 comments    : true
 tags        : [John Scott, Software]

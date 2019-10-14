@@ -4,6 +4,7 @@ title       : If Your Software Builder Can’t Answer These 3 Questions, Ghost T
 description : These three will determine if your software build is going to be exciting, or
               a headache.
 image       : 2019-06-07-if_your_software_builder_cant_answer_these_3_questions_ghost_them.jpg
+image-description: "Link to blog post. Photo of chalkboard with a large question mark drawn in the center."
 author      : John Stuckert
 comments    : true
 tags        : [BG Software, Blog, John Stuckert, Software]
