@@ -2,7 +2,7 @@
 <button
   {% if include.link %} onclick="goTo('{{ include.link }}')" {% endif %}
   {% if include.id %} id="{{ include.id }}" {% endif %}
-  class="{{ include.class }} button btn cta-button-blue font-weight-light font-size-md d-flex align-content-center"
+  class="{{ include.class }} button btn cta-button-blue font-weight-light font-size-md"
 >
-  <span class="d-flex align-content-center">{{ include.text }}</span>
+  {{ include.text }}
 </button>
