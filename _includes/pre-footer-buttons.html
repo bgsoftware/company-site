@@ -1,27 +1,32 @@
 <div id="pre-footer-buttons" class="d-flex justify-content-center w-100">
-  <div class="pre-footer-buttons__inner-container d-flex justify-content-around py-5">
-  <!--- If exclude process is true, don't show the process button. --->
+  <div class="pre-footer-buttons__inner-container d-flex justify-content-around">
+
+    <!--- If exclude process is true, don't show the process button. --->
   {% if excludeProcess == true %}
-    <a
-      href="/capabilities/software-development"
-      class="pre-footer-buttons__inner-container button btn cta-button-blue font-weight-light w-9rem"
-    >
-      Software Development
-    </a>
+    <div class="pt-5 pb-4 d-flex align-content-center">
+      {%
+        include button.html
+        link="/capabilities/software-development.html"
+        text="Software Development"
+      %}
+    </div>
   {% else %}
-    <a
-      href="/process"
-      class="pre-footer-buttons__inner-container button btn cta-button-blue font-weight-light w-9rem"
-    >
-      Software Development Process
-    </a>
+    <div class="pt-5 pb-4 d-flex align-content-center">
+      {%
+        include button.html
+        link="/process.html"
+        text="Software Development<br />Process"
+      %}
+    </div>
   {% endif %}
 
-    <a
-      href="/contact-form"
-      class="button btn cta-button-blue font-weight-light w-9rem"
-    >
-      Contact Us
-    </a>
+    <div class="pt-5 pb-4 d-flex align-content-center">
+      {%
+        include button.html
+        link="/contact-form.html"
+        text="Contact Us"
+      %}
+    </div>
+
   </div>
 </div>
