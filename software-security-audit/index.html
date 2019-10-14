@@ -161,6 +161,8 @@ tags: [Security, Audit]
         {% if service.title == true %}
           <td scope="row" class="font-size-md pl-5"><b>{{ service.description }}</b></td>
         {% else %}
+        <!-- Todo: The commented out line will be used as soon as text is provided -->
+        <!-- <td scope="row" class="font-size-sm pl-5" data-toggle="tooltip" data-placement="top" title="{{ service.tooltip }}">{{ service.description }}</td> -->
           <td scope="row" class="font-size-sm pl-5">{{ service.description }}</td>
         {% endif %}
           <td class="border-left-dark-blue"></td>
