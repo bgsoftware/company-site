@@ -44,16 +44,16 @@
           <div class="d-flex flex-column py-3">
           {% for capabilitiesThree in capabilities %}
             <div class="d-flex justify-content-between">
-            {% for service in capabilitiesThree %}
+            {% for capability in capabilitiesThree %}
               <div class="w-25 text-center py-2">
-                <a href="/capabilities/{{ service.link }}">
+                <a href="/capabilities/{{ capability.link }}">
                   <img
                     class="capabilities-modal__icon w-90"
-                    src="/assets/images/capabilities/{{ service.image }}"
-                    alt="{{ service.name }}"
+                    src="/assets/images/capabilities/{{ capability.image }}"
+                    alt="{{ capability.name }}"
                   >
                 </a>
-                <b class="font-size-sm">{{ service.name }}</b>
+                <b class="font-size-sm">{{ capability.name }}</b>
               </div>
             {% endfor %}
             </div>
