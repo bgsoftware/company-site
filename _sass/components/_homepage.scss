@@ -137,9 +137,9 @@
 
 .capabilities__card-points { padding-inline-start: 20px; }
 
-.service__icon { @include transition(filter, $image-transition-speed); }
+.capability__icon { @include transition(filter, $image-transition-speed); }
 
-.service__icon:hover { filter: brightness(75%); }
+.capability__icon:hover { filter: brightness(75%); }
 
 @mixin capabilities--lg() {
   .capabilities__cards {
