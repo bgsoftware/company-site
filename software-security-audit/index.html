@@ -156,14 +156,14 @@ tags: [Security, Audit]
           <td></td>
         </tr>
 
-      {% for service in site.data.security-audit-features %}
+      {% for capability in site.data.security-audit-features %}
         <tr>
-        {% if service.title == true %}
-          <td scope="row" class="font-size-md pl-5"><b>{{ service.description }}</b></td>
+        {% if capability.title == true %}
+          <td scope="row" class="font-size-md pl-5"><b>{{ capability.description }}</b></td>
         {% else %}
         <!-- Todo: The commented out line will be used as soon as text is provided -->
-        <!-- <td scope="row" class="font-size-sm pl-5" data-toggle="tooltip" data-placement="top" title="{{ service.tooltip }}">{{ service.description }}</td> -->
-          <td scope="row" class="font-size-sm pl-5">{{ service.description }}</td>
+        <!-- <td scope="row" class="font-size-sm pl-5" data-toggle="tooltip" data-placement="top" title="{{ capability.tooltip }}">{{ capability.description }}</td> -->
+          <td scope="row" class="font-size-sm pl-5">{{ capability.description }}</td>
         {% endif %}
           <td class="border-left-dark-blue"></td>
         {% if forloop.first %}
@@ -173,7 +173,7 @@ tags: [Security, Audit]
         {% else %}
           <td class="bg-color-lightest-blue text-center box-shadow font-size-sm">
         {% endif %}
-          {% if service.basic == true %}
+          {% if capability.basic == true %}
             X
           {% endif %}
           </td>
@@ -186,7 +186,7 @@ tags: [Security, Audit]
         {% else %}
           <td class="bg-color-lighter-blue text-center box-shadow font-size-sm">
         {% endif %}
-          {% if service.advanced == true %}
+          {% if capability.advanced == true %}
             X
           {% endif %}
           </td>
@@ -199,7 +199,7 @@ tags: [Security, Audit]
         {% else %}
           <td class="bg-color-light-blue text-center box-shadow font-size-sm">
         {% endif %}
-          {% if service.comp == true %}
+          {% if capability.comp == true %}
             X
           {% endif %}
           </td>
