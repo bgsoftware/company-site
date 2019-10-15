@@ -44,11 +44,11 @@ tags: [BG Software]
   </div>
   <!--- End of Custom Software. --->
 
-  <!--- Create a nested array for Services/Capabilities. --->
+  <!--- Create a nested array for Capabilities. --->
   {% assign subArrSize = 3 %}
-  {% assign services = "" | split: "/" %}
+  {% assign capabilities = "" | split: "/" %}
 
-  {% for element in site.data.services %}
+  {% for element in site.data.capabilities %}
     {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
 
     {% if needsNewSubArr == 1 %}
@@ -60,16 +60,16 @@ tags: [BG Software]
     {% assign subArr = subArr | push: element %}
 
     {% if needsNewSubArr == 0 or forloop.last %}
-      {% comment %} push subArr in services if subArr length is. {% endcomment %}
-      {% assign services = services | push: subArr %}
+      {% comment %} push subArr in capabilities if subArr length is. {% endcomment %}
+      {% assign capabilities = capabilities | push: subArr %}
     {% endif %}
   {% endfor %}
 
-  <!--- Services. --->
-  <div id="services" class="py-6">
+  <!--- Capabilities. --->
+  <div id="capabilities" class="py-6">
     <div class="d-flex align-items-center flex-column">
-      {% for serviceThree in services %}
-      <div class="services__cards d-flex justify-content-center m-0">
+      {% for serviceThree in capabilities %}
+      <div class="capabilities__cards d-flex justify-content-center m-0">
         {% for service in serviceThree %}
           {% include service-card.html %}
         {% endfor %}
@@ -77,7 +77,7 @@ tags: [BG Software]
       {% endfor %}
     </div>
   </div>
-  <!--- End of Services. --->
+  <!--- End of Capabilities. --->
 
 
   <!--- Survey. --->
