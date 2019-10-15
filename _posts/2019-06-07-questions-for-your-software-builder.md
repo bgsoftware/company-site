@@ -1,13 +1,12 @@
 ---
-layout      : post
-title       : If Your Software Builder Can’t Answer These 3 Questions, Ghost Them
-description : These three will determine if your software build is going to be exciting, or
-              a headache.
-image       : 2019-06-07-if_your_software_builder_cant_answer_these_3_questions_ghost_them.jpg
-image-description: "Link to blog post. Photo of chalkboard with a large question mark drawn in the center."
-author      : John Stuckert
-comments    : true
-tags        : [BG Software, Blog, John Stuckert, Software]
+layout            : post
+title             : If Your Software Builder Can’t Answer These 3 Questions, Ghost Them
+description       : These three will determine if your software build is going to be exciting, or a headache.
+image             : 2019-06-07-if_your_software_builder_cant_answer_these_3_questions_ghost_them.jpg
+image-description : "Link to blog post. Photo of chalkboard with a large question mark drawn in the center."
+author            : John Stuckert
+comments          : true
+tags              : [BG Software, Blog, John Stuckert, Software]
 ---
 
 You’ve decided to repair, upgrade or replace software at your company. You’ve done your research. You’ve found who you believe to be a vendor capable of getting this done for you. The process for developing an application is unique for every business, but there are basic steps in the process that need to happen before wireframing and developing a prototype.
