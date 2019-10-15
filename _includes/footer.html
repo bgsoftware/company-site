@@ -26,8 +26,14 @@
     <!--- Social Media Logos and Links. --->
     <div class="footer__social-media footer__block d-flex py-2">
       {% for app in site.data.socialMedia %}
-        <a href="{{ app.link }}" name="{{ app.name }}" aria-label= "{{ app.description }}" target="_blank" class="px-1">
-          <i class="footer__icon hover-color-{{ app.name }} fa {{ app.img-class-sq }} color-white font-size-3"></i>
+        <a 
+          href="{{ app.link }}" 
+          name="{{ app.name }}" 
+          aria-label= "{{ app.description }}" 
+          target="_blank" 
+          class="px-1">
+          <i class="footer__icon hover-color-{{ app.name }} 
+            fa {{ app.img-class-sq }} color-white font-size-3"></i>
         </a>
       {% endfor %}
     </div>
