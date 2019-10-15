@@ -68,10 +68,10 @@ tags: [BG Software]
   <!--- Capabilities. --->
   <div id="capabilities" class="py-6">
     <div class="d-flex align-items-center flex-column">
-      {% for serviceThree in capabilities %}
+      {% for capabilitiesThree in capabilities %}
       <div class="capabilities__cards d-flex justify-content-center m-0">
-        {% for service in serviceThree %}
-          {% include service-card.html %}
+        {% for capability in capabilitiesThree %}
+          {% include capability-card.html %}
         {% endfor %}
       </div>
       {% endfor %}
