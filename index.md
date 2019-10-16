@@ -274,14 +274,26 @@ tags: [BG Software]
             {% if forloop.first %}
               <div class="h-100 homepage-blogs__carousel-item carousel-item text-center active">
                 {% for post in postGroup %}
-                  {% include blog-card.html %}
+                  {%
+                    include blog-card.html
+                    id=post.id
+                    image=post.image
+                    title=post.title
+                    description=post.description
+                  %}
                 {% endfor %}
               </div>
             {% endif %}
             {% if forloop.first == false %}
               <div class="homepage-blogs__carousel-item carousel-item text-center">
                 {% for post in postGroup %}
-                  {% include blog-card.html %}
+                  {%
+                    include blog-card.html
+                    id=post.id
+                    image=post.image
+                    title=post.title
+                    description=post.description
+                  %}
                 {% endfor %}
               </div>
             {% endif %}
