@@ -1,13 +1,13 @@
-<a href="{{ post.id }}">
+<a href="{{ include.id }}">
   <div class="homepage-blog__card card d-inline-block align-top rounded-lg">
     <div
       class="homepage-blog__image-container"
-      style="background-image: url('/assets/images/blog/{{ post.image }}');"
+      style="background-image: url('/assets/images/blog/{{ include.image }}');"
     >
     </div>
     <div class="card-body">
-      <h5 class="card-title font-size-md">{{ post.title }}</h5>
-      <p class="card-text homepage-blog__card-description font-size-sm">{{ post.description }}</p>
+      <h5 class="card-title font-size-md">{{ include.title }}</h5>
+      <p class="card-text homepage-blog__card-description font-size-sm">{{ include.description }}</p>
     </div>
   </div>
 </a>
