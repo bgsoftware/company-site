@@ -141,7 +141,7 @@
 
 .capability__icon:hover { filter: brightness(75%); }
 
-@mixin capabilities--lg() {
+@mixin capabilities-row--lg() {
   .capabilities__cards {
     flex-direction: row;
     align-items: flex-start;
