@@ -4,17 +4,17 @@
   data-aos-offset="200"
 >
   <div class="card-body px-1">
-    <a href="/capabilities/{{ capability.link }}.html">
+    <a href="/capabilities/{{ include.link }}.html">
       <img
-        src="/assets/images/capabilities/{{ capability.image }}"
+        src="/assets/images/capabilities/{{ include.image }}"
         class="capability__icon mx-auto d-block w-75 max-width-10rem pb-4"
-        alt="{{ capability.name }}"
+        alt="{{ include.name }}"
       >
     </a>
-    <h2 class="capabilities__card-title card-title text-center">{{ capability.name }}</h2>
+    <h2 class="capabilities__card-title card-title text-center">{{ include.name }}</h2>
     <div class="capabilities__card-content font-size-md">
       <p class="font-weight-lighter line-height-2">
-        {{ capability.point }}
+        {{ include.point }}
       </p>
     </div>
   </div>
