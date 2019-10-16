@@ -71,7 +71,13 @@ tags: [BG Software]
       {% for capabilitiesThree in capabilities %}
       <div class="capabilities__cards d-flex justify-content-center m-0">
         {% for capability in capabilitiesThree %}
-          {% include capability-card.html %}
+          {%
+            include capability-card.html
+            link=capability.link
+            image=capability.image
+            name=capability.name
+            point=capability.point
+          %}
         {% endfor %}
       </div>
       {% endfor %}
