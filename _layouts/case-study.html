@@ -2,8 +2,10 @@
 layout: default
 ---
 
-{% assign headerText1 = page.title %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1=page.title
+%}
 
 <div id="case-study" class="sm-dynamic-px-container py-5">
   <div class="case-study__client d-flex py-4">
