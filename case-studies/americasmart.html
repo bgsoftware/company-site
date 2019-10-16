@@ -6,8 +6,10 @@ client: americasmart
 title: International Market Centers, LLC (AmericasMart)
 ---
 
-{% assign headerText1 = page.title %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1=page.title
+%}
 
 <script src="/assets/js/caseStudyAmericasMart.js"></script>
 
