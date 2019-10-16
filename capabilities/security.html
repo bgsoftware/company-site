@@ -10,8 +10,10 @@ title: Security
 ---
 
 
-{% assign headerText1 = page.title %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1=page.title
+%}
 <div id="capability" class="sm-dynamic-px-container py-5">
   <div class="capability__video-container mx-auto py-4">
     <video controls class="rounded-lg w-100"
