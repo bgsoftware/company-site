@@ -54,8 +54,10 @@ tags: [The Process]
       </div>
     </div>
 
-    {% assign excludeProcess = true %}
-    {% include pre-footer-buttons.html %}
+    {%
+      include pre-footer-buttons.html
+      excludeProcess=true
+    %}
     </div>
   </div>
 </div>
