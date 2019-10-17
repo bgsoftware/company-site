@@ -2,7 +2,7 @@
   <div class="pre-footer-buttons__inner-container d-flex justify-content-around">
 
     <!--- If exclude process is true, don't show the process button. --->
-  {% if excludeProcess == true %}
+  {% if include.excludeProcess == true %}
     <div class="pt-5 pb-4 d-flex align-content-center">
       {%
         include button.html
