@@ -4,10 +4,10 @@
   data-aos-offset="200"
 >
   <img
-    src="/assets/images/surveys/{{ survey.icon }}"
+    src="/assets/images/surveys/{{ include.icon }}"
     class="mx-auto d-block w-75 max-width-8rem pb-4"
-    alt="{{ survey.icon }}"
+    alt="{{ include.icon }}"
   >
-  <h1 class="card-title text-center font-size-4">{{ survey.pct }}</h1>
-  <p class="font-size-md line-height-2">{{ survey.text }}</p>
+  <h1 class="card-title text-center font-size-4">{{ include.pct }}</h1>
+  <p class="font-size-md line-height-2">{{ include.text }}</p>
 </div>
