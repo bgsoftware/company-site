@@ -92,14 +92,24 @@ tags: [BG Software]
       <div class="survey__group d-flex">
       {% for survey in site.data.surveys %}
         {% if forloop.index <= 2 %}
-          {% include survey-card.html %}
+          {%
+            include survey-card.html
+            icon=survey.icon
+            pct=survey.pct
+            text=survey.text
+          %}
         {% endif %}
       {% endfor %}
       </div>
       <div class="survey__group d-flex">
       {% for survey in site.data.surveys %}
         {% if forloop.index > 2 %}
-          {% include survey-card.html %}
+          {%
+            include survey-card.html
+            icon=survey.icon
+            pct=survey.pct
+            text=survey.text
+          %}
         {% endif %}
       {% endfor %}
       </div>
