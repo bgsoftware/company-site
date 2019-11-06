@@ -163,9 +163,7 @@ tags: [Security, Audit]
         {% if capability.title == true %}
           <td scope="row" class="font-size-md pl-5"><b>{{ capability.description }}</b></td>
         {% else %}
-        <!-- Todo: The commented out line will be used as soon as text is provided -->
-        <!-- <td scope="row" class="font-size-sm pl-5" data-toggle="tooltip" data-placement="top" title="{{ capability.tooltip }}">{{ capability.description }}</td> -->
-          <td scope="row" class="font-size-sm pl-5">{{ capability.description }}</td>
+          <td scope="row" class="font-size-sm pl-5" data-toggle="tooltip" data-placement="top" title="{{ capability.tooltip }}">{{ capability.description }}</td>
         {% endif %}
           <td class="border-left-dark-blue"></td>
         {% if forloop.first %}
