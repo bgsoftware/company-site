@@ -5,61 +5,61 @@
   advanced: false
   comp: false
 - description: Affected Areas
-  tooltip: text
+  tooltip:
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Risk Severity Analysis
-  tooltip: text
+  tooltip:
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Exploit Difficulty Analysis
-  tooltip: text
+  tooltip:
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Suggested Remedies
-  tooltip: text
+  tooltip:
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Enhanced Remedies
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Vulnerability Impact
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Telephone Consultation
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Source Code Analysis
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Systems Analysis
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Concierge Services
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: false
@@ -77,157 +77,177 @@
   advanced: false
   comp: false
 - description: SQL Injection
-  tooltip: text
+  tooltip: Using malicious code to access information that was not intended to be displayed,
+           such as customer information on a website.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Cross-site Scripting
-  tooltip: text
+  tooltip: XSS attacks occur when an attacker uses a web application to send malicious code
+           to a different end user. 
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Cross-site Request Forgery
-  tooltip: text
+  tooltip: An attack which forces an end user to perform unwanted actions on a web application 
+           in which they're currently authenticated.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Session ID Enumeration
-  tooltip: text
+  tooltip: When a hacker can use brute-force to either guess or confirm valid users in a system.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Public Service (Port) Enumeration
-  tooltip: text
+  tooltip: Port enumeration involves scanning all of a server's ports for vulnerabilities.
+           The attacker's goal is to determine how the targeted server communicates to the internet.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Out-of-Date Platform (e.g. CMS)
-  tooltip: text
+  tooltip: Many WordPress, Joomla, Magento and Drupal-driven websites aren't 
+           being updated, making them susceptible to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Password Reset Username Enumeration
-  tooltip: text
+  tooltip: An attacker can know that if a user exists or not; just by noticing a sign-in error.
+           Once the hacker knows that a user exists, s/he can launch a brute force attack against it.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Development Errors in Production
-  tooltip: text
+  tooltip: In the process of creating software, developers could miss something which could make the website of application vulnerable to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Insecure Direct Object References
-  tooltip: text
+  tooltip: As a result of this vulnerability, attackers can bypass authorization
+           and access resources like example database records or files, for example.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Password Sent Via Email
-  tooltip: text
+  tooltip: Emails are often sent in “plain” text. That means the content of the email is unencrypted
+           and can be intercepted by an attacker.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Password-Only Login
-  tooltip: text
+  tooltip: If a website or application does not use capchas, or authentication with an identity provider 
+           such as Google or Facebook, it is vulnerable to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Outdated or No Transport-Layer Security
-  tooltip: text
+  tooltip: Websites use TLS to secure all communications between their servers and web browsers. If this 
+           encryption is not updated the site is prone to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Improper Token or Credential Storage
-  tooltip: text
+  tooltip: If these tools for accessing an application or website are not stored securely, 
+           the information is vulnerable to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Unchecked Redirects
-  tooltip: text
+  tooltip: This occurs when an application redirects to a destination controlled by an attacker.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Language or Framework Disclosure
-  tooltip: text
+  tooltip: If it is easy to detect what kind of programming language was used to create an application, 
+           it makes it much easier to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Bad or No Password Policy
-  tooltip: text
+  tooltip: If the set of rules designed to encourage users to employ strong passwords and use them
+           properly is not robust, an application is vulnerable to attack.
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Local File Includes
-  tooltip: text
+  tooltip: The vulnerability occurs due to the use of user-supplied input without proper validation.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Remote File Includes
-  tooltip: text
+  tooltip: An attack targeting vulnerabilities in web applications that dynamically reference external scripts.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Eval. Vulnerability
-  tooltip: text
+  tooltip: An attacker will be able to run malicious scripts and commands on the targeted server
+           if they can assign a certain kind of code to a variable that will later be referenced by the eval function.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Login Timing Attacks
-  tooltip: text
+  tooltip: An attacker may attempt to compromise an encrypted system by 
+           analyzing the time taken to execute certain commands, then working
+           backwards to discover the login information.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Application Running as Priveleged User
-  tooltip: text
+  tooltip: To reduce the possibility of unauthorized code being able to get control, 
+           the system should run with the least privilege necessary for each user.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: File Write Vulnerabilities (unprotected path; arbitrary file; unchecked extension)
-  tooltip: text
+  tooltip: A successful exploit could allow the attacker to write arbitrary files 
+           to the operating system of an affected device. 
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Clear-text Password Storage
-  tooltip: text
+  tooltip: If this information is stored in clear (or “plain”) text, attackers could potentially read it. 
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Unsalted Password Storage
-  tooltip: text
+  tooltip: A salt is random data that is used as an additional input to a one-way function
+           that "hashes" data or a password by transforming it into a string of different characters.
+           Unsalted data is vulnerable to attack.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Tokens or Credentials in Log Files
-  tooltip: text
+  tooltip: Log files are text files and don't have any additional encryption or security protocol associated with them.  They are supposed to be easily accessible files that system admins can use to see what a server has been doing. If other information is in there, it’s a vulnerability.
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Application-Readable Log Files
-  tooltip: text
+  tooltip:
   title: false
   basic: false
   advanced: false
