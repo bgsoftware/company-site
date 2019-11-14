@@ -1,12 +1,14 @@
 ---
 layout: default
 description: "Let’s take you through the process of creating your custom software application, from discovery to testing to live launch."
-title: Process
-tags: [The Process]
+title: Software Development Process
+tags: [The Software Development Process]
 ---
 
-{% assign headerText1 = "The Process: How Your Software Is Made" %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1="The Software Development Process: How Your Software Is Made"
+%}
 <div class="overflow-hidden">
   <div class="sm-dynamic-px-container">
     <div class="py-2">
@@ -52,8 +54,10 @@ tags: [The Process]
       </div>
     </div>
 
-    {% assign excludeProcess = true %}
-    {% include pre-footer-buttons.html %}
+    {%
+      include pre-footer-buttons.html
+      hasSoftwareDevelopment=true
+    %}
     </div>
   </div>
 </div>

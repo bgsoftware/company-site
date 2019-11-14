@@ -122,44 +122,44 @@
 
 
 
-/* Services. */
-.services__cards {
+/* Capabilities. */
+.capabilities__cards {
   flex-direction: column;
   align-items: center;
 }
 
-.services__card {
+.capabilities__card {
   max-width: 40rem;
   width: 90%;
 }
 
-.services__card-title { min-height: 1.5rem; }
+.capabilities__card-title { min-height: 1.5rem; }
 
-.services__card-points { padding-inline-start: 20px; }
+.capabilities__card-points { padding-inline-start: 20px; }
 
-.service__icon { @include transition(filter, $image-transition-speed); }
+.capability__icon { @include transition(filter, $image-transition-speed); }
 
-.service__icon:hover { filter: brightness(75%); }
+.capability__icon:hover { filter: brightness(75%); }
 
-@mixin services--lg() {
-  .services__cards {
+@mixin capabilities-row--lg() {
+  .capabilities__cards {
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .services__card {
+  .capabilities__card {
     min-height: 25rem;
     max-width: 25rem;
   }
 }
 
-@mixin services__xl() {
-  .services__card {
+@mixin capabilities__xl() {
+  .capabilities__card {
     min-height: 30rem;
     max-width: 25rem;
   }
 }
-/* End of Services. */
+/* End of Capabilities. */
 
 
 

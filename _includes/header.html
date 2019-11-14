@@ -1,8 +1,8 @@
 <div class="sm-dynamic-px-container w-100 bg-color-dark-blue d-flex align-items-center">
   <div class="color-white header__text font-weight-normal py-3">
-    <span>{{ headerText1 }}</span>
-    {% if headerText2 %}
-    <span>{{ headerText2 }}</span>
+    <span>{{ include.headerText1 }}</span>
+    {% if include.headerText2 %}
+    <span>{{ include.headerText2 }}</span>
     {% endif %}
   </div>
 </div>

@@ -5,8 +5,10 @@ description: The BG Blog, your resource for all things software.
 tags: [Blog]
 ---
 
-{% assign headerText1 = "Blog" %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1="Blog"
+%}
 <div class="blog-library__container bg-color-dark-blue">
   <div class="blog-library mx-auto py-8">
     {% for post in site.posts %}

@@ -4,8 +4,11 @@ title: Contact Us
 description: Contact us for information or to get your questions answered.
 tags: [Contact Us]
 ---
-{% assign headerText1 = "How Can We Help?" %}
-{% include header.html %}
+
+{%
+  include header.html
+  headerText1="How Can We Help?"
+%}
 
 <div class="sm-dynamic-px-container contact-us pt-8 pb-15">
   <div class="contact-us__content d-flex">

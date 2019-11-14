@@ -1,194 +1,233 @@
 - description: Services Provided
+  tooltip:
   title: true
   basic: false
   advanced: false
   comp: false
 - description: Affected Areas
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Risk Severity Analysis
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Exploit Difficulty Analysis
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Suggested Remedies
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Enhanced Remedies
+  tooltip: text
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Vulnerability Impact
+  tooltip: text
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Telephone Consultation
+  tooltip: text
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Source Code Analysis
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Systems Analysis
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Concierge Services
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description:
+  tooltip:
   title:
   basic:
   advanced:
   comp:
 - description: Threats We Detect
+  tooltip:
   title: true
   basic: false
   advanced: false
   comp: false
 - description: SQL Injection
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Cross-site Scripting
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Cross-site Request Forgery
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Session ID Enumeration
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Public Service (Port) Enumeration
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Out-of-Date Platform (e.g. CMS)
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Password Reset Username Enumeration
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Development Errors in Production
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Insecure Direct Object References
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Password Sent Via Email
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Password-Only Login
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Outdated or No Transport-Layer Security
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Improper Token or Credential Storage
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Unchecked Redirects
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Language or Framework Disclosure
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Bad or No Password Policy
+  tooltip: text
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Local File Includes
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Remote File Includes
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Eval. Vulnerability
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Login Timing Attacks
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Application Running as Priveleged User
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: File Write Vulnerabilities (unprotected path; arbitrary file; unchecked extension)
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Clear-text Password Storage
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Unsalted Password Storage
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Tokens or Credentials in Log Files
+  tooltip: text
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Application-Readable Log Files
+  tooltip: text
   title: false
   basic: false
   advanced: false

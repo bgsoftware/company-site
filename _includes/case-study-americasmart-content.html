@@ -4,11 +4,11 @@
       id="amc-text-{{ number }}-open"
       aria-label="plus sign button"
       data-toggle="collapse"
-      href="#amc-text-{{ number }}"
+      href="#amc-text-{{ include.number }}"
       role="button"
       aria-expanded="false"
-      aria-controls="amc-text-{{ number }}"
-      onclick="toggleText('amc-text-{{ number }}', true)"
+      aria-controls="amc-text-{{ include.number }}"
+      onclick="toggleText('amc-text-{{ include.number }}', true)"
     >
       <i
         class="fa fa-plus-circle color-white"
@@ -16,13 +16,13 @@
       ></i>
     </a>
     <a
-      id="amc-text-{{ number }}-close"
+      id="amc-text-{{ include.number }}-close"
       data-toggle="collapse"
-      href="#amc-text-{{ number }}"
+      href="#amc-text-{{ include.number }}"
       role="button"
       aria-expanded="false"
-      aria-controls="amc-text-{{ number }}"
-      onclick="toggleText('amc-text-{{ number }}')"
+      aria-controls="amc-text-{{ include.number }}"
+      onclick="toggleText('amc-text-{{ include.number }}')"
       class="d-none"
     >
       <i
@@ -30,22 +30,22 @@
         aria-hidden="true"
       ></i>
     </a>
-    {{ title }}:
+    {{ include.title }}:
   </h3>
 </div>
 
-<div id="amc-text-{{ number }}" class="collapse">
+<div id="amc-text-{{ include.number }}" class="collapse">
   <div class="py-4">
     <h2 class="pb-3">The Challenge:</h2>
     <p class="font-size-md line-height-2">
-      {{ challenge }}
+      {{ include.challenge }}
     </p>
   </div>
 
   <div class="py-4">
     <h2 class="pb-3">The Technology:</h2>
     <div class="d-flex justify-content-around">
-    {% for tech in technologies %}
+    {% for tech in include.technologies %}
       <div class="w-10rem d-flex align-items-center">
         <img
           class="w-80"
@@ -60,19 +60,19 @@
   <div class="py-4">
     <h2 class="pb-3">The Outcome:</h2>
     <p class="font-size-md line-height-2">
-      {{ outcome }}
+      {{ include.outcome }}
     </p>
   </div>
 
-  {%- if quote-content and quote-signature-%}
+  {%- if include.quote-content and include.quote-signature-%}
   <div class="py-4">
     <h2 class="pb-3">What They Said:</h2>
     <div class="case-study-americasmart-content__quote font-size-lg line-height-1pt75 font-italic">
       <p>
-        {{ quote-content }}
+        {{ include.quote-content }}
       </p>
       <p>
-        {{ quote-signature }}
+        {{ include.quote-signature }}
       </p>
     </div>
   </div>

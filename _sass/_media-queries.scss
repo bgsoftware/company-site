@@ -31,6 +31,7 @@
   @include blog-library--lg();
   @include blog-post--lg();
   @include capabilities--lg();
+  @include capabilities-row--lg();
   @include capability--lg();
   @include capability-security--lg();
   @include case-study--lg();
@@ -43,7 +44,6 @@
   @include navigation-bar--lg();
   @include pre-footer-buttons--lg();
   @include security-audit--lg();
-  @include services--lg();
   @include survey--lg();
   @include testimonials--lg();
 }

@@ -1,8 +1,8 @@
-<!--- Create a nested array for Services/Capabilities. --->
+<!--- Create a nested array for Capabilities. --->
 {% assign subArrSize = 3 %}
-{% assign services = "" | split: "/" %}
+{% assign capabilities = "" | split: "/" %}
 
-{% for element in site.data.services %}
+{% for element in site.data.capabilities %}
   {% assign needsNewSubArr = forloop.index | modulo: subArrSize %}
 
   {% if needsNewSubArr == 1 %}
@@ -14,8 +14,8 @@
   {% assign subArr = subArr | push: element %}
 
   {% if needsNewSubArr == 0 or forloop.last %}
-    {% comment %} push subArr in services if subArr length is. {% endcomment %}
-    {% assign services = services | push: subArr %}
+    {% comment %} push subArr in capabilities if subArr length is. {% endcomment %}
+    {% assign capabilities = capabilities | push: subArr %}
   {% endif %}
 {% endfor %}
 
@@ -42,18 +42,18 @@
             What's your challenge? This is what we do. Choose any icon to learn more.
           </b>
           <div class="d-flex flex-column py-3">
-          {% for servicesThree in services %}
+          {% for capabilitiesThree in capabilities %}
             <div class="d-flex justify-content-between">
-            {% for service in servicesThree %}
+            {% for capability in capabilitiesThree %}
               <div class="w-25 text-center py-2">
-                <a href="/capabilities/{{ service.link }}">
+                <a href="/capabilities/{{ capability.link }}">
                   <img
                     class="capabilities-modal__icon w-90"
-                    src="/assets/images/services/{{ service.image }}"
-                    alt="{{ service.name }}"
+                    src="/assets/images/capabilities/{{ capability.image }}"
+                    alt="{{ capability.name }}"
                   >
                 </a>
-                <b class="font-size-sm">{{ service.name }}</b>
+                <b class="font-size-sm">{{ capability.name }}</b>
               </div>
             {% endfor %}
             </div>

@@ -6,8 +6,10 @@ description: Meet our team, the people who will make your software awesome!
 tags: [Our Team]
 ---
 
-{% assign headerText1 = "Our Team" %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1="Our Team"
+%}
 <div id="team" class="sm-dynamic-px-container d-flex flex-column pb-5">
   <div class="max-width-75rem pt-3 mx-auto">
     <img

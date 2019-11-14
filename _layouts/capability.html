@@ -2,14 +2,16 @@
 layout: default
 ---
 
-{% assign headerText1 = page.title %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1=page.title
+%}
 <div id="capability" class="sm-dynamic-px-container py-5">
   <div class="capability__video-container mx-auto py-4">
     <video
       controls
       class="rounded-lg w-100"
-      poster="/assets/images/services/video-thumbnails/{{ page.asset-name }}.png"
+      poster="/assets/images/capabilities/video-thumbnails/{{ page.asset-name }}.png"
     >
       <source src="/assets/videos/capabilities/{{ page.asset-name }}.mp4" type="video/mp4">
     </video>
@@ -21,7 +23,7 @@ layout: default
       <div class="capability-image-container align-items-start justify-content-center">
         <img
           class="w-80"
-          src="/assets/images/services/{{ page.asset-name }}_icon.png"
+          src="/assets/images/capabilities/{{ page.asset-name }}_icon.png"
           alt="{{ page.title }}"
         >
       </div>
@@ -47,6 +49,9 @@ layout: default
   </div>
 
 
-  {% include pre-footer-buttons.html %}
+  {% 
+    include pre-footer-buttons.html
+    hasSoftwareDevelopmentProcess=page.hasSoftwareDevelopmentProcess
+  %}
 </div>
 

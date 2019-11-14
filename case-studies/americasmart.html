@@ -6,8 +6,10 @@ client: americasmart
 title: International Market Centers, LLC (AmericasMart)
 ---
 
-{% assign headerText1 = page.title %}
-{% include header.html %}
+{%
+  include header.html
+  headerText1=page.title
+%}
 
 <script src="/assets/js/caseStudyAmericasMart.js"></script>
 
@@ -35,17 +37,20 @@ title: International Market Centers, LLC (AmericasMart)
 
 
   <!--- Sub Section 1. --->
-  {% assign number = 1 %}
-  {% assign title = "Modernizing the Application Process" %}
-  {% assign challenge =
-    "For an exhibitor to participate in a show, there was a lengthy process in place
+  {% assign technologies="javascript,angular,coldfusion,sql_server,html5,testbox" | split: ',' %}
+
+  {% 
+    include case-study-americasmart-content.html
+    number=1
+    title="Modernizing the Application Process"
+
+    challenge="For an exhibitor to participate in a show, there was a lengthy process in place
     where they would have to manually fill out a paper application, fax it in,
     complete a credit card deposit, and include a wet signature with the final
     contract. Exhibitors would have to complete this process for each show that they
     attended, and most of them would attend multiple shows a year."
-  %}
-  {% assign outcome =
-    "Our solution featured an integration we did with Auth.net so that AmericasMart
+
+    outcome="Our solution featured an integration we did with Auth.net so that AmericasMart
     could take online payments -including signing up for auto pay - and do so
     seamlessly within the application processes. We automated their prior process and
     turned it into an Online Exhibitor Portal, making both the registration and
@@ -54,31 +59,33 @@ title: International Market Centers, LLC (AmericasMart)
     attend. The Portal also remembers returning exhibitors, recalling which shows they
     attended in the past, booth number, locations, payment information, etc. so they
     could apply for every show, all in the same app, all at the same time."
-  %}
-  {% assign quote-content = "“The Benningfield Group has been AmericasMart’s software development partner
-      for over a decade. They produce quality mission critical software on time and on budget year after
-      year. We are fortunate to benefit from their expertise.”"
-  %}
-  {% assign quote-signature = "Kimberly Rometo – Vice President, Digital and Information Systems" %}
-  {% assign technologies = "javascript,angular,coldfusion,sql_server,html5,testbox" | split: ',' %}
 
-  {% include case-study-americasmart-content.html %}
+    quote-content="“The Benningfield Group has been AmericasMart’s software development partner
+    for over a decade. They produce quality mission critical software on time and on budget year after
+    year. We are fortunate to benefit from their expertise.”"
+
+    quote-signature="Kimberly Rometo – Vice President, Digital and Information Systems" 
+    technologies=technologies
+  %}
 
 
   <!--- Sub Section 2. --->
-  {% assign number = 2 %}
-  {% assign title = "Inventory and Installation Management for Advertising" %}
-  {% assign challenge =
-    "At AmericasMart, there are three main categories of advertising/promotional
+  {% assign technologies="javascript,angular,coldfusion,jasmine,sql_server,html5" | split: ',' %}
+
+  {% 
+    include case-study-americasmart-content.html
+    number= 2
+    title="Inventory and Installation Management for Advertising"
+
+    challenge="At AmericasMart, there are three main categories of advertising/promotional
     options for exhibitors: print, on-site exposure, and online exposure. For clients
     deploying sponsorship campaigns, they were assigned a unique physical location at
     the market. Historically, these locations were kept on an Excel spreadsheet, then
     transferred to a PowerPoint document, which was used to walk the different venues
     to ensure and approve that the proper advertising assets where placed in the correct
     locations."
-  %}
-  {% assign outcome =
-    "We built software that created a digital representation of the floor plan of the
+
+    outcome="We built software that created a digital representation of the floor plan of the
     exhibitor areas, to ensure each promotional asset was placed properly. Our
     application also featured an image uploader, so one could see at a glance what
     was in each location, filterable based on advertising type, material etc. We took
@@ -86,24 +93,26 @@ title: International Market Centers, LLC (AmericasMart)
     employees to check promotional installations from their computers/phones. In an
     integration we did with the printing company ColorSpot, our interactive floorplan
     map saved infinite amounts of paper, time and money."
-  %}
-  {% assign quote-content = nil %}
-  {% assign quote-signature = nil %}
-  {% assign technologies = "javascript,angular,coldfusion,jasmine,sql_server,html5" | split: ',' %}
 
-  {% include case-study-americasmart-content.html %}
+    quote-content=nil
+    quote-signature=nil
+    technologies=technologies
+  %}
 
 
   <!--- Sub Section 3. --->
-  {% assign number = 3 %}
-  {% assign title = "Constantly Changing Floorplans" %}
-  {% assign challenge =
-    "With over 16 shows per year, and thousands of exhibitors and buyers for each show, the floor at
+  {% assign technologies="javascript,angular,coldfusion,java,html5,css3" | split: ','%}
+
+  {% 
+    include case-study-americasmart-content.html
+    number=3
+    title="Constantly Changing Floorplans"
+
+    challenge="With over 16 shows per year, and thousands of exhibitors and buyers for each show, the floor at
     AmericasMart is always changing. It is crucial for all parties to know not only what the floor plans look like
     currently, but also what they will look like for future shows."
-  %}
-  {% assign outcome =
-    "We built a set of tools which takes AutoCAD files, identifies the layers that
+    
+    outcome="We built a set of tools which takes AutoCAD files, identifies the layers that
     show certain required information like booth dimensions that, when uploaded, are
     saved as sets of vertices and redrawn dynamically. We built an online app to show
     what the floor plan and booth spaces would look like ahead of each event. We were
@@ -115,11 +124,11 @@ title: International Market Centers, LLC (AmericasMart)
     floor. Here’s an example: If someone cancelled from appearing at market their
     booth would be removed right away so buyers intending to visit it wouldn’t be
     disappointed."
+
+    quote-content=nil
+    quote-signature=nil
+    technologies=technologies
   %}
-  {% assign technologies = "javascript,angular,coldfusion,java,html5,css3" | split: ',' %}
-
-  {% include case-study-americasmart-content.html %}
-
 
   <div class="pt-4 pb-10">
     <h2 class="pb-3">Check Out Our Other Case Studies:</h2>
@@ -130,6 +139,9 @@ title: International Market Centers, LLC (AmericasMart)
   </div>
 
 
-  {% include pre-footer-buttons.html %}
+  {%
+    include pre-footer-buttons.html
+    hasSoftwareDevelopmentProcess=true
+  %}
 
 </div>
