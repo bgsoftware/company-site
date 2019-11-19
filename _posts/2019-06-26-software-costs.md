@@ -10,7 +10,7 @@ comments          : true
 tags              : [John Scott, Software]
 ---
 
-When you’re talking business with a customer, there are two basic questions which will always be asked: “What’s this going to cost?” and “”How does this save me time and money?” Business decisions are made using logic, facts and data/research. A solution either is going to work, or not.
+When you’re talking business with a customer, there are two basic questions which will always be asked: “What’s this going to cost?” and ”How does this save me time and money?” Business decisions are made using logic, facts and data/research. A solution either is going to work, or not.
 
 The issue of price will almost always come up during the first meeting. Fair enough. You’ll know you’re dealing with a reputable company when they tell you, “It depends.”
 
