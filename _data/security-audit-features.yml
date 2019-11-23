@@ -1,77 +1,77 @@
 - description: Services Provided
-  tooltip:
+  tooltip: null
   title: true
   basic: false
   advanced: false
   comp: false
 - description: Affected Areas
-  tooltip:
+  tooltip: null
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Risk Severity Analysis
-  tooltip:
+  tooltip: null
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Exploit Difficulty Analysis
-  tooltip:
+  tooltip: null
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Suggested Remedies
-  tooltip:
+  tooltip: null
   title: false
   basic: true
   advanced: true
   comp: true
 - description: Enhanced Remedies
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Vulnerability Impact
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Telephone Consultation
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: true
   comp: true
 - description: Source Code Analysis
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Systems Analysis
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: false
   comp: true
 - description: Concierge Services
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: false
   comp: true
 - description:
-  tooltip:
+  tooltip: null
   title:
   basic:
   advanced:
   comp:
 - description: Threats We Detect
-  tooltip:
+  tooltip: null
   title: true
   basic: false
   advanced: false
@@ -247,7 +247,7 @@
   advanced: false
   comp: true
 - description: Application-Readable Log Files
-  tooltip:
+  tooltip: null
   title: false
   basic: false
   advanced: false
