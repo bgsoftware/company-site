@@ -163,7 +163,11 @@ tags: [Security, Audit]
           <td scope="row" class="font-size-md pl-5"><b>{{ capability.description }}</b></td>
         {% elsif capability.tooltip %}
           <td scope="row" class="font-size-sm pl-5"> 
-            <span data-toggle="tooltip" data-placement="top" title="{{ capability.tooltip }}">
+            <span
+              data-toggle="tooltip"
+              data-placement="top"
+              title="{{ capability.tooltip }}"
+            >
               {{ capability.description }}
               <span class="help-icon-color">
                 <span class="font-size-md">
