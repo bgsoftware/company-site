@@ -6,3 +6,7 @@
   .hover-color-#{$color} { @include transition(color, $color-transition-speed); }
   .hover-color-#{$color}:hover { color: $hex !important; }
 }
+
+.help-icon-color {
+  color: #24a0ed
+}
