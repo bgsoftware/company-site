@@ -8,7 +8,6 @@ tags: [Security, Audit]
   include header.html
   headerText1 = "The BG Software Security Audit"
 %}
-<script src="/assets/js/caseStudyAmericasMart.js"></script>
 
 <div class="sm-dynamic-px-container">
   <div class="col-lg-10 mx-auto">
@@ -162,8 +161,19 @@ tags: [Security, Audit]
         <tr>
         {% if capability.title == true %}
           <td scope="row" class="font-size-md pl-5"><b>{{ capability.description }}</b></td>
+        {% elsif capability.tooltip %}
+          <td scope="row" class="font-size-sm pl-5"> 
+            <span data-toggle="tooltip" data-placement="top" title="{{ capability.tooltip }}">
+              {{ capability.description }}
+              <span class="help-icon-color">
+                <span class="font-size-md">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </span>
+              </span>
+            </span>
+          </td>
         {% else %}
-          <td scope="row" class="font-size-sm pl-5" data-toggle="tooltip" data-placement="top" title="{{ capability.tooltip }}">{{ capability.description }}</td>
+          <td scope="row" class="font-size-sm pl-5">{{ capability.description }}</td>
         {% endif %}
           <td class="border-left-dark-blue"></td>
         {% if forloop.first %}
@@ -256,3 +266,6 @@ tags: [Security, Audit]
 
 {% assign current-url = site.url | append: page.url %}
 {% include security-contact-us-modal.html redirect=current-url %}
+
+<script src="/assets/js/caseStudyAmericasMart.js"></script>
+<script src="/assets/js/enableToolTips.js"></script>
