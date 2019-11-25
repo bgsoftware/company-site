@@ -247,7 +247,7 @@
   advanced: false
   comp: true
 - description: Application-Readable Log Files
-  tooltip: null
+  tooltip: An attacker can inject malicious code into log files, allowing them to intercept server traffic and compromise a system.
   title: false
   basic: false
   advanced: false
