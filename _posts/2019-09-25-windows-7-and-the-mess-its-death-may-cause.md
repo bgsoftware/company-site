@@ -3,6 +3,7 @@ layout: post
 title: "Windows 7 and the Mess Its Death May Cause"
 description: "The end of Windows 7 is coming. Here's what that means for you and the people who want to break into your applications."
 image: 2019-09-25-windows-7-and-the-mess-its-death-may-cause.png
+image-description: "Link to blog article. Windows 7 Logo"
 author: John Scott
 comments: true
 tags: [Windows 7]

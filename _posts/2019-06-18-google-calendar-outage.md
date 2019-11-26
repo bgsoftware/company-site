@@ -1,11 +1,12 @@
 ---
-layout      : post
-title       : "What We Learned When Google Went Down (Twice)"
-description : It can happen to anyone..
-image       : 2019-06-18-what-we-learned-when-google-went-down-twice.jpg
-author      : John Scott
-comments    : true
-tags        : [John Scott, Google, outage]
+layout            : post
+title             : "What We Learned When Google Went Down (Twice)"
+description       : It can happen to anyone..
+image             : 2019-06-18-what-we-learned-when-google-went-down-twice.jpg
+image-description : "Link to blog post. Photo of Yellow diamond-shaped road sign. Text reads 'DEAD END'"
+author            : John Scott
+comments          : true
+tags              : [John Scott, Google, outage]
 ---
 
 It can happen to anyone.

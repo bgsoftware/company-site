@@ -1,15 +1,16 @@
 ---
-layout      : post
-title       : What’s My Software Going to Cost?
-description : The correct answer is, "It depends." But it's not anything like buying
+layout            : post
+title             : What’s My Software Going to Cost?
+description       : The correct answer is, "It depends." But it's not anything like buying
               a car!
-image       : 2019-06-26-whats-my-software-going-to-cost.jpg
-author      : John Scott
-comments    : true
-tags        : [John Scott, Software]
+image             : 2019-06-26-whats-my-software-going-to-cost.jpg
+image-description : "Link to blog post. Photo of computer screen with HTML code going across it."
+author            : John Scott
+comments          : true
+tags              : [John Scott, Software]
 ---
 
-When you’re talking business with a customer, there are two basic questions which will always be asked: “What’s this going to cost?” and “”How does this save me time and money?” Business decisions are made using logic, facts and data/research. A solution either is going to work, or not.
+When you’re talking business with a customer, there are two basic questions which will always be asked: “What’s this going to cost?” and ”How does this save me time and money?” Business decisions are made using logic, facts and data/research. A solution either is going to work, or not.
 
 The issue of price will almost always come up during the first meeting. Fair enough. You’ll know you’re dealing with a reputable company when they tell you, “It depends.”
 

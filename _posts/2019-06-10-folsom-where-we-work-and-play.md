@@ -1,12 +1,13 @@
 ---
-layout      : post
-title       : "Folsom: Where We Work (and Play)"
-description : The story of our hometown, a former Gold Rush village
+layout            : post
+title             : "Folsom: Where We Work (and Play)"
+description       : The story of our hometown, a former Gold Rush village
               tuned-major-suburb, and why our quality of life is amazing.
-image       : 2019-06-10-folsom-where-we-work-and-play.jpg
-author      : John Stuckert
-comments    : true
-tags        : [BG Software, Blog, John Stuckert, Folsom]
+image             : 2019-06-10-folsom-where-we-work-and-play.jpg
+image-description : "Link to blog post. Photo of Folsom Lake from the shore in the daytime. Tree branches in foreground"
+author            : John Stuckert
+comments          : true
+tags              : [BG Software, Blog, John Stuckert, Folsom]
 ---
 
 We’re lucky enough to call the City of Folsom our home at BG Software. Although its name is recognizable worldwide in part because of the prison that Johnny Cash made famous – Folsom State Prison, Folsom has a rich history beginning with the ‘ 49ers during the great Gold Rush in California. It was also the site of the first railroad in the West and the first long-distance electricity transmission in the world.

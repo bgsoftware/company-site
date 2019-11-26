@@ -1,11 +1,12 @@
 ---
-layout      : post
-title       : "Security and Your Software: Are You Safe?"
-description : How to find out if you’re not.
-image       : 2019-06-13-security-and-your-software-are-you-safe.jpg
-author      : John Scott
-comments    : true
-tags        : [John Scott, Security]
+layout            : post
+title             : "Security and Your Software: Are You Safe?"
+description       : How to find out if you’re not.
+image             : 2019-06-13-security-and-your-software-are-you-safe.jpg
+image-description : "Link to blog post. Cartoon image of man in bank robber clothing walking out of laptop screen, carrying a bag over his shoulder, and a small flashlight pointed at images of credit cards."
+author            : John Scott
+comments          : true
+tags              : [John Scott, Security]
 ---
 
 “This version of the software is incompatible with your iPad.”
