@@ -28,10 +28,7 @@
   .contact-us__image-container {
     display: block;
     width: 48%;
-    background-image: url("/assets/images/misc/american_river_bike_trail.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    object-fit: cover;
   }
 
   .contact-us__image-container, .contact-us__form { width: 48%; }
