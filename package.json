@@ -13,7 +13,7 @@
   "dependencies": {
     "aos": "2.3.x",
     "bootstrap": "4.3.x",
-    "jquery": "3.4.x",
+    "jquery": "3.5.x",
     "popper.js": "1.14.x"
   },
   "devDependencies": {
