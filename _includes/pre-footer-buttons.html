@@ -1,9 +1,9 @@
-<div id="pre-footer-buttons" class="d-flex justify-content-center w-100">
+<div id="pre-footer-buttons" class="d-flex justify-content-center w-100 pb-3">
   <div class="pre-footer-buttons__inner-container d-flex justify-content-around">
 
     <!-- Optionally display this button -->
     {% if include.hasSoftwareDevelopment %}
-      <div class="pt-5 pb-4 d-flex align-content-center">
+      <div class="pt-2 pb-2 d-flex align-content-center">
         {%
           include button.html
           link="/capabilities/software-development.html"
@@ -14,7 +14,7 @@
 
     <!-- Optionally display this button -->
     {% if include.hasSoftwareDevelopmentProcess %}
-      <div class="pt-5 pb-4 d-flex align-content-center">
+      <div class="pt-2 pb-2 d-flex align-content-center">
         {%
           include button.html
           link="/process.html"
@@ -24,7 +24,7 @@
     {% endif %}
 
     <!-- Always display this buttonn -->
-    <div class="pt-5 pb-4 d-flex align-content-center">
+    <div class="pt-2 pb-2 d-flex align-content-center">
       {%
         include button.html
         link="/contact-form.html"

@@ -1,15 +1,23 @@
 .pre-footer-buttons__inner-container {
   width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 @mixin pre-footer-buttons--sm() {
   .pre-footer-buttons__inner-container {
-    width: 75%;
+    flex-direction: row;
+  }
+}
+
+@mixin pre-footer-buttons--md() {
+  .pre-footer-buttons__inner-container {
+    width: 85%;
   }
 }
 
 @mixin pre-footer-buttons--lg() {
   .pre-footer-buttons__inner-container {
-    width: 50%;
+    width: 65%;
   }
 }
