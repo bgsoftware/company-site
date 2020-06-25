@@ -4,7 +4,7 @@
   link : "#case-studies-modal"
 - name : Contact Us
   link : "/contact-form"
-- name : Team
-  link : "/our-team"
+# - name : Team
+#   link : "/our-team"
 - name : Blog
   link : "/blog"
