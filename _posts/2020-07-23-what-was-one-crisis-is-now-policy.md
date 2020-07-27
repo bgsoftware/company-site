@@ -1,6 +1,6 @@
 ---
-layout : blog
-title : “What Was Once Crisis Is Now Policy”
+layout : post
+title : "What Was Once Crisis Is Now Policy"
 description : The pandemic made you adapt and adlib. What stuck?
 image : 2020-07-23-what-was-once-crisis-is-now-policy.jpg
 author : John Scott
