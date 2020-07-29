@@ -7,66 +7,42 @@ tags: [Contact Us]
 
 {%
   include header.html
-  headerText1="How Can We Help?"
+  headerText1="Contact Us"
 %}
 
 <div class="sm-dynamic-px-container contact-us pt-8 pb-15">
   <div class="contact-us__content d-flex">
-    <img src="/assets/images/misc/american_river_bike_trail.jpg" class="contact-us__image-container rounded-lg" alt="Photograph of a trail by a river"> 
-    <form
-      class="contact-us__form d-flex justify-content-center flex-column"
-      action="https://formspree.io/xorvpykm"
-      method="POST"
-    >
-      <div class="contact-us__field">
-        <label for="name">Name:&nbsp;<span class="text-danger">*</span></label>
-        <input
-          name="name"
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Enter name"
-          required
-        >
-      </div>
-      <div class="contact-us__field">
-        <label for="email">
-          Email Address:&nbsp;<span class="text-danger">*</span>
-        </label>
-        <input
-          type="email"
-          class="form-control w-100"
-          name="email"
-          id="email"
-          placeholder="Enter email"
-          required
-        >
-      </div>
-      <div class="contact-us__field">
-        <label for="company-name">
-          Company Name:&nbsp;<span class="text-danger">*</span>
-        </label>
-        <input
-          name="company-name"
-          type="text"
-          class="form-control w-100"
-          id="company-name"
-          placeholder="Enter company name"
-          required
-        >
-      </div>
-      <div class="contact-us__field">
-        <label for="project-details">Tell us about your project:</label>
-        <textarea
-          name="project-details"
-          class="form-control"
-          id="project-details"
-          rows="3"
-        ></textarea>
-      </div>
-      <div class="contact-us-__submit-btn-container">
-        <button type="submit" class="btn btn-primary hover-bg-color-blue border-0">Submit</button>
-      </div>
-    </form>
+
+    <img
+      alt="Photograph of a trail by a river"
+      class="contact-us__image-container rounded-lg"
+      src="/assets/images/misc/american_river_bike_trail.jpg">
+    </img>
+
+    <!--- Contact Information. --->
+    <div class="footer__block d-flex flex-column">
+      <h3>We're here to help.</h3>
+      <p>
+        Call or send an email to tell us about
+        <br />
+        yourself and how we can help you.
+      </p>
+
+      <span>4401 Hazel Avenue, Suite 225</span>
+      <span>Fair Oaks, CA  95628</span>
+      <a
+        href="tel:1-833-754-3313"
+        class="hover-color-light-blue">
+        833.754.3313 (Toll Free)
+      </a>
+      <a
+        href="mailto:customsoftware@benningfieldgroup.com"
+        class="hover-color-light-blue pb-3"
+        aria-label="contact us by email.">
+        customsoftware@benningfieldgroup.com
+      </a>
+    </div>
+    <!--- End of Contact Information. --->
+
   </div>
 </div>
