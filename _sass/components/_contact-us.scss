@@ -26,12 +26,21 @@
   }
 
   .contact-us__image-container {
+    background-image: url("/assets/images/misc/american_river_bike_trail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     display: block;
-    object-fit: cover;
-    height: 29.75em;
+    width: 28em;
   }
 
-  .contact-us__image-container, .contact-us__form { width: 48%; }
+  .hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .contact-us__form { width: 50%; }
 
   .contact-us-__submit-btn-container  { text-align: left; }
 }
