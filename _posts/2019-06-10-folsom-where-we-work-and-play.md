@@ -10,7 +10,7 @@ comments          : true
 tags              : [BG Software, Blog, John Stuckert, Folsom]
 ---
 
-We’re lucky enough to call the City of Folsom our home at BG Software. Although its name is recognizable worldwide in part because of the prison that Johnny Cash made famous – Folsom State Prison, Folsom has a rich history beginning with the ‘ 49ers during the great Gold Rush in California. It was also the site of the first railroad in the West and the first long-distance electricity transmission in the world.
+We’re lucky enough to call the City of Folsom our home at BG Software. Although its name is recognizable worldwide in part because of the prison that Johnny Cash made famous – Folsom State Prison, Folsom has a rich history beginning with the ‘49ers during the great Gold Rush in California. It was also the site of the first railroad in the West and the first long-distance electricity transmission in the world.
 
 Folsom today is a forward-looking high-tech city with companies ranging from small to large international corporations. Moreover, Folsom boasts excellent schools, beautiful family-oriented neighborhoods and excellent shopping, dining and cultural options.
 
@@ -24,7 +24,7 @@ Just a few of Folsom’s benefits are as follows:
     “Distinctive by nature,” Folsom is home to natural amenities that provide recreational enthusiasts on land and water with a year-round playground. The city was bordered by Folsom Lake, Natoma Lake and the American River, hosting kayakers, swimmers and other water sports enthusiasts from all over the region.
   </li>
   <li>
-    Residents love the city’s network of 43 + miles of paved trails, displaying some of the city’s beautiful assets as they meander through open space, woodlands, wildlife habitats, and along streams and creeks.
+    Residents love the city’s network of 43+ miles of paved trails, displaying some of the city’s beautiful assets as they meander through open space, woodlands, wildlife habitats, and along streams and creeks.
   </li>
   <li>
     Almost every home in the city is within half a mile of a park’s radius. The city’s 46 parks are teeming with an almost limitless activity range, from cricket to lacrosse, tennis to t-ball, soccer, soccer, and more.
