@@ -33,4 +33,4 @@ This is the stuff of nightmares. Wishing it were not so is not a strong play. Yo
 
 Read the full report here.
 
-Technology is designed to help you run your business better. It’s a great idea to make sure it’s doing all it can for you..
+Technology is designed to help you run your business better. It’s a great idea to make sure it’s doing all it can for you.
