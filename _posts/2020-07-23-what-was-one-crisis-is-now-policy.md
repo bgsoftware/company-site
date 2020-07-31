@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "What Was Once Crisis Is Now Policy"
-description : The pandemic made you adapt and adlib. What stuck?
+description : The pandemic made you adapt and ad-lib. What stuck?
 image : 2020-07-23-what-was-once-crisis-is-now-policy.jpg
 author : John Scott
 comments : true
@@ -18,7 +18,5 @@ tags : [John Scott, Software,COVID-19]
 <p>We wonder what changes you have made in your business have now become seemingly normal. We know commercial office leasing companies are furiously trying to figure out what they are going to do with all those empty cubicles, now that we have strong evidence that many of us do a great job doing our jobs at home. This is likely signaling a major shift in decisions a lot of companies make regarding "the office."</p>
 <p>We've learned we <em>really</em> don't need to fly anywhere to have a meeting. It's hard to imagine right now what airlines are going to do to adapt.  Zoom has zoomed, trading in the 200+ dollar-per-share range, up from 75 dollars and change in Q1 of this year, security issues be damned.</p>
 <p>24 Hour Fitness was devastated by the lockdowns. They're bankrupt.</p>
-<p>With every story of distress, we're reminded that folks who make vodka now also make hand sanitizer. Ford shifted from all cars to make ventilators. Fashion houses are selling fancy masks. The plexiglas industry certainly doesn't appear to be hurting, now that we have found a new use for their product (the spit shield). And the "six feet apart" sticker companies, same thing.</p>
-<p>You understand the need for adaptation in running a business. Staying nimble means staying on top of what's happening in the marketplace. A reordering of priorities is happening. A shuffling of processes is underway. Try and look at the whole chess board ( even if you don't play)! See as much as you can. You'll make much smarter moves that way.</p>
-<p>John Scott is the marketing and business development manager for BG Software.</p>
-<p>john.scott@benningfieldgroup.com</p>
+<p>With every story of distress, we're reminded that folks who make vodka now also make hand sanitizer. Ford shifted from all cars to make ventilators. Fashion houses are selling fancy masks. The plexiglass industry certainly doesn't appear to be hurting, now that we have found a new use for their product (the spit shield). And the "six feet apart" sticker companies, same thing.</p>
+<p>You understand the need for adaptation in running a business. Staying nimble means staying on top of what's happening in the marketplace. A reordering of priorities is happening. A shuffling of processes is underway. Try and look at the whole chess board (even if you don't play)! See as much as you can. You'll make much smarter moves that way.</p>
